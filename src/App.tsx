@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import './App.css';
+import Button from './components/button/Button';
 
 const logo = require('./assets/images/logo.svg');
 
@@ -14,6 +14,7 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Button size="small" text="Hejsan" />
       </div>
     );
   }
