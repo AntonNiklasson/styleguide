@@ -2,7 +2,8 @@ $block: 'btn';
 
 .#{$block} {
   padding: 10px 20px;
-  border: 1px solid red;
+  border: 1px solid black;
   border-radius: 4px;
-  background-color: yellow;
+  background-color: green;
+  color: yellow;
 }
