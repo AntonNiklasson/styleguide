@@ -15,7 +15,7 @@
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "build-css": "node-sass-chokidar src/assets/styles -o public/css",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
+    "watch-css": "npm run build-css && node-sass-chokidar src/assets/styles -o public/css --watch --recursive"
   },
   "devDependencies": {
     "@types/jest": "^21.1.8",
