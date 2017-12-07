@@ -1,9 +1,28 @@
 $block: 'btn';
 
 .#{$block} {
-  padding: 10px 20px;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-color: green;
-  color: yellow;
+  display: inline-block;
+  background-color: #932360;
+  color: white;
+  border: 1px solid #692969;
+  border-radius: 3px;
+
+  &--small {
+    width: 102px;
+    padding: 7px 12px;
+    font-size: 16px;
+  }
+
+  &--standard {
+    width: 138px;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  &--large {
+    width: 132px;
+    padding: 14px 15px;
+    font-size: 22px;
+  }
 }
+
