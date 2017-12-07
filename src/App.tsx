@@ -1,20 +1,33 @@
 import * as React from 'react';
-import Button from './components/button/Button';
-
-const logo = require('./assets/images/logo.svg');
+import { Switch, Route } from 'react-router-dom';
+import Header from './Header';
+import Menu from './Menu';
+import WelcomePage from './gallery-pages/WelcomePage';
+import NotFoundPage from './NotFoundPage';
+import ButtonPage from './gallery-pages/ButtonPage';
+import AlertPage from './gallery-pages/AlertPage';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="full-height">
+        <Header />
+        <div className="container full-height">
+          <div className="row gallery-container">
+            <div className="col col-3 reset-padding">
+              <Menu />
+            </div>
+            <div className="col col-9 show-component">
+              <Switch>
+                <Route exact={true} path="/" component={WelcomePage} />
+                <Route exact={true} path="/components/alert" component={AlertPage} />
+                <Route exact={true} path="/components/button" component={ButtonPage} />
+                <Route component={NotFoundPage} />
+              </Switch>
+            </div>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Button size="small" text="Hejsan" />
+        {/* <Footer /> */}
       </div>
     );
   }
