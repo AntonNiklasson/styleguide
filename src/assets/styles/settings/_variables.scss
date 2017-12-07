@@ -1,0 +1,56 @@
+// Variables
+// These variables should be global and reused across components.
+// If a variable is only used in one component it should probably not
+// be placed here but moved to the component as a local :root variable
+
+$color-text: $color-black;
+
+// Spacing
+//
+// Control the default styling of most elements by modifying these
+// variables. Mostly focused on spacing.
+$spacer: 1rem !default; // Assumes the browser default, typically `16px`
+$spacer-xxsmall: .1875rem; // 3px
+$spacer-xsmall: .3125rem; // 5px
+$spacer-small: .625rem; // 10px
+$spacer-medium: 1.250rem; // 20px
+$spacer-large: 1.875rem; // 30px
+$spacer-xlarge: 2.5rem; // 40px
+$spacer-xxlarge: 3.75rem; // 60px
+$spacer-xxxlarge: 5rem; // 80px
+
+// Fonts
+//
+// Font, line-height and more
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: .875rem !default;
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 1.9rem !default;
+$font-size-h3: 1.5rem !default;
+$font-size-h4: 1.125rem !default;
+$font-size-h5: 1rem !default;
+$font-size-small: 0.75rem !default;
+
+$line-height-base: 1.4 !default;
+$font-weight-base: 400 !default;
+
+$line-height-h1: 1.1 !default;
+$line-height-h2: 1.1 !default;
+$line-height-h3: 1.2 !default;
+$line-height-h4: $line-height-base !default;
+$line-height-h5: $line-height-base !default;
+
+$font-weight-normal: 100 !default;
+$font-weight-bold: 700 !default;
+$font-weight-heavy: 900 !default;
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+// Note: Modal and modal backdrop is set in the javascript component and not here.
+//$zindex-component:              1000 !default; 
+
+// Misc
+$cursor-disabled : not-allowed !default;
+$default-border-width: .1875rem;

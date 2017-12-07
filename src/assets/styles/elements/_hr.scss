@@ -1,0 +1,9 @@
+///
+/// Horizontal Rule
+/// <hr>
+///============================================================================
+hr {
+  border: none; // reset
+  border-bottom: 4px solid $color-black;
+  margin: $spacer-medium 0;
+}

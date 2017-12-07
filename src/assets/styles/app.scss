@@ -1,5 +1,52 @@
-@charset 'UTF-8';
+// 1. Settings
+@import
+    'settings/colors',
+    'settings/font',
+    'settings/responsive',
+    'settings/variables';
 
-@import 'gallery/body';
+// 2. Tools
+@import
+    'tools/breakpoints',
+    'tools/functions',
+    'tools/mixins';
 
-@import 'components/button/button'
+// 3. Generic
+@import
+    'generic/accessibility',
+    'generic/base',
+    'generic/normalize',
+    'generic/typography',
+    'generic/visibility';
+
+// 4. Elements
+@import
+    'elements/button',
+    'elements/figure',
+    'elements/form',
+    'elements/heading',
+    'elements/hr',
+    'elements/icon',
+    'elements/image',
+    'elements/label',
+    'elements/link',
+    'elements/list',
+    'elements/paragraph',
+    'elements/small',
+    'elements/strong';
+
+// 5. Objects
+@import
+   'objects/grid',
+   'objects/space';
+
+// 6. Trumps
+@import 
+    'trumps/index';
+
+// 7. Components
+@import 'components/button/button';
+@import 'assets/styles/gallery-components/header';
+@import 'assets/styles/gallery-components/gallery-container';
+@import 'assets/styles/gallery-components/menu';
+@import 'assets/styles/gallery-components/show-component';

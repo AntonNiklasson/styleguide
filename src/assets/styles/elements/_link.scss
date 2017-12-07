@@ -1,0 +1,15 @@
+///
+/// ANCHOR
+/// <a>
+///============================================================================
+///
+a {
+  display: inline-block;
+  font-family: $font-p12-mixedcase;
+  color: $color-link;
+  text-decoration: none;
+  @include on-event {
+    color: $color-link;
+    text-decoration: underline;
+  }
+}

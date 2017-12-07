@@ -1,0 +1,38 @@
+///
+/// BUTTONS
+/// <button>
+///============================================================================
+
+button {
+  font-family: inherit;
+  line-height: normal;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+  @include on-event {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &.disabled,
+  &:disabled {
+    cursor: default;
+  }
+
+  // Work around a Firefox/IE bug where the transparent `button` background
+  // results in a loss of the default `button` focus styles.
+  //
+  // Credit: https://github.com/suitcss/base/
+  &:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}

@@ -1,0 +1,137 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+   @if $self{
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+  @else {
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+}
+///
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+///
+/// Shorthand media query creation
+/// @param {String} $breakpoint
+@mixin media-query($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+       @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($grid-breakpoints)}.";
+  }
+}
+///
+/// Adds a :after element clearfix
+@mixin clearfix {
+  &::safter {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+///
+/// Hide text while making it readable for screen readers
+/// 1. Needed in WebKit-based browsers because of an implementation bug;
+///    See: https://code.google.com/p/chromium/issues/detail?id=457146
+@mixin hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+///
+/// Hide element while making it readable for screen readers
+@mixin visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+///
+/// Element resets
+/// Reset List
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+///
+/// Reset bounds
+@mixin reset-bounds {
+  margin: 0;
+  padding: 0;
+}
+/// Border-radius Collection
+/// #{side}-border-radius()
+/// @param {Int + Unit} Takes an integer and a unit (px, em, rem etc)
+/// @example
+///  @include left-border-radius(10px);
+/// Top
+@mixin top-border-radius($r) {
+  border-top-left-radius: $r;
+  border-top-right-radius: $r;
+}
+/// Right
+@mixin right-border-radius($r) {
+  border-top-right-radius: $r;
+  border-bottom-right-radius: $r;
+}
+/// Bottom
+@mixin bottom-border-radius($r) {
+  border-bottom-left-radius: $r;
+  border-bottom-right-radius: $r;
+}
+/// Left
+@mixin left-border-radius($r) {
+  border-top-left-radius: $r;
+  border-bottom-left-radius: $r;
+}
+
+@mixin reset-text {
+  font-family: $font-stack;
+  // We deliberately do NOT reset font-size or word-wrap.
+  font-style: normal;
+  font-weight: $font-weight-base;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: $line-height-base;
+  text-align: left; // Fallback for where `start` is not supported
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+}
