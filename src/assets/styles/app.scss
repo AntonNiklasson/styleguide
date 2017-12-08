@@ -1,53 +1,54 @@
+// sass-lint:disable indentation
 // 1. Settings
 @import
-    'settings/colors',
-    'settings/font',
-    'settings/responsive',
-    'settings/variables';
+  'settings/colors',
+  'settings/font',
+  'settings/responsive',
+  'settings/variables';
 
 // 2. Tools
 @import
-    'tools/breakpoints',
-    'tools/functions',
-    'tools/mixins';
+  'tools/breakpoints',
+  'tools/functions',
+  'tools/mixins';
 
 // 3. Generic
 @import
-    'generic/accessibility',
-    'generic/base',
-    'generic/normalize',
-    'generic/typography',
-    'generic/visibility';
+  'generic/accessibility',
+  'generic/base',
+  'generic/normalize',
+  'generic/typography',
+  'generic/visibility';
 
 // 4. Elements
 @import
-    'elements/button',
-    'elements/figure',
-    'elements/form',
-    'elements/heading',
-    'elements/hr',
-    'elements/icon',
-    'elements/image',
-    'elements/label',
-    'elements/link',
-    'elements/list',
-    'elements/paragraph',
-    'elements/small',
-    'elements/strong';
+  'elements/button',
+  'elements/figure',
+  'elements/form',
+  'elements/heading',
+  'elements/hr',
+  'elements/icon',
+  'elements/image',
+  'elements/label',
+  'elements/link',
+  'elements/list',
+  'elements/paragraph',
+  'elements/small',
+  'elements/strong';
 
 // 5. Objects
 @import
-   'objects/grid',
-   'objects/space';
+  'objects/grid',
+  'objects/space';
 
 // 6. Trumps
 @import 
-    'trumps/index';
+  'trumps/index';
 
 // 7. Components
 @import 
-    'components/button/button',
-    'assets/styles/gallery-components/header',
-    'assets/styles/gallery-components/gallery-container',
-    'assets/styles/gallery-components/menu',
-    'assets/styles/gallery-components/show-component';
+  'components/button/button',
+  'assets/styles/gallery-components/header',
+  'assets/styles/gallery-components/gallery-container',
+  'assets/styles/gallery-components/menu',
+  'assets/styles/gallery-components/show-component';

@@ -6,10 +6,10 @@
 a {
   display: inline-block;
   font-family: $font-p12-mixedcase;
-  color: $color-link;
+  color: $color-blue;
   text-decoration: none;
   @include on-event {
-    color: $color-link;
+    color: $color-blue;
     text-decoration: underline;
   }
 }

@@ -1,7 +1,7 @@
 $block: 'show-component';
 
 .#{$block} {
-    background-color: #fff;
-    padding: 40px;
-    height: 100%;
+  background-color: $color-white;
+  padding: 40px;
+  height: 100%;
 }
