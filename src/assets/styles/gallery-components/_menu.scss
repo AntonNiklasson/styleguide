@@ -1,42 +1,42 @@
 $block: 'menu';
 
 .#{$block} {
-    background-color: #f8f4f8;
-    padding: 40px;
-    height: 100%;
+  background-color: $color-purple-light;
+  padding: 40px;
+  height: 100%;
 
-    &__title {
-        font-weight: 900;
-        margin-bottom: 15px;
-    }
+  &__title {
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
 
-    &__list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-        &-item {
-            padding-left: 15px;
-            font-size: 14px;
-            margin-bottom: 10px;
+    &-item {
+      padding-left: 15px;
+      font-size: 14px;
+      margin-bottom: 10px;
 
-            &--link {
-                text-decoration: none;
-                color: $color-link;
+      &--link {
+        text-decoration: none;
+        color: $color-link;
 
-                &:hover,
-                &:focus,
-                &:active,
-                &:active:focus {
-                    color: $color-link;
-                }
-            }
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus {
+          color: $color-link;
         }
+      }
     }
+  }
 }
 
 // react component <NavLink/> auto adds .active class to the class of active url
 .menu__list-item--link.active {
-    font-weight: 900;
-    text-decoration: underline;
+  font-weight: 900;
+  text-decoration: underline;
 }
