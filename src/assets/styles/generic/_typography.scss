@@ -1,0 +1,52 @@
+///
+/// Typography
+/// This partial contains all your far-reaching typography styles.
+/// Global classes for headings and copy.
+///============================================================================
+///
+/// Reusable positioning
+///----------------------------------------------------------------------------
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+///
+/// Coloring
+///----------------------------------------------------------------------------
+.text-black {
+  color: $color-black;
+}
+
+.text-error {
+  color: $color-error;
+  font-size: $font-size-sm;
+}
+
+///
+/// Margins
+///----------------------------------------------------------------------------
+.text-mt-large {
+  margin-top: 1.875rem;
+}
+
+///
+/// Other
+///----------------------------------------------------------------------------
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-link {
+  font-family: $font-p12;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

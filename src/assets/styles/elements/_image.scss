@@ -1,0 +1,19 @@
+///
+/// IMAGES
+/// <img>
+///============================================================================
+/// 1. Default images to be fluid in width
+/// 2. Non-fluid images if you specify `width` and/or `height` attributes.
+img {
+    max-width: 100%; // 1
+
+    // By default, `<img>`s are `inline-block`. This assumes that, and vertically
+    // centers them. This won't apply should you reset them to `block` level.
+    vertical-align: middle;
+    // Note: `<img>`s are deliberately not made responsive by default.
+    // For the rationale behind this, see the comments on the `.img-fluid` class.
+}
+img[width],
+img[height] {
+    max-width: none; // 2
+}

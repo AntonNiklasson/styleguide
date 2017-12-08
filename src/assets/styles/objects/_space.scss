@@ -1,0 +1,39 @@
+///
+/// Space
+///
+///============================================================================
+///
+/// @description
+///   Reusable spacing accross the application
+///
+///============================================================================
+.spacer-mb-xsmall {
+  margin-bottom: $spacer-xsmall;
+}
+.spacer-mb-small {
+  margin-bottom: $spacer-small;
+}
+.spacer-mb-medium {
+  margin-bottom: $spacer-medium;
+}
+.spacer-mb-large {
+  margin-bottom: $spacer-large;
+}
+.spacer-mb-xlarge {
+  margin-bottom: $spacer-xlarge;
+}
+.spacer-mb-xxlarge {
+  margin-bottom: $spacer-xxlarge;
+}
+.spacer-mt-large {
+  margin-top: $spacer-large;
+}
+.spacer-mr-small {
+  margin-right: $spacer-small;
+}
+.reset-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.reset-padding {
+  padding: 0 !important;
+}
