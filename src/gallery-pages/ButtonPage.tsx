@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Button from '../components/button/Button';
-export default class ButtonPage extends React.Component {
 
+export default class ButtonPage extends React.Component {
   render() {
     return (
       <div className="button-page">

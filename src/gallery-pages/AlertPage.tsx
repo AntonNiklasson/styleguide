@@ -1,6 +1,6 @@
 import * as React from 'react';
-export default class AlertPage extends React.Component {
 
+export default class AlertPage extends React.Component {
   render() {
     return (
       <div>
