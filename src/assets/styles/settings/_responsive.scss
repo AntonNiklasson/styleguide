@@ -5,8 +5,8 @@
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
+  sm: 375px, // 576px
   md: 768px,
   lg: 992px,
-  xl: 1300px
+  xl: 1200px
 ) !default;
