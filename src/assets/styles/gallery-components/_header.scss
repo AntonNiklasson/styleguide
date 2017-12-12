@@ -2,31 +2,47 @@ $block: 'header';
 
 .#{$block} {
   background-color: $color-white;
-  padding: 20px 0;
+  padding: 1.5rem 0;
   border-top: 3px solid $color-skolverket-purple;
   border-bottom: 1px solid $color-purple;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 
   &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
 
-    &-logo {
-      width: 159px;
-      height: 28px;
+    &-logo {    
+      width: 160px;
+      height: 30px;
       background-image: url('../images/skolverket-logotype.svg');
       background-position: left 0px center;
       background-repeat: no-repeat;
     }
-  }
-}
 
-@media (min-width: 1300px) {
-  .header__container {
-    width: 1280px;
-    max-width: 100%;
+    &-menu {
+      padding: 0.125rem 0.25rem 0.125rem calc(12px + 1rem);
+      cursor: pointer;
+      background-image: url('../images/mobilemenu.svg');
+      background-size: 1rem 1rem;
+      background-position: left 5px center;
+      background-repeat: no-repeat;
+
+      &:hover {
+        background-color: $color-purple;
+      }
+      &:hover,
+      &:focus,
+      &:active,
+      &:active:focus {
+        background-color: $color-purple;
+      }
+    }
   }
 }

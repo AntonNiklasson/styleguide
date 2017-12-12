@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
-import Menu from './Menu';
 import WelcomePage from './gallery-pages/WelcomePage';
 import NotFoundPage from './NotFoundPage';
 import ButtonPage from './gallery-pages/ButtonPage';
@@ -14,10 +13,7 @@ class App extends React.Component {
         <Header />
         <div className="container full-height">
           <div className="row gallery-container">
-            <div className="col col-3 reset-padding">
-              <Menu />
-            </div>
-            <div className="col col-9 show-component">
+            <div className="col col-12 show-component">
               <Switch>
                 <Route exact={true} path="/" component={WelcomePage} />
                 <Route exact={true} path="/components/alert" component={AlertPage} />
