@@ -8,20 +8,23 @@ $block: 'btn';
   border-radius: 3px;
 
   &--small {
-    width: 102px;
-    padding: 7px 12px;
-    font-size: 16px;
+    width: 102px; // controlled by left/right padding instead ???
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: $line-height-small;
   }
 
   &--standard {
-    width: 138px;
-    padding: 10px 15px;
-    font-size: 18px;
+    width: 138px; // controlled by left/right padding instead ???
+    padding: 0.625rem 1rem;
+    font-size: 1.125rem;
+    line-height: $line-height-normal;
   }
 
   &--large {
-    width: 132px;
-    padding: 14px 15px;
-    font-size: 22px;
+    width: 132px; // controlled by left/right padding instead ???
+    padding: 0.875rem 1rem;
+    font-size: 1.5rem;
+    line-height: $line-height-medium;
   }
 }

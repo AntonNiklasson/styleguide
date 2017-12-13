@@ -1,78 +1,15 @@
 // Fonts
-// @font-face {
-//     font-family: 'p12-text';
-//     src: url('/assets/fonts/P12-Text.woff2') format('woff2'),
-//     url('/assets/fonts/P12-Text.woff') format('woff'),
-//     url('/assets/fonts/P12-Text.ttf') format('truetype');
-// }
 
-// @font-face {
-//     font-family: 'p12-text-light';
-//     src: url('/assets/fonts/P12-LightText.woff2') format('woff2'),
-//     url('/assets/fonts/P12-LightText.woff') format('woff'),
-//     url('/assets/fonts/P12-LightText.ttf') format('truetype');
-// }
-
-// @font-face {
-//     font-family: 'p12-text-mixedcase';
-//     src: url('/assets/fonts/33AFCB_0_0.eot');
-//     src: url('/assets/fonts/33AFCB_0_0.eot?#iefix') format('embedded-opentype'),
-//     url('/assets/fonts/33AFCB_0_0.woff2') format('woff2'),
-//     url('/assets/fonts/33AFCB_0_0.woff') format('woff'),
-//     url('/assets/fonts/33AFCB_0_0.ttf') format('truetype');
-// }
-
-// @font-face {
-//     font-family: 'plantin';
-//     src: url('/assets/fonts/PlantinMTPro-Regular.otf');
-// }
-
-$font-stack: "Times New Roman",
-Georgia,
-serif,
+$font-stack: 'franklin-gothic-urw', 
+// Safari for OS X and iOS (San Francisco)
 -apple-system,
+// Chrome < 56 for OS X (San Francisco)
 BlinkMacSystemFont,
+// Windows
 "Segoe UI",
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol";
-
-$font-p12:
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol";
-
-$font-p12-light:
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol";
-
-$font-p12-mixedcase:
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-Helvetica,
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol";
+// Android
+"Roboto",
+// Basic web fallback
+"Helvetica Neue", Arial, sans-serif,
+// Emoji fonts
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
