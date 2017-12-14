@@ -4,6 +4,7 @@ import Header from './Header';
 import WelcomePage from './gallery-pages/WelcomePage';
 import NotFoundPage from './NotFoundPage';
 import ButtonPage from './gallery-pages/ButtonPage';
+import NavigationPage from './gallery-pages/NavigationPage';
 import AlertPage from './gallery-pages/AlertPage';
 
 class App extends React.Component {
@@ -11,16 +12,15 @@ class App extends React.Component {
     return (
       <div className="full-height">
         <Header />
-        <div className="container full-height">
-          <div className="row gallery-container">
-            <div className="col col-12 show-component">
-              <Switch>
-                <Route exact={true} path="/" component={WelcomePage} />
-                <Route exact={true} path="/components/alert" component={AlertPage} />
-                <Route exact={true} path="/components/button" component={ButtonPage} />
-                <Route component={NotFoundPage} />
-              </Switch>
-            </div>
+        <div className="gallery-container">
+          <div className="show-component">
+            <Switch>
+              <Route exact={true} path="/" component={WelcomePage} />
+              <Route exact={true} path="/components/alert" component={AlertPage} />
+              <Route exact={true} path="/components/button" component={ButtonPage} />
+              <Route exact={true} path="/components/navigation" component={NavigationPage} />
+              <Route component={NotFoundPage} />
+            </Switch>
           </div>
         </div>
       </div>

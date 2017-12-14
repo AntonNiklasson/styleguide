@@ -1,0 +1,89 @@
+$block: 'mobile-menu';
+
+.#{$block} {
+  display: flex;
+
+  &__links {
+    height: 100%;
+    padding: 0;
+    background-color: $color-purple-light;
+  }
+
+  &__header {
+    min-height: 4.5rem;
+    padding: 0.5rem 0;
+    background-color: $color-white;
+    border-top: 3px solid $color-skolverket-purple;
+  }
+
+  &__container {
+    display: flex;
+    flex-grow: 1;
+    min-height: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+
+    // Is it OK to use it this way (avoid long BEM names)???
+    &.align-items-start {
+      align-items: flex-start;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: 1px solid $color-purple;
+
+      &:last-child {
+        border-bottom: none;
+      }
+      // TODO: Separate it to reusable .icon
+      &--close {
+        padding: 0.375rem 0.75rem 0.375rem calc(20px + 1rem);
+        background-image: url('../images/close.svg');
+        background-size: 1rem 1rem;
+        background-position: left 12px center;
+        background-repeat: no-repeat; // margin-right: 0.5rem;
+        border-radius: 3px;
+        cursor: pointer;
+        color: $color-black;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus {
+          background-color: $color-purple-light;
+          color: $color-black;
+          text-decoration: none;
+        }
+      }
+
+      &--link {
+        text-decoration: none;
+        color: $color-skolverket-purple;
+        font-weight: 500;
+        &:hover {
+          color: $color-skolverket-purple;
+        }
+
+        &:focus,
+        &:active,
+        &:active:focus {
+          color: $color-skolverket-purple;
+        }
+      }
+    }
+  }
+}
