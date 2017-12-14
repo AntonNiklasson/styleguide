@@ -2,7 +2,7 @@ $block: 'menu';
 
 .#{$block} {
   background-color: $color-white;
-  padding: 1.25rem;
+  // padding: 1.25rem;
   width: 340px;
   height: 100%;
   position: fixed;
@@ -10,12 +10,25 @@ $block: 'menu';
   right: 0;
   box-shadow: 10px 0px 24px 0 rgba(108, 39, 106, 0.25);
   z-index: 1;
+  transition-duration: 0.5s;
+  border-left: 1px solid $color-purple;
+
+  &--open {
+    transform: translateX(0px);
+    transition-timing-function: ease-in;
+  }
+
+  &--close {
+    transform: translateX(340px);
+    transition-timing-function: ease-out;
+  }
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
 
     &-logo {
       width: 160px;
@@ -26,22 +39,24 @@ $block: 'menu';
     }
 
     &-close {
-      padding: 0.125rem 0.25rem 0.125rem calc(12px + 0.75rem);
+      padding: 0.4375rem 0.75rem 0.4375rem calc(20px + 0.75rem);
       cursor: pointer;
       background-image: url('../images/close.svg');
       background-size: 0.75rem 0.75rem;
-      background-position: left 5px center;
+      background-position: left 12px center;
       background-repeat: no-repeat;
+      border-radius: 3px;
 
       &:hover {
-        background-color: $color-purple;
+        background-color: $color-purple-light;
       }
     }
   }
 
   &__title {
     font-weight: $font-weight-heavy;
-    margin-bottom: 1rem;
+    padding: 0.625rem 1.25rem;
+    color: $color-skolverket-purple;
   }
 
   &__list {
@@ -50,25 +65,29 @@ $block: 'menu';
     margin: 0;
 
     &-item {
-      padding-left: 1rem;
-      font-size: $font-size-sm;
-      margin-bottom: 0.625rem;
-
       &--link {
+        width: 100%;
         text-decoration: none;
-        color: $color-link;
+        color: $color-skolverket-purple;
+        padding: 0.625rem 1.25rem 0.625rem 2.5rem;
 
         &:hover,
         &:focus,
         &:active,
         &:active:focus {
-          color: $color-link;
+          color: $color-black;
+          background-color: $color-purple-light;
+          text-decoration: none;
+          font-weight: $font-weight-medium;
+          border-left: 5px solid $color-skolverket-purple;
         }
       }
     }
   }
 } // react component <NavLink/> auto adds .active class to the class of active url
 .menu__list-item--link.active {
-  font-weight: $font-weight-heavy;
-  text-decoration: underline;
+  font-weight: $font-weight-medium;
+  background-color: $color-purple-light;
+  color: $color-black;
+  border-left: 5px solid $color-skolverket-purple;
 } 
