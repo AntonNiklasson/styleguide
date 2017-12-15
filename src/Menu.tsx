@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom';
 
 interface MenuParameters {
   toggleMenu: () => void;
-  readonly toggleState: boolean;
+  readonly menuState: boolean;
 }
 
 export default class Menu extends React.Component<MenuParameters> {
   render() {
-    let menuState = this.props.toggleState ? 'open' : 'close';
+    let menuState = this.props.menuState ? 'open' : 'close';
     return (
       <div className={`menu menu--${menuState}`}>
         <div className="menu__header">
