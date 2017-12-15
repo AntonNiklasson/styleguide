@@ -4,6 +4,31 @@
 /// Global classes for headings and copy.
 ///============================================================================
 ///
+/// Size
+///----------------------------------------------------------------------------
+
+.text-small {
+  font-size: $font-size-sm;       // 16px
+  line-height: $line-height-sm;
+}
+
+.text-standard {
+  font-size: $font-size-std;      // 18px
+  line-height: $line-height-std;
+}
+
+.text-medium {
+  font-size: $font-size-md;       // 24px
+  line-height: $line-height-md;
+}
+
+@media (max-width: 375.9999px) {
+  .text-small { font-size: 0.875rem; line-height: 1.72; }   // 14px
+  .text-standard { font-size: 1rem; line-height: 1.5; }     // 16px
+  .text-medium { font-size: 1.25rem; line-height: 1.5; }    // 20px
+}
+
+///
 /// Reusable positioning
 ///----------------------------------------------------------------------------
 .text-left {
@@ -37,15 +62,13 @@
   margin-top: 1.875rem;
 }
 
+.text-margin-reset {
+  margin: 0 !important;
+}
+
 ///
 /// Other
 ///----------------------------------------------------------------------------
 .text-uppercase {
-  text-transform: uppercase;
-}
-
-.text-link {
-  font-size: 18px;
-  font-weight: bold;
   text-transform: uppercase;
 }

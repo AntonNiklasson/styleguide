@@ -2,17 +2,18 @@ $block: 'header';
 
 .#{$block} {
   background-color: $color-white;
-  padding: 1.5rem 0;
+  padding: 1.125rem 0;
   border-top: 3px solid $color-skolverket-purple;
   border-bottom: 1px solid $color-purple;
   margin-bottom: 2.25rem;
+  min-height: 4.5rem;
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1280px;
-    position: relative;
+    position: sticky;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.125rem;
@@ -27,21 +28,19 @@ $block: 'header';
     }
 
     &-menu {
-      padding: 0.125rem 0.25rem 0.125rem calc(12px + 1rem);
+      padding: 0.4375rem 0.75rem 0.4375rem calc(20px + 1rem);
       cursor: pointer;
       background-image: url('../images/mobilemenu.svg');
       background-size: 1rem 1rem;
-      background-position: left 5px center;
+      background-position: left 12px center;
       background-repeat: no-repeat;
+      border-radius: 3px;
 
-      &:hover {
-        background-color: $color-purple;
-      }
       &:hover,
       &:focus,
       &:active,
       &:active:focus {
-        background-color: $color-purple;
+        background-color: $color-purple-light;
       }
     }
   }

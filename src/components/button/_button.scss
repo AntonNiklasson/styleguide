@@ -11,20 +11,20 @@ $block: 'btn';
     width: 102px; // controlled by left/right padding instead ???
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
-    line-height: $line-height-small;
+    line-height: $line-height-sm;
   }
 
   &--standard {
     width: 138px; // controlled by left/right padding instead ???
     padding: 0.625rem 1rem;
     font-size: 1.125rem;
-    line-height: $line-height-normal;
+    line-height: $line-height-std;
   }
 
   &--large {
     width: 132px; // controlled by left/right padding instead ???
     padding: 0.875rem 1rem;
     font-size: 1.5rem;
-    line-height: $line-height-medium;
+    line-height: $line-height-md;
   }
 }
