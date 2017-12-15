@@ -2,12 +2,12 @@ import * as React from 'react';
 
 interface MobileMenuParameters {
   toggleMenu: () => void;
-  readonly toggleState: boolean;
+  readonly menuState: boolean;
 }
 
 export default class MobileMenu extends React.Component<MobileMenuParameters> {
   render() {
-    let menuState = this.props.toggleState ? 'show' : 'hide';
+    let menuState = this.props.menuState ? '' : 'hidden';
     return (
       <div className={`full-height ${menuState}`}>
         <div className="mobile-menu mobile-menu__header">

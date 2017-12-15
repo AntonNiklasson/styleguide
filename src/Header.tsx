@@ -26,7 +26,7 @@ export default class Header extends React.Component<object, HeaderState> {
         <div className="header__container">
           <div className="header__container-logo" />
           <div className="header__container-menu text-small" onClick={this.toggleMenu}>Meny</div>
-          <Menu toggleState={this.state.isOpen} toggleMenu={this.toggleMenu} />
+          <Menu menuState={this.state.isOpen} toggleMenu={this.toggleMenu} />
         </div>
       </div>
     );

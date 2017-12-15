@@ -20,10 +20,10 @@ export default class Navigation extends React.Component<object, NavigationState>
   }
 
   render() {
-    let mobileMenuState = this.state.isOpen ? 'hide' : 'show';
+    let mobileMenuState = this.state.isOpen ? 'hidden' : '';
     return (
       <div className="full-height">
-        <MobileMenu toggleState={this.state.isOpen} toggleMenu={this.toggleMenu} />
+        <MobileMenu menuState={this.state.isOpen} toggleMenu={this.toggleMenu} />
         <div className={`full-height ${mobileMenuState}`}>
           <div className="navigation navigation__header">
             <div className="navigation__container">
@@ -56,22 +56,22 @@ export default class Navigation extends React.Component<object, NavigationState>
             <div className="navigation__container">
               <ul className="navigation__list">
                 <li className="navigation__list-item">
-                  <a href="#" className="navigation__list-item--link text-standard">
+                  <a href="#" className="navigation__list-item--link text-medium">
                     Undervisning
                 </a>
                 </li>
                 <li className="navigation__list-item">
-                  <a href="#" className="navigation__list-item--link text-standard">
+                  <a href="#" className="navigation__list-item--link text-medium">
                     Skolutveckling
                 </a>
                 </li>
                 <li className="navigation__list-item">
-                  <a href="#" className="navigation__list-item--link text-standard">
+                  <a href="#" className="navigation__list-item--link text-medium">
                     Lagar och regler
                 </a>
                 </li>
                 <li className="navigation__list-item">
-                  <a href="#" className="navigation__list-item--link text-small">
+                  <a href="#" className="navigation__list-item--link text-standard">
                     Innehåll A-Ö
                 </a>
                 </li>

@@ -18,14 +18,20 @@
 }
 
 .text-medium {
-  font-size: $font-size-md;       // 24px
+  font-size: $font-size-md;       // 21px
   line-height: $line-height-md;
+}
+
+.text-large {
+  font-size: $font-size-lg;       // 24px
+  line-height: $line-height-lg;
 }
 
 @media (max-width: 375.9999px) {
   .text-small { font-size: 0.875rem; line-height: 1.72; }   // 14px
   .text-standard { font-size: 1rem; line-height: 1.5; }     // 16px
-  .text-medium { font-size: 1.25rem; line-height: 1.5; }    // 20px
+  .text-medium { font-size: 1.1875rem; line-height: 1.26; } // 19px
+  .text-large { font-size: 1.25rem; line-height: 1.5; }     // 20px
 }
 
 ///
