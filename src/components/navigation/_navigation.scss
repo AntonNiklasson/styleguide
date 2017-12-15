@@ -43,7 +43,6 @@ $block: 'navigation';
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; // window < 200px
     height: 100%;
     list-style: none;
     padding: 0;
@@ -121,13 +120,13 @@ $block: 'navigation';
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .navigation__list-item--mobilemenu {
     display: none;
   }
 }
 
-@media (max-width: 575.9999px) {
+@media (max-width: 767.9999px) {
   .navigation__list-item--speaker,
   .navigation__list-item--language,
   .navigation__links .navigation__list-item
