@@ -19,7 +19,7 @@
 .h5 { font-size: $font-size-h5; line-height: $line-height-h5; }
 .h6 { font-size: $font-size-h6; line-height: $line-height-h6; }
 
-@media (max-width: 375.9999px) {
+@media (max-width: 767.9999px) {
   .h1 { font-size: 1.9375rem; line-height: 1.16; }   // 31px
   .h2 { font-size: 1.5625rem; line-height: 1.44; }   // 25px
   .h3 { font-size: 1.25rem; line-height: 1.25; }     // 20px

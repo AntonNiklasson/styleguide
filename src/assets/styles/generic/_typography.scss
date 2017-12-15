@@ -27,7 +27,7 @@
   line-height: $line-height-lg;
 }
 
-@media (max-width: 375.9999px) {
+@media (max-width: 767.9999px) {
   .text-small { font-size: 0.875rem; line-height: 1.72; }   // 14px
   .text-standard { font-size: 1rem; line-height: 1.5; }     // 16px
   .text-medium { font-size: 1.1875rem; line-height: 1.26; } // 19px
