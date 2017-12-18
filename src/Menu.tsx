@@ -12,7 +12,7 @@ export default class Menu extends React.Component<MenuParameters> {
     return (
       <div className={`menu menu--${menuState}`}>
         <div className="menu__header">
-          <div className="menu__header-logo"/>
+          <div className="menu__header-logo" />
           <div className="menu__header-close text-small" onClick={this.props.toggleMenu}>Stäng</div>
         </div>
         <div className="menu__title text-standard">Komponenter</div>
@@ -27,18 +27,18 @@ export default class Menu extends React.Component<MenuParameters> {
           </li>
           <li className="menu__list-item">
             <NavLink
-              to="/components/block"
-              activeClassName="active"
-              className="menu__list-item--link text-small">
-              Block
-              </NavLink>
-          </li>
-          <li className="menu__list-item">
-            <NavLink
               to="/components/navigation"
               activeClassName="active"
               className="menu__list-item--link text-small">
               Huvudmeny
+              </NavLink>
+          </li>
+          <li className="menu__list-item">
+            <NavLink
+              to="/components/news"
+              activeClassName="active"
+              className="menu__list-item--link text-small">
+              Nyhetslista
               </NavLink>
           </li>
           <li className="menu__list-item">

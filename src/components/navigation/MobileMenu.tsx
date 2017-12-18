@@ -24,21 +24,25 @@ export default class MobileMenu extends React.Component<MobileMenuParameters> {
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Undervisning
+                  <span className="icon--arrow"/>
                 </a>
               </li>
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Skolutveckling
+                  <span className="icon--arrow"/>
                 </a>
               </li>
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Lagar och regler
+                  <span className="icon--arrow"/>
                 </a>
               </li>
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Innehåll A-Ö
+                  <span className="icon--arrow"/>
                 </a>
               </li>
             </ul>

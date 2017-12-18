@@ -5,6 +5,7 @@ import WelcomePage from './gallery-pages/WelcomePage';
 import NotFoundPage from './NotFoundPage';
 import ButtonPage from './gallery-pages/ButtonPage';
 import NavigationPage from './gallery-pages/NavigationPage';
+import NewsPage from './gallery-pages/NewsPage';
 import AlertPage from './gallery-pages/AlertPage';
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
               <Route exact={true} path="/components/alert" component={AlertPage} />
               <Route exact={true} path="/components/button" component={ButtonPage} />
               <Route exact={true} path="/components/navigation" component={NavigationPage} />
+              <Route exact={true} path="/components/news" component={NewsPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>
