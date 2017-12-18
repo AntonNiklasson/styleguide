@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="12px" viewBox="0 0 6 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lagar-och-regler" transform="translate(-445.000000, -720.000000)" stroke-width="1.1" stroke="#692969" fill="#692969">
+            <g id="Group" transform="translate(152.000000, 698.000000)">
+                <g id="Group-4" transform="translate(294.000000, 0.000000)">
+                    <g id="knapp">
+                        <path d="M6.40695176,26.1367959 C6.26482831,25.9754932 6.01320607,25.953686 5.84270794,26.0882036 L2,29.1256947 L-1.84270794,26.0882036 C-2.01283107,25.9540415 -2.26532831,25.9759673 -2.40695176,26.1367959 C-2.54882521,26.297743 -2.52582546,26.5375043 -2.35595232,26.6717849 L1.74337781,29.9118228 C1.817627,29.9706076 1.908876,30 2,30 C2.091249,30 2.182373,29.9706076 2.25662219,29.9118228 L6.35595232,26.6717849 C6.52582546,26.5375043 6.54882521,26.2978615 6.40695176,26.1367959 L6.40695176,26.1367959 Z" id="Shape" transform="translate(2.000000, 28.000000) rotate(-90.000000) translate(-2.000000, -28.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
