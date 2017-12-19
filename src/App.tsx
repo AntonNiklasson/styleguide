@@ -8,6 +8,7 @@ import ButtonPage from './gallery-pages/ButtonPage';
 import ContentNavigationPage from './gallery-pages/ContentNavigationPage';
 import NavigationPage from './gallery-pages/NavigationPage';
 import NewsPage from './gallery-pages/NewsPage';
+import TextArticlePage from './gallery-pages/TextArticlePage';
 
 class App extends React.Component {
   render() {
@@ -23,6 +24,7 @@ class App extends React.Component {
               <Route exact={true} path="/components/navigation" component={NavigationPage} />
               <Route exact={true} path="/components/news" component={NewsPage} />
               <Route exact={true} path="/components/content-navigation" component={ContentNavigationPage} />
+              <Route exact={true} path="/components/text-article" component={TextArticlePage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>
