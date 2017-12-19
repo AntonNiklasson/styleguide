@@ -26,8 +26,8 @@ export default class Navigation extends React.Component<object, NavigationState>
         <MobileMenu menuState={this.state.isOpen} toggleMenu={this.toggleMenu} />
         <div className={`full-height ${mobileMenuState}`}>
           <div className="navigation navigation__header">
-            <div className="navigation__container">
-              <div className="navigation__container-logo" />
+            <div className="nav-container nav-container--header">
+              <div className="navigation__header-logo"/>
               <ul className="navigation__list">
                 <li className="navigation__list-item">
                   <a href="#" className="navigation__list-item--speaker text-small">
@@ -53,8 +53,8 @@ export default class Navigation extends React.Component<object, NavigationState>
             </div>
           </div>
           <div className="navigation navigation__links">
-            <div className="navigation__container">
-              <ul className="navigation__list">
+            <div className="nav-container nav-container--links">
+              <ul className="navigation__list navigation__list--absolute">
                 <li className="navigation__list-item">
                   <a href="#" className="navigation__list-item--link text-medium">
                     Undervisning
