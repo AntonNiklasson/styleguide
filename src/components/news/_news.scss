@@ -3,13 +3,13 @@ $block: 'news';
 .#{$block} {
   display: flex;
   border-top: 3px solid $color-skolverket-purple;
-  padding-top: 58px;
-  padding-bottom: 30px;
+  padding-top: 3.625rem;
+  padding-bottom: 1.875rem;
   background-color: $color-white;
   
   & .news-header-container {
-    min-width: 230px;
-    margin-right: 40px;
+    min-width: 14.375rem;
+    margin-right: 2.5rem;
   }
 
   &__header {
@@ -27,17 +27,17 @@ $block: 'news';
       }
       
       &--line {
-        margin: 14px 0;
+        margin: 0.875rem 0;
         flex-grow: 1;
-        min-width: 50px;
+        min-width: 3.125rem;
         border: 0;
         height: 3px;
-        background-color: #E8D3E0;
+        background-color: $color-purple;
       }
     }
 
     &-subtitle {
-      color: #666666;
+      color: $color-gray;
       font-weight: 500;
       margin-bottom: 0.875rem;
     }
@@ -94,15 +94,15 @@ $block: 'news';
     flex-basis: 743px;
   }
   .news {
-    padding-top: 16px; 
+    padding-top: 1rem; 
   }
   .news__header-title--text {
-    margin-right: 28px;
+    margin-right: 1.75rem;
   }
   .news__header-title--line {
     height: 2px;
   }
   .news__list-item {
-    padding: 12px;
+    padding: 0.75rem;
   }
 }
