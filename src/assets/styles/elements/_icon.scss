@@ -4,11 +4,31 @@
 
 .icon--arrow {
   display: inline-block;
-  width: 0.75rem;
+  width: 0.5rem;
   height: 0.75rem;
   background-image: url('../images/arrow.svg');
-  background-size: 0.75rem 0.75rem;
-  background-position: right 0px center;
+  background-size: 0.5rem 0.75rem;
+  background-position: center;
   background-repeat: no-repeat; 
-  margin-left: 0.5rem;
+  margin-left: 0.625rem;
+}
+
+.icon--close {
+  padding: 0.375rem 0.75rem 0.375rem calc(20px + 0.85rem);
+  background-image: url('../images/close.svg');
+  background-size: 0.85rem;
+  background-position: left 12px center;
+  background-repeat: no-repeat; // margin-right: 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  color: $color-black;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:active:focus {
+    background-color: $color-purple-light;
+    color: $color-black;
+    text-decoration: none;
+  }
 }

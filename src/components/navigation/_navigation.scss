@@ -1,7 +1,27 @@
 $block: 'navigation';
 
 .#{$block} {
-  display: flex;
+  position: relative;
+
+  &>.nav-container {
+    display: flex;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+
+    &--links {
+      position: relative;
+      min-height: 3.5rem;
+    }
+
+    &--header {
+      min-height: 2rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 
   &__links {
     min-height: 3.5rem;
@@ -14,29 +34,13 @@ $block: 'navigation';
     padding: 1.25rem 0;
     background-color: $color-white;
     border-top: 3px solid $color-skolverket-purple;
-  }
-
-  &__container {
-    display: flex;
-    flex-grow: 1;
-    min-height: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1280px;
-    position: sticky;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.125rem;
-    padding-right: 1.125rem;
-
+    
     &-logo {
       width: 160px;
-      min-height: 40px;
+      min-height: 36px;
       background-image: url('../images/skolverket-logotype.svg');
       background-position: left 0px center;
       background-repeat: no-repeat;
-      background-size: 100% 100%;
-      margin-right: auto; // take all available space to the right
     }
   }
 
@@ -47,6 +51,12 @@ $block: 'navigation';
     list-style: none;
     padding: 0;
     margin: 0;
+
+    &--absolute {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
 
     &-item {
       &--speaker,
@@ -92,12 +102,12 @@ $block: 'navigation';
 
       &--link {
         position: relative;
+        display: flex;
+        height: 100%;
+        align-items: center; // center text
+        margin-right: 1.75rem;
         text-decoration: none;
         color: $color-white;
-        margin-right: 1.75rem;
-        height: 100%;
-        display: flex;
-        align-items: center; // center text
         font-weight: 500;
         &:hover {
           color: $color-white;
@@ -141,14 +151,6 @@ $block: 'navigation';
   .navigation__links .navigation__list-item {
     display: none;
   }
-  .navigation__container-logo {
-    width: 134px;
-    min-height: 36px;
-  }
-  .navigation__container {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
   .navigation__links {
     height: 100%;
     background-color: $color-purple-light;
@@ -159,13 +161,21 @@ $block: 'navigation';
   .navigation__list {
     height: auto;
   }
+  .nav-container {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+  .navigation__header-logo {
+    width: 134px;
+    background-size: 100%;
+  }
 }
 
 @media (max-width: 340px) {
-  .navigation__container {
+  .nav-container {
     flex-direction: column;
   }
-  .navigation__container-logo {
+  .navigation__header-logo {
     margin-right: 0;
     margin-bottom: 20px;
   }

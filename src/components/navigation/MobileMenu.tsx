@@ -13,13 +13,13 @@ export default class MobileMenu extends React.Component<MobileMenuParameters> {
         <div className="mobile-menu mobile-menu__header">
           <div className="mobile-menu__container">
             <h1 className="h1 mobile-menu__header-title">Meny</h1>
-            <a href="#" className="mobile-menu__list-item--close text-small" onClick={this.props.toggleMenu}>
+            <a href="#" className="icon--close text-small" onClick={this.props.toggleMenu}>
               Stäng
             </a>
           </div>
         </div>
         <div className="mobile-menu mobile-menu__links">
-          <div className="mobile-menu__container align-items-start">
+          <div className="mobile-menu__container">
             <ul className="mobile-menu__list">
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
