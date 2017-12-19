@@ -8,7 +8,7 @@ export default class News extends React.Component {
         <div className="news">
           <div className="container">
             <div className="row">
-              <div className="col-12 col-md-3">
+              <div className="col-12 col-lg-2 news-header-container">
                 <div className="news__header">
                   <div className="news__header-title text-medium">
                     <div className="news__header-title--text">Press och nyheter</div>
@@ -20,15 +20,15 @@ export default class News extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-md-8 offset-md-1">
+              <div className="col news--col-12">
                 <ul className="news__list">
                   <li className="news__list-item">
                     <div className="news__list-item--data text-small">
                       23 mars 2017
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
-                      17 000 fler nyanlända i grundskolan
-                      <span className="icon--arrow"/>
+                      17 000 fler nyanlända i <span className="nowrap">grundskolan
+                      <i className="icon--arrow"/></span>
                     </a>
                   </li>
                   <li className="news__list-item">
@@ -36,8 +36,8 @@ export default class News extends React.Component {
                       23 mars 2017
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
-                      Andelen obehöriga lärare ökar
-                      <span className="icon--arrow"/>
+                      Andelen obehöriga lärare <span className="nowrap">ökar
+                      <i className="icon--arrow"/></span>
                     </a>
                   </li>
                   <li className="news__list-item">
@@ -45,8 +45,17 @@ export default class News extends React.Component {
                       23 mars 2017
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
-                      Statlig satsning gav nästan 3000 nyanställda i skolan
-                      <span className="icon--arrow"/>
+                      Statlig satsning gav nästan 3000 nyanställda i <span className="nowrap">skolan
+                      <i className="icon--arrow"/></span>
+                    </a>
+                  </li>
+                  <li className="news__list-item">
+                    <div className="news__list-item--data text-small">
+                      23 mars 2017
+                    </div>
+                    <a href="#" className="news__list-item--link text-medium">
+                      Många lärare får höjd lön från flera <span className="nowrap">statsbidrag
+                      <i className="icon--arrow"/></span>
                     </a>
                   </li>
                   <li className="news__list-item">
@@ -55,8 +64,8 @@ export default class News extends React.Component {
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
                       Antalet elever i gymnasieskolan ökar för första gången sedan mätningen
-                      infördes och sattes i bruk i början av 2008
-                      <span className="icon--arrow"/>
+                      infördes och sattes i bruk i början av <span className="nowrap">2008
+                      <i className="icon--arrow"/></span>
                     </a>
                   </li>
                 </ul>

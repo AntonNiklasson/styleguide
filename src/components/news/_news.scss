@@ -4,7 +4,14 @@ $block: 'news';
   display: flex;
   border-top: 3px solid $color-skolverket-purple;
   padding-top: 58px;
+  padding-bottom: 30px;
+  background-color: $color-white;
   
+  & .news-header-container {
+    min-width: 230px;
+    margin-right: 40px;
+  }
+
   &__header {
     width: 100%;
 
@@ -75,14 +82,17 @@ $block: 'news';
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .news__header-title {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-@media (max-width: 767.9999px) {
+@media (max-width: 991.9999px) {
+  .news--col-12 {
+    flex-basis: 743px;
+  }
   .news {
     padding-top: 16px; 
   }
