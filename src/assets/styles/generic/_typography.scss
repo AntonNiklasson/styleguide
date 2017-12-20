@@ -27,11 +27,17 @@
   line-height: $line-height-lg;
 }
 
+.text-xlarge {
+  font-size: $font-size-xlg;       // 28px
+  line-height: $line-height-xlg;
+}
+
 @media (max-width: 767.9999px) {
   .text-small { font-size: 0.875rem; line-height: 1.72; }   // 14px
   .text-standard { font-size: 1rem; line-height: 1.5; }     // 16px
   .text-medium { font-size: 1.1875rem; line-height: 1.26; } // 19px
   .text-large { font-size: 1.25rem; line-height: 1.5; }     // 20px
+  .text-xlarge { font-size: 1.5rem; line-height: 1.08; }    // 20px
 }
 
 ///

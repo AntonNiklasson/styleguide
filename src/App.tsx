@@ -3,12 +3,13 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import WelcomePage from './gallery-pages/WelcomePage';
 import NotFoundPage from './NotFoundPage';
-import AlertPage from './gallery-pages/AlertPage';
 import ButtonPage from './gallery-pages/ButtonPage';
 import ContentNavigationPage from './gallery-pages/ContentNavigationPage';
 import NavigationPage from './gallery-pages/NavigationPage';
 import NewsPage from './gallery-pages/NewsPage';
 import TextArticlePage from './gallery-pages/TextArticlePage';
+import ImageArticlePage from './gallery-pages/ImageArticlePage';
+import ImageArticleTwoPage from './gallery-pages/ImageArticleTwoPage';
 
 class App extends React.Component {
   render() {
@@ -19,12 +20,13 @@ class App extends React.Component {
           <div className="show-component">
             <Switch>
               <Route exact={true} path="/" component={WelcomePage} />
-              <Route exact={true} path="/components/alert" component={AlertPage} />
               <Route exact={true} path="/components/button" component={ButtonPage} />
               <Route exact={true} path="/components/navigation" component={NavigationPage} />
               <Route exact={true} path="/components/news" component={NewsPage} />
               <Route exact={true} path="/components/content-navigation" component={ContentNavigationPage} />
               <Route exact={true} path="/components/text-article" component={TextArticlePage} />
+              <Route exact={true} path="/components/image-article" component={ImageArticlePage} />
+              <Route exact={true} path="/components/image-article-two" component={ImageArticleTwoPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>

@@ -1,19 +1,27 @@
 ///
 /// ICONS
 ///============================================================================
+$base-arrow-width: 8px;
+$base-arrow-height: 12px;
 
-.icon--arrow {
+.icon-arrow {
   display: inline-block;
-  width: 0.5rem;
-  height: 0.75rem;
+  width: $base-arrow-width;
+  height: $base-arrow-height;
   background-image: url('../images/arrow.svg');
-  background-size: 0.5rem 0.75rem;
-  background-position: center;
+  background-size: $base-arrow-width $base-arrow-height;
+  background-position: bottom;
   background-repeat: no-repeat; 
   margin-left: 0.625rem;
+  
+  &--lg {
+    width: calc(#{$base-arrow-width}*1.3333);
+    height: calc(#{$base-arrow-height}*1.3333);
+    background-size: calc(#{$base-arrow-width}*1.3333) calc(#{$base-arrow-height}*1.3333);
+  }
 }
 
-.icon--close {
+.icon-close {
   padding: 0.375rem 0.75rem 0.375rem calc(20px + 0.85rem);
   background-image: url('../images/close.svg');
   background-size: 0.85rem;
@@ -32,3 +40,17 @@
     text-decoration: none;
   }
 }
+
+@media (max-width: 767.9999px) {
+  .icon-arrow { 
+    width: calc(#{$base-arrow-width}*0.9166);
+    height: calc(#{$base-arrow-height}*0.9166);
+    background-size: calc(#{$base-arrow-width}*0.9166) calc(#{$base-arrow-height}*0.9166); 
+  }
+  .icon-arrow--lg { 
+    width: calc(#{$base-arrow-width}*1.0833);
+    height: calc(#{$base-arrow-height}*1.0833);
+    background-size: calc(#{$base-arrow-width}*1.0833) calc(#{$base-arrow-height}*1.0833); 
+  }
+}
+
