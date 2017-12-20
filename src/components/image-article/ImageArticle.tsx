@@ -25,7 +25,7 @@ export default class ImageArticle extends React.Component {
                   <li className="image-article__list-item">
                     <div className="row">
                       <div className="col-4 push-8 col-md-12 push-md-0">
-                        <img src="/images/image16-9.png" className="image-article__list-item--image" />
+                        <img src="../images/image16-9.png" className="image-article__list-item--image" />
                       </div>
                       <div className="col-8 pull-4 col-md-12 pull-md-0">
                         <a href="#" className="image-article__list-item--link text-medium">
@@ -42,7 +42,7 @@ export default class ImageArticle extends React.Component {
                   <li className="image-article__list-item">
                     <div className="row">
                       <div className="col-4 push-8 col-md-12 push-md-0">
-                        <img src="/images/image16-9.png" className="image-article__list-item--image" />
+                        <img src="../images/image16-9.png" className="image-article__list-item--image" />
                       </div>
                       <div className="col-8 pull-4 col-md-12 pull-md-0">
                         <a href="#" className="image-article__list-item--link text-medium">
@@ -59,7 +59,7 @@ export default class ImageArticle extends React.Component {
                   <li className="image-article__list-item hide-border-bottom">
                     <div className="row">
                       <div className="col-4 push-8 col-md-12 push-md-0">
-                        <img src="/images/image16-9.png" className="image-article__list-item--image" />
+                        <img src="../images/image16-9.png" className="image-article__list-item--image" />
                       </div>
                       <div className="col-8 pull-4 col-md-12 pull-md-0">
                         <a href="#" className="image-article__list-item--link text-medium">
