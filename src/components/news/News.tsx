@@ -28,7 +28,7 @@ export default class News extends React.Component {
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
                       17 000 fler nyanlända i <span className="nowrap">grundskolan
-                      <i className="icon--arrow"/></span>
+                      <i className="icon-arrow"/></span>
                     </a>
                   </li>
                   <li className="news__list-item">
@@ -37,7 +37,7 @@ export default class News extends React.Component {
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
                       Andelen obehöriga lärare <span className="nowrap">ökar
-                      <i className="icon--arrow"/></span>
+                      <i className="icon-arrow"/></span>
                     </a>
                   </li>
                   <li className="news__list-item">
@@ -46,7 +46,7 @@ export default class News extends React.Component {
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
                       Statlig satsning gav nästan 3000 nyanställda i <span className="nowrap">skolan
-                      <i className="icon--arrow"/></span>
+                      <i className="icon-arrow"/></span>
                     </a>
                   </li>
                   <li className="news__list-item">
@@ -55,7 +55,7 @@ export default class News extends React.Component {
                     </div>
                     <a href="#" className="news__list-item--link text-medium">
                       Många lärare får höjd lön från flera <span className="nowrap">statsbidrag
-                      <i className="icon--arrow"/></span>
+                      <i className="icon-arrow"/></span>
                     </a>
                   </li>
                   <li className="news__list-item">
@@ -65,7 +65,7 @@ export default class News extends React.Component {
                     <a href="#" className="news__list-item--link text-medium">
                       Antalet elever i gymnasieskolan ökar för första gången sedan mätningen
                       infördes och sattes i bruk i början av <span className="nowrap">2008
-                      <i className="icon--arrow"/></span>
+                      <i className="icon-arrow"/></span>
                     </a>
                   </li>
                 </ul>

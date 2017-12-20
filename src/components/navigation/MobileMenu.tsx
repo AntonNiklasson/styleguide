@@ -13,7 +13,7 @@ export default class MobileMenu extends React.Component<MobileMenuParameters> {
         <div className="mobile-menu mobile-menu__header">
           <div className="mobile-menu__container">
             <h1 className="h1 mobile-menu__header-title">Meny</h1>
-            <a href="#" className="icon--close text-small" onClick={this.props.toggleMenu}>
+            <a href="#" className="icon-close text-small" onClick={this.props.toggleMenu}>
               Stäng
             </a>
           </div>
@@ -24,25 +24,25 @@ export default class MobileMenu extends React.Component<MobileMenuParameters> {
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Undervisning
-                  <span className="icon--arrow"/>
+                  <i className="icon-arrow"/>
                 </a>
               </li>
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Skolutveckling
-                  <span className="icon--arrow"/>
+                  <i className="icon-arrow"/>
                 </a>
               </li>
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Lagar och regler
-                  <span className="icon--arrow"/>
+                  <i className="icon-arrow"/>
                 </a>
               </li>
               <li className="mobile-menu__list-item">
                 <a href="#" className="mobile-menu__list-item--link text-medium">
                   Innehåll A-Ö
-                  <span className="icon--arrow"/>
+                  <i className="icon-arrow"/>
                 </a>
               </li>
             </ul>
