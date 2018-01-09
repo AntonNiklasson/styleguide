@@ -41,6 +41,11 @@ $base-arrow-height: 0.75rem;
   }
 }
 
+.icon-warning {
+  background-image: url('../images/warning.svg');
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 767.9999px) {
   .icon-arrow { 
     width: calc(#{$base-arrow-width}*0.9166);

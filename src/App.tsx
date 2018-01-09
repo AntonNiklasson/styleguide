@@ -10,6 +10,7 @@ import NewsPage from './gallery-pages/NewsPage';
 import TextArticlePage from './gallery-pages/TextArticlePage';
 import ImageArticlePage from './gallery-pages/ImageArticlePage';
 import ImageArticleTwoPage from './gallery-pages/ImageArticleTwoPage';
+import FormPage from './gallery-pages/FormPage';
 
 class App extends React.Component {
   render() {
@@ -27,6 +28,7 @@ class App extends React.Component {
               <Route exact={true} path="/components/text-article" component={TextArticlePage} />
               <Route exact={true} path="/components/image-article" component={ImageArticlePage} />
               <Route exact={true} path="/components/image-article-two" component={ImageArticleTwoPage} />
+              <Route exact={true} path="/components/form" component={FormPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>

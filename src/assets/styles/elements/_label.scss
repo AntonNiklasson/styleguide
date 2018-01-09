@@ -7,5 +7,9 @@ label {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
   font-weight: $font-weight-heavy;
-  margin-bottom: $spacer-small;
+  margin-bottom: $spacer-xsmall;
+
+  &--no-margin {
+    margin: 0;
+  }
 }
