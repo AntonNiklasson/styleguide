@@ -9,6 +9,7 @@ textarea {
   // Normalize includes `font: inherit;`, so `font-family`. `font-size`, etc are
   // properly inherited. However, `line-height` isn't inherited there.
   line-height: inherit;
+  min-height: 50%;
 }
 
 input[type="radio"],
