@@ -11,22 +11,22 @@ export default class Form extends React.Component {
               <div className="narrow-desktop-grid">
                 <div className="form-group">
                   <label className="text-standard" htmlFor="">Textfält / Textfält i fokus</label>
-                  <input type="text" className="form-control" id="" aria-describedby="" placeholder="Platshållare" />
+                  <input type="text" className="form-control" id="" placeholder="Platshållare" />
                 </div>
                 <div className="form-group">
                   <label className="text-standard margin-reset">Textfält med beskrivning</label>
                   <div className="form-group__sublabel text-standard">Beskrivning av textfält</div>
-                  <input type="text" className="form-control" id="" aria-describedby="" placeholder="Platshållare" />
+                  <input type="text" className="form-control" id="" placeholder="Platshållare" />
                 </div>
                 <div className="form-group">
                   <label className="text-standard">Textfält ej valbar</label>
                   <input type="text" className="form-control"
-                    id="" aria-describedby="" placeholder="" readOnly />
+                    id="" placeholder="" readOnly={true} />
                 </div>
                 <div className="form-group">
                   <label className="text-standard">Textfält med validering<span className="text-error">*</span></label>
                   <input type="text" className="form-control form-control--error icon-warning"
-                    id="" aria-describedby="" placeholder="" />
+                    id="" placeholder="" />
                   <div className="text-standard text-error">Hjälpsamt felmeddelande</div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default class Form extends React.Component {
                 </div>
                 <div className="form-group">
                   <label className="text-standard">Textområde  ej valbar</label>
-                  <textarea className="form-control" id="" rows={4} readOnly />
+                  <textarea className="form-control" id="" rows={4} readOnly={true} />
                 </div>
                 <div className="form-group">
                   <label className="text-standard">Textområde med validering<span className="text-error">*</span>
@@ -54,6 +54,63 @@ export default class Form extends React.Component {
                   <textarea className="form-control form-control--error form-control--error-textarea icon-warning"
                     id="" rows={4} />
                   <div className="text-standard text-error">Hjälpsamt felmeddelande</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row spacer-mt-xlarge">
+            <div className="col">
+              <div className="narrow-desktop-grid spacer-mb-large">
+                <label className="text-standard" htmlFor="">Enval</label>
+                <div className="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input" />
+                  <label className="custom-control-label" htmlFor="customRadio1">Radio 1</label>
+                </div>
+                <div className="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input" />
+                  <label className="custom-control-label" htmlFor="customRadio2">Radio 2</label>
+                </div>
+                <div className="custom-control custom-radio">
+                  <input type="radio" className="custom-control-input" name="disabledRadio"
+                    id="disabledRadio" disabled={true} />
+                  <label className="custom-control-label" htmlFor="disabledRadio">Ej valbar</label>
+                </div>
+              </div>
+              <div className="narrow-desktop-grid spacer-mb-large">
+                <label className="text-standard" htmlFor="">Flerval</label>
+                <div className="custom-control custom-checkbox">
+                  <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                  <label className="custom-control-label" htmlFor="customCheck1">Alternativ</label>
+                </div>
+                <div className="custom-control custom-checkbox">
+                  <input type="checkbox" className="custom-control-input" id="customCheck2" disabled={true} />
+                  <label className="custom-control-label" htmlFor="customCheck2">Ej valbar</label>
+                </div>
+              </div>
+              <div className="narrow-desktop-grid">
+                <div className="form-group">
+                  <label className="text-standard" htmlFor="">Rullgardin</label>
+                  <select className="form-control dropdown icon-dropdown-arrow" id="">
+                    <option value="1">Platshållare</option>
+                  </select>
+                </div>
+              </div>
+              <div className="narrow-desktop-grid spacer-mb-xxlarge">
+                <div className="form-group">
+                  <label className="text-standard" htmlFor="">Rullgardin ej valbar</label>
+                  <select className="form-control dropdown icon-dropdown-arrow"
+                    id="" disabled={true}>
+                    <option value="1">Platshållare</option>
+                  </select>
+                </div>
+              </div>
+              <div className="narrow-desktop-grid">
+                <div className="form-group">
+                  <label className="text-standard" htmlFor="">Sökfält / textfält med ikon</label>
+                  <div className="display-flex">
+                    <input type="text" className="form-control form-control--search icon-search"
+                      id="" placeholder="Platshållare" />
+                  </div>
                 </div>
               </div>
             </div>
