@@ -46,6 +46,16 @@ $base-arrow-height: 0.75rem;
   background-repeat: no-repeat;
 }
 
+.icon-search {
+  background-image: url('../images/search.svg');
+  background-repeat: no-repeat;
+}
+
+.icon-dropdown-arrow {
+  background-image: url('../images/arrow-dropdown.svg');
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 767.9999px) {
   .icon-arrow { 
     width: calc(#{$base-arrow-width}*0.9166);

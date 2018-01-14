@@ -89,3 +89,20 @@ output {
 input[type="file"] {
     display: none;
 }
+
+select {
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance:none;
+}
+
+/*for IE10*/
+select::-ms-expand {
+  display: none;
+}
+
+select[disabled] { 
+  background-color: $color-gray-light;
+  opacity: 0.6;
+}

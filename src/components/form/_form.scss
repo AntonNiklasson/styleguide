@@ -8,7 +8,6 @@ $block: 'form';
   background-color: $color-white;
 
   &-group {
-    max-width: 408px;
     margin-bottom: 1.5rem;
 
     &__sublabel {
@@ -22,13 +21,14 @@ $block: 'form';
 
   &-control {
     display: block;
+    max-width: 408px;
     width: 100%;
-    padding: .4375rem .875rem;
+    padding: .3125rem .875rem;
     font-size: 1rem;
     line-height: 1.75;
     color: $color-gray;
     background-color: $color-purple-light;
-    border: none;
+    border: 2px solid transparent;
 
     &:focus {
       border: solid 2px $color-yellow;
@@ -39,7 +39,7 @@ $block: 'form';
     &[readOnly] {
       background-color: $color-gray-light;
       &:focus {
-        border: none;
+        border: 2px solid transparent;
       }
     }
 
@@ -53,6 +53,121 @@ $block: 'form';
 
       &-textarea {
         background-position: top .5rem right .625rem;
+      }
+    }
+
+    &--search {
+      padding-left: 2.625rem;
+      background-position: center left .625rem;
+      background-size: 1.25rem 1.25rem;
+      margin-right: .5rem;
+    }
+
+    &.dropdown {
+      min-height: 42px;
+      padding-right: 2.625rem;
+      background-position: center right .625rem;
+      background-size: 1.25rem 1.25rem;
+    }
+  }
+  
+  // Custom control (checkbox, radio)
+  .custom-control {
+    position: relative;
+    display: block;
+    min-height: 1rem;
+    padding-left: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .custom-control-input {
+    position: absolute;
+    z-index: -1; // Put the input behind the label so it doesn't overlay text
+    opacity: 0;
+  
+    &:checked ~ .custom-control-label::before {
+      background-color: $color-skolverket-purple;
+    }
+  
+    &:active ~ .custom-control-label::before {
+      background-color:  $color-purple;
+    }
+  
+    &:disabled {
+      ~ .custom-control-label {
+        color: $color-gray;
+  
+        &::before {
+          background-color: $color-gray-light;
+          border: solid 2px rgba(153, 153, 153, 0.4);
+        }
+      }
+    }
+  }
+
+  .custom-control-label {
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+
+    // Background-color
+    &::before {
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto 0;
+      width: 1.125rem;
+      height: 1.125rem;
+      background-color: $color-white;
+      border: 2px solid $color-skolverket-purple;
+      content: "";
+    }
+  
+    // Foreground (icon)
+    &::after {
+      position: absolute;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto 0;
+      width: 1.125rem;
+      height: 1.125rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 0.875rem;
+      content: "";
+    }
+  }
+
+  // Custom checkbox
+  .custom-checkbox {
+    .custom-control-label::before {
+      border-radius: .125rem;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+      &::after {
+        background-image: url('../images/tick-white.svg');
+      }
+    }
+  }
+
+  // Custom radio
+  .custom-radio {
+    .custom-control-label::before {
+      border-radius: 50%;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label {
+      &::before {
+        background-color: $color-white;
+      }
+      &::after {
+        background-image: url('../images/radio-checked.svg');
+        background-size: 0.7185rem;
       }
     }
   }
