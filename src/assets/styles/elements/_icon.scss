@@ -13,6 +13,10 @@ $base-arrow-height: 0.75rem;
   background-position: bottom;
   background-repeat: no-repeat; 
   margin-left: 0.625rem;
+
+  &--white {
+    background-image: url('../images/arrow-white.svg');
+  }
   
   &--lg {
     width: calc(#{$base-arrow-width}*1.3333);
