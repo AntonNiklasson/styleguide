@@ -2,29 +2,114 @@ $block: 'btn';
 
 .#{$block} {
   display: inline-block;
-  background-color: $color-vinered;
-  color: $color-white;
-  border: 1px solid $color-skolverket-purple;
-  border-radius: 3px;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  border-radius: 0.1875rem;
+  transition: all .2s ease-in-out;
+  background-color: $color-white;
 
-  &--small {
-    width: 102px; // controlled by left/right padding instead ???
-    padding: 0.5rem 0.75rem;
-    font-size: 1rem;
-    line-height: $line-height-sm;
+  &:hover {
+    box-shadow: 0 7px 14px 0 rgba(108, 39, 106, 0.6);
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    border: 2px solid $color-yellow;
+
+    &:hover {
+      box-shadow: none;
+    }
+  } 
+  
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    background-color: $color-gray-light;
+    color: #999999;
+    cursor: not-allowed;
+    border: 0;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      border: 0;
+      background-color: $color-gray-light;
+    }
+  }
+
+  &:active,
+  &.active {
+    border-color: $color-yellow;
+  } 
+  
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  &:not([disabled]):not(.disabled) {
+    cursor: pointer;
+  }
+
+  &--primary {
+    color: $color-white;
+    background-color: $color-skolverket-purple;
+    border-color: $color-skolverket-purple;
+  }
+
+  &--secondary {
+    color: $color-skolverket-purple;
+    background-color: $color-white;
+    border-color: $color-purple;
+
+    &:focus,
+    &.focus {
+      border: 2px solid $color-yellow;
+    }
   }
 
   &--standard {
-    width: 138px; // controlled by left/right padding instead ???
-    padding: 0.625rem 1rem;
-    font-size: 1.125rem;
+    padding: 0.3725rem 1.3125rem;
+    font-size: $font-size-std;
     line-height: $line-height-std;
   }
 
-  &--large {
-    width: 132px; // controlled by left/right padding instead ???
-    padding: 0.875rem 1rem;
-    font-size: 1.5rem;
-    line-height: $line-height-md;
+  &--small {
+    padding: 0.125rem 1.3125rem;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &-icon {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: calc(20px + 1.25rem);
+    padding-right: 0.875rem;
+
+    background-size: 1.25rem;
+    background-position: left 12px center;
+
+    &:hover {
+      box-shadow: none;
+      background-color: $color-purple-light;
+    }
+
+    &:focus,
+    &.focus {
+      background-color: $color-purple-light;
+    }
+
+    &--right {
+      padding-left: 0.875rem;
+      padding-right: calc(8px + 1.25rem);
+      background-position: right 6px center;
+    }
   }
 }
