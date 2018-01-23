@@ -1,6 +1,9 @@
 ///
 /// ICONS
 ///============================================================================
+$base-width: 1rem;
+$base-height: 1rem;
+$base-size: 1rem;
 $base-arrow-width: 0.5rem;
 $base-arrow-height: 0.75rem;
 
@@ -11,13 +14,13 @@ $base-arrow-height: 0.75rem;
   background-image: url('../images/arrow.svg');
   background-size: $base-arrow-width $base-arrow-height;
   background-position: bottom;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   margin-left: 0.625rem;
 
   &--white {
     background-image: url('../images/arrow-white.svg');
   }
-  
+
   &--lg {
     width: calc(#{$base-arrow-width}*1.3333);
     height: calc(#{$base-arrow-height}*1.3333);
@@ -60,16 +63,56 @@ $base-arrow-height: 0.75rem;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 767.9999px) {
-  .icon-arrow { 
-    width: calc(#{$base-arrow-width}*0.9166);
-    height: calc(#{$base-arrow-height}*0.9166);
-    background-size: calc(#{$base-arrow-width}*0.9166) calc(#{$base-arrow-height}*0.9166); 
+.icon-dropdown-arrow-disabled {
+  background-image: url('../images/arrow-dropdown-disabled.svg');
+  background-repeat: no-repeat;
+}
+
+.icon-lock,
+.icon-hyperlink {
+  padding-right: 20px;
+  background-size: $base-size;
+  background-position: right center;
+  background-repeat: no-repeat;
+
+  &--x1-33 {
+    padding-right: 24px;
+    background-size: calc(#{$base-size}*1.3333);
   }
-  .icon-arrow--lg { 
-    width: calc(#{$base-arrow-width}*1.0833);
-    height: calc(#{$base-arrow-height}*1.0833);
-    background-size: calc(#{$base-arrow-width}*1.0833) calc(#{$base-arrow-height}*1.0833); 
+
+  &--x2 {
+    padding-right: 36px;
+    background-size: calc(#{$base-size}*2);
   }
 }
 
+.icon-lock {
+  background-image: url('../images/lock.svg');
+}
+
+.icon-hyperlink {
+  background-image: url('../images/hyperlink.svg');
+}
+
+.icon-speaker {
+  background-image: url('../images/speaker.svg');
+  background-repeat: no-repeat;
+}
+
+.icon-speaker-disabled {
+  background-image: url('../images/speaker-disabled.svg');
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767.9999px) {
+  .icon-arrow {
+    width: calc(#{$base-arrow-width}*0.9166);
+    height: calc(#{$base-arrow-height}*0.9166);
+    background-size: calc(#{$base-arrow-width}*0.9166) calc(#{$base-arrow-height}*0.9166);
+  }
+  .icon-arrow--lg {
+    width: calc(#{$base-arrow-width}*1.0833);
+    height: calc(#{$base-arrow-height}*1.0833);
+    background-size: calc(#{$base-arrow-width}*1.0833) calc(#{$base-arrow-height}*1.0833);
+  }
+}

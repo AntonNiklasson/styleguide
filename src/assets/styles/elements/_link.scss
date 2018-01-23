@@ -13,3 +13,49 @@ a {
     text-decoration: underline;
   }
 }
+
+///
+/// Text Link
+///----------------------------------------------------------------------------
+.text-link {
+  position: relative;
+  display: inline-flex;
+  padding: .25rem .625rem;
+  text-decoration: underline;
+  color: $color-blue;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-blue-dark;
+  }
+
+  &:active, &:focus {
+    text-decoration: underline;
+    color: $color-blue;
+    border-color: $color-yellow;
+  }
+
+  &:visited {
+    color: $color-grass;
+  }
+
+  &.disabled {
+    color: #888888;
+    cursor: not-allowed;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active, &:focus {
+      border-color: transparent;
+    }
+  }
+  
+  &--icon {
+    padding: 0.125rem 0.125rem 0.125rem 0.25rem;
+    margin: 0 0.125rem;
+  }
+}
