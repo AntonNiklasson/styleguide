@@ -13,6 +13,7 @@ import ImageArticleTwoPage from './gallery-pages/ImageArticleTwoPage';
 import FormPage from './gallery-pages/FormPage';
 import FooterPage from './gallery-pages/FooterPage';
 import FeedbackPage from './gallery-pages/FeedbackPage';
+import TocPage from './gallery-pages/TocPage';
 
 class App extends React.Component {
   render() {
@@ -33,6 +34,7 @@ class App extends React.Component {
               <Route exact={true} path="/components/form" component={FormPage} />
               <Route exact={true} path="/components/footer" component={FooterPage} />
               <Route exact={true} path="/components/feedback" component={FeedbackPage} />
+              <Route exact={true} path="/components/toc" component={TocPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>
