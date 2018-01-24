@@ -89,6 +89,14 @@ export default class Menu extends React.Component<MenuParameters> {
               Knappar
               </NavLink>
           </li>
+          <li className="menu__list-item">
+            <NavLink
+              to="/components/feedback"
+              activeClassName="active"
+              className="menu__list-item--link text-small">
+              Feedback
+              </NavLink>
+          </li>
         </ul>
       </div>
     );

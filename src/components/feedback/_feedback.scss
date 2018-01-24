@@ -1,0 +1,65 @@
+$block: 'feedback';
+
+.#{$block} {
+  border-top: 3px solid $color-skolverket-purple;
+  background-color: $color-white;
+  box-shadow: 0 12px 24px 0 rgba(108, 39, 106, 0.25);
+
+  &__box {
+    margin-top: 150px;
+    border-top: 1px solid $color-purple;
+    padding: 24px 36px;
+    font-weight: 500;
+
+    &-text {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    &-text-area {
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      &--first {
+        width: 84px;
+        margin-right: 14px;
+      }
+
+      &--second {
+        width: 84px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.9999px) {
+  .feedback__box-text {
+    justify-content: center;
+    height: inherit;
+  }
+  .feedback__box-text-only {
+    text-align: center;
+    padding: 23px 0;
+  }
+  .feedback__box-text-area {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .feedback__box-buttons {
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    height: inherit;
+  }
+  .feedback__box {
+    padding: 24px 0px;
+    margin-top: 92px;
+  }
+}
