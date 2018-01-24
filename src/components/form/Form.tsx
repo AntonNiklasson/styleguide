@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Button from '../button/Button';
 
 export default class Form extends React.Component {
 
@@ -101,6 +102,7 @@ export default class Form extends React.Component {
                 <div className="display-flex">
                   <input type="text" className="form-control form-control--search icon-search"
                     id="" placeholder="Platshållare" />
+                  <Button type="primary" size="standard" text="Knapp normal" />
                 </div>
               </div>
             </div>
