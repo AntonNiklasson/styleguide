@@ -97,6 +97,14 @@ export default class Menu extends React.Component<MenuParameters> {
               Feedback
               </NavLink>
           </li>
+          <li className="menu__list-item">
+            <NavLink
+              to="/components/toc"
+              activeClassName="active"
+              className="menu__list-item--link text-small">
+              Table of content
+              </NavLink>
+          </li>
         </ul>
       </div>
     );
