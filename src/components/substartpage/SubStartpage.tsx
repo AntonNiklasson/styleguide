@@ -6,7 +6,7 @@ export default class Substartpage extends React.Component {
       <div className="substartpage">
         <div className="substartpage__header">
           <img className="substartpage__header-img"
-            src="/images/understart.png" alt="Error with image loading..." />
+            src="../images/understart.png" alt="Error with image loading..." />
           <div className="substartpage__header-section">
             <div className="container">
               <div className="row">
