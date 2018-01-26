@@ -22,9 +22,9 @@ export default class Navigation extends React.Component<object, NavigationState>
   render() {
     let mobileMenuState = this.state.isOpen ? 'hidden' : '';
     return (
-      <div className="full-height">
+      <div>
         <MobileMenu menuState={this.state.isOpen} toggleMenu={this.toggleMenu} />
-        <div className={`full-height ${mobileMenuState}`}>
+        <div className={`${mobileMenuState}`}>
           <div className="navigation navigation__header">
             <div className="nav-container nav-container--header">
               <div className="navigation__header-logo"/>

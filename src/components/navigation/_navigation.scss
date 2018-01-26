@@ -154,6 +154,7 @@ $block: 'navigation';
   .navigation__links {
     height: 100%;
     background-color: $color-purple-light;
+    display: none;
   }
   .navigation__header {
     padding: 0.9375rem 0;

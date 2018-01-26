@@ -4,7 +4,7 @@ import ContentNavigation from '../components/content-navigation/ContentNavigatio
 export default class ContentNavigationPage extends React.Component {
   render() {
     return (
-      <div className="full-height">
+      <div>
         <div className="spacer-mb-large spacer-mt-large text-center">
           <h1 className="h1">Innehållsnavigering</h1>
         </div>

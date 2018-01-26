@@ -26,6 +26,12 @@ $base-arrow-height: 0.75rem;
     height: calc(#{$base-arrow-height}*1.3333);
     background-size: calc(#{$base-arrow-width}*1.3333) calc(#{$base-arrow-height}*1.3333);
   }
+
+  &--x1-6 {
+    width: calc(#{$base-arrow-width}*1.6);
+    height: calc(#{$base-arrow-height}*1.6);
+    background-size: calc(#{$base-arrow-width}*1.6) calc(#{$base-arrow-height}*1.6);
+  }
 }
 
 .icon-close {

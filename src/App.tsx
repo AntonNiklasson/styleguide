@@ -14,11 +14,12 @@ import FormPage from './gallery-pages/FormPage';
 import FooterPage from './gallery-pages/FooterPage';
 import FeedbackPage from './gallery-pages/FeedbackPage';
 import TocPage from './gallery-pages/TocPage';
+import StartPage from './gallery-pages/StartPage';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="full-height">
+      <div>
         <Header />
         <div className="gallery-container">
           <div className="show-component">
@@ -35,6 +36,7 @@ class App extends React.Component {
               <Route exact={true} path="/components/footer" component={FooterPage} />
               <Route exact={true} path="/components/feedback" component={FeedbackPage} />
               <Route exact={true} path="/components/toc" component={TocPage} />
+              <Route exact={true} path="/components/startpage" component={StartPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>

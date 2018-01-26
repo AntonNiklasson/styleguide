@@ -23,7 +23,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Huvudmeny
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -31,7 +31,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Nyhetslista
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -47,7 +47,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Textpuffar
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -55,7 +55,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Bildpuffar
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -63,7 +63,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Bildpuffar 2
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -71,7 +71,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Formulär
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -79,7 +79,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Sidfot
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -87,7 +87,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Knappar
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -95,7 +95,7 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Feedback
-              </NavLink>
+            </NavLink>
           </li>
           <li className="menu__list-item">
             <NavLink
@@ -103,7 +103,15 @@ export default class Menu extends React.Component<MenuParameters> {
               activeClassName="active"
               className="menu__list-item--link text-small">
               Table of content
-              </NavLink>
+            </NavLink>
+          </li>
+          <li className="menu__list-item">
+            <NavLink
+              to="/components/startpage"
+              activeClassName="active"
+              className="menu__list-item--link text-small">
+              Startsida
+            </NavLink>
           </li>
         </ul>
       </div>
