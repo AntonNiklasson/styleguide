@@ -42,7 +42,7 @@ $block: 'feedback';
 @media (max-width: 767.9999px) {
   .feedback__box-text {
     justify-content: center;
-    height: inherit;
+    height: auto;
   }
   .feedback__box-text-only {
     text-align: center;
@@ -56,7 +56,7 @@ $block: 'feedback';
     justify-content: center;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    height: inherit;
+    height: auto;
   }
   .feedback__box {
     padding: 1.5rem 0px;
