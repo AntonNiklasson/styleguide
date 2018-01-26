@@ -19,8 +19,8 @@ $block: 'startpage';
         line-height: 1.7;
         font-size: 2.375rem;
         color: $color-white;
-        margin-left: 1.125rem;
-        margin-bottom: 1.125rem;
+        margin-left: .875rem;
+        margin-bottom: .875rem;
 
         &:hover {
           color: $color-white;
@@ -52,9 +52,6 @@ $block: 'startpage';
 @media (min-width: 1280.9999px) {
   .startpage__header-title {
     bottom: 140px;
-  }
-  .startpage__header-title--link {
-    margin-left: -.25px;
   }
 }
 
