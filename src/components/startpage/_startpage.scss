@@ -6,6 +6,10 @@ $block: 'startpage';
   &__header {
     position: relative;
 
+    &-bg {
+      min-height: 164px;
+    }
+
     &-title {
       position: absolute;
       width: 100%;
