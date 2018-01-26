@@ -49,13 +49,16 @@ $block: 'startpage';
   }
 }
 
-@media (min-width: 1280.9999px) {
+@media (min-width: 1281px) {
   .startpage__header-title {
     bottom: 140px;
   }
+  .startpage__content {
+    max-width: 1244px;
+  }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1280.9999px) {
   .startpage__content {
     margin-top: 0;
   }
