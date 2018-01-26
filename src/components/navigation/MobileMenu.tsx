@@ -9,7 +9,7 @@ export default class MobileMenu extends React.Component<MobileMenuParameters> {
   render() {
     let menuState = this.props.menuState ? '' : 'hidden';
     return (
-      <div className={`full-height ${menuState}`}>
+      <div className={`${menuState}`}>
         <div className="mobile-menu mobile-menu__header">
           <div className="mobile-menu__container">
             <h1 className="h1 mobile-menu__header-title">Meny</h1>
