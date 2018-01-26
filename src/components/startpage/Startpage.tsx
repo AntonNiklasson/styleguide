@@ -6,7 +6,7 @@ export default class Startpage extends React.Component {
       <div className="startpage">
         <div className="startpage__header">
           <div className="startpage__header-bg">
-            <img src="../images/bildstartsida.png" alt="" />
+            <img src="../images/bildstartsida.png" alt="Error with image loading..." />
           </div>
           <div className="startpage__header-title">
             <div className="container">
