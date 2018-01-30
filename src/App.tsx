@@ -16,6 +16,7 @@ import FeedbackPage from './gallery-pages/FeedbackPage';
 import TocPage from './gallery-pages/TocPage';
 import StartPage from './gallery-pages/StartPage';
 import SubStartPage from './gallery-pages/SubStartPage';
+import NotificationPage from './gallery-pages/NotificationPage';
 
 class App extends React.Component {
   render() {
@@ -39,6 +40,7 @@ class App extends React.Component {
               <Route exact={true} path="/components/toc" component={TocPage} />
               <Route exact={true} path="/components/startpage" component={StartPage} />
               <Route exact={true} path="/components/substartpage" component={SubStartPage} />
+              <Route exact={true} path="/components/notification" component={NotificationPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>
