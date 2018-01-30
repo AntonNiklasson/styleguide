@@ -5,7 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <BrowserRouter basename="/sv-component-library">
+  <BrowserRouter basename="/skolverket-komponentbibliotek">
     <App />
   </BrowserRouter>,
   document.getElementById('root') as HTMLElement
