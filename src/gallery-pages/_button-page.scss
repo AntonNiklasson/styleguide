@@ -1,5 +1,8 @@
 $block: 'button-page';
 
 .#{$block} {
-  padding: 1.125rem 1.125rem 0 1.125rem;
+  display: flex;
+  padding-top: 5.625rem;
+  padding-bottom: 1.875rem;
+  background-color: $color-white;
 }

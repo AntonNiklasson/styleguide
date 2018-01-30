@@ -3,23 +3,25 @@ $block: 'navigation';
 .#{$block} {
   position: relative;
 
-  &>.nav-container {
-    display: flex;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.125rem;
-    padding-right: 1.125rem;
+  &__header {
+    min-height: 4.5rem;
+    padding: 1.25rem 0;
+    background-color: $color-white;
+    border-top: 3px solid $color-skolverket-purple;
 
-    &--links {
-      position: relative;
-      min-height: 3.5rem;
-    }
-
-    &--header {
+    &-container {
+      display: flex;
       min-height: 2rem;
       justify-content: space-between;
       align-items: center;
+    }
+
+    &-logo {
+      width: 160px;
+      min-height: 36px;
+      background-image: url('../images/skolverket-logotype.svg');
+      background-position: left 0px center;
+      background-repeat: no-repeat;
     }
   }
 
@@ -27,20 +29,11 @@ $block: 'navigation';
     min-height: 3.5rem;
     padding: 0;
     background-color: $color-skolverket-purple;
-  }
 
-  &__header {
-    min-height: 4.5rem;
-    padding: 1.25rem 0;
-    background-color: $color-white;
-    border-top: 3px solid $color-skolverket-purple;
-    
-    &-logo {
-      width: 160px;
-      min-height: 36px;
-      background-image: url('../images/skolverket-logotype.svg');
-      background-position: left 0px center;
-      background-repeat: no-repeat;
+    &-container {
+      display: flex;
+      position: relative;
+      min-height: 3.5rem;
     }
   }
 
@@ -66,7 +59,7 @@ $block: 'navigation';
         padding: 0.375rem 0.75rem 0.375rem calc(20px + 1rem);
         background-size: 1rem 1rem;
         background-position: left 12px center;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         border-radius: 3px;
         cursor: pointer;
         color: $color-black;
@@ -152,19 +145,14 @@ $block: 'navigation';
     display: none;
   }
   .navigation__links {
-    height: 100%;
-    background-color: $color-purple-light;
+    display: none;
   }
   .navigation__header {
     padding: 0.9375rem 0;
   }
   .navigation__list {
     height: auto;
-  }
-  .nav-container {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
+  } 
   .navigation__header-logo {
     width: 134px;
     background-size: 100%;
@@ -172,7 +160,7 @@ $block: 'navigation';
 }
 
 @media (max-width: 340px) {
-  .nav-container {
+  .navigation__header-container {
     flex-direction: column;
   }
   .navigation__header-logo {

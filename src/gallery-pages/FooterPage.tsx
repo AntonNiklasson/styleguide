@@ -1,14 +1,14 @@
 import * as React from 'react';
-import News from '../components/news/News';
+import Footer from '../components/footer/Footer';
 
-export default class NewsPage extends React.Component {
+export default class FooterPage extends React.Component {
   render() {
     return (
       <div>
         <div className="spacer-mb-large spacer-mt-large text-center">
-          <h1 className="h1">Nyhetslista</h1>
+          <h1 className="h1">Sidfot</h1>
         </div>
-        <News />
+        <Footer />
       </div>
     );
   }
