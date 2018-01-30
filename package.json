@@ -2,7 +2,7 @@
   "name": "sv-component-library",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kblomster.github.io/sv-component-library",
+  "homepage": "https://acandocxc.github.io/skolverket-komponentbibliotek",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^0.0.3",
