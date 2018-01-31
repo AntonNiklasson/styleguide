@@ -17,6 +17,7 @@ import TocPage from './gallery-pages/TocPage';
 import StartPage from './gallery-pages/StartPage';
 import SubStartPage from './gallery-pages/SubStartPage';
 import NotificationPage from './gallery-pages/NotificationPage';
+import AccordionPage from './gallery-pages/AccordionPage';
 
 class App extends React.Component {
   render() {
@@ -41,6 +42,7 @@ class App extends React.Component {
               <Route exact={true} path="/components/startpage" component={StartPage} />
               <Route exact={true} path="/components/substartpage" component={SubStartPage} />
               <Route exact={true} path="/components/notification" component={NotificationPage} />
+              <Route exact={true} path="/components/accordion" component={AccordionPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>
