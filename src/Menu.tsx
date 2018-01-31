@@ -129,6 +129,14 @@ export default class Menu extends React.Component<MenuParameters> {
               Notifieringar
             </NavLink>
           </li>
+          <li className="menu__list-item">
+            <NavLink
+              to="/components/accordion"
+              activeClassName="active"
+              className="menu__list-item--link text-small">
+              Accordion
+            </NavLink>
+          </li>
         </ul>
       </div>
     );

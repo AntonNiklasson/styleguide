@@ -1,0 +1,78 @@
+$block: 'accordion';
+
+.#{$block} {
+  max-width: 820px;
+  display: flex;
+  border-top: 3px solid $color-skolverket-purple;
+  padding: 2.625rem 2.25rem 4rem 2.25rem;
+  background-color: $color-white;
+  
+  &__list {
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0.9375rem;
+      border: 2px solid transparent;
+      border-bottom: 1px solid $color-purple;
+
+      &:hover, &:focus {
+        border: 2px solid $color-yellow;
+      }
+
+      &.oppen {
+        padding: 1.875rem;
+        animation: fadeInDown 1s ease .2s 1 both;
+
+        &:hover, &:focus {
+          border: 2px solid transparent;
+          border-bottom: 1px solid $color-purple;
+        }
+      }
+
+      &.close {
+        display: none;
+      }
+
+      &--link {
+        text-decoration: none;
+        color: $color-skolverket-purple;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 3.25rem;
+
+        &:hover {
+          color: $color-skolverket-purple;
+        }
+
+        &:focus,
+        &:active,
+        &:active:focus {
+          color: $color-skolverket-purple;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.9999px) {
+  .accordion {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
