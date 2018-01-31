@@ -121,6 +121,14 @@ export default class Menu extends React.Component<MenuParameters> {
               Understartsida
             </NavLink>
           </li>
+          <li className="menu__list-item">
+            <NavLink
+              to="/components/notification"
+              activeClassName="active"
+              className="menu__list-item--link text-small">
+              Notifieringar
+            </NavLink>
+          </li>
         </ul>
       </div>
     );
