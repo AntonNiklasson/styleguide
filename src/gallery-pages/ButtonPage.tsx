@@ -9,22 +9,22 @@ export default class ButtonPage extends React.Component {
           <div className="row spacer-mb-large">
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Primary</strong></div>
-              <button className="btn btn--primary btn--standard">Knapp normal</button>
+              <button className="btn btn--primary">Knapp normal</button>
               {/* <Button type="primary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Hover</strong></div>
-              <button className="btn btn--primary btn--standard">Knapp normal</button>
+              <button className="btn btn--primary">Knapp normal</button>
               {/* <Button type="primary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Active/focus</strong></div>
-              <button className="btn btn--primary btn--standard">Knapp normal</button>
+              <button className="btn btn--primary">Knapp normal</button>
               {/* <Button type="primary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Disabled</strong></div>
-              <button className="btn btn--primary btn--standard disabled">Knapp normal</button>
+              <button className="btn btn--primary disabled">Knapp normal</button>
               {/* <Button type="primary" size="standard" text="Knapp normal" state="disabled" /> */}
             </div>
           </div>
@@ -48,29 +48,29 @@ export default class ButtonPage extends React.Component {
           </div>
           <div className="row spacer-mb-xxlarge">
             <div className="col spacer-mb-medium">
-              <button className="btn btn--primary btn--standard btn--block">Knapp full</button>
+              <button className="btn btn--primary btn--block">Knapp full</button>
               {/* <Button type="primary" size="standard" text="Knapp full" display="block" /> */}
             </div>
           </div>
           <div className="row spacer-mb-large">
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Secondary</strong></div>
-              <button className="btn btn--secondary btn--standard">Knapp normal</button>
+              <button className="btn btn--secondary">Knapp normal</button>
               {/* <Button type="secondary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Hover</strong></div>
-              <button className="btn btn--secondary btn--standard">Knapp normal</button>
+              <button className="btn btn--secondar">Knapp normal</button>
               {/* <Button type="secondary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Active/focus</strong></div>
-              <button className="btn btn--secondary btn--standard">Knapp normal</button>
+              <button className="btn btn--secondary">Knapp normal</button>
               {/* <Button type="secondary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Disabled</strong></div>
-              <button className="btn btn--secondary btn--standard disabled">Knapp normal</button>
+              <button className="btn btn--secondary disabled">Knapp normal</button>
               {/* <Button type="secondary" size="standard" text="Knapp normal" state="disabled" /> */}
             </div>
           </div>
@@ -94,7 +94,7 @@ export default class ButtonPage extends React.Component {
           </div>
           <div className="row spacer-mb-xxlarge">
             <div className="col spacer-mb-medium">
-              <button className="btn btn--secondary btn--standard btn--block">Knapp full</button>
+              <button className="btn btn--secondary btn--block">Knapp full</button>
               {/* <Button type="secondary" size="standard" text="Knapp full" display="block" /> */}
             </div>
           </div>
