@@ -6,30 +6,21 @@
   "dependencies": {
     "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts-ts": "2.8.0"
+    "npm-run-all": "^4.1.2"
   },
   "scripts": {
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "npm-run-all build-css build-js",
+    "start": "npm-run-all -p watch-css watch-docs",
+    "build": "npm-run-all build-css",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject",
-    "start-js": "react-scripts-ts start",
-    "build-js": "react-scripts-ts build",
-    "build-css": "node-sass-chokidar src/assets/styles --include-path=src -o public/css",
-    "watch-css": "npm run build-css && node-sass-chokidar src/assets/styles --include-path=src -o public/css --watch --recursive",
+    "watch-docs": "stylemark -i src -o public -c stylemark.yml -w -b",
+    "start-zip": "react-scripts-ts start",
+    "build-zip": "react-scripts-ts build",
+    "build-css": "node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css",
+    "watch-css": "npm run build-css && node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css --watch --recursive",
     "predeploy": "npm run build"
   },
   "devDependencies": {
-    "@types/jest": "^21.1.8",
-    "@types/node": "^8.0.54",
-    "@types/react": "^16.0.27",
-    "@types/react-dom": "^16.0.3",
-    "@types/react-router-dom": "^4.2.3",
+    "stylemark": "^0.6.3",
     "sass-lint": "^1.12.1"
   }
 }

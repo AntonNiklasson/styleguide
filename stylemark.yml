@@ -1,0 +1,20 @@
+name: Komponentbibliotek
+logo: docs/assets/img/skolverket-logotyp.png
+
+assets:
+  # - scss
+  - docs
+  # - dist
+
+excludeDir:
+
+sidebar:
+  background: "#f8f4f8"
+  textColor: "#692969"
+
+headHtml: |
+  <link rel="stylesheet" href="https://use.typekit.net/oal1gcu.css">
+  <link rel="stylesheet" href="dist/css/skolverket.css">
+
+order:
+  - +Kom igång
