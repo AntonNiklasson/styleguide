@@ -1,12 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="9px" height="14px" viewBox="0 0 9 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="arrow" fill="#692969" fill-rule="nonzero">
-            <path d="M0.458625932,2.43202118 C-0.117156107,1.90955242 -0.156053071,1.02395915 0.371747131,0.453993232 C0.899547333,-0.115972683 1.7941775,-0.154476738 2.36995954,0.367992017 L8.5413824,5.96798542 C9.15287253,6.52285596 9.15287253,7.47714404 8.5413824,8.03201458 L2.36995954,13.632008 C1.7941775,14.1544767 0.899547333,14.1159727 0.371747131,13.5460068 C-0.156053071,12.9760409 -0.117156107,12.0904476 0.458625932,11.5679788 L5.49272631,7 L0.458625932,2.43202118 Z" id="Shape"></path>
-        </g>
-    </g>
+<svg fill="#692969" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+    <path d="M0-.25h24v24H0z" fill="none"/>
 </svg>
