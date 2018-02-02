@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Button from '../components/button/Button';
+// import Button from '../components/button/Button';
 
 export default class ButtonPage extends React.Component {
   render() {
@@ -9,75 +9,93 @@ export default class ButtonPage extends React.Component {
           <div className="row spacer-mb-large">
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Primary</strong></div>
-              <Button type="primary" size="standard" text="Knapp normal" />
+              <button className="btn btn--primary btn--standard">Knapp normal</button>
+              {/* <Button type="primary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Hover</strong></div>
-              <Button type="primary" size="standard" text="Knapp normal" />
+              <button className="btn btn--primary btn--standard">Knapp normal</button>
+              {/* <Button type="primary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Active/focus</strong></div>
-              <Button type="primary" size="standard" text="Knapp normal" />
+              <button className="btn btn--primary btn--standard">Knapp normal</button>
+              {/* <Button type="primary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Disabled</strong></div>
-              <Button type="primary" size="standard" text="Knapp normal" state="disabled" />
+              <button className="btn btn--primary btn--standard disabled">Knapp normal</button>
+              {/* <Button type="primary" size="standard" text="Knapp normal" state="disabled" /> */}
             </div>
           </div>
           <div className="row spacer-mb-large">
             <div className="col spacer-mb-medium">
-              <Button type="primary" size="small" text="Knapp liten" />
+              <button className="btn btn--primary btn--small">Knapp liten</button>
+              {/* <Button type="primary" size="small" text="Knapp liten" /> */}
             </div>
             <div className="col spacer-mb-medium">
-              <Button type="primary" size="small" text="Knapp liten" />
+              <button className="btn btn--primary btn--small">Knapp liten</button>
+              {/* <Button type="primary" size="small" text="Knapp liten" /> */}
             </div>
             <div className="col spacer-mb-medium">
-              <Button type="primary" size="small" text="Knapp liten" />
+              <button className="btn btn--primary btn--small">Knapp liten</button>
+              {/* <Button type="primary" size="small" text="Knapp liten" /> */}
             </div>
             <div className="col spacer-mb-medium">
-              <Button type="primary" size="small" text="Knapp liten" state="disabled" />
+              <button className="btn btn--primary btn--small disabled">Knapp liten</button>
+              {/* <Button type="primary" size="small" text="Knapp liten" state="disabled" /> */}
             </div>
           </div>
           <div className="row spacer-mb-xxlarge">
             <div className="col spacer-mb-medium">
-              <Button type="primary" size="standard" text="Knapp full" display="block" />
+              <button className="btn btn--primary btn--standard btn--block">Knapp full</button>
+              {/* <Button type="primary" size="standard" text="Knapp full" display="block" /> */}
             </div>
           </div>
           <div className="row spacer-mb-large">
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Secondary</strong></div>
-              <Button type="secondary" size="standard" text="Knapp normal" />
+              <button className="btn btn--secondary btn--standard">Knapp normal</button>
+              {/* <Button type="secondary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Hover</strong></div>
-              <Button type="secondary" size="standard" text="Knapp normal" />
+              <button className="btn btn--secondary btn--standard">Knapp normal</button>
+              {/* <Button type="secondary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Active/focus</strong></div>
-              <Button type="secondary" size="standard" text="Knapp normal" />
+              <button className="btn btn--secondary btn--standard">Knapp normal</button>
+              {/* <Button type="secondary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Disabled</strong></div>
-              <Button type="secondary" size="standard" text="Knapp normal" state="disabled" />
+              <button className="btn btn--secondary btn--standard disabled">Knapp normal</button>
+              {/* <Button type="secondary" size="standard" text="Knapp normal" state="disabled" /> */}
             </div>
           </div>
           <div className="row spacer-mb-large">
             <div className="col spacer-mb-medium">
-              <Button type="secondary" size="small" text="Knapp liten" />
+              <button className="btn btn--secondary btn--small">Knapp liten</button>
+              {/* <Button type="secondary" size="small" text="Knapp liten" /> */}
             </div>
             <div className="col spacer-mb-medium">
-              <Button type="secondary" size="small" text="Knapp liten" />
+              <button className="btn btn--secondary btn--small">Knapp liten</button>
+              {/* <Button type="secondary" size="small" text="Knapp liten" /> */}
             </div>
             <div className="col spacer-mb-medium">
-              <Button type="secondary" size="small" text="Knapp liten" />
+              <button className="btn btn--secondary btn--small">Knapp liten</button>
+              {/* <Button type="secondary" size="small" text="Knapp liten" /> */}
             </div>
             <div className="col spacer-mb-medium">
-              <Button type="secondary" size="small" text="Knapp liten" />
+              <button className="btn btn--secondary btn--small disabled">Knapp liten</button>
+              {/* <Button type="secondary" size="small" text="Knapp liten" state="disabled" /> */}
             </div>
           </div>
           <div className="row spacer-mb-xxlarge">
             <div className="col spacer-mb-medium">
-              <Button type="secondary" size="standard" text="Knapp full" display="block" />
+              <button className="btn btn--secondary btn--standard btn--block">Knapp full</button>
+              {/* <Button type="secondary" size="standard" text="Knapp full" display="block" /> */}
             </div>
           </div>
           <div className="row spacer-mb-large">

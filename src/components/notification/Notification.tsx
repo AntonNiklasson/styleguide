@@ -1,18 +1,37 @@
 import * as React from 'react';
-import Button from '../button/Button';
 
-export default class Notification extends React.Component {
+interface NotificationState {
+  readonly close: boolean;
+}
+
+export default class Notification extends React.Component<object, NotificationState>  {
+  constructor(props: object) {
+    super(props);
+
+    this.state = {
+      close: false,
+    };
+
+    this.close = this.close.bind(this);
+  }
+
+  close() {
+    this.setState({ close: true });
+  }
+
   render() {
+    let closeState = this.state.close ? 'close' : '';
     return (
       <div>
         <div className="spacer-mb-xlarge">
-          <div className="notification notification--success animated">
+          <div className={`notification notification--success animated ${closeState}`}>
             <div className="container">
               <div className="row">
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Allt gott!</strong> Lorem ipsum dolor sit amet.</span>
-                    <Button type="primary" size="standard" text="Stäng" />
+                    <button className="btn btn--primary btn--standard"
+                      onClick={this.close}>Stäng</button>
                   </div>
                 </div>
               </div>
@@ -26,7 +45,7 @@ export default class Notification extends React.Component {
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Varning!</strong> Lorem ipsum dolor sit amet.</span>
-                    <Button type="primary" size="standard" text="Stäng" />
+                    <button className="btn btn--primary btn--standard">Stäng</button>
                   </div>
                 </div>
               </div>
@@ -40,7 +59,7 @@ export default class Notification extends React.Component {
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Något gick fel!</strong> Lorem ipsum dolor sit amet.</span>
-                    <Button type="primary" size="standard" text="Stäng" />
+                    <button className="btn btn--primary btn--standard">Stäng</button>
                   </div>
                 </div>
               </div>
@@ -54,7 +73,7 @@ export default class Notification extends React.Component {
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Information!</strong> Lorem ipsum dolor sit amet.</span>
-                    <Button type="primary" size="standard" text="Stäng" />
+                    <button className="btn btn--primary btn--standard">Stäng</button>
                   </div>
                 </div>
               </div>

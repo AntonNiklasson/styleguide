@@ -21,13 +21,12 @@ $block: 'btn';
   &.focus {
     outline: 0;
     border: 2px solid $color-yellow;
+    margin: -1px;
 
     &:hover {
       box-shadow: none;
     }
-  } 
-  
-  // Disabled comes first so active can properly restyle
+  } // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
     background-color: $color-gray-light;
@@ -39,6 +38,7 @@ $block: 'btn';
     &:focus {
       box-shadow: none;
       border: 0;
+      margin: 0;
       background-color: $color-gray-light;
     }
   }
@@ -46,9 +46,7 @@ $block: 'btn';
   &:active,
   &.active {
     border-color: $color-yellow;
-  } 
-  
-  // Opinionated: add "hand" cursor to non-disabled .btn elements
+  } // Opinionated: add "hand" cursor to non-disabled .btn elements
   &:not([disabled]):not(.disabled) {
     cursor: pointer;
   }
@@ -63,11 +61,6 @@ $block: 'btn';
     color: $color-skolverket-purple;
     background-color: $color-white;
     border-color: $color-purple;
-
-    &:focus,
-    &.focus {
-      border: 2px solid $color-yellow;
-    }
   }
 
   &--standard {

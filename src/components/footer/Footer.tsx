@@ -19,22 +19,26 @@ export default class Footer extends React.Component {
                 <ul className="footer__list">
                   <li className="footer__list-item">
                     <a href="#" className="footer__list-item--link text-medium">
-                      <span className="nowrap">Kontakt<i className="icon-arrow icon-arrow--white"/></span>
+                      Kontakt
+                      <i className="icon-arrow icon-arrow--white"/>
                     </a>
                   </li>
                   <li className="footer__list-item">
                     <a href="#" className="footer__list-item--link text-medium">
-                      Om <span className="nowrap">Skolverket<i className="icon-arrow icon-arrow--white"/></span>
+                      Om Skolverket
+                      <i className="icon-arrow icon-arrow--white"/>
                     </a>
                   </li>
                   <li className="footer__list-item">
                     <a href="#" className="footer__list-item--link text-medium">
-                      Våra <span className="nowrap">webbplatser<i className="icon-arrow icon-arrow--white"/></span>
+                      Våra webbplatser
+                      <i className="icon-arrow icon-arrow--white"/>
                     </a>
                   </li>
                   <li className="footer__list-item">
                     <a href="#" className="footer__list-item--link text-medium">
-                      <span className="nowrap">Press<i className="icon-arrow icon-arrow--white"/></span>
+                      Press
+                      <i className="icon-arrow icon-arrow--white"/>
                     </a>
                   </li>
                 </ul>

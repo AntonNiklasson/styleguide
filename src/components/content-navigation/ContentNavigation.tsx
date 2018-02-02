@@ -23,20 +23,20 @@ export default class ContentNavigation extends React.Component {
               <ul className="content-navigation__list">
                 <li className="content-navigation__list-item">
                   <a href="#" className="content-navigation__list-item--link text-medium">
-                    Anpassa för läs- och <span className="nowrap">skrivsvårigheter
-                      <i className="icon-arrow" /></span>
+                    Anpassa för läs- och skrivsvårigheter
+                    <i className="icon-arrow" />
                   </a>
                 </li>
                 <li className="content-navigation__list-item">
                   <a href="#" className="content-navigation__list-item--link text-medium">
-                    Anpassa för <span className="nowrap">funktionsnedsättning
-                      <i className="icon-arrow" /></span>
+                    Anpassa för funktionsnedsättning
+                    <i className="icon-arrow" />
                   </a>
                 </li>
                 <li className="content-navigation__list-item show-border-bottom">
                   <a href="#" className="content-navigation__list-item--link text-medium">
-                    Nationella prov med nyanlända
-                      <span className="nowrap">elever<i className="icon-arrow" /></span>
+                    Nationella prov med nyanlända elever
+                    <i className="icon-arrow" />
                   </a>
                 </li>
               </ul>
@@ -45,20 +45,20 @@ export default class ContentNavigation extends React.Component {
               <ul className="content-navigation__list">
                 <li className="content-navigation__list-item">
                   <a href="#" className="content-navigation__list-item--link text-medium">
-                    Nationella prov med digitala <span className="nowrap">verktyg
-                      <i className="icon-arrow" /></span>
+                    Nationella prov med digitala verktyg
+                      <i className="icon-arrow" />
                   </a>
                 </li>
                 <li className="content-navigation__list-item">
                   <a href="#" className="content-navigation__list-item--link text-medium">
-                    Organisera muntliga prov så kan det gå till exempel finns att ladda
-                      <span className="nowrap">ner<i className="icon-arrow" /></span>
+                    Organisera muntliga prov så kan det gå till exempel finns att ladda ner
+                    <i className="icon-arrow" />
                   </a>
                 </li>
                 <li className="content-navigation__list-item">
                   <a href="#" className="content-navigation__list-item--link text-medium">
-                    Beställa <span className="nowrap">prov
-                      <i className="icon-arrow" /></span>
+                    Beställa prov
+                    <i className="icon-arrow" />
                   </a>
                 </li>
               </ul>

@@ -44,6 +44,8 @@
       padding: 0 0.9375rem;
 
       &--link {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: $color-white;
         font-weight: 500;
