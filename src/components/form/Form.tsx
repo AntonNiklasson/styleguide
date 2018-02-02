@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Button from '../button/Button';
 
 export default class Form extends React.Component {
 
@@ -57,19 +56,21 @@ export default class Form extends React.Component {
           </div>
           <div className="row spacer-mt-xlarge">
             <div className="col spacer-mb-large">
-              <label className="text-standard" htmlFor="">Enval</label>
-              <div className="custom-control custom-radio">
-                <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input" />
-                <label className="custom-control-label" htmlFor="customRadio1">Radio 1</label>
-              </div>
-              <div className="custom-control custom-radio">
-                <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input" />
-                <label className="custom-control-label" htmlFor="customRadio2">Radio 2</label>
-              </div>
-              <div className="custom-control custom-radio">
-                <input type="radio" className="custom-control-input" name="disabledRadio"
-                  id="disabledRadio" disabled={true} />
-                <label className="custom-control-label" htmlFor="disabledRadio">Ej valbar</label>
+              <div className="spacer-mb-medium">
+                <label className="text-standard" htmlFor="">Enval</label>
+                <div className="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input" />
+                  <label className="custom-control-label" htmlFor="customRadio1">Radio 1</label>
+                </div>
+                <div className="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input" />
+                  <label className="custom-control-label" htmlFor="customRadio2">Radio 2</label>
+                </div>
+                <div className="custom-control custom-radio">
+                  <input type="radio" className="custom-control-input" name="disabledRadio"
+                    id="disabledRadio" disabled={true} />
+                  <label className="custom-control-label" htmlFor="disabledRadio">Ej valbar</label>
+                </div>
               </div>
               <div className="spacer-mb-large">
                 <label className="text-standard" htmlFor="">Flerval</label>
@@ -102,7 +103,7 @@ export default class Form extends React.Component {
                 <div className="display-flex">
                   <input type="text" className="form-control form-control--search icon-search"
                     id="" placeholder="Platshållare" />
-                  <Button type="primary" size="standard" text="Knapp normal" />
+                  <button className="btn btn--primary btn--standard">Knapp normal</button>
                 </div>
               </div>
             </div>

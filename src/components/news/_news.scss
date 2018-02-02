@@ -64,6 +64,8 @@ $block: 'news';
       }
 
       &--link {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: $color-skolverket-purple;
         font-weight: 600;

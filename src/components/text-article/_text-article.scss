@@ -53,6 +53,8 @@ $block: 'text-article';
       padding: 0.5rem 0.9375rem;
 
       &--link {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: $color-skolverket-purple;
         font-weight: 600;

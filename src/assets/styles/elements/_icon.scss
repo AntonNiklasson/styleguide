@@ -4,33 +4,39 @@
 $base-width: 1rem;
 $base-height: 1rem;
 $base-size: 1rem;
-$base-arrow-width: 0.5rem;
-$base-arrow-height: 0.75rem;
 
 .icon-arrow {
   display: inline-block;
-  width: $base-arrow-width;
-  height: $base-arrow-height;
-  background-image: url('../images/arrow.svg');
-  background-size: $base-arrow-width $base-arrow-height;
-  background-position: bottom;
+  min-width: 16px;
+  min-height: 24px;
+  background-size: 24px 24px;
+  background-position: center;
   background-repeat: no-repeat;
-  margin-left: 0.625rem;
+  background-image: url(../images/arrow.svg);
+  margin-left: 0.25rem;
+
+  &--rotate-down {
+    transform: rotate(90deg); 
+  }
+
+  &--rotate-up {
+    transform: rotate(-90deg); 
+  }
 
   &--white {
     background-image: url('../images/arrow-white.svg');
   }
 
+  &--down {
+    background-image: url('../images/arrow-down.svg');
+  }
+
   &--lg {
-    width: calc(#{$base-arrow-width}*1.3333);
-    height: calc(#{$base-arrow-height}*1.3333);
-    background-size: calc(#{$base-arrow-width}*1.3333) calc(#{$base-arrow-height}*1.3333);
+    background-size: calc(24px*1.3333) calc(24px*1.3333);
   }
 
   &--x1-6 {
-    width: calc(#{$base-arrow-width}*1.6);
-    height: calc(#{$base-arrow-height}*1.6);
-    background-size: calc(#{$base-arrow-width}*1.6) calc(#{$base-arrow-height}*1.6);
+    background-size: calc(24px*1.6) calc(24px*1.6);
   }
 }
 
@@ -39,7 +45,7 @@ $base-arrow-height: 0.75rem;
   background-image: url('../images/close.svg');
   background-size: 0.85rem;
   background-position: left 12px center;
-  background-repeat: no-repeat; // margin-right: 0.5rem;
+  background-repeat: no-repeat; 
   border-radius: 3px;
   cursor: pointer;
   color: $color-black;
@@ -76,18 +82,21 @@ $base-arrow-height: 0.75rem;
 
 .icon-lock,
 .icon-hyperlink {
-  padding-right: 20px;
   background-size: $base-size;
   background-position: right center;
   background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
 
   &--x1-33 {
-    padding-right: 24px;
+    width: 24px;
+    height: 24px;
     background-size: calc(#{$base-size}*1.3333);
   }
 
   &--x2 {
-    padding-right: 36px;
+    width: 36px;
+    height: 36px;
     background-size: calc(#{$base-size}*2);
   }
 }
@@ -112,13 +121,9 @@ $base-arrow-height: 0.75rem;
 
 @media (max-width: 767.9999px) {
   .icon-arrow {
-    width: calc(#{$base-arrow-width}*0.9166);
-    height: calc(#{$base-arrow-height}*0.9166);
-    background-size: calc(#{$base-arrow-width}*0.9166) calc(#{$base-arrow-height}*0.9166);
+    background-size: calc(24px*0.9166) calc(24px*0.9166);
   }
   .icon-arrow--lg {
-    width: calc(#{$base-arrow-width}*1.0833);
-    height: calc(#{$base-arrow-height}*1.0833);
-    background-size: calc(#{$base-arrow-width}*1.0833) calc(#{$base-arrow-height}*1.0833);
+    background-size: calc(24px*1.0833) calc(24px*1.0833);
   }
 }

@@ -13,13 +13,13 @@ export default class Accordion extends React.Component {
                   <a href="#" className="accordion__list-item--link text-medium">
                     Engelska 5, 100 poäng
                   </a>
-                  <i className="icon-arrow" />
+                  <i className="icon-arrow icon-arrow--rotate-down" />
                 </div>
                 <div className="accordion__list-item">
                   <a href="#" className="accordion__list-item--link text-medium">
                     Engelska 6, 100 poäng
                   </a>
-                  <i className="icon-arrow" />
+                  <i className="icon-arrow icon-arrow--rotate-down" />
                 </div>
                 <div className="accordion__list-item text-standard oppen">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -33,7 +33,7 @@ export default class Accordion extends React.Component {
                   <a href="#" className="accordion__list-item--link text-medium">
                     Vad gör man om proven inte har kommit till skolan en vecka innan provet ska genomföras?
                   </a>
-                  <i className="icon-arrow" />
+                  <i className="icon-arrow icon-arrow--rotate-down" />
                 </div>
               </div>
             </div>

@@ -28,8 +28,8 @@ export default class ImageArticle extends React.Component {
                     </div>
                     <div className="col-8 pull-4 col-md-12 pull-md-0">
                       <a href="#" className="image-article__list-item--link text-medium">
-                        Fjärdeklassare är bättre på att <span className="nowrap">läsa
-                        <i className="icon-arrow" /></span>
+                        Fjärdeklassare är bättre på att läsa
+                        <i className="icon-arrow" />
                       </a>
                     </div>
                   </div>
@@ -45,8 +45,8 @@ export default class ImageArticle extends React.Component {
                     </div>
                     <div className="col-8 pull-4 col-md-12 pull-md-0">
                       <a href="#" className="image-article__list-item--link text-medium">
-                        Fortsatt stort intresse för <span className="nowrap">lärarlönelyftet
-                        <i className="icon-arrow" /></span>
+                        Fortsatt stort intresse för lärarlönelyftet
+                        <i className="icon-arrow" />
                       </a>
                     </div>
                   </div>
@@ -62,8 +62,8 @@ export default class ImageArticle extends React.Component {
                     </div>
                     <div className="col-8 pull-4 col-md-12 pull-md-0">
                       <a href="#" className="image-article__list-item--link text-medium">
-                        Nationella prov enbart obligatoriska i högsta <span className="nowrap">kursen
-                        <i className="icon-arrow" /></span>
+                        Nationella prov enbart obligatoriska i högsta kursen
+                        <i className="icon-arrow" />
                       </a>
                     </div>
                   </div>

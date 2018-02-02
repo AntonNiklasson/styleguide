@@ -23,8 +23,8 @@ export default class TextArticle extends React.Component {
               <ul className="text-article__list">
                 <li className="text-article__list-item">
                   <a href="#" className="text-article__list-item--link text-medium">
-                    Anpassa för läs- och <span className="nowrap">skrivsvårigheter
-                      <i className="icon-arrow" /></span>
+                    Anpassa för läs- och skrivsvårigheter
+                      <i className="icon-arrow" />
                   </a>
                   <div className="text-article__list-item--text text-standard">
                     Skolverket erbjuder stöd till huvudmän, skolor och förskolor
@@ -37,8 +37,8 @@ export default class TextArticle extends React.Component {
               <ul className="text-article__list">
                 <li className="text-article__list-item">
                   <a href="#" className="text-article__list-item--link text-medium">
-                    Nationella prov med digitala <span className="nowrap">verktyg
-                      <i className="icon-arrow" /></span>
+                    Nationella prov med digitala verktyg
+                      <i className="icon-arrow" />
                   </a>
                   <div className="text-article__list-item--text text-standard">
                     Tillsammans med 25 ungdomar har vi identifierat nio vanliga myter
@@ -51,8 +51,8 @@ export default class TextArticle extends React.Component {
               <ul className="text-article__list">
                 <li className="text-article__list-item">
                   <a href="#" className="text-article__list-item--link text-medium">
-                    Nationella prov med digitala <span className="nowrap">verktyg
-                      <i className="icon-arrow" /></span>
+                    Nationella prov med digitala verktyg
+                      <i className="icon-arrow" />
                   </a>
                   <div className="text-article__list-item--text text-standard">
                     På vår lärportal finns material speciellt anpassat för

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Button from '../button/Button';
 
 export default class Feedback extends React.Component {
   render() {
@@ -18,10 +17,10 @@ export default class Feedback extends React.Component {
                   <div className="col-12 col-md-6">
                     <div className="feedback__box-buttons">
                       <div className="feedback__box-buttons--first">
-                        <Button type="primary" size="small" text="Ja" display="block" />
+                        <button className="btn btn--primary btn--small btn--block">Ja</button>
                       </div>
                       <div className="feedback__box-buttons--second">
-                        <Button type="primary" size="small" text="Nej" display="block" />
+                        <button className="btn btn--primary btn--small btn--block">Nej</button>
                       </div>
                     </div>
                   </div>
@@ -60,7 +59,7 @@ export default class Feedback extends React.Component {
                       <div className="form-group">
                         <textarea className="form-control" id="" rows={4} placeholder="Platshållare" />
                       </div>
-                      <Button type="primary" size="small" text="Skicka kommentar" />
+                      <button className="btn btn--primary btn--small">Skicka kommentar</button>
                     </div>
                   </div>
                 </div>

@@ -3,7 +3,7 @@ $block: 'notification';
 .#{$block} {
 
   &.close {
-    animation: fadeInUp 1s ease .2s 1 both;
+    display: none;
   }
 
   &--success {

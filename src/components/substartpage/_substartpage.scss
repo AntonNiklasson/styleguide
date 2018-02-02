@@ -126,9 +126,8 @@ $block: 'substartpage';
     }
 
     &--link {
-      display: inline-block;
+      display: inline-flex;
       width: auto;
-      text-align: left;
 
       &:hover {
         color: $color-skolverket-purple;
