@@ -8,7 +8,9 @@ $block: 'btn';
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: .5rem 1rem;
+  padding: 0.3725rem 1.3125rem;
+  font-size: $font-size-std;
+  line-height: $line-height-std;
   border-radius: 0.1875rem;
   transition: all .2s ease-in-out;
   background-color: $color-white;
@@ -26,7 +28,14 @@ $block: 'btn';
     &:hover {
       box-shadow: none;
     }
-  } // Disabled comes first so active can properly restyle
+  } 
+  
+  &:active,
+  &.active {
+    border-color: $color-yellow;
+  } 
+  
+  // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
     background-color: $color-gray-light;
@@ -42,11 +51,8 @@ $block: 'btn';
       background-color: $color-gray-light;
     }
   }
-
-  &:active,
-  &.active {
-    border-color: $color-yellow;
-  } // Opinionated: add "hand" cursor to non-disabled .btn elements
+ 
+  // Opinionated: add "hand" cursor to non-disabled .btn elements
   &:not([disabled]):not(.disabled) {
     cursor: pointer;
   }
@@ -63,12 +69,6 @@ $block: 'btn';
     border-color: $color-purple;
   }
 
-  &--standard {
-    padding: 0.3725rem 1.3125rem;
-    font-size: $font-size-std;
-    line-height: $line-height-std;
-  }
-
   &--small {
     padding: 0.125rem 1.3125rem;
     font-size: $font-size-sm;
@@ -78,6 +78,12 @@ $block: 'btn';
   &--block {
     display: block;
     width: 100%;
+    border: 2px solid transparent;
+
+    &:focus,
+    &.focus {
+      margin: 0px;
+    }
   }
 
   &-icon {
@@ -85,9 +91,9 @@ $block: 'btn';
     padding-bottom: 0.5rem;
     padding-left: calc(20px + 1.25rem);
     padding-right: 0.875rem;
-
     background-size: 1.25rem;
     background-position: left 12px center;
+    border: 2px solid transparent;
 
     &:hover {
       box-shadow: none;
@@ -97,6 +103,7 @@ $block: 'btn';
     &:focus,
     &.focus {
       background-color: $color-purple-light;
+      margin: 0;
     }
 
     &--right {

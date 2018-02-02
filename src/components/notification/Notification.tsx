@@ -30,7 +30,7 @@ export default class Notification extends React.Component<object, NotificationSt
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Allt gott!</strong> Lorem ipsum dolor sit amet.</span>
-                    <button className="btn btn--primary btn--standard"
+                    <button className="btn btn--primary"
                       onClick={this.close}>Stäng</button>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ export default class Notification extends React.Component<object, NotificationSt
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Varning!</strong> Lorem ipsum dolor sit amet.</span>
-                    <button className="btn btn--primary btn--standard">Stäng</button>
+                    <button className="btn btn--primary">Stäng</button>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default class Notification extends React.Component<object, NotificationSt
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Något gick fel!</strong> Lorem ipsum dolor sit amet.</span>
-                    <button className="btn btn--primary btn--standard">Stäng</button>
+                    <button className="btn btn--primary">Stäng</button>
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default class Notification extends React.Component<object, NotificationSt
                 <div className="col">
                   <div className="notification__flash">
                     <span className="text-standard"><strong>Information!</strong> Lorem ipsum dolor sit amet.</span>
-                    <button className="btn btn--primary btn--standard">Stäng</button>
+                    <button className="btn btn--primary">Stäng</button>
                   </div>
                 </div>
               </div>

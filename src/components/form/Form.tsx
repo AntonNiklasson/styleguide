@@ -103,7 +103,7 @@ export default class Form extends React.Component {
                 <div className="display-flex">
                   <input type="text" className="form-control form-control--search icon-search"
                     id="" placeholder="Platshållare" />
-                  <button className="btn btn--primary btn--standard">Knapp normal</button>
+                  <button className="btn btn--primary">Knapp normal</button>
                 </div>
               </div>
             </div>
