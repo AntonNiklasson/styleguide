@@ -1,12 +1,8 @@
 name: Komponentbibliotek
-logo: docs/assets/img/skolverket-logotyp.png
+logo: _styleguide/assets/img/skolverket-logotyp.png
 
 assets:
-  # - scss
-  - docs
-  # - dist
-
-excludeDir:
+  - _styleguide
 
 sidebar:
   background: "#f8f4f8"

@@ -70,7 +70,7 @@ typings/
 .env.production.local
 
 # compiled css
-public/css
+dist/docs/dist/css
 
 # custom editor configs
 .vscode
