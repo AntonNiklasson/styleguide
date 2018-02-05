@@ -1,0 +1,247 @@
+//
+// Textual form controls
+//
+.form {
+  display: flex;
+  border-top: 3px solid $color-purple-dark;
+  padding-top: 3.625rem;
+  padding-bottom: 1.875rem;
+  background-color: $color-white;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 42px;
+  padding: .3125rem .875rem;
+  font-size: $font-size-base;
+  line-height: $line-height-sm;
+  color: $color-input;
+  background-color: $color-input-bg;
+  background-clip: padding-box;
+  border: 2px solid transparent; 
+  
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &:focus {
+    border: 2px solid $color-yellow;
+    outline: 0;
+    color: $color-black;
+  } 
+  
+  // Placeholder
+  &::placeholder {
+    color: $color-input; 
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  } 
+  
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &:disabled,
+  &[readonly] {
+    background-color: $color-gray-light; 
+    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+    opacity: 1;
+
+    &:focus {
+      border: 2px solid transparent;
+    }
+  }
+
+  &--error {
+    border: 1px solid $color-error;
+    box-shadow: 0 3px 0 0 $color-error;
+    padding-right: 2.625rem;
+    background-position: center right .625rem;
+    background-size: 1.25rem 1.25rem;
+    margin-bottom: .5rem;
+
+    &-textarea {
+      background-position: top .5rem right .625rem;
+    }
+  }
+
+  &--search {
+    padding-left: 2.625rem;
+    background-position: center left .625rem;
+    background-size: 1.25rem 1.25rem;
+    margin-right: .5rem;
+  }
+}
+
+select.form-control  {
+  padding-right: 2.625rem;
+  background-position: center right .625rem;
+  background-size: 1.25rem 1.25rem;
+  
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance:none;
+
+  /*for IE10*/
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus::-ms-value {
+    // Suppress the nested default white text on blue background highlight given to
+    // the selected option text when the (still closed) <select> receives focus
+    // in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
+    // match the appearance of the native widget.
+    // See https://github.com/twbs/bootstrap/issues/19398.
+    color: $color-input;
+    background-color: $color-input-bg;
+  }
+
+  &[disabled] { 
+    background-color: $color-gray-light;
+    opacity: 0.6;
+  }
+}
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+.form-group {
+  margin-bottom: .875rem;
+
+  & .display-flex {
+    display: flex;
+  }
+}
+
+.form-label {
+  // Allow labels to use `margin` for spacing.
+  display: inline-block;
+  font-weight: $font-weight-heavy;
+  margin-bottom: $spacer-xsmall;
+  font-size: $font-size-std;
+  line-height: $line-height-std;
+
+  @media (max-width: 767.9999px) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+//
+.form-text {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: $color-gray;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+// Custom control (checkbox, radio)
+//
+// Following Bootstrap 4 naming convention but extended with BEM
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1rem;
+  padding-left: 1.5rem;
+  margin-right: 1rem;
+}
+
+.custom-control__input {
+  position: absolute;
+  z-index: -1; 
+  // Put the input behind the label so it doesn't overlay text
+  opacity: 0;
+
+  &:checked~.custom-control__label::before {
+    background-color: $color-purple-dark;
+  }
+
+  &:active~.custom-control__label::before {
+    background-color: $color-purple;
+  }
+
+  &:disabled {
+    ~.custom-control__label {
+      color: $color-gray;
+
+      &::before {
+        background-color: $color-gray-light;
+        border: solid 2px rgba(153, 153, 153, 0.4);
+      }
+    }
+  }
+}
+
+.custom-control__label {
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: pointer; 
+  // Background-color
+  &::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: $color-white;
+    border: 2px solid $color-purple-dark;
+    content: "";
+  } 
+  // Foreground (icon)
+  &::after {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 0.875rem;
+    content: "";
+  }
+}
+
+// Custom checkbox
+.custom-control--checkbox {
+  .custom-control__label::before {
+    border-radius: .125rem;
+  }
+
+  .custom-control__input:checked~.custom-control__label {
+    &::after {
+      background-image: url('../images/tick-white.svg');
+    }
+  }
+}
+
+// Custom radio
+.custom-control--radio {
+  .custom-control__label::before {
+    border-radius: 50%;
+  }
+
+  .custom-control__input:checked~.custom-control__label {
+    &::before {
+      background-color: $color-white;
+    }
+    &::after {
+      background-image: url('../images/radio-checked.svg');
+      background-size: 0.7185rem;
+    }
+  }
+}
