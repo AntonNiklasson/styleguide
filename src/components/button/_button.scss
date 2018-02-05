@@ -59,12 +59,12 @@ $block: 'btn';
 
   &--primary {
     color: $color-white;
-    background-color: $color-skolverket-purple;
-    border-color: $color-skolverket-purple;
+    background-color: $color-purple-dark;
+    border-color: $color-purple-dark;
   }
 
   &--secondary {
-    color: $color-skolverket-purple;
+    color: $color-purple-dark;
     background-color: $color-white;
     border-color: $color-purple;
   }
@@ -78,11 +78,10 @@ $block: 'btn';
   &--block {
     display: block;
     width: 100%;
-    border: 2px solid transparent;
 
     &:focus,
     &.focus {
-      margin: 0px;
+      margin: -1px 0;
     }
   }
 
