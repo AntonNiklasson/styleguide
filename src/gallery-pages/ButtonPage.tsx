@@ -60,7 +60,7 @@ export default class ButtonPage extends React.Component {
             </div>
             <div className="col spacer-mb-medium">
               <div className="text-standard spacer-mb-small"><strong>Hover</strong></div>
-              <button className="btn btn--secondar">Knapp normal</button>
+              <button className="btn btn--secondary">Knapp normal</button>
               {/* <Button type="secondary" size="standard" text="Knapp normal" /> */}
             </div>
             <div className="col spacer-mb-medium">
