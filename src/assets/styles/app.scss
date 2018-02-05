@@ -1,56 +1,68 @@
 // sass-lint:disable indentation
+
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/functions";
+@import "scss/reboot";
+@import "scss/type";
+@import "scss/grid";
+@import "scss/forms";
+@import "scss/buttons";
+@import "scss/links";
+@import "scss/icons";
+
 // 1. Settings
-@import
-  'settings/colors',
-  'settings/font',
-  'settings/responsive',
-  'settings/variables';
+// @import
+//   'settings/colors',
+//   'settings/font',
+//   'settings/responsive',
+//   'settings/variables';
 
 // 2. Tools
-@import
-  'tools/breakpoints',
-  'tools/functions',
-  'tools/mixins';
+// @import
+//   'tools/breakpoints',
+//   'tools/functions',
+//   'tools/mixins';
 
 // 3. Generic
-@import
-  'generic/accessibility',
-  'generic/base',
-  'generic/normalize',
-  'generic/typography',
-  'generic/visibility';
+// @import
+//   'generic/accessibility',
+//   'generic/base',
+//   'generic/normalize',
+//   'generic/typography',
+//   'generic/visibility';
 
 // 4. Elements
-@import
-  'elements/button',
-  'elements/figure',
-  'elements/form',
-  'elements/heading',
-  'elements/hr',
-  'elements/icon',
-  'elements/image',
-  'elements/label',
-  'elements/link',
-  'elements/list',
-  'elements/paragraph',
-  'elements/small',
-  'elements/strong';
+// @import
+//   'elements/button',
+//   'elements/figure',
+//   'elements/form',
+//   'elements/heading',
+//   'elements/hr',
+//   'elements/icon';
+//   'elements/image',
+//   'elements/label',
+//   'elements/link',
+//   'elements/list',
+//   'elements/paragraph',
+//   'elements/small',
+//   'elements/strong';
 
 // 5. Objects
 @import
-  'objects/grid',
+//   'objects/grid',
   'objects/space';
 
 // 6. Trumps
-@import 
-  'trumps/index';
+// @import 
+//   'trumps/index';
 
 // 7. Components
 @import 
   'components/accordion/accordion',
-  'components/button/button',
+  // 'components/button/button',
   'components/content-navigation/content-navigation',
-  'components/form/form',
+  // 'components/form/form',
   'components/footer/footer',
   'components/feedback/feedback',
   'components/image-article/image-article',
