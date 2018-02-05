@@ -20,7 +20,7 @@ $block: 'substartpage';
         display: inline-block;
         padding: 1rem 1.25rem 1rem .875rem;
         color: $color-white;
-        background-color: $color-skolverket-purple;
+        background-color: $color-purple-dark;
         font-size: 1.5rem;
         line-height: 1;
         font-weight: 500;
@@ -34,6 +34,10 @@ $block: 'substartpage';
     padding-top: .875rem;
     padding-bottom: .875rem;
 
+    & .display-flex {
+      display: flex;
+    }
+
     &-item {
       min-height: 7rem;
       width: 100%;
@@ -44,7 +48,7 @@ $block: 'substartpage';
       border: 2px solid transparent;
       
       &:hover, &:focus {
-        border: 2px solid $color-skolverket-purple;
+        border: 2px solid $color-purple-dark;
       }
 
       &.no-border {
@@ -61,20 +65,20 @@ $block: 'substartpage';
         text-align: center;
         height: 100%;
         width: 100%;
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
         font-size: 1.5rem;
         line-height: 1.26;
         font-weight: 600;
 
         &:hover, &:focus {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
       }
     }
   }
 
   &__content {
-    border-top: 3px solid $color-skolverket-purple;
+    border-top: 3px solid $color-purple-dark;
     min-height: 400px;
     background-color: $color-white;
     box-shadow: 0 12px 24px 0 rgba(108, 39, 106, 0.25);
@@ -130,13 +134,13 @@ $block: 'substartpage';
       width: auto;
 
       &:hover {
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
       }
 
       &:focus,
       &:active,
       &:active:focus {
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
       }
     }
   }

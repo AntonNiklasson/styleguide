@@ -56,7 +56,7 @@ $block: 'menu';
   &__title {
     font-weight: $font-weight-heavy;
     padding: 0.625rem 1.25rem;
-    color: $color-skolverket-purple;
+    color: $color-purple-dark;
   }
 
   &__list {
@@ -68,7 +68,7 @@ $block: 'menu';
       &--link {
         width: 100%;
         text-decoration: none;
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
         padding: 0.625rem 1.25rem 0.625rem 2.5rem;
 
         &:hover,
@@ -79,7 +79,7 @@ $block: 'menu';
           background-color: $color-purple-light;
           text-decoration: none;
           font-weight: $font-weight-medium;
-          border-left: 5px solid $color-skolverket-purple;
+          border-left: 5px solid $color-purple-dark;
         }
       }
     }
@@ -89,5 +89,5 @@ $block: 'menu';
   font-weight: $font-weight-medium;
   background-color: $color-purple-light;
   color: $color-black;
-  border-left: 5px solid $color-skolverket-purple;
+  border-left: 5px solid $color-purple-dark;
 } 

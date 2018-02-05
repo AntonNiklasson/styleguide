@@ -3,7 +3,7 @@ $block: 'accordion';
 .#{$block} {
   max-width: 820px;
   display: flex;
-  border-top: 3px solid $color-skolverket-purple;
+  border-top: 3px solid $color-purple-dark;
   padding: 2.625rem 2.25rem 4rem 2.25rem;
   background-color: $color-white;
   
@@ -37,7 +37,7 @@ $block: 'accordion';
 
       &--link {
         text-decoration: none;
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
         font-weight: 600;
         width: 100%;
         display: flex;
@@ -46,13 +46,13 @@ $block: 'accordion';
         height: 3.25rem;
 
         &:hover {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
 
         &:focus,
         &:active,
         &:active:focus {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
       }
     }

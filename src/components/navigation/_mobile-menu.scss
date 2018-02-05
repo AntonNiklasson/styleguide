@@ -12,7 +12,7 @@ $block: 'mobile-menu';
     min-height: 4.5rem;
     padding: 1rem 0;
     background-color: $color-white;
-    border-top: 3px solid $color-skolverket-purple;
+    border-top: 3px solid $color-purple-dark;
 
     &-title {
       margin-bottom: 0;
@@ -42,19 +42,23 @@ $block: 'mobile-menu';
 
       &--link {
         text-decoration: none;
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
         font-weight: 600;
 
         &:hover {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
 
         &:focus,
         &:active,
         &:active:focus {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
       }
     }
   }
+}
+
+.hidden {
+  display: none;
 }

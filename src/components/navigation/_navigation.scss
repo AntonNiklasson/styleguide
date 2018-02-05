@@ -7,7 +7,7 @@ $block: 'navigation';
     min-height: 4.5rem;
     padding: 1.25rem 0;
     background-color: $color-white;
-    border-top: 3px solid $color-skolverket-purple;
+    border-top: 3px solid $color-purple-dark;
 
     &-container {
       display: flex;
@@ -28,7 +28,7 @@ $block: 'navigation';
   &__links {
     min-height: 3.5rem;
     padding: 0;
-    background-color: $color-skolverket-purple;
+    background-color: $color-purple-dark;
 
     &-container {
       display: flex;

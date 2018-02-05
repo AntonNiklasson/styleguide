@@ -2,7 +2,7 @@ $block: 'news';
 
 .#{$block} {
   display: flex;
-  border-top: 3px solid $color-skolverket-purple;
+  border-top: 3px solid $color-purple-dark;
   padding-top: 3.625rem;
   padding-bottom: 1.875rem;
   background-color: $color-white;
@@ -59,7 +59,7 @@ $block: 'news';
       }
 
       &--data {
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
         font-weight: 500;
       }
 
@@ -67,17 +67,17 @@ $block: 'news';
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
         font-weight: 600;
 
         &:hover {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
 
         &:focus,
         &:active,
         &:active:focus {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
       }
     }

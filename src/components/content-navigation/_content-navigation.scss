@@ -2,7 +2,7 @@ $block: 'content-navigation';
 
 .#{$block} {
   display: flex;
-  border-top: 3px solid $color-skolverket-purple;
+  border-top: 3px solid $color-purple-dark;
   padding-top: 3.625rem;
   padding-bottom: 1.875rem;
   background-color: $color-white;
@@ -64,17 +64,17 @@ $block: 'content-navigation';
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: $color-skolverket-purple;
+        color: $color-purple-dark;
         font-weight: 600;
 
         &:hover {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
 
         &:focus,
         &:active,
         &:active:focus {
-          color: $color-skolverket-purple;
+          color: $color-purple-dark;
         }
       }
     }
@@ -89,9 +89,6 @@ $block: 'content-navigation';
 }
 
 @media (max-width: 991.9999px) {
-  .content-navigation--col-12 {
-    flex-basis: 976px;
-  }
   .content-navigation {
     padding-top: 1rem; 
   }

@@ -2,7 +2,7 @@ $block: 'form';
 
 .#{$block} {
   display: flex;
-  border-top: 3px solid $color-skolverket-purple;
+  border-top: 3px solid $color-purple-dark;
   padding-top: 3.625rem;
   padding-bottom: 1.875rem;
   background-color: $color-white;
@@ -86,7 +86,7 @@ $block: 'form';
     opacity: 0;
   
     &:checked ~ .custom-control-label::before {
-      background-color: $color-skolverket-purple;
+      background-color: $color-purple-dark;
     }
   
     &:active ~ .custom-control-label::before {
@@ -121,7 +121,7 @@ $block: 'form';
       width: 1.125rem;
       height: 1.125rem;
       background-color: $color-white;
-      border: 2px solid $color-skolverket-purple;
+      border: 2px solid $color-purple-dark;
       content: "";
     }
   
