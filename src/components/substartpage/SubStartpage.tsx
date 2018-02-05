@@ -21,53 +21,67 @@ export default class Substartpage extends React.Component {
         </div>
         <div className="container substartpage__box">
           <div className="row">
-            <div className="col-12 col-md-4 col-lg-3 display-flex">
-              <div className="substartpage__box-item">
-                <a href="#" className="substartpage__box-item--link">
-                  Förskola<i className="icon-arrow" />
-                </a>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="display-flex">
+                <div className="substartpage__box-item">
+                  <a href="#" className="substartpage__box-item--link">
+                    Förskola<i className="icon-arrow" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-3 display-flex">
-              <div className="substartpage__box-item">
-                <a href="#" className="substartpage__box-item--link">
-                  Förskoleklass<i className="icon-arrow" />
-                </a>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="display-flex">
+                <div className="substartpage__box-item">
+                  <a href="#" className="substartpage__box-item--link">
+                    Förskoleklass<i className="icon-arrow" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-3 display-flex">
-              <div className="substartpage__box-item">
-              <a href="#" className="substartpage__box-item--link">
-                Grundskola<i className="icon-arrow" />
-              </a>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="display-flex">
+                <div className="substartpage__box-item">
+                  <a href="#" className="substartpage__box-item--link">
+                    Grundskola<i className="icon-arrow" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-3 display-flex">
-              <div className="substartpage__box-item">
-                <a href="#" className="substartpage__box-item--link">
-                  Grundsärskola<i className="icon-arrow" />
-                </a>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="display-flex">
+                <div className="substartpage__box-item">
+                  <a href="#" className="substartpage__box-item--link">
+                    Grundsärskola<i className="icon-arrow" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-3 display-flex">
-              <div className="substartpage__box-item">
-                <a href="#" className="substartpage__box-item--link">
-                  Gymnasieskola<i className="icon-arrow" />
-                </a>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="display-flex">
+                <div className="substartpage__box-item">
+                  <a href="#" className="substartpage__box-item--link">
+                    Gymnasieskola<i className="icon-arrow" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-3 display-flex">
-              <div className="substartpage__box-item">
-                <a href="#" className="substartpage__box-item--link">
-                  Gymnasiesärskola<i className="icon-arrow" />
-                </a>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="display-flex">
+                <div className="substartpage__box-item">
+                  <a href="#" className="substartpage__box-item--link">
+                    Gymnasiesärskola<i className="icon-arrow" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-lg-3 display-flex">
-              <div className="substartpage__box-item no-border">
-                <a href="#" className="substartpage__box-item--link">
-                  Inspiration och stöd i arbetet<i className="icon-arrow" />
-                </a>
+            <div className="col-12 col-md-4 col-lg-3">
+              <div className="display-flex">
+                <div className="substartpage__box-item no-border">
+                  <a href="#" className="substartpage__box-item--link">
+                    Inspiration och stöd i arbetet<i className="icon-arrow" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

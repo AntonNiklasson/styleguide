@@ -51,10 +51,8 @@ export default class Feedback extends React.Component {
                 <div className="row">
                   <div className="col">
                     <div className="feedback__box-text-area">
-                      <div className="spacer-mb-xsmall">
-                        <span className="text-standard">
-                          <strong>Tack, berätta gärna hur vi kan förbättra den här sidan</strong>
-                        </span>
+                      <div className="feedback__box-text-area--title text-standard">
+                        <strong>Tack, berätta gärna hur vi kan förbättra den här sidan</strong>
                       </div>
                       <div className="form-group">
                         <textarea className="form-control" id="" rows={4} placeholder="Platshållare" />

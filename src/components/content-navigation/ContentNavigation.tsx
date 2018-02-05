@@ -19,7 +19,7 @@ export default class ContentNavigation extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="col content-navigation--col-12">
+            <div className="col">
               <ul className="content-navigation__list">
                 <li className="content-navigation__list-item">
                   <a href="#" className="content-navigation__list-item--link text-medium">
@@ -41,7 +41,7 @@ export default class ContentNavigation extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="col content-navigation--col-12">
+            <div className="col">
               <ul className="content-navigation__list">
                 <li className="content-navigation__list-item">
                   <a href="#" className="content-navigation__list-item--link text-medium">
