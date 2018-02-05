@@ -14,7 +14,7 @@ export default class Form extends React.Component {
               </div>
               <div className="form-group">
                 <label className="text-standard margin-reset">Textfält med beskrivning</label>
-                <div className="form-group__sublabel text-standard">Beskrivning av textfält</div>
+                <div className="form-text text-standard">Beskrivning av textfält</div>
                 <input type="text" className="form-control" id="" placeholder="Platshållare" />
               </div>
               <div className="form-group">
@@ -38,7 +38,7 @@ export default class Form extends React.Component {
               </div>
               <div className="form-group">
                 <label className="text-standard margin-reset">Textområde med beskrivning</label>
-                <div className="form-group__sublabel text-standard">Beskrivning av textområde</div>
+                <div className="form-text text-standard">Beskrivning av textområde</div>
                 <textarea className="form-control" id="" rows={4} placeholder="Platshållare" />
               </div>
               <div className="form-group">
@@ -58,29 +58,29 @@ export default class Form extends React.Component {
             <div className="col spacer-mb-large">
               <div className="spacer-mb-medium">
                 <label className="text-standard" htmlFor="">Enval</label>
-                <div className="custom-control custom-radio">
-                  <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input" />
-                  <label className="custom-control-label" htmlFor="customRadio1">Radio 1</label>
+                <div className="custom-control custom-control--radio">
+                  <input type="radio" id="customRadio1" name="customRadio" className="custom-control__input" />
+                  <label className="custom-control__label" htmlFor="customRadio1">Radio 1</label>
                 </div>
-                <div className="custom-control custom-radio">
-                  <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input" />
-                  <label className="custom-control-label" htmlFor="customRadio2">Radio 2</label>
+                <div className="custom-control custom-control--radio">
+                  <input type="radio" id="customRadio2" name="customRadio" className="custom-control__input" />
+                  <label className="custom-control__label" htmlFor="customRadio2">Radio 2</label>
                 </div>
-                <div className="custom-control custom-radio">
-                  <input type="radio" className="custom-control-input" name="disabledRadio"
+                <div className="custom-control custom-control--radio">
+                  <input type="radio" className="custom-control__input" name="disabledRadio"
                     id="disabledRadio" disabled={true} />
-                  <label className="custom-control-label" htmlFor="disabledRadio">Ej valbar</label>
+                  <label className="custom-control__label" htmlFor="disabledRadio">Ej valbar</label>
                 </div>
               </div>
               <div className="spacer-mb-large">
                 <label className="text-standard" htmlFor="">Flerval</label>
-                <div className="custom-control custom-checkbox">
-                  <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                  <label className="custom-control-label" htmlFor="customCheck1">Alternativ</label>
+                <div className="custom-control custom-control--checkbox">
+                  <input type="checkbox" className="custom-control__input" id="customCheck1" />
+                  <label className="custom-control__label" htmlFor="customCheck1">Alternativ</label>
                 </div>
-                <div className="custom-control custom-checkbox">
-                  <input type="checkbox" className="custom-control-input" id="customCheck2" disabled={true} />
-                  <label className="custom-control-label" htmlFor="customCheck2">Ej valbar</label>
+                <div className="custom-control custom-control--checkbox">
+                  <input type="checkbox" className="custom-control__input" id="customCheck2" disabled={true} />
+                  <label className="custom-control__label" htmlFor="customCheck2">Ej valbar</label>
                 </div>
               </div>
               <div className="form-group">
