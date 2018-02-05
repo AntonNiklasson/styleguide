@@ -3,14 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://acandocxc.github.io/skolverket-komponentbibliotek",
-  "dependencies": {
-    "gh-pages": "^1.1.0",
-    "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.2"
-  },
   "scripts": {
     "start": "npm-run-all -p watch-css watch-docs",
-    "build": "npm-run-all build-css",
+    "build": "npm-run-all build-css*",
     "deploy": "gh-pages -d build",
     "watch-docs": "stylemark -i src -o public -c stylemark.yml -w -b",
     "start-zip": "react-scripts-ts start",
@@ -20,6 +15,9 @@
     "predeploy": "npm run build"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.1.2",
     "stylemark": "^0.6.3",
     "sass-lint": "^1.12.1"
   }
