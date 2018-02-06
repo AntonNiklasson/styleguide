@@ -28,6 +28,7 @@
 							<optgroup label="Komponenter">
 									<option value="formular">Formulär</option>
 									<option value="knappar">Knappar</option>
+									<option value="toc">TOC</option>
 							</optgroup>
 							<optgroup label="Kompositioner">
 									<option value="innehallsnavigering">Innehållsnavigering</option>
@@ -356,7 +357,7 @@ både kompilerade och minifierade:</p>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary btn--small&quot;&gt;Primär&lt;/button&gt;
 &lt;button class=&quot;btn btn--secondary btn--small&quot;&gt;Sekundär&lt;/button&gt;</code></pre>
 	</div>
-</div><p>Skapa en knapp med full bredd med klassen <code>.btn--block</code>. Denna knapp är speciellt lämplig när ...</p>
+</div><p>För att få en knapp att bli 100% bred används <code>.btn--block</code>.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -387,6 +388,107 @@ både kompilerade och minifierade:</p>
 &lt;button class=&quot;btn btn--secondary btn--standard btn--block&quot;&gt;Sekundär&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary btn--standard btn--block&quot;&gt;Primär&lt;/button&gt;
 &lt;button class=&quot;btn btn--secondary btn--standard btn--block&quot;&gt;Sekundär&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="toc" class="i-library">
+	<h1 class="display-4">TOC</h1>
+	<div><p>En navigerng som används för att ge en outline av en lång sida med mycket innehåll.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="toc-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="toc-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;toc&quot;&gt;
+  &lt;div class=&quot;toc__title text-standard&quot;&gt;På denna sida&lt;/div&gt;
+  &lt;ul class=&quot;toc__list&quot;&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        Vad är yrkesprogram och högskoleförberedande program?
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+            Yrkesprogram
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+            Högskoleförberedande program
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        Introduktionsprogram för dig som inte har tillräckliga betyg
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        Kontakta utbildningsförvaltningen
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;toc&quot;&gt;
+  &lt;div class=&quot;toc__title text-standard&quot;&gt;På denna sida&lt;/div&gt;
+  &lt;ul class=&quot;toc__list&quot;&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        Vad är yrkesprogram och högskoleförberedande program?
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+            Yrkesprogram
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+            Högskoleförberedande program
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        Introduktionsprogram för dig som inte har tillräckliga betyg
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        Kontakta utbildningsförvaltningen
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -614,7 +716,7 @@ både kompilerade och minifierade:</p>
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Formulär  Knappar "
+						data-filter-value=" Formulär  Knappar  TOC "
 					>
 						<a href="#category-komponenter" class="i-sidebar-list-item">
 							<b>Komponenter</b>
@@ -635,6 +737,13 @@ både kompilerade och minifierade:</p>
 								data-filter-value="Knappar"
 							>
 								<span>Knappar</span>
+							</a>
+							<a
+								href="#toc"
+								class="i-sidebar-list-item"
+								data-filter-value="TOC"
+							>
+								<span>TOC</span>
 							</a>
 					</div>
 			

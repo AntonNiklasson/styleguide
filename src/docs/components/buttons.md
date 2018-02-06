@@ -32,7 +32,7 @@ En mindre knapp är lämplig att använda till exempel när lorem ipsum...
 <button class="btn btn--secondary btn--small">Sekundär</button>
 ```
 
-Skapa en knapp med full bredd med klassen `.btn--block`. Denna knapp är speciellt lämplig när ...
+För att få en knapp att bli 100% bred används `.btn--block`.
 ```block.html
 <button class="btn btn--primary btn--standard btn--block">Primär</button>
 <button class="btn btn--secondary btn--standard btn--block">Sekundär</button>

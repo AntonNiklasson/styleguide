@@ -1366,7 +1366,6 @@ a,
   font-family: "franklin-gothic-urw", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   position: relative;
   display: inline-flex;
-  padding: .25rem .625rem;
   text-decoration: underline;
   color: #0079C2;
   border: 2px solid transparent;
@@ -1399,6 +1398,31 @@ a,
   .text-link--icon {
     padding: 0.125rem 0.125rem 0.125rem 0.25rem;
     margin: 0 0.125rem; }
+
+.toc {
+  border-left: 3px solid #0079C2;
+  padding: .375rem 1.5rem; }
+  .toc-title {
+    font-weight: bold;
+    margin-bottom: .75rem; }
+  .toc__list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .toc__list-item {
+      padding: .25rem 0; }
+      .toc__list-item-link {
+        font-weight: 600; }
+    .toc__list--sub {
+      padding: .25rem 0 .25rem 1.875rem; }
+      .toc__list--sub .toc__list-item-link {
+        font-weight: 400; }
+  @media (max-width: 767.9999px) {
+    .toc {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-left: 0; } }
 
 .content-navigation {
   display: flex;
