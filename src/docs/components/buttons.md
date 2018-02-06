@@ -18,7 +18,7 @@ Det finns tre typer av knappar:
 <button class="btn btn--secondary">Sekundär</button>
 <button class="btn btn--link">Länk</button>
 ```
-```types:well/padded.css hidden
+```types:_well/padded.css hidden
 ```
 
 ## Storlekar
@@ -28,7 +28,7 @@ En mindre knapp är lämplig att använda till exempel när lorem ipsum...
 <button class="btn btn--primary btn--small">Primär</button>
 <button class="btn btn--secondary btn--small">Sekundär</button>
 ```
-```small:well/padded.css hidden
+```small:_well/padded.css hidden
 ```
 
 För att få en knapp att bli 100% bred används `.btn--block`.
@@ -36,5 +36,5 @@ För att få en knapp att bli 100% bred används `.btn--block`.
 <button class="btn btn--primary btn--standard btn--block">Primär</button>
 <button class="btn btn--secondary btn--standard btn--block">Sekundär</button>
 ```
-```block:well/padded.css hidden
+```block:_well/padded.css hidden
 ```
