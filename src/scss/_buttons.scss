@@ -23,6 +23,7 @@ $block: 'btn';
   &.focus {
     outline: 0;
     border: 2px solid $color-yellow;
+    margin: -1px;
 
     &:hover {
       box-shadow: none;
@@ -35,12 +36,13 @@ $block: 'btn';
     background-color: $color-gray-light;
     color: #999999;
     cursor: not-allowed;
-    border: 0;
+    border: 1px solid transparent;
 
     &:hover,
     &:focus {
       box-shadow: none;
-      border: 0;
+      // border: 1px solid transparent;
+      margin: 0;
       background-color: $color-gray-light;
     }
   }
@@ -65,11 +67,6 @@ $block: 'btn';
     color: $color-purple-dark;
     background-color: $color-white;
     border-color: $color-purple;
-
-    &:focus,
-    &.focus {
-      border: 2px solid $color-yellow;
-    }
   }
 
   &--small {
@@ -81,16 +78,26 @@ $block: 'btn';
   &--block {
     display: block;
     width: 100%;
+
+    &:focus,
+    &.focus {
+      margin: -1px 0;
+    }
+
+    // Vertically space out multiple block buttons
+    + .btn--block {
+      margin-top: .5rem;
+    }
   }
 
   &-icon {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
     padding-left: calc(20px + 1.25rem);
     padding-right: 0.875rem;
-
     background-size: 1.25rem;
     background-position: left 12px center;
+    border: 2px solid transparent;
 
     &:hover {
       box-shadow: none;
@@ -100,6 +107,7 @@ $block: 'btn';
     &:focus,
     &.focus {
       background-color: $color-purple-light;
+      margin: 0;
     }
 
     &--right {
@@ -107,19 +115,5 @@ $block: 'btn';
       padding-right: calc(8px + 1.25rem);
       background-position: right 6px center;
     }
-  }
-}
-
-//
-// Block button
-//
-
-.btn--block {
-  display: block;
-  width: 100%;
-
-  // Vertically space out multiple block buttons
-  + .btn--block {
-    margin-top: .5rem;
   }
 }

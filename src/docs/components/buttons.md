@@ -16,7 +16,10 @@ Det finns tre typer av knappar:
 ```types.html
 <button class="btn btn--primary">Primär</button>
 <button class="btn btn--secondary">Sekundär</button>
+<button class="btn btn--primary" disabled>Disabled</button>
 <button class="btn btn--link">Länk</button>
+<button class="btn btn-icon icon-speaker">Lyssna</button>
+<button class="btn btn-icon btn-icon--right icon-dropdown-arrow">Platshållare</button>
 ```
 ```types:well/padded.css hidden
 ```
@@ -27,14 +30,15 @@ En mindre knapp är lämplig att använda till exempel när lorem ipsum...
 ```small.html
 <button class="btn btn--primary btn--small">Primär</button>
 <button class="btn btn--secondary btn--small">Sekundär</button>
+<button class="btn btn--primary btn--small" disabled>Disabled</button>
 ```
 ```small:well/padded.css hidden
 ```
 
 För att få en knapp att bli 100% bred används `.btn--block`.
 ```block.html
-<button class="btn btn--primary btn--standard btn--block">Primär</button>
-<button class="btn btn--secondary btn--standard btn--block">Sekundär</button>
+<button class="btn btn--primary btn--block">Primär</button>
+<button class="btn btn--secondary btn--block">Sekundär</button>
 ```
 ```block:well/padded.css hidden
 ```

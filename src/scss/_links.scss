@@ -1,48 +1,49 @@
-
 ///
-/// Link
-/// <a>
+/// Links
+/// 
 ///----------------------------------------------------------------------------
-a,
+
 .text-link {
-  font-family: $font-family-base;
   position: relative;
-	display: inline-flex;
-	text-decoration: underline;
-	color: $color-link;
-	border: 2px solid transparent;
-	cursor: pointer;
+  display: inline-flex;
+  padding: .25rem .625rem;
+  text-decoration: underline;
+  color: $color-link;
+  border: 2px solid transparent;
+  cursor: pointer;
 
-	&:hover {
-	  text-decoration: none;
-	  color: $color-link-hover;
-	}
+  &:hover {
+    text-decoration: none;
+    color: $color-link-hover;
+  }
 
-	&:active, &:focus {
-	  text-decoration: underline;
-	  color: $color-link;
-	  border-color: $color-yellow;
-	}
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    color: $color-link;
+    border-color: $color-yellow;
+  }
 
-	&:visited {
-	  color: $color-grass;
-	}
+  &:visited {
+    color: $color-grass;
+  }
 
-	&.disabled {
-	  color: #888888;
-	  cursor: not-allowed;
+  &.disabled {
+    color: #888888;
+    cursor: not-allowed;
 
-	  &:hover {
-		text-decoration: underline;
-	  }
+    &:hover {
+      text-decoration: underline;
+    }
 
-	  &:active, &:focus {
-		border-color: transparent;
-	  }
-	}
+    &:active,
+    &:focus {
+      border-color: transparent;
+    }
+  }
 
-	&--icon {
-	  padding: 0.125rem 0.125rem 0.125rem 0.25rem;
-	  margin: 0 0.125rem;
-	}
+  &--icon {
+    padding: 0.125rem 0.125rem 0.125rem 0.25rem;
+    margin: 0 0.125rem;
+  }
 }
