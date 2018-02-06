@@ -1424,6 +1424,14 @@ a,
       padding-right: 1rem;
       margin-left: 0; } }
 
+.box {
+  border-top: 3px solid #692969;
+  background-color: #FFF;
+  box-shadow: 0 12px 24px 0 rgba(108, 39, 106, 0.25);
+  padding: 1.875rem; }
+  .box--margins {
+    margin: 0 12px 34px 0; }
+
 .content-navigation {
   display: flex;
   border-top: 3px solid #692969;
