@@ -5,14 +5,20 @@
   "homepage": "https://acandocxc.github.io/skolverket-komponentbibliotek",
   "scripts": {
     "start": "npm-run-all -p watch-css watch-docs watch-assets",
-    "build": "npm-run-all build-css* copy-assets",
-    "deploy": "gh-pages -d build",
+    "build": "npm-run-all build-docs* build-css* copy-assets",
+    "deploy": "gh-pages -d public",
     "watch-docs": "stylemark -i src/docs -o public -c stylemark.yml -w -b",
+    "build-docs": "stylemark -i src/docs -o public -c stylemark.yml",
     "start-zip": "react-scripts-ts start",
     "build-zip": "react-scripts-ts build",
     "build-css": "node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css",
-    "copy-assets": "cp -R src/assets/ public/dist/assets/",
+<<<<<<< HEAD
+    "copy-assets": "cpx \"src/assets/**/*\" public/dist/assets",
     "watch-assets": "cpx \"src/assets/**/*\" public/dist/assets --watch",
+=======
+    "copy-assets": "cpx 'src/assets/**/*' public/dist/assets",
+    "watch-assets": "cpx 'src/assets/**/*' public/dist/assets --watch",
+>>>>>>> Fixed build commands for docs and assets
     "watch-css": "npm run build-css && node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css --watch --recursive",
     "predeploy": "npm run build"
   },
