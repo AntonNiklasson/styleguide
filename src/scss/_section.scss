@@ -4,15 +4,7 @@
 $block: 'section';
 
 .#{$block} {
-  padding: $spacer-xlarge $page-padding-small * 2;
-
-  @include media-query('sm') {
-    padding: $spacer-xxlarge $page-padding * 2;
-  }
-
-  @include media-query('md') {
-    display: flex;
-  }
+  display: flex;
 
   + .#{$block} {
     border-top: 1px solid $color-purple;
@@ -67,6 +59,6 @@ $block: 'section';
   }
 
   &--boxed {
-    margin-left: -$spacer-large 0;
+    @include box-padding;
   }
 }

@@ -50,10 +50,19 @@
 ///
 /// Adds a :after element clearfix
 @mixin clearfix {
-  &::safter {
+  &::after {
     content: "";
     display: table;
     clear: both;
+  }
+}
+///
+/// Adds padding for boxed content
+/// Left
+@mixin box-padding() {
+  padding: $spacer-xlarge $page-padding-small * 2;
+  @include media-query('sm') {
+    padding: $spacer-xxlarge $page-padding * 2;
   }
 }
 ///

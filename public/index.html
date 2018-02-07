@@ -1049,7 +1049,7 @@ både kompilerade och minifierade:</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
@@ -1062,7 +1062,7 @@ både kompilerade och minifierade:</p>
   &lt;/div&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
@@ -1102,40 +1102,94 @@ både kompilerade och minifierade:</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h2&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;section&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h2&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h2&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;section&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h2&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><p>Det går dock såklart att använda en sektion fristående <em>mot vit bakgrund</em> om det skulle krävas.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="sektioner-standalone.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="sektioner-standalone.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;section&quot;&gt;
+  &lt;header class=&quot;section__header&quot;&gt;
+    &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+    &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+      &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
     &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;section__body&quot;&gt;
+    &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;section&quot;&gt;
+  &lt;header class=&quot;section__header&quot;&gt;
+    &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+    &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+      &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&quot;section__body&quot;&gt;
+    &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
