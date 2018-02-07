@@ -7,13 +7,12 @@ Sektioner används för att skapa en tydlig och lättöverskådlig struktur på 
 
 #### Begränsningar
 - Sektioner används uteslutande inom en [box](#box) som omger sidan.
-- Sektionen skall *alltid* använda inledande rubrik
 
 #### Tillgänglighet och semantik
 Även om vi exemplet nedan använder en `div` så används inte sällan HTML-elementet `section` för sektioner på sidan. Om det används så är det viktigt att sektionen alltid har rubrik och att rubrikhierarkin nollställs, alltså bör första rubriken vara en `h1`-rubrik.
 
 ```boxed.html
-<div class="box">
+<div class="box box--no-padding">
   <div class="section">
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
@@ -28,4 +27,29 @@ Sektioner används för att skapa en tydlig och lättöverskådlig struktur på 
 </div>
 ```
 ```boxed:_well/padded-purple.css hidden
+```
+
+När flera sektioner läggs bredvid varandra läggs en horisontell avdelare autotamtiskt till.
+
+```multiple.html
+<div class="box box--no-padding">
+  <div class="section">
+    <header class="section__header">
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></h2>
+    </header>
+    <div class="section__body">
+      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+    </div>
+  </div>
+  <div class="section">
+    <header class="section__header">
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 2<span></h2>
+    </header>
+    <div class="section__body">
+      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+    </div>
+  </div>
+</div>
+```
+```multiple:_well/padded-purple.css hidden
 ```

@@ -35,7 +35,7 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-sektioner-boxed"
+			ng-controller="stylemark-sektioner-multiple"
 			style="
 				display: block;
 				padding: ;
@@ -44,29 +44,39 @@
 		><div class="box box--no-padding">
   <div class="section">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
-      <div class="section__header-preamble text-secondary">
-        <p>Fler nyheter i <a href="/press">pressrummet</a></p>
-      </div>
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></h2>
     </header>
     <div class="section__body">
-      <img src="http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+    </div>
+  </div>
+  <div class="section">
+    <header class="section__header">
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 2<span></h2>
+    </header>
+    <div class="section__body">
+      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
     </div>
   </div>
 </div></main>
 
-		
+
 
 			<script type="text/x-stylemark" data-language="html"><div class="box box--no-padding">
   <div class="section">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
-      <div class="section__header-preamble text-secondary">
-        <p>Fler nyheter i <a href="/press">pressrummet</a></p>
-      </div>
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></h2>
     </header>
     <div class="section__body">
-      <img src="http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+    </div>
+  </div>
+  <div class="section">
+    <header class="section__header">
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 2<span></h2>
+    </header>
+    <div class="section__body">
+      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
     </div>
   </div>
 </div></script>
@@ -95,10 +105,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-sektioner-boxed', []);
+					module = angular.module('stylemark-sektioner-multiple', []);
 				}
 
-				module.controller('stylemark-sektioner-boxed', function($scope) {
+				module.controller('stylemark-sektioner-multiple', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);

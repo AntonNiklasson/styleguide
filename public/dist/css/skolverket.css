@@ -1042,20 +1042,28 @@ template {
   .offset-xl-11 {
     margin-left: 91.666667%; } }
 
+/*
 @media (max-width: 768.9999px) {
+  $page-padding:   1.625rem;
+  $grid-gutter:     0.875rem;
   .container {
-    padding-left: 1.625rem;
-    padding-right: 1.625rem; }
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+  }
   .row {
-    margin-right: -0.875rem;
-    margin-left: -0.875rem; }
+    margin-right: -$grid-gutter;
+    margin-left: -$grid-gutter;
+  }
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col {
-    padding-right: 0.875rem;
-    padding-left: 0.875rem; }
+    padding-right: $grid-gutter;
+    padding-left: $grid-gutter;
+  }
   .narrow-desktop-grid {
     margin-left: 0;
-    margin-right: 0; } }
-
+    margin-right: 0;
+  }
+}
+*/
 @media (max-width: 375.9999px) {
   .container {
     padding-left: 0.9375rem;
@@ -1410,10 +1418,15 @@ select.form-control {
     margin: 0 0.125rem; }
 
 .section {
-  padding: 1.875rem 0; }
+  padding: 2.5rem 1.875rem; }
+  @media (min-width: 375px) {
+    .section {
+      padding: 3.75rem 2.25rem; } }
   @media (min-width: 768px) {
     .section {
       display: flex; } }
+  .section + .section {
+    border-top: 1px solid #E8D3E0; }
   .section__header-title {
     position: relative;
     font-weight: 400; }
@@ -1484,6 +1497,8 @@ select.form-control {
   padding: 1.875rem; }
   .box--margins {
     margin: 0 12px 34px 0; }
+  .box--no-padding {
+    padding: 0; }
 
 .content-navigation {
   display: flex;

@@ -4,10 +4,18 @@
 $block: 'section';
 
 .#{$block} {
-  padding: $spacer-large 0;
+  padding: $spacer-xlarge $page-padding-small * 2;
+
+  @include media-query('sm') {
+    padding: $spacer-xxlarge $page-padding * 2;
+  }
 
   @include media-query('md') {
     display: flex;
+  }
+
+  + .#{$block} {
+    border-top: 1px solid $color-purple;
   }
 
   &__header {
