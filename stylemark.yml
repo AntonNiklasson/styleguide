@@ -3,6 +3,7 @@ logo: _styleguide/assets/img/skolverket-logotyp.png
 
 assets:
   - _styleguide
+  - .nojekyll
 
 sidebar:
   background: "#f8f4f8"
