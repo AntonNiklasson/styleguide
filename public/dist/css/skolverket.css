@@ -1408,14 +1408,31 @@ a,
     .section {
       display: flex; } }
   .section__header-title {
+    position: relative;
     font-weight: 400; }
+    .section__header-title-text {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      padding-right: 0.625rem; }
     .section__header-title::after {
       content: '';
       display: block;
-      margin: 0.875rem 0;
-      width: 3.125rem;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 0;
       height: 3px;
+      transform: translateY(-50%);
       background-color: #E8D3E0; }
+      @media (min-width: 768px) {
+        .section__header-title::after {
+          position: static;
+          width: 3.125rem;
+          margin: 0.875rem 0;
+          transform: none; } }
   .section__header-preamble {
     margin-bottom: 0.875rem; }
   @media (min-width: 768px) {
