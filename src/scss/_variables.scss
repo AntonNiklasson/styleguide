@@ -18,9 +18,11 @@ $spacer-xxlarge: 3.75rem;     // 60px
 $spacer-xxxlarge: 5rem;       // 80px
 
 // Grid and page defining space
-$page-padding: 1.125rem !default;
 $page-max-width: 1280px !default;
+$page-padding: 1.125rem !default;
+$page-padding-small: 0.9375rem !default;
 $grid-gutter: 0.875rem !default;
+$grid-gutter-small: 0.46875rem !default;
 
 
 /// Colors

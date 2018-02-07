@@ -968,7 +968,7 @@
     margin-left: 91.666667%;
   }
 }
-
+/*
 @media (max-width: 768.9999px) {
   $page-padding:   1.625rem;
   $grid-gutter:     0.875rem;
@@ -989,20 +989,19 @@
     margin-right: 0;
   }
 }
+*/
 
 @media (max-width: 375.9999px) {
-  $page-padding:   0.9375rem;
-  $grid-gutter:    0.46875rem;
   .container {
-    padding-left: $page-padding;
-    padding-right: $page-padding;
+    padding-left: $page-padding-small;
+    padding-right: $page-padding-small;
   }
   .row {
-    margin-right: -$grid-gutter;
-    margin-left: -$grid-gutter;
+    margin-right: -$grid-gutter-small;
+    margin-left: -$grid-gutter-small;
   }
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col {
-    padding-right: $grid-gutter;
-    padding-left: $grid-gutter;
+    padding-right: $grid-gutter-small;
+    padding-left: $grid-gutter-small;
   }
 }
