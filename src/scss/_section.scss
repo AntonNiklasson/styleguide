@@ -1,0 +1,44 @@
+// @define section
+// Page section
+
+$block: 'section';
+
+.#{$block} {
+  padding: $spacer-large 0;
+
+  @include media-query('md') {
+    display: flex;
+  }
+
+  &__header {
+    &-title {
+      font-weight: 400;
+      &::after {
+        content: '';
+        display: block;
+        margin: 0.875rem 0;
+        width: 3.125rem;
+        height: 3px;
+        background-color: $color-purple;
+      }
+    }
+    &-preamble {
+      margin-bottom: 0.875rem;
+    }
+
+    @include media-query('md') {
+      flex: 0 0 200px;
+      max-width: 200px;
+    }
+  }
+
+  &__body {
+    @include media-query('md') {
+      margin-left: $grid-gutter * 2
+    }
+  }
+
+  &--boxed {
+    margin-left: -$spacer-large 0;
+  }
+}

@@ -11,7 +11,7 @@
     margin-top: 0;
     color: inherit;
 }
-  
+
 .h1 { font-size: $font-size-h1; line-height: $line-height-h1; }
 .h2 { font-size: $font-size-h2; line-height: $line-height-h2; }
 .h3 { font-size: $font-size-h3; line-height: $line-height-h3; }
@@ -27,7 +27,7 @@
     .h5 { font-size: 1rem; line-height: 1.50; }        // 16px
     .h6 { font-size: 0.875rem; line-height: 1.50; }    // 14px
 }
-  
+
 ///
 /// Typography
 /// This partial contains all your far-reaching typography styles.
@@ -71,5 +71,9 @@
 }
 
 .line-height-normal {
-    line-height: 1.2; 
+    line-height: 1.2;
+}
+
+.text-secondary {
+    color: $color-gray;
 }

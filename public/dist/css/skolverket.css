@@ -346,6 +346,9 @@ template {
 .line-height-normal {
   line-height: 1.2; }
 
+.text-secondary {
+  color: #666666; }
+
 .container {
   position: relative;
   margin-left: auto;
@@ -1398,6 +1401,32 @@ a,
   .text-link--icon {
     padding: 0.125rem 0.125rem 0.125rem 0.25rem;
     margin: 0 0.125rem; }
+
+.section {
+  padding: 1.875rem 0; }
+  @media (min-width: 768px) {
+    .section {
+      display: flex; } }
+  .section__header-title {
+    font-weight: 400; }
+    .section__header-title::after {
+      content: '';
+      display: block;
+      margin: 0.875rem 0;
+      width: 3.125rem;
+      height: 3px;
+      background-color: #E8D3E0; }
+  .section__header-preamble {
+    margin-bottom: 0.875rem; }
+  @media (min-width: 768px) {
+    .section__header {
+      flex: 0 0 200px;
+      max-width: 200px; } }
+  @media (min-width: 768px) {
+    .section__body {
+      margin-left: 1.75rem; } }
+  .section--boxed {
+    margin-left: -1.875rem 0; }
 
 .toc {
   border-left: 3px solid #0079C2;
