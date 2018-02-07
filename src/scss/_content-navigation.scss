@@ -10,11 +10,10 @@ $block: 'content-navigation-list';
   &__item {
     display: flex;
     align-items: center;
-    padding: 0.75rem 0.75rem;
+
     border-bottom: 1px solid $color-purple;
 
     @include media-query('md') {
-      padding: 1.4rem 0.9375rem;
 
       &:first-child {
         padding-top: 0;
@@ -30,9 +29,16 @@ $block: 'content-navigation-list';
     }
 
     &-link {
+      display: block;
+      width: 100%;
       text-decoration: none;
       color: $color-purple-dark;
       font-weight: 600;
+      padding: 0.75rem 0.75rem;
+
+      @include media-query('md') {
+        padding: 1.4rem 0.9375rem;
+      }
 
       &:hover {
         color: $color-purple-dark;
