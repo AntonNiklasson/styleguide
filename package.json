@@ -21,7 +21,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css --watch --recursive",
     "predeploy": "npm run build"
   },
-  "devDependencies": {
+  "dependencies": {
     "cpx": "^1.5.0",
     "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^0.0.3",
