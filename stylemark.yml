@@ -11,6 +11,7 @@ sidebar:
 headHtml: |
   <link rel="stylesheet" href="https://use.typekit.net/oal1gcu.css">
   <link rel="stylesheet" href="dist/css/skolverket.css">
+  <link rel="stylesheet" href="_styleguide/css/well.css">
 
 order:
   - +Kom igång

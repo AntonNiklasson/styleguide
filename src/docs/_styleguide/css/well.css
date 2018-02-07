@@ -1,0 +1,8 @@
+body {
+  padding: 20px;
+}
+
+body.purple {
+  padding: 40px;
+  background: #F8F4F8;
+}

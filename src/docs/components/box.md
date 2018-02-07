@@ -10,8 +10,6 @@ En generell box som används för att skapa tydliga sektioner på en sida.
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 </div>
 ```
-```default:_well/padded.css hidden
-```
 
 I fall där två eller flera boxar behöver ligga efter varandra eller där du vill förhindra att skuggan överlappar andra element används modifieraren `margins`.
 
@@ -22,8 +20,6 @@ I fall där två eller flera boxar behöver ligga efter varandra eller där du v
 <div class="box box--margins">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 </div>
-```
-```margins:_well/padded.css hidden
 ```
 
 Det går att lägga vilket innehål som helst i en box.
@@ -66,6 +62,4 @@ Det går att lägga vilket innehål som helst i en box.
     </ul>
   </div>
 </div>
-```
-```toc:_well/padded.css hidden
 ```
