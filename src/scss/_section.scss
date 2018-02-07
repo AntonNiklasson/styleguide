@@ -4,13 +4,17 @@
 $block: 'section';
 
 .#{$block} {
-  display: flex;
+  @include media-query('md') {
+    display: flex;
+  }
 
   + .#{$block} {
     border-top: 1px solid $color-purple;
   }
 
   &__header {
+    width: 100%;
+
     &-title {
       position: relative;
       font-weight: 400;
@@ -54,6 +58,8 @@ $block: 'section';
 
   &__body {
     @include media-query('md') {
+      flex: 1 1 0%;
+      flex-basis: 0%;
       margin-left: $grid-gutter * 2
     }
   }
