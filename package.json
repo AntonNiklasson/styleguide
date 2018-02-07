@@ -8,7 +8,7 @@
   "private": true,
   "homepage": "https://acandocxc.github.io/skolverket-komponentbibliotek",
   "scripts": {
-    "start": "npm-run-all -p watch-css watch-docs watch-assets",
+    "start": "npm-run-all -p watch-*",
     "build": "npm-run-all build-docs* build-css* copy-assets",
     "deploy": "gh-pages -d public --dotfiles",
     "watch-docs": "stylemark -i src/docs -o public -c stylemark.yml -w -b",
