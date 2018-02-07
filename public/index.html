@@ -33,6 +33,7 @@
 							</optgroup>
 							<optgroup label="Kompositioner">
 									<option value="innehallsnavigering">Innehållsnavigering</option>
+									<option value="sektioner">Sektioner</option>
 							</optgroup>
 					</select>
 				</form>
@@ -832,6 +833,70 @@ både kompilerade och minifierade:</p>
 </div></div>
 </div>
 
+						<div id="sektioner" class="i-library">
+	<h1 class="display-4">Sektioner</h1>
+	<div><p>Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida. Den används ofta för att  särklilja olika typer av innehåll eller innehåll för olika målgrupper.</p>
+<h4>Begränsningar</h4><ul>
+<li>Sektioner används uteslutande inom en <a href="#box">box</a> som omger sidan.</li>
+<li>Sektionen skall <em>alltid</em> använda inledande rubrik</li>
+</ul>
+<h4>Tillgänglighet och semantik</h4><p>Även om vi exemplet nedan använder en <code>div</code> så används inte sällan HTML-elementet <code>section</code> för sektioner på sidan. Om det används så är det viktigt att sektionen alltid har rubrik och att rubrikhierarkin nollställs, alltså bör första rubriken vara en <code>h1</code>-rubrik.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="sektioner-boxed.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="sektioner-boxed.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 				</div>
 		</div>
 		<div
@@ -939,7 +1004,7 @@ både kompilerade och minifierade:</p>
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Innehållsnavigering "
+						data-filter-value=" Innehållsnavigering  Sektioner "
 					>
 						<a href="#category-kompositioner" class="i-sidebar-list-item">
 							<b>Kompositioner</b>
@@ -953,6 +1018,13 @@ både kompilerade och minifierade:</p>
 								data-filter-value="Innehållsnavigering"
 							>
 								<span>Innehållsnavigering</span>
+							</a>
+							<a
+								href="#sektioner"
+								class="i-sidebar-list-item"
+								data-filter-value="Sektioner"
+							>
+								<span>Sektioner</span>
 							</a>
 					</div>
 			

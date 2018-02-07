@@ -21,7 +21,7 @@ Det finns tre typer av knappar:
 <button class="btn btn-icon icon-speaker">Lyssna</button>
 <button class="btn btn-icon btn-icon--right icon-dropdown-arrow">Platshållare</button>
 ```
-```types:well/padded.css hidden
+```types:_well/padded.css hidden
 ```
 
 ## Storlekar
@@ -32,7 +32,7 @@ En mindre knapp är lämplig att använda till exempel när lorem ipsum...
 <button class="btn btn--secondary btn--small">Sekundär</button>
 <button class="btn btn--primary btn--small" disabled>Disabled</button>
 ```
-```small:well/padded.css hidden
+```small:_well/padded.css hidden
 ```
 
 För att få en knapp att bli 100% bred används `.btn--block`.
@@ -40,5 +40,5 @@ För att få en knapp att bli 100% bred används `.btn--block`.
 <button class="btn btn--primary btn--block">Primär</button>
 <button class="btn btn--secondary btn--block">Sekundär</button>
 ```
-```block:well/padded.css hidden
+```block:_well/padded.css hidden
 ```

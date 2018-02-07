@@ -1,0 +1,64 @@
+// @define section
+// Page section
+
+$block: 'section';
+
+.#{$block} {
+  padding: $spacer-large 0;
+
+  @include media-query('md') {
+    display: flex;
+  }
+
+  &__header {
+    &-title {
+      position: relative;
+      font-weight: 400;
+
+      &-text {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        padding-right: $spacer-small;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+        height: 3px;
+        transform: translateY(-50%);
+        background-color: $color-purple;
+
+        @include media-query('md') {
+          position: static;
+          width: 3.125rem;
+          margin: 0.875rem 0;
+          transform: none;
+        }
+      }
+    }
+    &-preamble {
+      margin-bottom: 0.875rem;
+    }
+
+    @include media-query('md') {
+      flex: 0 0 200px;
+      max-width: 200px;
+    }
+  }
+
+  &__body {
+    @include media-query('md') {
+      margin-left: $grid-gutter * 2
+    }
+  }
+
+  &--boxed {
+    margin-left: -$spacer-large 0;
+  }
+}
