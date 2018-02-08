@@ -107,6 +107,7 @@ select.form-control  {
 // horizontal forms, use the predefined grid classes.
 .form-group {
   margin-bottom: .875rem;
+  width: 100%;
 
   & .display-flex {
     display: flex;
