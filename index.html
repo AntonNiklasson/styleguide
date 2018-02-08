@@ -23,7 +23,6 @@
 							<optgroup label="Kom igång">
 									<option value="introduktion">Introduktion</option>
 									<option value="snabbstart">Snabbstart</option>
-									<option value="vad-som-ingar">Vad som ingår</option>
 							</optgroup>
 							<optgroup label="Komponenter">
 									<option value="box">Box</option>
@@ -55,16 +54,13 @@ Bootstrap-komponenter som inte möter Skolverkets designriktlinjer har tagits el
 						<div id="snabbstart" class="i-library">
 	<h1 class="display-4">Snabbstart</h1>
 	<div><p>Det finns flera alternativ tillgängliga:</p>
+<div id="kompilerad-css-och-java-script" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kompilerad-css-och-java-script" class="icon-link i-section__link -heading"></a>Kompilerad CSS och JavaScript</h2></div><p>Ladda hem färdigkompilerad kod för att enkelt lägga till i ditt projekt, inkluderar</p>
 <ul>
-<li><a href="/dist/archive/skolverket-latest.zip">Ladda hem senaste versionen.</a></li>
-<li>Installera med <a href="https://www.npmjs.com/">npm</a>: <code>npm install @skolverket/ui</code></li>
+<li>Kompilerad och minifierad CSS och JavaScript</li>
 </ul>
-</div>
-</div>
-
-						<div id="vad-som-ingar" class="i-library">
-	<h1 class="display-4">Vad som ingår</h1>
-	<div><p>När du laddar ner biblioteket hittar du följande kataloger och filer,
+<p>Detta alternativ saknar dokumentation och källkods-filer.</p>
+<p><a href="/dist/archive/skolverket-compiled-latest.zip" class="btn btn-primary">Ladda hem</a></p>
+<p>När du laddar ner biblioteket hittar du följande kataloger och filer,
 både kompilerade och minifierade:</p>
 
 <div class="i-code-block">
@@ -90,6 +86,13 @@ både kompilerade och minifierade:</p>
     └── skolverket.min.js</code></pre>
 	</div>
 </div><p>Vi tillhandahåller kompilerad CSS and JS (<code>skolverket.*</code>), men även kompilerad och minifierad (<code>skolverket.min.*</code>). CSS <a href="https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps">source maps</a> (<code>skolverket.*.map</code>) är tillgänglig för att användas i vissa webbläsares utvecklingsverktyg.</p>
+<div id="kallkod" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kallkod" class="icon-link i-section__link -heading"></a>Källkod</h2></div><p>Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass, JavaScript, and documentation files. Detta alternativ kräver</p>
+<ul>
+<li>Sass-kompilator för att kompilera till CSS</li>
+<li>Autoprefixer</li>
+</ul>
+<p><a href="/dist/archive/skolverket-source-latest.zip" class="btn btn-primary">Ladda hem källkod</a></p>
+<div id="npm" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#npm" class="icon-link i-section__link -heading"></a>Npm</h2></div><p>Installera med <a href="https://www.npmjs.com/">npm</a>: <code>npm install @skolverket/ui</code></p>
 </div>
 </div>
 
@@ -1370,7 +1373,7 @@ både kompilerade och minifierade:</p>
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Introduktion  Snabbstart  Vad som ingår "
+						data-filter-value=" Introduktion  Snabbstart "
 					>
 						<a href="#category-kom igång" class="i-sidebar-list-item">
 							<b>Kom igång</b>
@@ -1391,13 +1394,6 @@ både kompilerade och minifierade:</p>
 								data-filter-value="Snabbstart"
 							>
 								<span>Snabbstart</span>
-							</a>
-							<a
-								href="#vad-som-ingar"
-								class="i-sidebar-list-item"
-								data-filter-value="Vad som ingår"
-							>
-								<span>Vad som ingår</span>
 							</a>
 					</div>
 			
