@@ -67,4 +67,9 @@ $block: 'section';
   &--boxed {
     @include box-padding;
   }
+
+  &--compact-padding {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
