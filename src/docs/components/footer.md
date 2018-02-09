@@ -51,7 +51,7 @@ Beskrivning
                 Om webbplatsen
               </a>
             </li>
-            <li class="footer__navigation-item footer__navigation-item--no-border-bottom">
+            <li class="footer__navigation-item">
               <a href="#6" class="footer__navigation-item-link footer__navigation-item-link--purple">
                 Kakor
               </a>
