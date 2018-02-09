@@ -56,6 +56,15 @@ Beskrivning...
   </div>
 </div>
 ```
+```flash.js hidden
+var items = document.querySelectorAll('.btn');
+
+for (i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function() {
+    this.closest(".notification").classList.toggle('close');
+  });
+}
+```
 
 ## Built-in in a container
 ```built-in.html

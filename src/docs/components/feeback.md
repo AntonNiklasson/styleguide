@@ -8,12 +8,6 @@ category: Kompositioner
 ```default.html
 <div class="box box--no-padding">
   <div class="section section--boxed">
-    <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></span></span></h2>
-    </header>
-    <div class="section__body">
-      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%">
-    </div>
   </div>
   <div class="section section--boxed section--compact-padding">
     <div class="feedback">
@@ -36,12 +30,6 @@ När text visas utan knappar så använd klassen `.feedback__text--standalone` f
 ```standalone.html
 <div class="box box--no-padding">
   <div class="section section--boxed">
-    <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></span></span></h2>
-    </header>
-    <div class="section__body">
-      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%">
-    </div>
   </div>
   <div class="section section--boxed section--compact-padding">
     <div class="feedback">
@@ -60,12 +48,6 @@ Med en textruta som användaren kan fylla i
 ```textarea.html
 <div class="box box--no-padding">
   <div class="section section--boxed">
-    <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></span></span></h2>
-    </header>
-    <div class="section__body">
-      <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%">
-    </div>
   </div>
   <div class="section section--boxed section--compact-padding">
     <div class="feedback feedback--textarea">
