@@ -5,7 +5,7 @@ category: Kompositioner
 
 Ger användaren överblick lorem ipsum...
 
-```content-navigation-type.html
+```default.html
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
@@ -19,19 +19,19 @@ Ger användaren överblick lorem ipsum...
         <div class="col-12 col-md-6">
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item">
-              <a href="#2" class="content-navigation-list__item-link text-medium">
+              <a href="#1" class="content-navigation-list__item-link text-medium">
                 Suspendisse potenti
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#3" class="content-navigation-list__item-link text-medium">
+              <a href="#2" class="content-navigation-list__item-link text-medium">
                 Phasellus mattis diam convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#4" class="content-navigation-list__item-link text-medium">
+              <a href="#3" class="content-navigation-list__item-link text-medium">
                 Phasellus convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
@@ -41,19 +41,19 @@ Ger användaren överblick lorem ipsum...
         <div class="col-12 col-md-6">
           <ul class="content-navigation-list content-navigation-list">
             <li class="content-navigation-list__item">
-              <a href="#2" class="content-navigation-list__item-link text-medium">
+              <a href="#4" class="content-navigation-list__item-link text-medium">
                 Suspendisse potenti
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#3" class="content-navigation-list__item-link text-medium">
+              <a href="#5" class="content-navigation-list__item-link text-medium">
                 Phasellus mattis diam convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <a href="#4" class="content-navigation-list__item-link text-medium">
+              <a href="#6" class="content-navigation-list__item-link text-medium">
                 Phasellus convallis
                 <i class="icon-arrow"></i>
               </a>
@@ -65,5 +65,5 @@ Ger användaren överblick lorem ipsum...
   </div>
 </div>
 ```
-```content-navigation-type:_well/purple.css hidden
+```default:_well/purple.css hidden
 ```

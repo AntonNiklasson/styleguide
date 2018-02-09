@@ -8,12 +8,10 @@ $block: 'content-navigation-list';
   margin: 0;
 
   &__item {
-    display: flex;
-    align-items: center;
-
+    padding: 0.75rem;
     border-bottom: 1px solid $color-purple;
-
     @include media-query('md') {
+      padding: .875rem;
 
       &:first-child {
         padding-top: 0;
@@ -28,17 +26,33 @@ $block: 'content-navigation-list';
       border-bottom: none;
     }
 
+    &-text {
+      @include media-query('md') {
+        margin-top: 1rem;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: 0;
+      @include media-query('md') {
+        margin-bottom: .25rem;
+      }
+    }
+
+    &-image-large {
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: .875rem;
+    }
+
     &-link {
       display: block;
       width: 100%;
       text-decoration: none;
       color: $color-purple-dark;
-      font-weight: 600;
-      padding: 0.75rem 0.75rem;
-
-      @include media-query('md') {
-        padding: 1.4rem 0.9375rem;
-      }
+      font-weight: 500;
 
       &:hover {
         color: $color-purple-dark;
