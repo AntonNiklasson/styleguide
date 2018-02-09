@@ -15,7 +15,7 @@ $base-arrow-height: 0.75rem;
   background-size: $base-arrow-width $base-arrow-height;
   background-position: bottom;
   background-repeat: no-repeat;
-  margin-left: 0.625rem;
+  margin-left: 0.25rem;
 
   &--white {
     background-image: url('../assets/img/arrow-white.svg');
@@ -31,6 +31,11 @@ $base-arrow-height: 0.75rem;
     width: calc(#{$base-arrow-width}*1.6);
     height: calc(#{$base-arrow-height}*1.6);
     background-size: calc(#{$base-arrow-width}*1.6) calc(#{$base-arrow-height}*1.6);
+  }
+
+  &--rotate-down {
+    transform: rotate(90deg);
+    margin-left: 1rem;
   }
 }
 
