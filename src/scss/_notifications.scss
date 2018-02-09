@@ -1,0 +1,81 @@
+$block: 'notification';
+
+.#{$block} {
+
+  + .#{$block} {
+    margin-top: 1.5rem;
+  }
+
+  &.close {
+    display: none;
+  }
+
+  &--success {
+    background-color: $color-turq-light;
+    &--bordered {
+      border-top: 3px solid $color-turq;
+    }
+    &--animated {
+      animation: fadeInDown 1s ease .2s 1 both;
+      animation-delay: 0s;
+    }
+  }
+
+  &--warning {
+    background-color: $color-yellow-light;
+    &--bordered {
+      border-top: 3px solid $color-yellow;
+    }
+    &--animated {
+      animation: fadeInDown 1s ease .2s 1 both;
+      animation-delay: 0.5s; // TO BE REMOVED
+    }
+  }
+
+  &--error {
+    background-color: $color-pink;
+    &--bordered {
+      border-top: 3px solid $color-pink-dark;
+    }
+    &--animated {
+      animation: fadeInDown 1s ease .2s 1 both;
+      animation-delay: 1s;  // TO BE REMOVED
+    }
+  }
+
+  &--info {
+    background-color: $color-blue-light;
+    &--bordered {
+      border-top: 3px solid $color-blue;
+    }
+    &--animated {
+      animation: fadeInDown 1s ease .2s 1 both;
+      animation-delay: 1.5s;  // TO BE REMOVED
+    }
+  }
+
+  &__flash {
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  &__textbox {
+    @include media-query('md') {
+      padding: 24px 10px 20px 10px;
+    }
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
