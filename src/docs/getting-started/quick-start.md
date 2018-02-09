@@ -35,7 +35,9 @@ Vi tillhandahåller kompilerad CSS and JS (`skolverket.*`), men även kompilerad
 
 ## Källkod
 
-Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass, JavaScript, and documentation files. Detta alternativ kräver
+Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass, JavaScript, and dokumentation. Fördelen med detta alternativ är att du endast behöver välja de komponenter du behöver i ditt projekt samt att det är enklare att bygga ut komponenter för att möta ditt behov.
+
+Detta alternativ kräver att du konfigurerar
 
 - Sass-kompilator för att kompilera till CSS
 - Autoprefixer
