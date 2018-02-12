@@ -3,11 +3,7 @@ name: Formulär
 category: Komponenter
 ---
 
-Exempel och vägledning för använding av flera olika typer av komponenter i ett formulär.
-
-## Exempel
-
-Skolverkets formulär utgår från Bootstrap 4. Här följer ett enkelt exempel
+Skolverkets formulär utgår från Bootstrap 4. Det bygger på att varje formulärelement är omslutet av den `.form-group`-element.
 
 ```input-simple.html
 <form>
@@ -26,11 +22,16 @@ Skolverkets formulär utgår från Bootstrap 4. Här följer ett enkelt exempel
 
 ## Fler varianter
 
-Ibland behöver ett fält inte kunna ändras. Lägg till `readonly` attribut på ett inputfält för att hindra modifikation av fältets värde.
+Fältet går både att låsa helt (`disabled`), tillåtas att kopieras/läsas (`readonly`) eller markeras att det inte klarat validering.
+
 ```input-readonly.html
 <div class="form-group">
+  <label class="form-label" for="exampleInputDisabled1">Går ej att redigera</label>
+  <input class="form-control" id="exampleInputDisabled1" type="text" placeholder="Kan inte redigeras..." disabled>
+</div>
+<div class="form-group">
   <label class="form-label" for="exampleInputReadonly1">Endast läsbar</label>
-  <input class="form-control" id="exampleInputReadonly1" type="text" placeholder="Kan inte ändras..." readonly>
+  <input class="form-control" id="exampleInputReadonly1" type="text" value="Den här texten kan kopieras men inte ändras" placeholder="Kan inte ändras..." readonly>
 </div>
 <div class="form-group">
   <label class="form-label" for="exampleInputReadonly1">Validerar<span class="text-error">*</span></label>
@@ -39,9 +40,9 @@ Ibland behöver ett fält inte kunna ändras. Lägg till `readonly` attribut på
 </div>
 ```
 
-## Textområde
+## Textruta
 
-Beskrivning ...
+Flerradiga textfält har stöd för samtliga tillstånd.
 
 ```textarea.html
 <div class="form-group">
@@ -50,8 +51,12 @@ Beskrivning ...
   <textarea class="form-control" id="exampleTextarea1" rows="4" aria-describedby="textareaHelp" placeholder="Platshållare"></textarea>
 </div>
 <div class="form-group">
-  <label class="form-label" for="exampleTextarea2">Textområde  ej valbar</label>
+  <label class="form-label" for="exampleTextarea2">Textområde som är avstängt</label>
   <textarea class="form-control" id="exampleTextarea2" rows="4" placeholder="Kan inte ändras..." readonly></textarea>
+</div>
+<div class="form-group">
+  <label class="form-label" for="exampleTextarea3">Textområde som bara går att kopiera</label>
+  <textarea class="form-control" id="exampleTextarea3" rows="2"  readonly>1bd8994b8f2998e2216d846ed40bffd62493b5cb</textarea>
 </div>
 <div class="form-group">
   <label class="form-label" for="exampleTextarea3">Textområde med validering<span class="text-error">*</span>
@@ -64,7 +69,7 @@ Beskrivning ...
 
 ## Checkbox och radioknappar
 
-Namnkonvention med `custom-control`är baserad på Bootstrap 4 men har anpassats för att möta BEM.
+Namnkonvention med `.custom-control` är baserad på Bootstrap 4 men har anpassats för att möta [BEM](#konventioner).
 
 ```checkbox.html
 <div class="custom-control custom-control--checkbox">
@@ -98,13 +103,14 @@ Namnkonvention med `custom-control`är baserad på Bootstrap 4 men har anpassats
 
 ## Rullgardin
 
-Beskrivning ...
+Den här komponenten använder webbläsarens inbyggda `<select>`-element i bakgrunden av tillgänglighetsskäl men designats för att hänga ihop med andra formulärelement.
 
 ```dropdown.html
 <div class="form-group">
   <label class="text-standard" for="exampleDropdown1">Rullgardin</label>
   <select class="form-control dropdown icon-dropdown-arrow" id="exampleDropdown1">
-    <option value="1">Platshållare</option>
+    <option value="1">Val 1</option>
+    <option value="1">Val 2</option>
   </select>
 </div>
 <div class="form-group">
@@ -126,7 +132,7 @@ Beskrivning ...
   <div class="display-flex">
     <input type="text" class="form-control form-control--search icon-search"
       id="inputSearch" placeholder="Platshållare" />
-    <button class="btn btn--primary">Knapp normal</button>
+    <button class="btn btn--primary">Sök</button>
   </div>
 </div>
 ```
