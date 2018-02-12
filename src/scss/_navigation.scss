@@ -22,16 +22,8 @@ $block: 'navigation';
     }
 
     &-logo {
-      display: block;
       width: 134px;
-      min-height: 36px;
-      font: 0/0 a; // zeros out the font size and line-height
-      border: 0;
-      background-image: url(../assets/img/skolverket-logotype.svg);
-      background-repeat: no-repeat;
-      color: transparent;
-      background-color: transparent;
-      background-size: 100%;
+      height: 36px;
 
       @include media-query('md') {
         width: 160px;
