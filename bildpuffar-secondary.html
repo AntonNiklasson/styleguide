@@ -36,7 +36,7 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-aterkoppling-default"
+			ng-controller="stylemark-bildpuffar-secondary"
 			style="
 				display: block;
 				padding: ;
@@ -44,15 +44,36 @@
 			"
 		><div class="box box--no-padding">
   <div class="section section--boxed">
-  </div>
-  <div class="section section--boxed section--compact-padding">
-    <div class="feedback">
-      <span class="feedback__text text-standard">
-        Hjälpte informationen på den här sidan dig?
-      </span>
-      <div class="feedback__buttons">
-        <button class="feedback__button btn btn--primary btn--small">Ja</button>
-        <button class="feedback__button btn btn--primary btn--small">Nej</button>
+    <header class="section__header">
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
+      <div class="section__header-preamble text-secondary">
+        <p>Dolarsum <a href="/press">rimpvom</a></p>
+      </div>
+    </header>
+    <div class="section__body">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <ul class="content-navigation-list">
+            <li class="content-navigation-list__item content-navigation-list__item--no-border">
+              <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
+              <a href="#1" class="content-navigation-list__item-link text-xlarge">
+                Quisque augue dui, suscipit consequat
+                <i class="icon-arrow icon-arrow--lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="content-navigation-list">
+            <li class="content-navigation-list__item content-navigation-list__item--no-border">
+              <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
+              <a href="#2" class="content-navigation-list__item-link text-xlarge">
+                Quisque augue dui, suscipit consequat metus nec, bibendum 
+                <i class="icon-arrow icon-arrow--lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -62,15 +83,36 @@
 
 			<script type="text/x-stylemark" data-language="html"><div class="box box--no-padding">
   <div class="section section--boxed">
-  </div>
-  <div class="section section--boxed section--compact-padding">
-    <div class="feedback">
-      <span class="feedback__text text-standard">
-        Hjälpte informationen på den här sidan dig?
-      </span>
-      <div class="feedback__buttons">
-        <button class="feedback__button btn btn--primary btn--small">Ja</button>
-        <button class="feedback__button btn btn--primary btn--small">Nej</button>
+    <header class="section__header">
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
+      <div class="section__header-preamble text-secondary">
+        <p>Dolarsum <a href="/press">rimpvom</a></p>
+      </div>
+    </header>
+    <div class="section__body">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <ul class="content-navigation-list">
+            <li class="content-navigation-list__item content-navigation-list__item--no-border">
+              <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
+              <a href="#1" class="content-navigation-list__item-link text-xlarge">
+                Quisque augue dui, suscipit consequat
+                <i class="icon-arrow icon-arrow--lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="content-navigation-list">
+            <li class="content-navigation-list__item content-navigation-list__item--no-border">
+              <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
+              <a href="#2" class="content-navigation-list__item-link text-xlarge">
+                Quisque augue dui, suscipit consequat metus nec, bibendum 
+                <i class="icon-arrow icon-arrow--lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -100,10 +142,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-aterkoppling-default', []);
+					module = angular.module('stylemark-bildpuffar-secondary', []);
 				}
 
-				module.controller('stylemark-aterkoppling-default', function($scope) {
+				module.controller('stylemark-bildpuffar-secondary', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);

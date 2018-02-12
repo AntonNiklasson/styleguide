@@ -8,11 +8,6 @@
 
 
 		<style>
-					body {
-  padding: 40px;
-  background: #F8F4F8;
-}
-
 		</style>
 
 		<style>
@@ -36,50 +31,39 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-aterkoppling-default"
+			ng-controller="stylemark-textlankar-with-icon"
 			style="
 				display: block;
 				padding: ;
 				width: ;
 			"
-		><div class="box box--no-padding">
-  <div class="section section--boxed">
-  </div>
-  <div class="section section--boxed section--compact-padding">
-    <div class="feedback">
-      <span class="feedback__text text-standard">
-        Hjälpte informationen på den här sidan dig?
-      </span>
-      <div class="feedback__buttons">
-        <button class="feedback__button btn btn--primary btn--small">Ja</button>
-        <button class="feedback__button btn btn--primary btn--small">Nej</button>
-      </div>
-    </div>
-  </div>
+		><div>
+  <a href="javascript:void(0)" class="text-link text-link--icon">
+    <span class="text-standard">Curabitur dignissim ante</span>
+    <i class="icon-lock icon-lock--x1-33"></i>
+  </a>
+</div>
+<div>
+  <a href="javascript:void(0)" class="text-link text-link--icon">
+    <span class="text-large">Curabitur dignissim ante</span>
+    <i class="icon-lock icon-lock--x2"></i>
+  </a>
 </div></main>
 
 		
 
-			<script type="text/x-stylemark" data-language="html"><div class="box box--no-padding">
-  <div class="section section--boxed">
-  </div>
-  <div class="section section--boxed section--compact-padding">
-    <div class="feedback">
-      <span class="feedback__text text-standard">
-        Hjälpte informationen på den här sidan dig?
-      </span>
-      <div class="feedback__buttons">
-        <button class="feedback__button btn btn--primary btn--small">Ja</button>
-        <button class="feedback__button btn btn--primary btn--small">Nej</button>
-      </div>
-    </div>
-  </div>
+			<script type="text/x-stylemark" data-language="html"><div>
+  <a href="javascript:void(0)" class="text-link text-link--icon">
+    <span class="text-standard">Curabitur dignissim ante</span>
+    <i class="icon-lock icon-lock--x1-33"></i>
+  </a>
+</div>
+<div>
+  <a href="javascript:void(0)" class="text-link text-link--icon">
+    <span class="text-large">Curabitur dignissim ante</span>
+    <i class="icon-lock icon-lock--x2"></i>
+  </a>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">body {
-  padding: 40px;
-  background: #F8F4F8;
-}
-</script>
 
 		<script>
 			eval(getStylemarkBlock('js'));
@@ -100,10 +84,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-aterkoppling-default', []);
+					module = angular.module('stylemark-textlankar-with-icon', []);
 				}
 
-				module.controller('stylemark-aterkoppling-default', function($scope) {
+				module.controller('stylemark-textlankar-with-icon', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);

@@ -36,44 +36,78 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-aterkoppling-default"
+			ng-controller="stylemark-notifieringar-built-in"
 			style="
 				display: block;
 				padding: ;
 				width: ;
 			"
-		><div class="box box--no-padding">
-  <div class="section section--boxed">
-  </div>
-  <div class="section section--boxed section--compact-padding">
-    <div class="feedback">
-      <span class="feedback__text text-standard">
-        Hjälpte informationen på den här sidan dig?
-      </span>
-      <div class="feedback__buttons">
-        <button class="feedback__button btn btn--primary btn--small">Ja</button>
-        <button class="feedback__button btn btn--primary btn--small">Nej</button>
+		><div class="box">
+<div class="notification notification--info notification--info--bordered">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__textbox">
+          <span class="text-standard">
+            <strong>Vivamus placerat:</strong> 
+            Morbi tortor mi, lobortis a pharetra eget, ultricies id elit. Curabitur gravida ex ac accumsan elementum. Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat tortor, vitae euismod quam sem eleifend turpis. Donec tristique commodo odio eu facilisis. Proin convallis risus mi, in mollis quam molestie.
+          </span>
+        </div>
       </div>
     </div>
   </div>
+</div>
+<div class="notification notification--warning notification--warning--bordered">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__textbox">
+          <span class="text-standard">
+            <strong>Ej gällande kursplan:</strong> Läroplanen har reviderats med skrivningar
+            om digital kompetens (se länk till den nya läroplanen nedan). Under läsåret 2017/2018
+            är det möjligt att följa den nya eller den gamla läroplanen. Från och med läsåret 2018/2019
+            är det däremot obligatoriskt att följa visas mer
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div></main>
 
 		
 
-			<script type="text/x-stylemark" data-language="html"><div class="box box--no-padding">
-  <div class="section section--boxed">
-  </div>
-  <div class="section section--boxed section--compact-padding">
-    <div class="feedback">
-      <span class="feedback__text text-standard">
-        Hjälpte informationen på den här sidan dig?
-      </span>
-      <div class="feedback__buttons">
-        <button class="feedback__button btn btn--primary btn--small">Ja</button>
-        <button class="feedback__button btn btn--primary btn--small">Nej</button>
+			<script type="text/x-stylemark" data-language="html"><div class="box">
+<div class="notification notification--info notification--info--bordered">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__textbox">
+          <span class="text-standard">
+            <strong>Vivamus placerat:</strong> 
+            Morbi tortor mi, lobortis a pharetra eget, ultricies id elit. Curabitur gravida ex ac accumsan elementum. Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat tortor, vitae euismod quam sem eleifend turpis. Donec tristique commodo odio eu facilisis. Proin convallis risus mi, in mollis quam molestie.
+          </span>
+        </div>
       </div>
     </div>
   </div>
+</div>
+<div class="notification notification--warning notification--warning--bordered">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__textbox">
+          <span class="text-standard">
+            <strong>Ej gällande kursplan:</strong> Läroplanen har reviderats med skrivningar
+            om digital kompetens (se länk till den nya läroplanen nedan). Under läsåret 2017/2018
+            är det möjligt att följa den nya eller den gamla läroplanen. Från och med läsåret 2018/2019
+            är det däremot obligatoriskt att följa visas mer
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div></script>
 			<script type="text/x-stylemark" data-language="css">body {
   padding: 40px;
@@ -100,10 +134,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-aterkoppling-default', []);
+					module = angular.module('stylemark-notifieringar-built-in', []);
 				}
 
-				module.controller('stylemark-aterkoppling-default', function($scope) {
+				module.controller('stylemark-notifieringar-built-in', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);
