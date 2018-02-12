@@ -13,7 +13,7 @@ Beskrivning...
         <div class="col">
           <div class="mobile-menu__header-container">
             <h1 class="h1 mobile-menu__header-title">Meny</h1>
-            <a href="#" class="mobile-menu__header-close icon-close text-small">
+            <a href="#" class="icon-close text-small">
               Stäng
             </a>
           </div>
@@ -62,7 +62,9 @@ Beskrivning...
       <div class="row">
         <div class="col">
           <div class="navigation__header-container">
-            <a class="navigation__header-logo" href="#/">Skolverket</a>
+            <a href="#/">
+              <img src="_styleguide/assets/img/skolverket-logotype.svg" alt="Skolverket" class="navigation__header-logo" />
+            </a>
             <ul class="navigation__list">
               <li class="navigation__list-item">
                 <a href="#1" class="navigation__list-item-listen text-small">
