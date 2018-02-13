@@ -101,5 +101,6 @@ for (i = 0; i < items.length; i++) {
 </div>
 </div>
 ```
-```built-in:_well/purple.css hidden
+```built-in.js hidden
+SG_WELL_PURPLE = true;
 ```

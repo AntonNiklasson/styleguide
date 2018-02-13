@@ -26,7 +26,8 @@ Sektioner används för att skapa en tydlig och lättöverskådlig struktur på 
   </div>
 </div>
 ```
-```boxed:_well/purple.css hidden
+```boxed.js hidden
+SG_WELL_PURPLE = true;
 ```
 
 När flera sektioner läggs bredvid varandra läggs en horisontell avdelare autotamtiskt till.
@@ -53,5 +54,6 @@ När flera sektioner läggs bredvid varandra läggs en horisontell avdelare auto
   </div>
 </div>
 ```
-```multiple:_well/purple.css hidden
+```multiple.js hidden
+SG_WELL_PURPLE = true;
 ```

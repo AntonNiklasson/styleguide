@@ -60,5 +60,6 @@ Ger användaren överblick lorem ipsum...
   </div>
 </div>
 ```
-```default:_well/purple.css hidden
+```default.js hidden
+SG_WELL_PURPLE = true;
 ```

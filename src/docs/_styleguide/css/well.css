@@ -1,3 +1,7 @@
-body {
+body.Body--padded {
   padding: 20px;
+}
+body.Body--paddedPurple {
+  padding: 40px;
+  background: #F8F4F8;
 }

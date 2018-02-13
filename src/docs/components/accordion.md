@@ -44,7 +44,8 @@ Med ett så kallat dragspel kan du dela upp en sida med mycket innehåll i tydli
   </div> 
 </div>
 ```
-```default:_well/purple.css hidden
+```default.js hidden
+SG_WELL_PURPLE = true;
 ```
 ```default.js hidden
 var items = document.querySelectorAll('.accordion__item-link');

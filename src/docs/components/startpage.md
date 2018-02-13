@@ -101,4 +101,6 @@ Beskrivning...
   </div>
 </div>
 ```
-
+```default.js hidden
+SG_WELL_PURPLE = true;
+```

@@ -22,7 +22,8 @@ category: Kompositioner
   </div>
 </div>
 ```
-```default:_well/purple.css hidden
+```default.js hidden
+SG_WELL_PURPLE = true;
 ```
 
 När text visas utan knappar så använd klassen `.feedback__text--standalone` för att lägga till mer luft ovanför och under texten i mobilläge.
@@ -40,7 +41,8 @@ När text visas utan knappar så använd klassen `.feedback__text--standalone` f
   </div>
 </div>
 ```
-```standalone:_well/purple.css hidden
+```standalone.js hidden
+SG_WELL_PURPLE = true;
 ```
 
 Med en textruta som användaren kan fylla i
@@ -60,5 +62,6 @@ Med en textruta som användaren kan fylla i
   </div>
 </div>
 ```
-```standalone:_well/purple.css hidden
+```standalone.js hidden
+SG_WELL_PURPLE = true;
 ```

@@ -13,6 +13,7 @@ headHtml: |
   <link rel="stylesheet" href="https://use.typekit.net/oal1gcu.css">
   <link rel="stylesheet" href="dist/css/skolverket.css">
   <link rel="stylesheet" href="_styleguide/css/well.css">
+  <script src="_styleguide/js/well.js"></script>
 
 order:
   - +Kom igång
