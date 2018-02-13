@@ -15,14 +15,16 @@
 
   function init () {
     var isInIframe = inIframe();
-
+    var bodyClasses = [];
+    var body = document.body;
     if (isInIframe) {
       if (global('SG_WELL_PURPLE')) {
-        var bodyClass = 'Body--paddedPurple'
+        bodyClasses.push('Body--purple')
+        if (!global('SG_WELL_NOT_PADDED')) bodyClasses.push('Body--padded')
       } else {
-        var bodyClass = 'Body--padded'
+        bodyClasses.push('Body--padded')
       }
-      document.body.classList.add(bodyClass)
+      bodyClasses.forEach(function (cls) { body.classList.add(cls) });
     }
   }
 
