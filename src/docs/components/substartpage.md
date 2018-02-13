@@ -150,13 +150,22 @@ Beskrivning...
     </div>
   </div>
 </div>
-<div class="substartpage">
-  <div class="container substartpage__content">
-    <div class="row">
-      <div class="col">
-        Page content here...
+<div class="container">
+  <div class="box box--no-padding">
+    <div class="section section--boxed">
+      <header class="section__header">
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
+        <div class="section__header-preamble text-secondary">
+          <p>Fler nyheter i <a href="/press">pressrummet</a></p>
+        </div>
+      </header>
+      <div class="section__body">
+        <img src="http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
       </div>
     </div>
   </div>
 </div>
+```
+```default.js hidden
+SG_WELL_PURPLE = true;
 ```

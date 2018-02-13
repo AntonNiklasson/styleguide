@@ -7,7 +7,6 @@ $block: 'section-navigation';
   position: relative;
   padding-top: .875rem;
   padding-bottom: .875rem;
-  background-color: $color-purple-light;
 
   &__label {
     position: absolute;
@@ -19,8 +18,8 @@ $block: 'section-navigation';
     line-height: 1;
     font-weight: 500;
     border-top-right-radius: 1.125rem;
-    
-    @include media-query('md') { 
+
+    @include media-query('md') {
       padding: $label-padding-tb-md 1.25rem $label-padding-tb-md .875rem;
       font-size: 1.5rem;
       top: calc(-.875rem - 1.5rem - #{2*$label-padding-tb-md});
@@ -36,7 +35,7 @@ $block: 'section-navigation';
       background-color: $color-purple-light;
       border-bottom: 1px solid $color-purple;
 
-      @include media-query('md') { 
+      @include media-query('md') {
         min-height: 7rem;
         margin: .875rem 0;
         padding: 1rem;
@@ -44,11 +43,11 @@ $block: 'section-navigation';
         box-shadow: 0 6px 14px 0 rgba(108, 39, 106, 0.25);
         background-color: $color-white;
       }
-      
+
       &:hover, &:focus {
         border-bottom: 1px solid $color-purple;
 
-        @include media-query('md') { 
+        @include media-query('md') {
           border: 2px solid $color-purple-dark;
         }
       }
@@ -75,7 +74,7 @@ $block: 'section-navigation';
           font-size: 1.5rem;
         }
 
-        @include media-query('md') { 
+        @include media-query('md') {
           &>.icon-arrow {
             visibility: hidden;
           }
