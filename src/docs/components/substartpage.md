@@ -3,7 +3,7 @@ name: Understartsida
 category: Kompositioner
 ---
 
-Beskrivning...
+Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den bilden (eller vilken komponent som helst som råkar ligga före sektions-navigationen).
 
 ```default.html
 <div class="navigation">
@@ -80,7 +80,7 @@ Beskrivning...
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="section-navigation__label">
+        <div class="section-navigation__label section-navigation__label--overlap">
           Current section
         </div>
       </div>
