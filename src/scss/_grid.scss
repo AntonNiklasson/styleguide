@@ -24,6 +24,20 @@
     width: $page-max-width;
     max-width: 100%;
   }
+
+  &--overlap-top {
+    margin-top: -60px;
+  }
+  @include media-query('md') {
+    &--overlap-top {
+      margin-top: -100px;
+    }
+  }
+  @include media-query('lg') {
+    &--overlap-top {
+      margin-top: -140px;
+    }
+  }
 }
 
 .narrow-desktop-grid {

@@ -66,6 +66,33 @@
   }
 }
 ///
+/// Adds consistent margins
+/// Left
+@mixin vertical-margins($size: 'md') {
+  @if $size == 'sm' {
+    margin-top: $spacer-large;
+    margin-bottom: $spacer-large;
+    @include media-query('sm') {
+      margin-top: $spacer-xlarge;
+      margin-bottom: $spacer-xlarge;
+    }
+  } @else if $size == 'lg' {
+    margin-top: $spacer-xxlarge;
+    margin-bottom: $spacer-xxlarge;
+    @include media-query('sm') {
+      margin-top: $spacer-xxxlarge;
+      margin-bottom: $spacer-xxxlarge;
+    }
+  } @else {
+    margin-top: $spacer-xlarge;
+    margin-bottom: $spacer-xlarge;
+    @include media-query('sm') {
+      margin-top: $spacer-xxlarge;
+      margin-bottom: $spacer-xxlarge;
+    }
+  }
+}
+///
 /// Hide text while making it readable for screen readers
 /// 1. Needed in WebKit-based browsers because of an implementation bug;
 ///    See: https://code.google.com/p/chromium/issues/detail?id=457146
