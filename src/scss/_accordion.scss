@@ -23,7 +23,7 @@ $block: 'accordion';
       border-top: 1px solid $color-purple;
       color: $color-purple-dark;
       font-weight: 600;
-      
+
       @include media-query('md') {
         padding: 1.25rem 0.875rem;
       }
@@ -45,7 +45,6 @@ $block: 'accordion';
     &-body {
       display: none;
       padding: 1.625rem;
-      animation: fadeInDown 1s ease .2s 1 both;
 
       .#{$block}__item--open & {
         display: block;
@@ -55,18 +54,7 @@ $block: 'accordion';
     &-icon {
       .#{$block}__item--open & {
         transform: rotate(-90deg);
-      } 
-    }    
-  }
-}
-
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+      }
+    }
   }
 }
