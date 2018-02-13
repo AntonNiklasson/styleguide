@@ -1,5 +1,5 @@
 ---
-name: Startsida
+name: Sidstart
 category: Kompositioner
 ---
 
@@ -75,32 +75,38 @@ Beskrivning...
     </div>
   </div>
 </div>
-<div class="startpage">
-  <div class="startpage__header">
-    <img src="_styleguide/assets/img/bildstartsida.png" width="100%" alt="Error with image loading..." />
-    <div class="startpage__header-title">
-      <div class="container">
-        <div class="row">
-          <div class="col col-sm-8 col-md-7 col-lg-6">
-            <a href="#" class="startpage__header-title-link">
-              <span class="startpage__header-title-link--padding">Dags för nationella prov, vi har samlat allt du behöver veta
-                <i class="icon-arrow icon-arrow--white icon-arrow--x1-6"></i>
-              </span>
-            </a>
-          </div>
+<div class="hero hero--overlap">
+  <img src="_styleguide/assets/img/bildstartsida.png" width="100%" alt="Error with image loading..." />
+  <div class="container">
+    <div class="hero__banner">
+        <div class="col-sm-9 col-md-8 col-lg-7">
+          <a href="#" class="hero__banner-text">
+            <span class="hero__banner-text-stripe">Dags för nationella prov, vi har samlat allt du behöver veta
+              <i class="icon-arrow icon-arrow--white icon-arrow--x1-6"></i>
+            </span>
+          </a>
         </div>
-      </div>
     </div>
   </div>
-  <div class="container startpage__content">
-    <div class="row">
-      <div class="col">
-        Page content here...
+</div>
+<div class="container">
+  <div class="box box--no-padding">
+    <div class="section section--boxed">
+      <header class="section__header">
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
+        <div class="section__header-preamble text-secondary">
+          <p>Fler nyheter i <a href="/press">pressrummet</a></p>
+        </div>
+      </header>
+      <div class="section__body">
+        <img src="http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
       </div>
     </div>
   </div>
 </div>
+
 ```
 ```default.js hidden
 SG_WELL_PURPLE = true;
+SG_WELL_NOT_PADDED = true;
 ```
