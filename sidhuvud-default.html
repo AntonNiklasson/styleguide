@@ -78,7 +78,7 @@
             </li>
             <li class="mobile-menu__list-item">
               <a href="#4" class="mobile-menu__list-item-link text-medium">
-                Innehåll A-Ö
+                <span class="text-reset">Innehåll A-Ö</span>
                 <i class="icon-arrow"></i>
               </a>
             </li>
@@ -147,7 +147,7 @@
               </li>
               <li class="navigation__list-item">
                 <a href="#8" class="navigation__list-item-link text-standard">
-                  Innehåll A-Ö
+                  <span class="text-reset">Innehåll A-Ö</span>
                 </a>
               </li>
             </ul>
@@ -200,7 +200,7 @@
             </li>
             <li class="mobile-menu__list-item">
               <a href="#4" class="mobile-menu__list-item-link text-medium">
-                Innehåll A-Ö
+                <span class="text-reset">Innehåll A-Ö</span>
                 <i class="icon-arrow"></i>
               </a>
             </li>
@@ -269,7 +269,7 @@
               </li>
               <li class="navigation__list-item">
                 <a href="#8" class="navigation__list-item-link text-standard">
-                  Innehåll A-Ö
+                  <span class="text-reset">Innehåll A-Ö</span>
                 </a>
               </li>
             </ul>
@@ -279,6 +279,13 @@
     </div>
   </div>
 </div></script>
+			<script type="text/x-stylemark" data-language="js">
+var items = document.querySelectorAll('.navigation__list-item-mobilemenu, .icon-close');
+for (i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function() {
+    document.querySelector('.mobile-menu').classList.toggle('mobile-menu--open');
+  });
+}</script>
 
 		<script>
 			eval(getStylemarkBlock('js'));
