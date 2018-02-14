@@ -32,18 +32,54 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-notifieringar-flash"
+			ng-controller="stylemark-notifieringar-default"
 			style="
 				display: block;
 				padding: ;
 				width: ;
 			"
-		><div class="notification notification--success notification--animated">
+		><div class="notification notification--success">
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="notification__flash">
           <span class="text-standard"><strong>Allt gott!</strong> Lorem ipsum dolor sit amet.</span>
+          <button class="btn btn--primary">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="notification notification--warning">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__flash">
+          <span class="text-standard"><strong>Varning!</strong> Lorem ipsum dolor sit amet.</span>
+          <button class="btn btn--primary">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="notification notification--error">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__flash">
+          <span class="text-standard"><strong>Något gick fel!</strong> Lorem ipsum dolor sit amet.</span>
+          <button class="btn btn--primary">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="notification notification--info">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__flash">
+          <span class="text-standard"><strong>Information!</strong> Lorem ipsum dolor sit amet.</span>
           <button class="btn btn--primary">Stäng</button>
         </div>
       </div>
@@ -53,7 +89,7 @@
 
 		
 
-			<script type="text/x-stylemark" data-language="html"><div class="notification notification--success notification--animated">
+			<script type="text/x-stylemark" data-language="html"><div class="notification notification--success">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -64,23 +100,51 @@
       </div>
     </div>
   </div>
+</div>
+<div class="notification notification--warning">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__flash">
+          <span class="text-standard"><strong>Varning!</strong> Lorem ipsum dolor sit amet.</span>
+          <button class="btn btn--primary">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="notification notification--error">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__flash">
+          <span class="text-standard"><strong>Något gick fel!</strong> Lorem ipsum dolor sit amet.</span>
+          <button class="btn btn--primary">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="notification notification--info">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="notification__flash">
+          <span class="text-standard"><strong>Information!</strong> Lorem ipsum dolor sit amet.</span>
+          <button class="btn btn--primary">Stäng</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div></script>
 			<script type="text/x-stylemark" data-language="js">
-var resetBtn = document.createElement('button');
-resetBtn.appendChild(document.createTextNode('Visa animation'));
-resetBtn.setAttribute('class', 'btn btn--small btn--secondary');
-resetBtn.style.marginTop = '30px';
-var notification = document.querySelector(".notification");
-notification.parentNode.appendChild(resetBtn);
+var items = document.querySelectorAll('.btn');
 
-resetBtn.addEventListener('click', function() {
-  notification.classList.remove('notification--animated');
-  setTimeout(function () {
-    notification.classList.add('notification--animated');
-  }, 300)
-
-});
-</script>
+for (i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function() {
+    this.closest(".notification").classList.toggle('close');
+  });
+}</script>
 
 		<script>
 			eval(getStylemarkBlock('js'));
@@ -101,10 +165,10 @@ resetBtn.addEventListener('click', function() {
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-notifieringar-flash', []);
+					module = angular.module('stylemark-notifieringar-default', []);
 				}
 
-				module.controller('stylemark-notifieringar-flash', function($scope) {
+				module.controller('stylemark-notifieringar-default', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);
