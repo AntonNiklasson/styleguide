@@ -2,6 +2,16 @@ $block: 'mobile-menu';
 
 .#{$block} {
 
+  display: none;
+
+  &--open {
+    display: block;
+  }
+
+  @include media-query('md') {
+    display: none;
+  }
+
   &__links {
     height: 100%;
     padding: 0;

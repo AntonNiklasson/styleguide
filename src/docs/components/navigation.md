@@ -126,4 +126,12 @@ Beskrivning...
   </div>
 </div>
 ```
+```default.js hidden
 
+var items = document.querySelectorAll('.navigation__list-item-mobilemenu, .icon-close');
+for (i = 0; i < items.length; i++) {
+  items[i].addEventListener('click', function() {
+    document.querySelector('.mobile-menu').classList.toggle('mobile-menu--open');
+  });
+}
+```
