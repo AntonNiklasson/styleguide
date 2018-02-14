@@ -36,7 +36,7 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-innehallsnavigering-content-navigation-type"
+			ng-controller="stylemark-section-navigering-default"
 			style="
 				display: block;
 				padding: ;
@@ -55,19 +55,19 @@
         <div class="col-12 col-md-6">
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item">
-              <a href="#2" class="content-navigation-list__item-link text-medium">
+              <a href="#1" class="content-navigation-list__item-link text-medium">
                 Suspendisse potenti
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#3" class="content-navigation-list__item-link text-medium">
+              <a href="#2" class="content-navigation-list__item-link text-medium">
                 Phasellus mattis diam convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#4" class="content-navigation-list__item-link text-medium">
+              <a href="#3" class="content-navigation-list__item-link text-medium">
                 Phasellus convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
@@ -77,19 +77,19 @@
         <div class="col-12 col-md-6">
           <ul class="content-navigation-list content-navigation-list">
             <li class="content-navigation-list__item">
-              <a href="#2" class="content-navigation-list__item-link text-medium">
+              <a href="#4" class="content-navigation-list__item-link text-medium">
                 Suspendisse potenti
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#3" class="content-navigation-list__item-link text-medium">
+              <a href="#5" class="content-navigation-list__item-link text-medium">
                 Phasellus mattis diam convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <a href="#4" class="content-navigation-list__item-link text-medium">
+              <a href="#6" class="content-navigation-list__item-link text-medium">
                 Phasellus convallis
                 <i class="icon-arrow"></i>
               </a>
@@ -116,19 +116,19 @@
         <div class="col-12 col-md-6">
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item">
-              <a href="#2" class="content-navigation-list__item-link text-medium">
+              <a href="#1" class="content-navigation-list__item-link text-medium">
                 Suspendisse potenti
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#3" class="content-navigation-list__item-link text-medium">
+              <a href="#2" class="content-navigation-list__item-link text-medium">
                 Phasellus mattis diam convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#4" class="content-navigation-list__item-link text-medium">
+              <a href="#3" class="content-navigation-list__item-link text-medium">
                 Phasellus convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
@@ -138,19 +138,19 @@
         <div class="col-12 col-md-6">
           <ul class="content-navigation-list content-navigation-list">
             <li class="content-navigation-list__item">
-              <a href="#2" class="content-navigation-list__item-link text-medium">
+              <a href="#4" class="content-navigation-list__item-link text-medium">
                 Suspendisse potenti
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <a href="#3" class="content-navigation-list__item-link text-medium">
+              <a href="#5" class="content-navigation-list__item-link text-medium">
                 Phasellus mattis diam convallis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
             </li>
             <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <a href="#4" class="content-navigation-list__item-link text-medium">
+              <a href="#6" class="content-navigation-list__item-link text-medium">
                 Phasellus convallis
                 <i class="icon-arrow"></i>
               </a>
@@ -186,10 +186,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-innehallsnavigering-content-navigation-type', []);
+					module = angular.module('stylemark-section-navigering-default', []);
 				}
 
-				module.controller('stylemark-innehallsnavigering-content-navigation-type', function($scope) {
+				module.controller('stylemark-section-navigering-default', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);

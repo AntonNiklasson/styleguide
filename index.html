@@ -22,14 +22,17 @@
 						<option disabled selected>Go to…</option>
 							<optgroup label="Kom igång">
 									<option value="introduktion">Introduktion</option>
+									<option value="konventioner">Konventioner</option>
 									<option value="snabbstart">Snabbstart</option>
 							</optgroup>
 							<optgroup label="Komponenter">
 									<option value="box">Box</option>
 									<option value="dragspel">Dragspel</option>
 									<option value="formular">Formulär</option>
+									<option value="hero">Hero</option>
 									<option value="knappar">Knappar</option>
 									<option value="notifieringar">Notifieringar</option>
+									<option value="sektionnavigering">Sektionnavigering</option>
 									<option value="sidfot">Sidfot</option>
 									<option value="sidhuvud">Sidhuvud</option>
 									<option value="toc">TOC</option>
@@ -41,7 +44,9 @@
 									<option value="innehallsnavigering">Innehållsnavigering</option>
 									<option value="nyhetslista">Nyhetslista</option>
 									<option value="sektioner">Sektioner</option>
+									<option value="sidstart">Sidstart</option>
 									<option value="textpuffar">Textpuffar</option>
+									<option value="understartsida">Understartsida</option>
 									<option value="aterkoppling">Återkoppling</option>
 							</optgroup>
 					</select>
@@ -56,6 +61,23 @@
 <div id="bootstrap-4-0" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#bootstrap-4-0" class="icon-link i-section__link -heading"></a>Bootstrap 4.0</h2></div><p>För ökad igenkänning bland utvecklare och därmed utvecklingseffektivitet så <strong>utgår</strong> Skolverkets CSS från Bootstrap 4.
 Bootstrap-komponenter som inte möter Skolverkets designriktlinjer har tagits eller skalats ner. I de fall Bootstrap 4 komponenter saknat implementation så har de byggts ut med nya klasser för att möta Skolverkets designriktlinjer.</p>
 <div id="upphovsratt-och-licenser" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#upphovsratt-och-licenser" class="icon-link i-section__link -heading"></a>Upphovsrätt och licenser</h2></div><p>Kod släppt under <a href="https://opensource.org/licenses/MIT">MIT Licens</a>.</p>
+</div>
+</div>
+
+						<div id="konventioner" class="i-library">
+	<h1 class="display-4">Konventioner</h1>
+	<div><div id="html-och-semantik" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#html-och-semantik" class="icon-link i-section__link -heading"></a>HTML och semantik</h2></div><p>Det viktigaste att tänka på vid uppmärkning med HTML är såklart <strong>tillgänglighet</strong> och <strong>semantik</strong>, de båda går hand i hand men semantiken har också andra bonusvärden värden som sökmotorsoptimering och integration mot vissa tjänster (sk. <em>scraping</em>). Den HTML som används här eftersträvar att uppnå internationella webbriktlinjer för tillgänglighet, WCAG 2.0 (nivå AA) och PTS Webbriktlinjer samt använder sig av WAI-Aria där det behövs. Eftersom komponenterna kan implementeras på en rad olika sätt och olika miljöer <em>bör</em> dock testning och säkerställande av tillgänglighet och användbarhet göras i den tjänst som använder komponenterna. Läs mer här:</p>
+<ul>
+<li><strong>WCAG 2.0</strong>: <a href="https://www.w3.org/Translations/WCAG20-sv/">https://www.w3.org/Translations/WCAG20-sv/</a></li>
+<li><strong>PTS Webbriktlinjer</strong>: <a href="https://webbriktlinjer.se/">https://webbriktlinjer.se/</a></li>
+<li><strong>WAI Aria</strong>: <a href="https://www.w3.org/WAI/intro/aria">https://www.w3.org/WAI/intro/aria</a></li>
+</ul>
+<div id="css" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#css" class="icon-link i-section__link -heading"></a>CSS</h2></div><p>För att underlätta utveckling och bibehålla komponenternas modularitet och visuella integritet så används strikta regler för hur klasser och regler skrivs. Med undantag för de fall då konventioner lånas från Bootstrap 4 (t.ex i formulär) används metoden <em>BEM</em> (<em>Block Element Modifier</em>) för att skapa skalbar och objektorientead CSS. Kort kan säga att BEM är byggt för att underlätta så att stilregler från en komponents CSS stör någon annan (med oväntat arv) och underlätta samarbete mellan många utvecklare. Läs mer här:</p>
+<ul>
+<li><strong>BEM</strong>: <a href="http://www.getbem.com">http://www.getbem.com</a></li>
+<li><strong>Bootstrap 4</strong>: <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
+</ul>
+<div id="java-script" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#java-script" class="icon-link i-section__link -heading"></a>JavaScript</h2></div><p>I dagsläget tillhandahålls inga JavaScript för att sköta beteenden i gränssnittet. Istället redovisas bara de tillstånd och varianter som du själv kan sätta.</p>
 </div>
 </div>
 
@@ -395,8 +417,7 @@ både kompilerade och minifierade:</p>
 
 						<div id="formular" class="i-library">
 	<h1 class="display-4">Formulär</h1>
-	<div><p>Exempel och vägledning för använding av flera olika typer av komponenter i ett formulär.</p>
-<div id="exempel" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel" class="icon-link i-section__link -heading"></a>Exempel</h2></div><p>Skolverkets formulär utgår från Bootstrap 4. Här följer ett enkelt exempel</p>
+	<div><p>Skolverkets formulär utgår från Bootstrap 4. Det bygger på att varje formulärelement är omslutet av den <code>.form-group</code>-element.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -448,7 +469,7 @@ både kompilerade och minifierade:</p>
   &lt;button type=&quot;submit&quot; class=&quot;btn btn--primary&quot;&gt;Skicka&lt;/button&gt;
 &lt;/form&gt;</code></pre>
 	</div>
-</div><div id="fler-varianter" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#fler-varianter" class="icon-link i-section__link -heading"></a>Fler varianter</h2></div><p>Ibland behöver ett fält inte kunna ändras. Lägg till <code>readonly</code> attribut på ett inputfält för att hindra modifikation av fältets värde.</p>
+</div><div id="fler-varianter" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#fler-varianter" class="icon-link i-section__link -heading"></a>Fler varianter</h2></div><p>Fältet går både att låsa helt (<code>disabled</code>), tillåtas att kopieras/läsas (<code>readonly</code>) eller markeras att det inte klarat validering.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -476,8 +497,12 @@ både kompilerade och minifierade:</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputDisabled1&quot;&gt;Går ej att redigera&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputDisabled1&quot; type=&quot;text&quot; placeholder=&quot;Kan inte redigeras...&quot; disabled&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Endast läsbar&lt;/label&gt;
-  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; value=&quot;Den här texten kan kopieras men inte ändras&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Validerar&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
@@ -485,8 +510,12 @@ både kompilerade och minifierade:</p>
   &lt;span class=&quot;text-error&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputDisabled1&quot;&gt;Går ej att redigera&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputDisabled1&quot; type=&quot;text&quot; placeholder=&quot;Kan inte redigeras...&quot; disabled&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Endast läsbar&lt;/label&gt;
-  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; value=&quot;Den här texten kan kopieras men inte ändras&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Validerar&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
@@ -494,7 +523,7 @@ både kompilerade och minifierade:</p>
   &lt;span class=&quot;text-error&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="textomrade" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textomrade" class="icon-link i-section__link -heading"></a>Textområde</h2></div><p>Beskrivning ...</p>
+</div><div id="textruta" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textruta" class="icon-link i-section__link -heading"></a>Textruta</h2></div><p>Flerradiga textfält har stöd för samtliga tillstånd.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -527,8 +556,12 @@ både kompilerade och minifierade:</p>
   &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea2&quot;&gt;Textområde  ej valbar&lt;/label&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea2&quot;&gt;Textområde som är avstängt&lt;/label&gt;
   &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea2&quot; rows=&quot;4&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde som bara går att kopiera&lt;/label&gt;
+  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea3&quot; rows=&quot;2&quot;  readonly&gt;1bd8994b8f2998e2216d846ed40bffd62493b5cb&lt;/textarea&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde med validering&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;
@@ -543,8 +576,12 @@ både kompilerade och minifierade:</p>
   &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea2&quot;&gt;Textområde  ej valbar&lt;/label&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea2&quot;&gt;Textområde som är avstängt&lt;/label&gt;
   &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea2&quot; rows=&quot;4&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde som bara går att kopiera&lt;/label&gt;
+  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea3&quot; rows=&quot;2&quot;  readonly&gt;1bd8994b8f2998e2216d846ed40bffd62493b5cb&lt;/textarea&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde med validering&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;
@@ -554,7 +591,7 @@ både kompilerade och minifierade:</p>
   &lt;span class=&quot;text-error&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="checkbox-och-radioknappar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#checkbox-och-radioknappar" class="icon-link i-section__link -heading"></a>Checkbox och radioknappar</h2></div><p>Namnkonvention med <code>custom-control</code>är baserad på Bootstrap 4 men har anpassats för att möta BEM.</p>
+</div><div id="checkbox-och-radioknappar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#checkbox-och-radioknappar" class="icon-link i-section__link -heading"></a>Checkbox och radioknappar</h2></div><p>Namnkonvention med <code>.custom-control</code> är baserad på Bootstrap 4 men har anpassats för att möta <a href="#konventioner">BEM</a>.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -657,7 +694,7 @@ både kompilerade och minifierade:</p>
   &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio3&quot;&gt;Ej valbar&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="rullgardin" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#rullgardin" class="icon-link i-section__link -heading"></a>Rullgardin</h2></div><p>Beskrivning ...</p>
+</div><div id="rullgardin" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#rullgardin" class="icon-link i-section__link -heading"></a>Rullgardin</h2></div><p>Den här komponenten använder webbläsarens inbyggda <code>&lt;select&gt;</code>-element i bakgrunden av tillgänglighetsskäl men designats för att hänga ihop med andra formulärelement.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -687,7 +724,8 @@ både kompilerade och minifierade:</p>
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown1&quot;&gt;Rullgardin&lt;/label&gt;
   &lt;select class=&quot;form-control dropdown icon-dropdown-arrow&quot; id=&quot;exampleDropdown1&quot;&gt;
-    &lt;option value=&quot;1&quot;&gt;Platshållare&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Val 1&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Val 2&lt;/option&gt;
   &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
@@ -700,7 +738,8 @@ både kompilerade och minifierade:</p>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown1&quot;&gt;Rullgardin&lt;/label&gt;
   &lt;select class=&quot;form-control dropdown icon-dropdown-arrow&quot; id=&quot;exampleDropdown1&quot;&gt;
-    &lt;option value=&quot;1&quot;&gt;Platshållare&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Val 1&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Val 2&lt;/option&gt;
   &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
@@ -743,7 +782,7 @@ både kompilerade och minifierade:</p>
   &lt;div class=&quot;display-flex&quot;&gt;
     &lt;input type=&quot;text&quot; class=&quot;form-control form-control--search icon-search&quot;
       id=&quot;inputSearch&quot; placeholder=&quot;Platshållare&quot; /&gt;
-    &lt;button class=&quot;btn btn--primary&quot;&gt;Knapp normal&lt;/button&gt;
+    &lt;button class=&quot;btn btn--primary&quot;&gt;Sök&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
@@ -751,7 +790,68 @@ både kompilerade och minifierade:</p>
   &lt;div class=&quot;display-flex&quot;&gt;
     &lt;input type=&quot;text&quot; class=&quot;form-control form-control--search icon-search&quot;
       id=&quot;inputSearch&quot; placeholder=&quot;Platshållare&quot; /&gt;
-    &lt;button class=&quot;btn btn--primary&quot;&gt;Knapp normal&lt;/button&gt;
+    &lt;button class=&quot;btn btn--primary&quot;&gt;Sök&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="hero" class="i-library">
+	<h1 class="display-4">Hero</h1>
+	<div><p>Ger användaren överblick lorem ipsum...</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="hero-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="hero-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hero&quot;&gt;
+  &lt;img src=&quot;_styleguide/assets/img/bildstartsida.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;hero__banner&quot;&gt;
+        &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hero__banner-text&quot;&gt;
+            &lt;span class=&quot;hero__banner-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+              &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--x1-6&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hero&quot;&gt;
+  &lt;img src=&quot;_styleguide/assets/img/bildstartsida.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;hero__banner&quot;&gt;
+        &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hero__banner-text&quot;&gt;
+            &lt;span class=&quot;hero__banner-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+              &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--x1-6&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -763,8 +863,8 @@ både kompilerade och minifierade:</p>
 	<div><p>Knappar kan användas med elementen <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, och <code>&lt;input&gt;</code>.</p>
 <div id="exempel" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel" class="icon-link i-section__link -heading"></a>Exempel</h2></div><p>Det finns tre typer av knappar:</p>
 <ul>
-<li>Primär: Tillhandahåller extra visuell vikt och framhäver en knapp bland en grupp av knappar</li>
-<li>Sekundär: En alternativ knapp som används för att märka ut att det här inte är det primära valet</li>
+<li>Primär: Är den mest visuellt utmärkande och <em>skall</em> användas för det viktigaste valet om flera knappar används</li>
+<li>Sekundär: En alternativ knapp som <em>bör</em> användas för att märka ut att det här inte är det primära valet</li>
 <li>Länk: Tona ned en knapp genom att göra att den ser ut som en länk men med fortsatt knapp-beteende (sänder formulär etc)</li>
 </ul>
 <div class="i-example">
@@ -806,7 +906,7 @@ både kompilerade och minifierade:</p>
 &lt;button class=&quot;btn btn-icon icon-speaker&quot;&gt;Lyssna&lt;/button&gt;
 &lt;button class=&quot;btn btn-icon btn-icon--right icon-dropdown-arrow&quot;&gt;Platshållare&lt;/button&gt;</code></pre>
 	</div>
-</div><div id="storlekar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#storlekar" class="icon-link i-section__link -heading"></a>Storlekar</h2></div><p>En mindre knapp är lämplig att använda till exempel när lorem ipsum...</p>
+</div><p>En variant för små knappar finns och <em>bör</em> används där utrymmet är begränsat eller där en normal knappstorlek skulle få för mycket uppmärksamhet.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1095,6 +1195,187 @@ både kompilerade och minifierade:</p>
 </div></div>
 </div>
 
+						<div id="sektionnavigering" class="i-library">
+	<h1 class="display-4">Sektionnavigering</h1>
+	<div><p>Ger användaren överblick lorem ipsum...</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="sektionnavigering-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="sektionnavigering-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;section-navigation&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;section-navigation__label&quot;&gt;
+          Current section
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskoleklass&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundsärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasieskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasiesärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
+            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Inspiration och stöd i arbetet&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;section-navigation&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;section-navigation__label&quot;&gt;
+          Current section
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskoleklass&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundsärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasieskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasiesärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
+            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Inspiration och stöd i arbetet&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="sidfot" class="i-library">
 	<h1 class="display-4">Sidfot</h1>
 	<div><p>Beskrivning</p>
@@ -1276,7 +1557,7 @@ både kompilerade och minifierade:</p>
         &lt;div class=&quot;col&quot;&gt;
           &lt;div class=&quot;mobile-menu__header-container&quot;&gt;
             &lt;h1 class=&quot;h1 mobile-menu__header-title&quot;&gt;Meny&lt;/h1&gt;
-            &lt;a href=&quot;#&quot; class=&quot;mobile-menu__header-close icon-close text-small&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;icon-close text-small&quot;&gt;
               Stäng
             &lt;/a&gt;
           &lt;/div&gt;
@@ -1325,7 +1606,9 @@ både kompilerade och minifierade:</p>
       &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col&quot;&gt;
           &lt;div class=&quot;navigation__header-container&quot;&gt;
-            &lt;a class=&quot;navigation__header-logo&quot; href=&quot;#/&quot;&gt;Skolverket&lt;/a&gt;
+            &lt;a href=&quot;#/&quot;&gt;
+              &lt;img src=&quot;_styleguide/assets/img/skolverket-logotype.svg&quot; alt=&quot;Skolverket&quot; class=&quot;navigation__header-logo&quot; /&gt;
+            &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
                 &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
@@ -1393,7 +1676,7 @@ både kompilerade och minifierade:</p>
         &lt;div class=&quot;col&quot;&gt;
           &lt;div class=&quot;mobile-menu__header-container&quot;&gt;
             &lt;h1 class=&quot;h1 mobile-menu__header-title&quot;&gt;Meny&lt;/h1&gt;
-            &lt;a href=&quot;#&quot; class=&quot;mobile-menu__header-close icon-close text-small&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;icon-close text-small&quot;&gt;
               Stäng
             &lt;/a&gt;
           &lt;/div&gt;
@@ -1442,7 +1725,9 @@ både kompilerade och minifierade:</p>
       &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col&quot;&gt;
           &lt;div class=&quot;navigation__header-container&quot;&gt;
-            &lt;a class=&quot;navigation__header-logo&quot; href=&quot;#/&quot;&gt;Skolverket&lt;/a&gt;
+            &lt;a href=&quot;#/&quot;&gt;
+              &lt;img src=&quot;_styleguide/assets/img/skolverket-logotype.svg&quot; alt=&quot;Skolverket&quot; class=&quot;navigation__header-logo&quot; /&gt;
+            &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
                 &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
@@ -2563,6 +2848,235 @@ både kompilerade och minifierade:</p>
 </div></div>
 </div>
 
+						<div id="sidstart" class="i-library">
+	<h1 class="display-4">Sidstart</h1>
+	<div><p>Beskrivning...</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="sidstart-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="sidstart-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;navigation__header&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__header-container&quot;&gt;
+            &lt;a href=&quot;#/&quot;&gt;
+              &lt;img src=&quot;_styleguide/assets/img/skolverket-logotype.svg&quot; alt=&quot;Skolverket&quot; class=&quot;navigation__header-logo&quot; /&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;navigation__list&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                  Lyssna
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                  Languages
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                  Sök
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                  Meny
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navigation__links&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__links-container&quot;&gt;
+            &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Undervisning
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Skolutveckling
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Lagar och regler
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                  Innehåll A-Ö
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hero hero--overlap&quot;&gt;
+  &lt;img src=&quot;_styleguide/assets/img/bildstartsida.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;hero__banner&quot;&gt;
+        &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hero__banner-text&quot;&gt;
+            &lt;span class=&quot;hero__banner-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+              &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--x1-6&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;navigation__header&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__header-container&quot;&gt;
+            &lt;a href=&quot;#/&quot;&gt;
+              &lt;img src=&quot;_styleguide/assets/img/skolverket-logotype.svg&quot; alt=&quot;Skolverket&quot; class=&quot;navigation__header-logo&quot; /&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;navigation__list&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                  Lyssna
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                  Languages
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                  Sök
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                  Meny
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navigation__links&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__links-container&quot;&gt;
+            &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Undervisning
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Skolutveckling
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Lagar och regler
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                  Innehåll A-Ö
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hero hero--overlap&quot;&gt;
+  &lt;img src=&quot;_styleguide/assets/img/bildstartsida.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;hero__banner&quot;&gt;
+        &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hero__banner-text&quot;&gt;
+            &lt;span class=&quot;hero__banner-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+              &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--x1-6&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="textpuffar" class="i-library">
 	<h1 class="display-4">Textpuffar</h1>
 	<div><p>Ger användaren överblick lorem ipsum...</p>
@@ -2694,6 +3208,357 @@ både kompilerade och minifierade:</p>
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="understartsida" class="i-library">
+	<h1 class="display-4">Understartsida</h1>
+	<div><p>Genom att använda modifieraren <code>overlap</code> på sektionsnamnet så överlappar den bilden (eller vilken komponent som helst som råkar ligga före sektions-navigationen).</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="understartsida-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="understartsida-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;navigation__header&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__header-container&quot;&gt;
+            &lt;a href=&quot;#/&quot;&gt;
+              &lt;img src=&quot;_styleguide/assets/img/skolverket-logotype.svg&quot; alt=&quot;Skolverket&quot; class=&quot;navigation__header-logo&quot; /&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;navigation__list&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                  Lyssna
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                  Languages
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                  Sök
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                  Meny
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navigation__links&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__links-container&quot;&gt;
+            &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Undervisning
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Skolutveckling
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Lagar och regler
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                  Innehåll A-Ö
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&quot;_styleguide/assets/img/understart.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
+&lt;div class=&quot;section-navigation&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;section-navigation__label section-navigation__label--overlap&quot;&gt;
+          Current section
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskoleklass&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundsärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasieskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasiesärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
+            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Inspiration och stöd i arbetet&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;navigation&quot;&gt;
+  &lt;div class=&quot;navigation__header&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__header-container&quot;&gt;
+            &lt;a href=&quot;#/&quot;&gt;
+              &lt;img src=&quot;_styleguide/assets/img/skolverket-logotype.svg&quot; alt=&quot;Skolverket&quot; class=&quot;navigation__header-logo&quot; /&gt;
+            &lt;/a&gt;
+            &lt;ul class=&quot;navigation__list&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                  Lyssna
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                  Languages
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                  Sök
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                  Meny
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navigation__links&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;div class=&quot;navigation__links-container&quot;&gt;
+            &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Undervisning
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Skolutveckling
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                  Lagar och regler
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;navigation__list-item&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                  Innehåll A-Ö
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;img src=&quot;_styleguide/assets/img/understart.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
+&lt;div class=&quot;section-navigation&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12&quot;&gt;
+        &lt;div class=&quot;section-navigation__label section-navigation__label--overlap&quot;&gt;
+          Current section
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Förskoleklass&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Grundsärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasieskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
+            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Gymnasiesärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
+        &lt;div class=&quot;section-navigation__box&quot;&gt;
+          &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
+            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Inspiration och stöd i arbetet&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -2897,7 +3762,7 @@ både kompilerade och minifierade:</p>
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Introduktion  Snabbstart "
+						data-filter-value=" Introduktion  Konventioner  Snabbstart "
 					>
 						<a href="#category-kom igång" class="i-sidebar-list-item">
 							<b>Kom igång</b>
@@ -2913,6 +3778,13 @@ både kompilerade och minifierade:</p>
 								<span>Introduktion</span>
 							</a>
 							<a
+								href="#konventioner"
+								class="i-sidebar-list-item"
+								data-filter-value="Konventioner"
+							>
+								<span>Konventioner</span>
+							</a>
+							<a
 								href="#snabbstart"
 								class="i-sidebar-list-item"
 								data-filter-value="Snabbstart"
@@ -2926,7 +3798,7 @@ både kompilerade och minifierade:</p>
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Box  Dragspel  Formulär  Knappar  Notifieringar  Sidfot  Sidhuvud  TOC  Textlänkar "
+						data-filter-value=" Box  Dragspel  Formulär  Hero  Knappar  Notifieringar  Sektionnavigering  Sidfot  Sidhuvud  TOC  Textlänkar "
 					>
 						<a href="#category-komponenter" class="i-sidebar-list-item">
 							<b>Komponenter</b>
@@ -2956,6 +3828,13 @@ både kompilerade och minifierade:</p>
 								<span>Formulär</span>
 							</a>
 							<a
+								href="#hero"
+								class="i-sidebar-list-item"
+								data-filter-value="Hero"
+							>
+								<span>Hero</span>
+							</a>
+							<a
 								href="#knappar"
 								class="i-sidebar-list-item"
 								data-filter-value="Knappar"
@@ -2968,6 +3847,13 @@ både kompilerade och minifierade:</p>
 								data-filter-value="Notifieringar"
 							>
 								<span>Notifieringar</span>
+							</a>
+							<a
+								href="#sektionnavigering"
+								class="i-sidebar-list-item"
+								data-filter-value="Sektionnavigering"
+							>
+								<span>Sektionnavigering</span>
 							</a>
 							<a
 								href="#sidfot"
@@ -3004,7 +3890,7 @@ både kompilerade och minifierade:</p>
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Bildpuffar  Frågor och svar  Innehållsnavigering  Nyhetslista  Sektioner  Textpuffar  Återkoppling "
+						data-filter-value=" Bildpuffar  Frågor och svar  Innehållsnavigering  Nyhetslista  Sektioner  Sidstart  Textpuffar  Understartsida  Återkoppling "
 					>
 						<a href="#category-kompositioner" class="i-sidebar-list-item">
 							<b>Kompositioner</b>
@@ -3048,11 +3934,25 @@ både kompilerade och minifierade:</p>
 								<span>Sektioner</span>
 							</a>
 							<a
+								href="#sidstart"
+								class="i-sidebar-list-item"
+								data-filter-value="Sidstart"
+							>
+								<span>Sidstart</span>
+							</a>
+							<a
 								href="#textpuffar"
 								class="i-sidebar-list-item"
 								data-filter-value="Textpuffar"
 							>
 								<span>Textpuffar</span>
+							</a>
+							<a
+								href="#understartsida"
+								class="i-sidebar-list-item"
+								data-filter-value="Understartsida"
+							>
+								<span>Understartsida</span>
 							</a>
 							<a
 								href="#aterkoppling"

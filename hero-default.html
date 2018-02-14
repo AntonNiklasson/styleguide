@@ -32,42 +32,42 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-formular-dropdown"
+			ng-controller="stylemark-hero-default"
 			style="
 				display: block;
 				padding: ;
 				width: ;
 			"
-		><div class="form-group">
-  <label class="text-standard" for="exampleDropdown1">Rullgardin</label>
-  <select class="form-control dropdown icon-dropdown-arrow" id="exampleDropdown1">
-    <option value="1">Val 1</option>
-    <option value="1">Val 2</option>
-  </select>
-</div>
-<div class="form-group">
-  <label class="text-standard" for="exampleDropdown2">Rullgardin ej valbar</label>
-  <select class="form-control dropdown icon-dropdown-arrow-disabled"
-    id="exampleDropdown2" disabled>
-    <option value="1">Platshållare</option>
-  </select>
+		><div class="hero">
+  <img src="_styleguide/assets/img/bildstartsida.png" width="100%" alt="Error with image loading..." />
+  <div class="container">
+    <div class="hero__banner">
+        <div class="col-sm-9 col-md-8 col-lg-7">
+          <a href="#" class="hero__banner-text">
+            <span class="hero__banner-text-stripe">Dags för nationella prov, vi har samlat allt du behöver veta
+              <i class="icon-arrow icon-arrow--white icon-arrow--x1-6"></i>
+            </span>
+          </a>
+        </div>
+    </div>
+  </div>
 </div></main>
 
 		
 
-			<script type="text/x-stylemark" data-language="html"><div class="form-group">
-  <label class="text-standard" for="exampleDropdown1">Rullgardin</label>
-  <select class="form-control dropdown icon-dropdown-arrow" id="exampleDropdown1">
-    <option value="1">Val 1</option>
-    <option value="1">Val 2</option>
-  </select>
-</div>
-<div class="form-group">
-  <label class="text-standard" for="exampleDropdown2">Rullgardin ej valbar</label>
-  <select class="form-control dropdown icon-dropdown-arrow-disabled"
-    id="exampleDropdown2" disabled>
-    <option value="1">Platshållare</option>
-  </select>
+			<script type="text/x-stylemark" data-language="html"><div class="hero">
+  <img src="_styleguide/assets/img/bildstartsida.png" width="100%" alt="Error with image loading..." />
+  <div class="container">
+    <div class="hero__banner">
+        <div class="col-sm-9 col-md-8 col-lg-7">
+          <a href="#" class="hero__banner-text">
+            <span class="hero__banner-text-stripe">Dags för nationella prov, vi har samlat allt du behöver veta
+              <i class="icon-arrow icon-arrow--white icon-arrow--x1-6"></i>
+            </span>
+          </a>
+        </div>
+    </div>
+  </div>
 </div></script>
 
 		<script>
@@ -89,10 +89,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-formular-dropdown', []);
+					module = angular.module('stylemark-hero-default', []);
 				}
 
-				module.controller('stylemark-formular-dropdown', function($scope) {
+				module.controller('stylemark-hero-default', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);
