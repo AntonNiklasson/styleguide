@@ -6,9 +6,10 @@
 .text-link {
   position: relative;
   display: inline-flex;
-  padding: .25rem 0;
+  padding: .25rem .625rem;
   text-decoration: underline;
   color: $color-link;
+  // border: 2px solid transparent;
   cursor: pointer;
 
   &:hover {
@@ -20,7 +21,9 @@
   &:focus {
     text-decoration: underline;
     color: $color-link;
-    border-color: $color-yellow;
+    outline: 0;
+    // border-color: $color-yellow;
+    background: $color-yellow;
   }
 
   &:visited {
@@ -30,18 +33,15 @@
   &.disabled {
     color: #888888;
     cursor: not-allowed;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: none;
 
     &:active,
     &:focus {
-      border-color: transparent;
+      background-color: transparent;
     }
   }
 
   &--icon {
-    padding: 0.125rem 0 0.125rem 0;
+    padding: 0.125rem 0.125rem 0.125rem 0.25rem;
   }
 }
