@@ -48,6 +48,10 @@
       border: 2px solid $color-gray-light;
     }
   }
+  
+  &:disabled {
+    cursor: not-allowed;
+  }
 
   &--error {
     border-color: $color-error;
@@ -55,6 +59,7 @@
     padding-right: 2.625rem;
     background-position: center right .625rem;
     background-size: 1.25rem 1.25rem;
+    background-color: #FCF4F4;
     margin-bottom: .5rem;
 
     &-textarea {
@@ -78,6 +83,7 @@ select.form-control  {
   padding-right: 2.625rem;
   background-position: center right .625rem;
   background-size: 1.25rem 1.25rem;
+  border-radius: 0;
 
   /*for firefox*/
   -moz-appearance: none;
@@ -110,7 +116,7 @@ select.form-control  {
 // Designed to help with the organization and spacing of vertical forms. For
 // horizontal forms, use the predefined grid classes.
 .form-group {
-  margin-bottom: .875rem;
+  margin-bottom: 1.75rem;
   width: 100%;
 
   & .display-flex {
@@ -121,9 +127,9 @@ select.form-control  {
 .form-label {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
-  font-weight: $font-weight-heavy;
+  font-weight: $font-weight-medium;
   margin-bottom: $spacer-xsmall;
-  font-size: $font-size-std;
+  font-size: 1.25rem;
   line-height: $line-height-std;
 
   @media (max-width: 767.9999px) {
@@ -174,6 +180,7 @@ select.form-control  {
   &:disabled {
     ~ .custom-control__label {
       color: $color-gray;
+      cursor: not-allowed;
 
       &::before {
         background-color: $color-gray-light;
@@ -225,6 +232,7 @@ select.form-control  {
   .custom-control__label::before {
     border-radius: .125rem;
   }
+  margin-bottom: 0.25rem;
 
   .custom-control__input:checked ~ .custom-control__label {
     &::after {
@@ -238,6 +246,7 @@ select.form-control  {
   .custom-control__label::before {
     border-radius: 50%;
   }
+  margin-bottom: 0.25rem;
 
   .custom-control__input:checked ~ .custom-control__label {
     &::before {

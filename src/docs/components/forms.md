@@ -35,7 +35,7 @@ Fältet går både att låsa helt (`disabled`), tillåtas att kopieras/läsas (`
 </div>
 <div class="form-group">
   <label class="form-label" for="exampleInputReadonly1">Validerar<span class="text-error">*</span></label>
-  <input class="form-control form-control--error icon-warning" id="exampleInputReadonly1" type="text" placeholder="Validerar...">
+  <input class="form-control form-control--error icon-error" id="exampleInputReadonly1" type="text" placeholder="Validerar...">
   <span class="text-error">Hjälpsamt felmeddelande</span>
 </div>
 ```
@@ -61,7 +61,7 @@ Flerradiga textfält har stöd för samtliga tillstånd.
 <div class="form-group">
   <label class="form-label" for="exampleTextarea3">Textområde med validering<span class="text-error">*</span>
   </label>
-  <textarea class="form-control form-control--error form-control--error-textarea icon-warning"
+  <textarea class="form-control form-control--error form-control--error-textarea icon-error"
     id="exampleTextarea3" rows="4" placeholder="Validerar..."></textarea>
   <span class="text-error">Hjälpsamt felmeddelande</span>
 </div>
@@ -108,14 +108,14 @@ Den här komponenten använder webbläsarens inbyggda `<select>`-element i bakgr
 ```dropdown.html
 <div class="form-group">
   <label class="text-standard" for="exampleDropdown1">Rullgardin</label>
-  <select class="form-control dropdown icon-dropdown-arrow" id="exampleDropdown1">
+  <select class="form-control icon-dropdown-arrow" id="exampleDropdown1">
     <option value="1">Val 1</option>
     <option value="1">Val 2</option>
   </select>
 </div>
 <div class="form-group">
   <label class="text-standard" for="exampleDropdown2">Rullgardin ej valbar</label>
-  <select class="form-control dropdown icon-dropdown-arrow-disabled"
+  <select class="form-control icon-dropdown-arrow-disabled"
     id="exampleDropdown2" disabled>
     <option value="1">Platshållare</option>
   </select>
