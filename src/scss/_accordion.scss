@@ -22,7 +22,7 @@ $block: 'accordion';
       border: 1px solid transparent;
       border-top: 1px solid $color-purple;
       color: $color-purple-dark;
-      font-weight: 600;
+      font-weight: $font-weight-medium;
 
       @include media-query('md') {
         padding: 1.25rem 0.875rem;
@@ -40,11 +40,16 @@ $block: 'accordion';
       &:active:focus {
         color: $color-purple-dark;
       }
+      
+      &:active {
+        border-color: transparent;
+      }
     }
 
     &-body {
       display: none;
       padding: 1.625rem;
+      font-size: 1.125rem;
 
       .#{$block}__item--open & {
         display: block;

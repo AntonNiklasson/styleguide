@@ -58,7 +58,6 @@ Ger användaren överblick lorem ipsum...
 SG_WELL_PURPLE = true;
 
 var items = document.querySelectorAll('.accordion__item-link');
-
 for (i = 0; i < items.length; i++) {
   items[i].addEventListener('click', function() {
     this.closest(".accordion__item").classList.toggle('accordion__item--open');
