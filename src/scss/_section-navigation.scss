@@ -7,6 +7,7 @@ $block: 'section-navigation';
   position: relative;
   padding-top: .875rem;
   padding-bottom: .875rem;
+  background-color: $color-purple-light;
 
   &__label {
     display: inline-block;
@@ -16,7 +17,7 @@ $block: 'section-navigation';
     background-color: $color-purple-dark;
     font-size: 1.375rem;
     line-height: 1;
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     border-top-right-radius: 1.125rem;
 
     @include media-query('md') {
@@ -72,7 +73,7 @@ $block: 'section-navigation';
         color: $color-purple-dark;
         font-size: 1.1875rem;
         line-height: 1.26;
-        font-weight: 600;
+        font-weight: $font-weight-medium;
 
         @include media-query('md') {
           display: flex;
