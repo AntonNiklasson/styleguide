@@ -19,7 +19,7 @@ Ger användaren överblick lorem ipsum...
         <div class="col">
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item">
-              <div class="text-purple-dark text-small">
+              <div text-small">
                 23 mars 2017
               </div>
               <a href="#1" class="content-navigation-list__item-link text-medium">
@@ -28,7 +28,7 @@ Ger användaren överblick lorem ipsum...
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <div class="text-purple-dark text-small">
+              <div text-small">
                 23 mars 2017
               </div>
               <a href="#1" class="content-navigation-list__item-link text-medium">
@@ -37,7 +37,7 @@ Ger användaren överblick lorem ipsum...
               </a>
             </li>
             <li class="content-navigation-list__item">
-              <div class="text-purple-dark text-small">
+              <div text-small">
                 23 mars 2017
               </div>
               <a href="#1" class="content-navigation-list__item-link text-medium">
