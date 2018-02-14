@@ -51,6 +51,12 @@
   margin-left: -$grid-gutter;
 }
 
+.row-reverse {
+  @include media-query('md') {
+    flex-direction: row-reverse;
+  }
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
