@@ -16,7 +16,7 @@ $block: 'btn';
   background-color: $color-white;
 
   &:hover {
-    box-shadow: 0 7px 14px 0 rgba(108, 39, 106, 0.6);
+    box-shadow: 0 7px 14px 0 rgba(108, 39, 106, 0.4);
   }
 
   &:focus,
@@ -41,7 +41,7 @@ $block: 'btn';
     &:hover,
     &:focus {
       box-shadow: none;
-      // border: 1px solid transparent;
+      border: 1px solid transparent;
       margin: 0;
       background-color: $color-gray-light;
     }
@@ -98,6 +98,7 @@ $block: 'btn';
     background-size: 1.25rem;
     background-position: left 12px center;
     border: 2px solid transparent;
+    font-weight: $font-weight-base;
 
     &:hover {
       box-shadow: none;
