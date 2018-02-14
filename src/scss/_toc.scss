@@ -4,8 +4,8 @@ $block: 'toc';
   border-left: 3px solid $color-blue;
   padding: .375rem 1.5rem;
 
-  &-title {
-    font-weight: bold;
+  &__title {
+    font-weight: $font-weight-medium;
     margin-bottom: .75rem;
   }
 
@@ -19,7 +19,7 @@ $block: 'toc';
       padding: .25rem 0;
 
       &-link {
-        font-weight: 600;
+        font-weight: $font-weight-medium;
       }
     }
 
