@@ -15,20 +15,12 @@ $block: 'notification';
     &--bordered {
       border-top: 3px solid $color-turq;
     }
-    &--animated {
-      animation: fadeInDown 1s ease .2s 1 both;
-      animation-delay: 0s;
-    }
   }
 
   &--warning {
     background-color: $color-yellow-light;
     &--bordered {
       border-top: 3px solid $color-yellow;
-    }
-    &--animated {
-      animation: fadeInDown 1s ease .2s 1 both;
-      animation-delay: 0.5s; // TO BE REMOVED
     }
   }
 
@@ -37,10 +29,6 @@ $block: 'notification';
     &--bordered {
       border-top: 3px solid $color-pink-dark;
     }
-    &--animated {
-      animation: fadeInDown 1s ease .2s 1 both;
-      animation-delay: 1s;  // TO BE REMOVED
-    }
   }
 
   &--info {
@@ -48,10 +36,10 @@ $block: 'notification';
     &--bordered {
       border-top: 3px solid $color-blue;
     }
-    &--animated {
-      animation: fadeInDown 1s ease .2s 1 both;
-      animation-delay: 1.5s;  // TO BE REMOVED
-    }
+  }
+
+  &--animated {
+    animation: fadeInDown 1s ease .2s 1 both;
   }
 
   &__flash {
