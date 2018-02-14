@@ -9,7 +9,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialised; }
 
 @-ms-viewport {
   width: device-width; }
@@ -1459,9 +1460,10 @@ select.form-control {
 .text-link {
   position: relative;
   display: inline-flex;
-  padding: .25rem 0;
+  padding: .25rem .625rem;
   text-decoration: underline;
   color: #0079C2;
+  border: 2px solid transparent;
   cursor: pointer; }
   .text-link:hover {
     text-decoration: none;
@@ -1474,13 +1476,12 @@ select.form-control {
     color: #6D7C20; }
   .text-link.disabled {
     color: #888888;
-    cursor: not-allowed; }
-    .text-link.disabled:hover {
-      text-decoration: underline; }
+    cursor: not-allowed;
+    text-decoration: none; }
     .text-link.disabled:active, .text-link.disabled:focus {
       border-color: transparent; }
   .text-link--icon {
-    padding: 0.125rem 0 0.125rem 0; }
+    padding: 0.125rem 0.125rem 0.125rem 0.25rem; }
 
 @media (min-width: 768px) {
   .section {
@@ -1555,8 +1556,8 @@ select.form-control {
 .toc {
   border-left: 3px solid #0079C2;
   padding: .375rem 1.5rem; }
-  .toc-title {
-    font-weight: bold;
+  .toc__title {
+    font-weight: 500;
     margin-bottom: .75rem; }
   .toc__list {
     width: 100%;
@@ -1566,7 +1567,7 @@ select.form-control {
     .toc__list-item {
       padding: .25rem 0; }
       .toc__list-item-link {
-        font-weight: 600; }
+        font-weight: 500; }
     .toc__list--sub {
       padding: .25rem 0 .25rem 1.875rem; }
       .toc__list--sub .toc__list-item-link {
@@ -1705,7 +1706,7 @@ select.form-control {
   border: 1px solid transparent;
   border-top: 1px solid #E8D3E0;
   color: #692969;
-  font-weight: 600; }
+  font-weight: 500; }
   @media (min-width: 768px) {
     .accordion__item-link {
       padding: 1.25rem 0.875rem; } }
@@ -2001,7 +2002,7 @@ select.form-control {
     .mobile-menu__list-item-link {
       text-decoration: none;
       color: #692969;
-      font-weight: 600; }
+      font-weight: 500; }
       .mobile-menu__list-item-link:hover, .mobile-menu__list-item-link:focus, .mobile-menu__list-item-link:active, .mobile-menu__list-item-link:active:focus {
         color: #692969; }
 
@@ -2103,7 +2104,7 @@ select.form-control {
         color: #692969;
         font-size: 1.1875rem;
         line-height: 1.26;
-        font-weight: 600; }
+        font-weight: 500; }
         @media (min-width: 768px) {
           .section-navigation__box-item-link {
             display: flex;
