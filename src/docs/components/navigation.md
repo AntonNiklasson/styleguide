@@ -46,7 +46,7 @@ Beskrivning...
             </li>
             <li class="mobile-menu__list-item">
               <a href="#4" class="mobile-menu__list-item-link text-medium">
-                Innehåll A-Ö
+                <span class="text-reset">Innehåll A-Ö</span>
                 <i class="icon-arrow"></i>
               </a>
             </li>
@@ -115,7 +115,7 @@ Beskrivning...
               </li>
               <li class="navigation__list-item">
                 <a href="#8" class="navigation__list-item-link text-standard">
-                  Innehåll A-Ö
+                  <span class="text-reset">Innehåll A-Ö</span>
                 </a>
               </li>
             </ul>

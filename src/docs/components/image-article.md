@@ -23,7 +23,9 @@ Ger användaren överblick lorem ipsum...
             <li class="content-navigation-list__item">
               <div class="row">
                 <div class="col-4 push-8 col-md-12 push-md-0">
-                  <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image" />
+                  <a href="#1">
+                    <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image" />
+                  </a>
                 </div>
                 <div class="col-8 pull-4 col-md-12 pull-md-0">
                   <a href="#1" class="content-navigation-list__item-link text-medium">
@@ -40,7 +42,9 @@ Ger användaren överblick lorem ipsum...
             <li class="content-navigation-list__item">
               <div class="row">
                 <div class="col-4 push-8 col-md-12 push-md-0">
-                  <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image" />
+                  <a href="#2">
+                    <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image" />
+                  </a>
                 </div>
                 <div class="col-8 pull-4 col-md-12 pull-md-0">
                   <a href="#2" class="content-navigation-list__item-link text-medium">
@@ -57,7 +61,9 @@ Ger användaren överblick lorem ipsum...
             <li class="content-navigation-list__item content-navigation-list__item--no-border">
               <div class="row">
                 <div class="col-4 push-8 col-md-12 push-md-0">
-                  <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image" />
+                  <a href="#3">
+                    <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image" />
+                  </a>
                 </div>
                 <div class="col-8 pull-4 col-md-12 pull-md-0">
                   <a href="#3" class="content-navigation-list__item-link text-medium">

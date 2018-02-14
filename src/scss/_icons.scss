@@ -59,8 +59,8 @@ $base-arrow-height: 0.75rem;
   }
 }
 
-.icon-warning {
-  background-image: url('../assets/img/warning.svg');
+.icon-error {
+  background-image: url('../assets/img/error.svg');
   background-repeat: no-repeat;
 }
 
@@ -85,6 +85,11 @@ $base-arrow-height: 0.75rem;
   background-size: $base-size;
   background-position: right center;
   background-repeat: no-repeat;
+
+  &--x1-2 {
+    padding-right: 22px;
+    background-size: calc(#{$base-size}*1.2);
+  }
 
   &--x1-33 {
     padding-right: 24px;

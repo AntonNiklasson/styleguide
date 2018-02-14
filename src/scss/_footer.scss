@@ -89,7 +89,7 @@ $block: 'footer';
       &-link {
         text-decoration: none;
         color: $color-white;
-        font-weight: 500;
+        font-weight: $font-weight-medium;
 
         &:hover {
           color: $color-white;

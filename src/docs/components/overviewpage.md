@@ -85,25 +85,25 @@ Beskrivning...
         <h1 class="h1">Nationella prov i grundskolan</h1>
         <p class="text-medium">De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.</p>
         <ul class="content-navigation-list">
-          <li class="content-navigation-list__item content-navigation-list__item--aligned">
+          <li class="content-navigation-list__item">
             <a href="#1" class="content-navigation-list__item-link text-medium">
               Suspendisse potenti
               <i class="icon-arrow"></i>
             </a>
           </li>
-          <li class="content-navigation-list__item content-navigation-list__item--aligned">
+          <li class="content-navigation-list__item">
             <a href="#2" class="content-navigation-list__item-link text-medium">
               Phasellus mattis diam convallis lectus ultricies
               <i class="icon-arrow"></i>
             </a>
           </li>
-          <li class="content-navigation-list__item content-navigation-list__item--aligned">
+          <li class="content-navigation-list__item">
             <a href="#3" class="content-navigation-list__item-link text-medium">
               Phasellus mattis diam convallis lectus ultricies
               <i class="icon-arrow"></i>
             </a>
           </li>
-          <li class="content-navigation-list__item content-navigation-list__item--aligned content-navigation-list__item--no-border">
+          <li class="content-navigation-list__item content-navigation-list__item--no-border">
             <a href="#4" class="content-navigation-list__item-link text-medium">
               Phasellus convallis lectus ultricies
               <i class="icon-arrow"></i>
@@ -132,4 +132,5 @@ Beskrivning...
 ```
 ```default.js hidden
 SG_WELL_PURPLE = true;
+SG_WELL_NOT_PADDED = true;
 ```

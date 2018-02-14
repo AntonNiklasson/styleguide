@@ -150,8 +150,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="box box--no-padding">
+<div class="box box--no-padding">
+  <div class="container">
     <div class="section section--boxed">
       <header class="section__header">
         <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
@@ -168,4 +168,5 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
 ```
 ```default.js hidden
 SG_WELL_PURPLE = true;
+SG_WELL_NOT_PADDED = true;
 ```
