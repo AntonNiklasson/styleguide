@@ -42,7 +42,7 @@ Detta alternativ kräver att du konfigurerar
 - Sass-kompilator för att kompilera till CSS
 - Autoprefixer
 
-<a href="/dist/archive/skolverket-source-latest.zip" class="btn btn-primary">Ladda hem källkod</a>
+<a href="/dist/archive/sv-component-library-0.1.0.zip" class="btn btn-primary">Ladda hem källkod</a>
 
 ## Npm
 

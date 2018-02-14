@@ -56,8 +56,7 @@ Ger användaren överblick lorem ipsum...
 ```
 ```default.js hidden
 SG_WELL_PURPLE = true;
-```
-```default.js hidden
+
 var items = document.querySelectorAll('.accordion__item-link');
 
 for (i = 0; i < items.length; i++) {

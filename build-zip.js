@@ -9,7 +9,7 @@ if (!fs.existsSync(dir)) {
 }
 
 // create a file to stream archive data to.
-var output = fs.createWriteStream(dir + '/skolverket-source-latest.zip');
+var output = fs.createWriteStream(dir + '/' + process.env.npm_package_name + '-' + process.env.npm_package_version + '.zip');
 var archive = archiver('zip', {
   zlib: { level: 9 } // Sets the compression level.
 });
