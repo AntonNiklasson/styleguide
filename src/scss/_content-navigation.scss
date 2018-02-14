@@ -26,6 +26,10 @@ $block: 'content-navigation-list';
       border-bottom: none;
     }
 
+    &--aligned {
+      padding-left: 0;
+    }
+
     &-text {
       @include media-query('md') {
         margin-top: 1rem;

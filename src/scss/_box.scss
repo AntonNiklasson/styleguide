@@ -10,10 +10,24 @@ $block: 'box';
 
   @include box-padding;
 
+  &--compact {
+    padding: 18px 24px 24px 26px;
+
+    @include media-query('md') { 
+      padding: 28px 54px 40px 54px;
+    }
+  }
+
   &--margins {
     margin: 0 12px 34px 0; // Account for drop shadow
   }
   &--no-padding {
     padding: 0;
+  }
+  &--no-border {
+    border: 0;
+  }
+  &--mb-large { // TEMPORARY
+    margin-top: $spacer-large; 
   }
 }
