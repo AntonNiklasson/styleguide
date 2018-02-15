@@ -4328,7 +4328,15 @@ både kompilerade och minifierade:</p>
 					<a class="i-muted -hover" href="https://github.com/nextbigsoundinc/stylemark">Stylemark</a>
 				</span>
 			</div>
-		</div>
+    </div>
+    
+    <script type="text/javascript">
+      if (!String.prototype.startsWith) {
+        String.prototype.startsWith = function(search, pos) {
+          return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+        };
+      }
+    </script>
 
 		<script src="_stylemark/js/vendor/jquery-3.2.1.slim.min.js"></script>
 		<script src="_stylemark/js/vendor/popper.min.js"></script>
