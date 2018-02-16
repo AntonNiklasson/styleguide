@@ -3,7 +3,7 @@ name: Notifieringar
 category: Komponenter
 ---
 
-Beskrivning...
+Beskrivning lorem ipsum...
 
 ```default.html
 <div class="notification notification--success">
@@ -66,7 +66,7 @@ for (i = 0; i < items.length; i++) {
 }
 ```
 
-Animerade med modifieraren `animated`.
+Animerade med modifieraren `--animated`.
 
 ```flash.html
 <div class="notification notification--success notification--animated">
