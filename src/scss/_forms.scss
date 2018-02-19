@@ -12,7 +12,7 @@
   color: $color-input;
   background-color: $color-input-bg;
   background-clip: padding-box;
-  border: 2px solid $color-input-bg;
+  border: 0;
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
@@ -21,8 +21,7 @@
   }
 
   &:focus {
-    border: 2px solid $color-yellow;
-    outline: 0;
+    outline: 2px solid $color-yellow;
     color: $color-black;
   }
 
@@ -43,10 +42,6 @@
     background-color: $color-gray-light;
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
-
-    &:focus {
-      border: 2px solid $color-gray-light;
-    }
   }
   
   &:disabled {
@@ -54,11 +49,11 @@
   }
 
   &--error {
-    border-color: $color-error;
+    border: 2px solid $color-error;
     box-shadow: 0 3px 0 0 $color-error;
     padding-right: 2.625rem;
     background-position: center right .625rem;
-    background-size: 1.25rem 1.25rem;
+    background-size: 1.5rem;
     background-color: #FCF4F4;
     margin-bottom: .5rem;
 
@@ -67,21 +62,22 @@
     }
 
     &:focus {
-      outline: 1px solid $color-yellow;
+      outline: 2px solid $color-yellow;
+      border-color: transparent;
     }
   }
 
   &--search {
     padding-left: 2.625rem;
-    background-position: center left .625rem;
-    background-size: 1.25rem 1.25rem;
+    background-position: left .625rem center;
+    background-size: 1.5rem;
     margin-right: .5rem;
   }
 }
 
 select.form-control  {
   padding-right: 2.625rem;
-  background-position: center right .625rem;
+  background-position: right .625rem center;
   background-size: 1.25rem 1.25rem;
   border-radius: 0;
 
@@ -142,7 +138,6 @@ select.form-control  {
   }
 }
 
-//
 .form-text {
   display: block;
   font-size: 1rem;
@@ -175,6 +170,10 @@ select.form-control  {
 
   &:active ~ .custom-control__label::before {
     background-color: $color-purple;
+  }
+
+  &:focus ~ .custom-control__label::before {    // ???
+    outline: 1px solid #4D90FE;            
   }
 
   &:disabled {
