@@ -11,7 +11,7 @@ Ger användaren överblick lorem ipsum...
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Frågor och svar<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Dolarsum <a href="/press">rimpvom</a></p>
+        <p>Dolarsum <a href="/press" class="text-link">rimpvom</a></p>
       </div>
     </header>
     <div class="section__body">
@@ -20,7 +20,7 @@ Ger användaren överblick lorem ipsum...
           <h5 class="accordion__item-header" id="headingOne">
               <a class="accordion__item-link text-medium" href="#accordion1">
                 Cliche reprehenderit, enim eiusmod?
-                <i class="accordion__item-icon icon-arrow icon-arrow--rotate-down"></i>
+                <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
               </a>
           </h5>
           <div class="accordion__item-body" data-parent="#accordion">
@@ -31,7 +31,7 @@ Ger användaren överblick lorem ipsum...
           <h5 class="accordion__item-header" id="headingTwo">
               <a class="accordion__item-link text-medium" href="#accordion2">
                 Coffee nulla assumenda shoreditch?
-                <i class="accordion__item-icon icon-arrow icon-arrow--rotate-down"></i>
+                <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
               </a>
           </h5>
           <div class="accordion__item-body" data-parent="#accordion">
@@ -42,7 +42,7 @@ Ger användaren överblick lorem ipsum...
           <h5 class="accordion__item-header" id="headingThree">
               <a class="accordion__item-link text-medium" href="#accordion3">
                 Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid?
-                <i class="accordion__item-icon icon-arrow icon-arrow--rotate-down"></i>
+                <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
               </a>
           </h5>
           <div class="accordion__item-body" data-parent="#accordion">

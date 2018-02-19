@@ -13,7 +13,7 @@ Ger användaren överblick lorem ipsum...
         <div class="col-sm-9 col-md-8 col-lg-7">
           <a href="#" class="hero__banner-text">
             <span class="hero__banner-text-stripe">Dags för nationella prov, vi har samlat allt du behöver veta
-              <i class="icon-arrow icon-arrow--white icon-arrow--x1-6"></i>
+              <i class="icon-arrow icon-arrow--white icon-arrow--xlg"></i>
             </span>
           </a>
         </div>

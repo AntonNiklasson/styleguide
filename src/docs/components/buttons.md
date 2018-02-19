@@ -16,10 +16,8 @@ Det finns tre typer av knappar:
 <button class="btn btn--primary">Primär</button>
 <button class="btn btn--secondary">Sekundär</button>
 <button class="btn btn--primary" disabled>Disabled</button>
-<button class="btn btn-icon icon-speaker">Lyssna</button>
-<button class="btn btn-icon icon-speaker-disabled" disabled>Lyssna</button>
-<button class="btn btn-icon btn-icon--right icon-dropdown-arrow">Platshållare</button>
-<button class="btn btn-icon btn-icon--right icon-dropdown-arrow-disabled" disabled>Platshållare</button>
+<button class="btn btn-icon icon-volume">Lyssna</button>
+<button class="btn btn-icon icon-volume-disabled" disabled>Lyssna</button>
 ```
 
 En variant för små knappar finns och _bör_ används där utrymmet är begränsat eller där en normal knappstorlek skulle få för mycket uppmärksamhet.

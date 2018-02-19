@@ -12,7 +12,7 @@ Med ett så kallat dragspel kan du dela upp en sida med mycket innehåll i tydli
       <h5 class="accordion__item-header" id="headingOne">
           <a class="accordion__item-link text-medium" href="#accordion1">
             Grupp 1
-            <i class="accordion__item-icon icon-arrow icon-arrow--rotate-down"></i>
+            <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
           </a>
       </h5>
       <div class="accordion__item-body" data-parent="#accordion">
@@ -23,7 +23,7 @@ Med ett så kallat dragspel kan du dela upp en sida med mycket innehåll i tydli
       <h5 class="accordion__item-header" id="headingTwo">
           <a class="accordion__item-link text-medium" href="#accordion2">
             Grupp 2
-            <i class="accordion__item-icon icon-arrow icon-arrow--rotate-down"></i>
+            <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
           </a>
       </h5>
       <div class="accordion__item-body" data-parent="#accordion">
@@ -34,7 +34,7 @@ Med ett så kallat dragspel kan du dela upp en sida med mycket innehåll i tydli
       <h5 class="accordion__item-header" id="headingThree">
           <a class="accordion__item-link text-medium" href="#accordion3">
             Grupp 3
-            <i class="accordion__item-icon icon-arrow icon-arrow--rotate-down"></i>
+            <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
           </a>
       </h5>
       <div class="accordion__item-body" data-parent="#accordion">

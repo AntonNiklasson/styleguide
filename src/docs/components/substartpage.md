@@ -88,7 +88,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#1" class="section-navigation__box-item-link">
-              Förskola<i class="icon-arrow"></i>
+              Förskola
+              <i class="icon-arrow"></i>
             </a>
           </div>
         </div>
@@ -97,7 +98,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#2" class="section-navigation__box-item-link">
-              Förskoleklass<i class="icon-arrow"></i>
+              Förskoleklass
+              <i class="icon-arrow"></i>
             </a>
           </div>
         </div>
@@ -106,7 +108,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#3" class="section-navigation__box-item-link">
-              Grundskola<i class="icon-arrow"></i>
+              Grundskola
+              <i class="icon-arrow"></i>
             </a>
           </div>
         </div>
@@ -115,7 +118,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#4" class="section-navigation__box-item-link">
-              Grundsärskola<i class="icon-arrow"></i>
+              Grundsärskola
+              <i class="icon-arrow"></i>
             </a>
           </div>
         </div>
@@ -124,7 +128,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#5" class="section-navigation__box-item-link">
-              Gymnasieskola<i class="icon-arrow"></i>
+              Gymnasieskola
+              <i class="icon-arrow"></i>
             </a>
           </div>
         </div>
@@ -133,7 +138,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#6" class="section-navigation__box-item-link">
-              Gymnasiesärskola<i class="icon-arrow"></i>
+              Gymnasiesärskola
+              <i class="icon-arrow"></i>
             </a>
           </div>
         </div>
@@ -142,7 +148,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item section-navigation__box-item--no-border">
             <a href="#7" class="section-navigation__box-item-link">
-              Inspiration och stöd i arbetet<i class="icon-arrow"></i>
+              Inspiration och stöd i arbetet
+              <i class="icon-arrow"></i>
             </a>
           </div>
         </div>
@@ -150,8 +157,8 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
     </div>
   </div>
 </div>
-<div class="box box--no-padding">
-  <div class="container">
+<div class="container">
+  <div class="box box--no-padding">
     <div class="section section--boxed">
       <header class="section__header">
         <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
