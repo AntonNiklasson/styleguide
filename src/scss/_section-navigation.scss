@@ -41,7 +41,7 @@ $block: 'section-navigation';
 
     &-item {
       width: 100%;
-      padding: 0.6875rem 0 0.6875rem 0.75rem;
+      padding: 0.6875rem 0;
       background-color: $color-purple-light;
       border-bottom: 1px solid $color-purple;
 
@@ -82,11 +82,12 @@ $block: 'section-navigation';
           text-align: center;
           height: 100%;
           font-size: 1.5rem;
+          padding-right: 0;
         }
 
         @include media-query('md') {
           &>.icon-arrow {
-            visibility: hidden;
+            display: none;
           }
         }
 

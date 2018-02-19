@@ -52,7 +52,7 @@ Flerradiga textfält har stöd för samtliga tillstånd.
 </div>
 <div class="form-group">
   <label class="form-label" for="exampleTextarea2">Textområde som är avstängt</label>
-  <textarea class="form-control" id="exampleTextarea2" rows="4" placeholder="Kan inte ändras..." readonly></textarea>
+  <textarea class="form-control" id="exampleTextarea2" rows="4" placeholder="Kan inte ändras..." disabled></textarea>
 </div>
 <div class="form-group">
   <label class="form-label" for="exampleTextarea3">Textområde som bara går att kopiera</label>

@@ -13,7 +13,7 @@ Ger användaren överblick lorem ipsum...
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Dolarsum <a href="/press">rimpvom</a></p>
+        <p>Dolarsum <a href="/press" class="text-link">rimpvom</a></p>
       </div>
     </header>
     <div class="section__body">
@@ -87,39 +87,29 @@ SG_WELL_PURPLE = true;
 ## Variant 2
 
 ```secondary.html
-<div class="box box--no-padding">
-  <div class="section section--boxed">
-    <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
-      <div class="section__header-preamble text-secondary">
-        <p>Dolarsum <a href="/press">rimpvom</a></p>
-      </div>
-    </header>
-    <div class="section__body">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <ul class="content-navigation-list">
-            <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
-              <a href="#1" class="content-navigation-list__item-link text-xlarge">
-                Quisque augue dui, suscipit consequat
-                <i class="icon-arrow icon-arrow--lg"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-6">
-          <ul class="content-navigation-list">
-            <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
-              <a href="#2" class="content-navigation-list__item-link text-xlarge">
-                Quisque augue dui, suscipit consequat metus nec, bibendum 
-                <i class="icon-arrow icon-arrow--lg"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<div class="box">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <ul class="content-navigation-list">
+        <li class="content-navigation-list__item content-navigation-list__item--no-border">
+          <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
+          <a href="#1" class="content-navigation-list__item-link text-xlarge">
+            Quisque augue dui, suscipit consequat
+            <i class="icon-arrow icon-arrow--lg"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-6">
+      <ul class="content-navigation-list">
+        <li class="content-navigation-list__item content-navigation-list__item--no-border">
+          <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
+          <a href="#2" class="content-navigation-list__item-link text-xlarge">
+            Quisque augue dui, suscipit consequat metus nec, bibendum 
+            <i class="icon-arrow icon-arrow--lg"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

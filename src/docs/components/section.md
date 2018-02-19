@@ -17,7 +17,7 @@ Sektioner används för att skapa en tydlig och lättöverskådlig struktur på 
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Fler nyheter i <a href="/press">pressrummet</a></p>
+        <p>Fler nyheter i <a href="/press" class="text-link">pressrummet</a></p>
       </div>
     </header>
     <div class="section__body">

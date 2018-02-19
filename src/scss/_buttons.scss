@@ -93,10 +93,10 @@ $block: 'btn';
   &-icon {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
-    padding-left: calc(20px + 1.25rem);
+    padding-left: calc(12px + 1.5rem);
     padding-right: 0.875rem;
-    background-size: 1.25rem;
-    background-position: left 12px center;
+    background-size: 1.5rem;
+    background-position: left 6px center;
     border: 2px solid transparent;
     font-weight: $font-weight-base;
 
@@ -113,7 +113,7 @@ $block: 'btn';
 
     &--right {
       padding-left: 0.875rem;
-      padding-right: calc(8px + 1.25rem);
+      padding-right: calc(12px + 1.5rem);
       background-position: right 6px center;
     }
   }

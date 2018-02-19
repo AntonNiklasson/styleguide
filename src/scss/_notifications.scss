@@ -52,7 +52,7 @@ $block: 'notification';
 
   &__textbox {
     @include media-query('md') {
-      padding: 24px 10px 20px 10px;
+      padding: 1.5rem .625rem 1.25rem .625rem;
     }
   }
 }
