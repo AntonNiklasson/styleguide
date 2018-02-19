@@ -114,8 +114,8 @@ Beskrivning...
     </div>
   </div>
 </div>
-<div class="box box--no-padding box--mb-large">
-  <div class="container">
+<div class="container">
+  <div class="box box--no-padding box--mb-large">
     <div class="section section--boxed">
       <header class="section__header">
         <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
