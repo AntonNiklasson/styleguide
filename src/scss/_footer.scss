@@ -32,7 +32,7 @@ $block: 'footer';
     background-repeat: no-repeat;
     color: transparent;
     background-color: transparent;
-    background-size: 100% 100%;
+    background-size: 100%;
   }
 
   &__description {
@@ -72,7 +72,7 @@ $block: 'footer';
     }
 
     &-item {
-      padding: .625rem 0.9375rem .625rem 0.9375rem;
+      padding: .625rem .625rem .625rem 0;
       border-bottom: 1px solid $color-purple;
       &:last-child {
         border-bottom: 0;
@@ -84,6 +84,7 @@ $block: 'footer';
 
       @include media-query('md') {
         border-bottom: 0;
+        padding-right: 1.75rem;
       }
 
       &-link {
