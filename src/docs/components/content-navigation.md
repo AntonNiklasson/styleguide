@@ -11,7 +11,7 @@ Ger användaren överblick lorem ipsum...
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Dolarsum <a href="/press">rimpvom</a></p>
+        <p>Dolarsum <a href="/press" class="text-link">rimpvom</a></p>
       </div>
     </header>
     <div class="section__body">
