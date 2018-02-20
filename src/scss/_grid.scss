@@ -1011,6 +1011,14 @@
 }
 */
 
+@media (max-width: 768.9999px) {
+  .container {
+    padding-left: $page-padding-medium;
+    padding-right: $page-padding-medium;
+  }
+}
+
+
 @media (max-width: 375.9999px) {
   .container {
     padding-left: $page-padding-small;

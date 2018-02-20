@@ -23,7 +23,7 @@ $block: 'section';
         position: relative;
         z-index: 1;
         background: #fff;
-        padding-right: $spacer-small;
+        padding-right: 15px;
       }
       &::after {
         content: '';
@@ -66,10 +66,6 @@ $block: 'section';
 
   &--boxed {
     @include box-padding;
-  }
-
-  &--margins {
-    @include vertical-margins;
   }
 
   &--compact-padding {

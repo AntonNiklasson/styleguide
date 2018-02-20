@@ -3,27 +3,28 @@
 // If a variable is only used in one component it should probably not
 // be placed here but moved to the component as a local :root variable
 
-// Spacing
-//
-// Control the default styling of most elements by modifying these
-// variables. Mostly focused on spacing.
-$spacer: 1rem !default; // Assumes the browser default, typically `16px`
-$spacer-xxsmall: .1875rem;    // 3px
-$spacer-xsmall: .3125rem;     // 5px
-$spacer-small: .625rem;       // 10px
-$spacer-medium: 1.250rem;     // 20px
-$spacer-large: 1.875rem;      // 30px
-$spacer-xlarge: 2.5rem;       // 40px
-$spacer-xxlarge: 3.75rem;     // 60px
-$spacer-xxxlarge: 5rem;       // 80px
+///
+/// PX to EM utility
+@function em($pixels, $context: 16px) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
 
 // Grid and page defining space
-$page-max-width: 1280px !default;
-$page-padding: 1.125rem !default;
-$page-padding-small: 0.9375rem !default;
-$grid-gutter: 0.875rem !default;
-$grid-gutter-small: 0.46875rem !default;
-
+$page-max-width: 1244px !default;
+$page-padding: em(54) !default;
+$page-padding-medium: em(26) !default;
+$page-padding-small: em(15) !default;
+$grid-gutter: em(14) !default;
+$grid-gutter-small: em(7.5) !default;
+$baseline: em(28) !default;
 
 /// Colors
 $color-black: #000 !default;

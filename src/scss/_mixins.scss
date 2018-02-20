@@ -58,38 +58,13 @@
 }
 ///
 /// Adds padding for boxed content
-/// Left
 @mixin box-padding() {
-  padding: $spacer-xlarge $page-padding-small * 2;
+  padding: ($baseline / 2) $page-padding-small;
   @include media-query('sm') {
-    padding: $spacer-xxlarge $page-padding * 2;
+    padding: $baseline $page-padding-medium;
   }
-}
-///
-/// Adds consistent margins
-/// Left
-@mixin vertical-margins($size: 'md') {
-  @if $size == 'sm' {
-    margin-top: $spacer-large;
-    margin-bottom: $spacer-large;
-    @include media-query('sm') {
-      margin-top: $spacer-xlarge;
-      margin-bottom: $spacer-xlarge;
-    }
-  } @else if $size == 'lg' {
-    margin-top: $spacer-xxlarge;
-    margin-bottom: $spacer-xxlarge;
-    @include media-query('sm') {
-      margin-top: $spacer-xxxlarge;
-      margin-bottom: $spacer-xxxlarge;
-    }
-  } @else {
-    margin-top: $spacer-xlarge;
-    margin-bottom: $spacer-xlarge;
-    @include media-query('sm') {
-      margin-top: $spacer-xxlarge;
-      margin-bottom: $spacer-xxlarge;
-    }
+  @include media-query('md') {
+    padding: ($baseline * 2) $page-padding;
   }
 }
 ///

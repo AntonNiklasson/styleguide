@@ -43,7 +43,7 @@
     // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
     opacity: 1;
   }
-  
+
   &:disabled {
     cursor: not-allowed;
   }
@@ -124,7 +124,7 @@ select.form-control  {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
   font-weight: $font-weight-medium;
-  margin-bottom: $spacer-xsmall;
+  margin-bottom: ($baseline / 4);
   font-size: 1.25rem;
   line-height: $line-height-std;
 
@@ -173,7 +173,7 @@ select.form-control  {
   }
 
   &:focus ~ .custom-control__label::before {    // ???
-    outline: 1px solid #4D90FE;            
+    outline: 1px solid #4D90FE;
   }
 
   &:disabled {

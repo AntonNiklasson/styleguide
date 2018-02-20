@@ -13,7 +13,7 @@ $block: 'box';
   &--compact {
     padding: 18px 24px 24px 26px;
 
-    @include media-query('md') { 
+    @include media-query('md') {
       padding: 28px 54px 40px 54px;
     }
   }
@@ -26,8 +26,5 @@ $block: 'box';
   }
   &--no-border {
     border: 0;
-  }
-  &--mb-large { // TEMPORARY
-    margin-top: $spacer-large; 
   }
 }

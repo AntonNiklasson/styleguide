@@ -7,8 +7,6 @@ $block: 'hero';
     position: absolute;
     bottom: 30px;
     left: 0;
-    padding-left: $page-padding;
-    padding-right: $page-padding;
 
     @include media-query('md') {
       bottom: 60px;
