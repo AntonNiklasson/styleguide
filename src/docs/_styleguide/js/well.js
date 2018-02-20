@@ -17,15 +17,15 @@
     var isInIframe = inIframe();
     var bodyClasses = [];
     var body = document.body;
+    if (global('SG_WELL_PURPLE')) {
+      bodyClasses.push('Body--purple')
+    }
     if (isInIframe) {
-      if (global('SG_WELL_PURPLE')) {
-        bodyClasses.push('Body--purple')
-        if (!global('SG_WELL_NOT_PADDED')) bodyClasses.push('Body--padded')
-      } else {
+      if (!global('SG_WELL_NOT_PADDED')) {
         bodyClasses.push('Body--padded')
       }
-      bodyClasses.forEach(function (cls) { body.classList.add(cls) });
     }
+    bodyClasses.forEach(function (cls) { body.classList.add(cls) });
   }
 
   document.addEventListener('DOMContentLoaded', init);
