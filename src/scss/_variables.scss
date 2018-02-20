@@ -18,7 +18,7 @@
 }
 
 // Grid and page defining space
-$page-max-width: 1244px !default;
+$page-max-width: em(1244) !default;
 $page-padding: em(54) !default;
 $page-padding-medium: em(26) !default;
 $page-padding-small: em(15) !default;
