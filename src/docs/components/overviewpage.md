@@ -75,7 +75,7 @@ Beskrivning...
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container container--margins">
   <div class="row row-reverse">
     <div class="col-12 col-md-4">
       <img src="_styleguide/assets/img/overview.png" width="100%" alt="Error with image loading..." />
