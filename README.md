@@ -14,4 +14,4 @@ npm start
 Go to [localhost:3000](http://localhost:3000) to view the component library.
 
 # Contribute
-To develop a component, go to `/src/scss/_component.scss` and write your code following [BEM](http://getbem.com/introduction/) Document your component in Markdown `/src/docs/_component.scss`. Then make a Pull Request.
+To develop a component, go to `/src/scss/_component.scss` and write your code following [BEM](http://getbem.com/introduction/). Document your component in Markdown `/src/docs/_component.scss`. Then make a Pull Request.
