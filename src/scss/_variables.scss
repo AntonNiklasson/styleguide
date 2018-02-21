@@ -1,30 +1,19 @@
+@import "mixins";
+
 // Variables
 // These variables should be global and reused across components.
 // If a variable is only used in one component it should probably not
 // be placed here but moved to the component as a local :root variable
 
-///
-/// PX to EM utility
-@function em($pixels, $context: 16px) {
-  @if (unitless($pixels)) {
-    $pixels: $pixels * 1px;
-  }
-
-  @if (unitless($context)) {
-    $context: $context * 1px;
-  }
-
-  @return $pixels / $context * 1em;
-}
 
 // Grid and page defining space
-$page-max-width: em(1244) !default;
-$page-padding: em(54) !default;
-$page-padding-medium: em(26) !default;
-$page-padding-small: em(15) !default;
-$grid-gutter: em(14) !default;
-$grid-gutter-small: em(7.5) !default;
-$baseline: em(28) !default;
+$page-max-width: rem(1244) !default;
+$page-padding: rem(54) !default;
+$page-padding-medium: rem(26) !default;
+$page-padding-small: rem(15) !default;
+$grid-gutter: rem(14) !default;
+$grid-gutter-small: rem(7.5) !default;
+$baseline: rem(28) !default;
 
 /// Colors
 $color-black: #000 !default;

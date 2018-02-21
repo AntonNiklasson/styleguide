@@ -57,6 +57,32 @@
   }
 }
 ///
+/// PX to EM utility
+@function em($pixels, $context: 16px) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+///
+/// PX to REM utility
+@function rem($pixels, $context: 16px) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+///
 /// Adds padding for boxed content
 @mixin box-padding() {
   padding: ($baseline / 2) $page-padding-small;
