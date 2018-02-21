@@ -7,7 +7,7 @@ View the component library at [here](https://acandocxc.github.io/skolverket-komp
 # View component library locally
 
 ```sh
-npm  install
+npm install
 npm start
 ```
 
