@@ -1,6 +1,6 @@
 # Skolverket UI Component Library
 
-The component library uses a the style guide [Stylemark](https://github.com/nextbigsoundinc/stylemark) to visualize common UI components used at Skolverket. To develop new components or make changes to existing ones, you need to have both [Node] (https://nodejs.org) installed and it is assumed knowledge of the version control [git](http://www.git-scm.com).
+The component library uses a the style guide [Stylemark](https://github.com/nextbigsoundinc/stylemark) to visualize common UI components used at Skolverket. To develop new components or make changes to existing ones, you need to have both [Node](https://nodejs.org) installed and it is assumed knowledge of the version control [git](http://www.git-scm.com).
 
 View the component library at [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
 
