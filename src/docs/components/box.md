@@ -41,14 +41,14 @@ Det går att lägga vilket innehål som helst i en box.
           Vad är yrkesprogram och högskoleförberedande program?
         </a>
       </li>
-      <li class="toc__list-item">
+      <li>
         <ul class="toc__list toc__list--sub">
-          <li class="toc_list-item">
+          <li class="toc__list-item">
             <a href="#toc2" class="toc__list-item-link text-small">
               Yrkesprogram
             </a>
           </li>
-          <li class="toc_list-item">
+          <li class="toc__list-item">
             <a href="#toc3" class="toc__list-item-link text-small">
               Högskoleförberedande program
             </a>
