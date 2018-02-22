@@ -46,14 +46,14 @@ SG_WELL_PURPLE = true;
 ```
 
 Väljer användaren nej, presenteras ett formulär med möjlighet till återkoppling.
-                    
+
 ```textarea.html
 <div class="box box--no-padding">
   <div class="section section--boxed">
   </div>
   <div class="section section--boxed section--compact-padding">
     <div class="feedback feedback--textarea">
-      <div class="form-group">
+      <div class="form-group form-group--margin-b-small">
         <label class="form-label" for="exampleTextarea1">Tack, berätta gärna hur vi kan förbättra den här sidan</label>
         <textarea class="form-control" id="exampleTextarea1" rows="4" aria-describedby="textareaHelp" placeholder="Platshållare"></textarea>
       </div>
