@@ -18,11 +18,12 @@ $block: 'section';
     &-title {
       position: relative;
       font-weight: 400;
+      margin: 0;
 
       &-text {
         position: relative;
         z-index: 1;
-        background: #fff;
+        background: $color-white;
         padding-right: 15px;
       }
       &::after {
@@ -48,11 +49,20 @@ $block: 'section';
     }
     &-preamble {
       margin-bottom: 0.875rem;
+      font-size: rem(16px);
+      line-height: rem(24px);
+      
+      @include media-query('md') {
+        flex: 0 0 220px;
+        max-width: 220px;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+      }
     }
 
     @include media-min('md') {
-      flex: 0 0 200px;
-      max-width: 200px;
+      flex: 0 0 220px;
+      max-width: 220px;
     }
   }
 
