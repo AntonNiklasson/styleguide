@@ -25,3 +25,4 @@ To develop a component, go to `/src/scss/_component.scss` and write your code fo
 2. `git push`
 3. `git push --tags` to see the release notes in Github
 4. `npm run deploy` the component library at [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
+5. Inform the system owners across Skolverket to upgrade to the new release.
