@@ -11,7 +11,7 @@ Ger användaren överblick lorem ipsum...
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
+      <h3 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h3>
       <div class="section__header-preamble text-secondary">
         <p>Dolarsum <a href="/press" class="text-link">rimpvom</a></p>
       </div>
@@ -28,7 +28,7 @@ Ger användaren överblick lorem ipsum...
                   </a>
                 </div>
                 <div class="col-8 pull-4 col-md-12 pull-md-0">
-                  <a href="#1" class="content-navigation-list__item-link text-medium">
+                  <a href="#1" class="content-navigation-list__item-link text-standard">
                     Vivamus placerat, neque quis rutrum feugiat turpis
                     <i class="icon-arrow"></i>
                   </a>
@@ -47,7 +47,7 @@ Ger användaren överblick lorem ipsum...
                   </a>
                 </div>
                 <div class="col-8 pull-4 col-md-12 pull-md-0">
-                  <a href="#2" class="content-navigation-list__item-link text-medium">
+                  <a href="#2" class="content-navigation-list__item-link text-standard">
                     Vivamus placerat, neque quis
                     <i class="icon-arrow"></i>
                   </a>
@@ -66,7 +66,7 @@ Ger användaren överblick lorem ipsum...
                   </a>
                 </div>
                 <div class="col-8 pull-4 col-md-12 pull-md-0">
-                  <a href="#3" class="content-navigation-list__item-link text-medium">
+                  <a href="#3" class="content-navigation-list__item-link text-standard">
                     Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
                     <i class="icon-arrow"></i>
                   </a>
@@ -93,7 +93,7 @@ SG_WELL_PURPLE = true;
       <ul class="content-navigation-list">
         <li class="content-navigation-list__item content-navigation-list__item--no-border">
           <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
-          <a href="#1" class="content-navigation-list__item-link text-xlarge">
+          <a href="#1" class="content-navigation-list__item-link text-big">
             Quisque augue dui, suscipit consequat
             <i class="icon-arrow icon-arrow--lg"></i>
           </a>
@@ -104,7 +104,7 @@ SG_WELL_PURPLE = true;
       <ul class="content-navigation-list">
         <li class="content-navigation-list__item content-navigation-list__item--no-border">
           <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
-          <a href="#2" class="content-navigation-list__item-link text-xlarge">
+          <a href="#2" class="content-navigation-list__item-link text-big">
             Quisque augue dui, suscipit consequat metus nec, bibendum 
             <i class="icon-arrow icon-arrow--lg"></i>
           </a>
