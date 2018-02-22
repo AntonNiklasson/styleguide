@@ -6,18 +6,19 @@ category: Komponenter
 Formulär används för att skicka data. Varje formulärelement är omslutet av ett `.form-group`-element.
 
 ## Textfält
-Textfält låter användaren skriva in en kombination av bokstäver, siffror och symboler. 
+Textfält låter användaren skriva in en kombination av bokstäver, siffror och symboler.
 Textfält kan vara enradiga eller på flera rader.
- 
+
 Fältet går både att låsa helt `disabled`, tillåtas att kopieras/läsas `readonly` eller markera eventuella valideringsfel.
+
 ```input-simple.html
 <form>
   <div class="form-group">
-    <label class="form-label margin-reset" for="exampleInputEmail1">Textfältstitel</label>
+    <label class="form-label form-label--margin-reset" for="exampleInputEmail1">Textfältstitel</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Platshållare">
   </div>
   <div class="form-group">
-    <label class="form-label margin-reset" for="exampleInputEmail1">Textfältstitel</label>
+    <label class="form-label form-label--margin-reset" for="exampleInputEmail1">Textfältstitel</label>
     <span id="emailHelp" class="form-text">Kontextuell hjälptext</span>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Platshållare">
   </div>
@@ -32,10 +33,10 @@ Fältet går både att låsa helt `disabled`, tillåtas att kopieras/läsas `rea
   <div class="form-group">
     <label class="form-label" for="exampleInputReadonly1">Textfältstitel<span class="text-error">*</span></label>
     <input class="form-control form-control--error icon-error" id="exampleInputReadonly1" type="text" placeholder="">
-    <span class="text-error">Hjälpsamt felmeddelande</span>
+    <span class="text-error text-small">Hjälpsamt felmeddelande</span>
   </div>
   <div class="form-group">
-    <label class="form-label margin-reset" for="exampleTextarea1">Textfältstitel</label>
+    <label class="form-label form-label--margin-reset" for="exampleTextarea1">Textfältstitel</label>
     <textarea class="form-control" id="exampleTextarea1" rows="4" aria-describedby="textareaHelp" placeholder="Platshållare"></textarea>
   </div>
 </form>
