@@ -9,11 +9,10 @@
   "homepage": "https://acandocxc.github.io/skolverket-komponentbibliotek",
   "scripts": {
     "start": "npm-run-all -p watch-*",
-    "build": "npm-run-all build-docs* build-css* copy-assets build-zip",
+    "build": "npm-run-all build-docs* build-css* copy-assets",
     "deploy": "gh-pages -d public --dotfiles",
     "watch-docs": "stylemark -i src/docs -o public -c stylemark.yml -w -b",
     "build-docs": "stylemark -i src/docs -o public -c stylemark.yml",
-    "build-zip": "node build-zip.js",
     "build-css": "node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css",
     "copy-assets": "cpx \"src/assets/**/*\" public/dist/assets",
     "watch-assets": "cpx \"src/assets/**/*\" public/dist/assets --watch",
@@ -21,7 +20,6 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
-    "archiver": "^2.1.1",
     "cpx": "^1.5.0",
     "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^0.0.3",
