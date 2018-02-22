@@ -15,7 +15,7 @@ Sektioner används för att skapa en tydlig och lättöverskådlig struktur på 
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
+      <h3 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h3>
       <div class="section__header-preamble text-secondary">
         <p>Fler nyheter i <a href="/press" class="text-link">pressrummet</a></p>
       </div>
@@ -37,7 +37,7 @@ När flera sektioner läggs bredvid varandra läggs en horisontell avdelare auto
   <div class="box box--no-padding">
     <div class="section section--boxed">
       <header class="section__header">
-        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></h2>
+        <h3 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></h3>
       </header>
       <div class="section__body">
         <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
@@ -45,7 +45,7 @@ När flera sektioner läggs bredvid varandra läggs en horisontell avdelare auto
     </div>
     <div class="section section--boxed">
       <header class="section__header">
-        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 2<span></h2>
+        <h3 class="h3 section__header-title"><span class="section__header-title-text">Sektion 2<span></h3>
       </header>
       <div class="section__body">
         <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
