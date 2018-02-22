@@ -52,7 +52,7 @@ $block: 'section';
       font-size: rem(16px);
       line-height: rem(24px);
 
-      @include media-query('md') {
+      @include media-min('md') {
         flex: 0 0 220px;
         max-width: 220px;
         font-size: $font-size-sm;

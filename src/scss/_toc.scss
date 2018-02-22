@@ -5,7 +5,7 @@ $block: 'toc';
   padding-left: 1rem;
   padding-right: 1rem;
 
-  @include media-query('md') {
+  @include media-min('md') {
     padding: .375rem 1.5rem;
   }
 
