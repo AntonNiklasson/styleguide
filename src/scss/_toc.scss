@@ -2,11 +2,17 @@ $block: 'toc';
 
 .#{$block} {
   border-left: 3px solid $color-blue;
-  padding: .375rem 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include media-query('md') {
+    padding: .375rem 1.5rem;
+  }
 
   &__title {
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-bold;
     margin-bottom: .75rem;
+    margin-top: 0;
   }
 
   &__list {
@@ -19,14 +25,13 @@ $block: 'toc';
       padding: .25rem 0;
 
       &-link {
-        font-weight: $font-weight-medium;
+        font-weight: $font-weight-bold;
       }
     }
 
     // Is sub list (nested)
     &--sub {
-      padding: .25rem 0 .25rem 1.875rem;
-
+      padding-left: 1.875rem;
       .toc__list-item-link {
         font-weight: 400;
       }
