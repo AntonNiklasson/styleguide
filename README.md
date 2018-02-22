@@ -14,4 +14,12 @@ npm start
 Go to [localhost:3000](http://localhost:3000) to view the component library.
 
 # Contribute
+
 To develop a component, go to `/src/scss/_component.scss` and write your code following [BEM](http://getbem.com/introduction/). Document your component in Markdown `/src/docs/_component.scss`. Then make a Pull Request.
+
+# Release Management
+
+1. Update the component library version using `npm version <major|minor|patch> -m "Message describing what happened".` The message will be published as the [release notes in Github](https://github.com/AcandoCxC/skolverket-komponentbibliotek/releases).
+2. `git push`
+3. `git push --tags` to see the release notes in Github
+4. `npm run deploy` the component library at [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
