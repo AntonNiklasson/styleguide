@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="https://use.typekit.net/oal1gcu.css">
+<link rel="stylesheet" href="dist/css/skolverket.css">
+<link rel="stylesheet" href="_styleguide/css/well.css">
+
+
+		<style>
+		</style>
+
+		<style>
+			html, body {
+				min-height: 0 !important;
+				height: auto !important;
+			}
+		</style>
+
+		<script>
+			function getStylemarkBlock(language, defaultIfEmpty) {
+				defaultIfEmpty = defaultIfEmpty || '';
+				var script = document.querySelector('script[data-language="' + language + '"]');
+				return script ? script.innerText : defaultIfEmpty;
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<main
+			role="main"
+			id="stylemark-root"
+			ng-controller="stylemark-dragspel-default1"
+			style="
+				display: block;
+				padding: ;
+				width: ;
+			"
+		></main>
+
+		
+
+			<script type="text/x-stylemark" data-language="js">/**
+* @fileOverview
+* @author Zoltan Toth
+* @version 1.0.0
+*/
+
+/**
+* @description
+* Vanilla JavaScript Accordion
+*
+* @class
+* @param {string} options.element - The HTML id of the accordion container.
+* @param {number} [options.openTab=1] - Start the accordion with this item opened.
+* @param {boolean} [options.oneOpen=false] - Only one tab can be opened at a time.
+*/
+var Accordion = function(options) {
+    
+    var element = document.getElementById(options.element),
+        openTab = options.openTab,
+        oneOpen = options.oneOpen || false,
+
+        titleClass   = 'js-Accordion-title',
+        contentClass = 'js-Accordion-content';
+        
+    render();
+    
+    /**
+     * Initial rendering of the accordion.
+     */
+    function render() {
+        // attach classes to buttons and containers
+        [].forEach.call(element.parentElement.querySelectorAll('#' + options.element + '> button'), 
+            function(item) {
+                item.classList.add(titleClass);
+                item.nextElementSibling.classList.add(contentClass);
+            });
+
+        // attach only one click listener
+        element.addEventListener('click', onClick);
+
+        // accordion starts with all tabs closed
+        closeAll();
+
+        // sets the open tab - if defined
+        if (openTab) { 
+            open(openTab);
+        }
+    }
+
+    /**
+     * Handles clicks on the accordion.
+     * 
+     * @param {object} e - Element the click occured on.
+     */
+    function onClick(e) {
+        if (e.target.className.indexOf(titleClass) === -1) {
+            return;
+        }
+        
+        if (oneOpen) {
+            closeAll();
+        }
+
+        toggle(e.target.nextElementSibling);
+    }
+    
+    /**
+     * Closes all accordion tabs.
+     */
+    function closeAll() {
+        [].forEach.call(element.querySelectorAll('.' + contentClass), function(item) {
+            item.style.height = 0;
+        });
+    }
+    
+    /**
+     * Toggles corresponding tab for each title clicked.
+     * 
+     * @param {object} el - The content tab to show or hide.
+     */
+    function toggle(el) {
+        // getting the height every time in case
+        // the content was updated dynamically
+        var height = el.scrollHeight;
+
+        if (el.style.height === '0px' || el.style.height === '') {
+            el.style.height = height + 'px';
+        } else {
+            el.style.height = 0;
+        }
+    }
+
+
+    /**
+     * Returns the corresponding accordion content element by index.
+     *
+     * @param {number} n - Index of tab to return
+     */
+    function getTarget(n) {
+        return element.querySelectorAll('.' + contentClass)[n - 1];
+    }
+    
+    /**
+     * Opens a tab by index.
+     * 
+     * @param {number} n - Index of tab to open.
+     * 
+     * @public
+     */
+    function open(n) {
+        var target = getTarget(n);
+
+        if (target) {
+            if (oneOpen) closeAll();
+            target.style.height = target.scrollHeight + 'px';
+        }
+    }
+
+    /**
+     * Closes a tab by index.
+     * 
+     * @param {number} n - Index of tab to close.
+     * 
+     * @public
+     */
+    function close(n) {
+        var target = getTarget(n);
+
+        if (target) {
+            target.style.height = 0;
+        }
+    }
+    
+    return {
+        open: open,
+        close: close
+    };
+};</script>
+
+		<script>
+			eval(getStylemarkBlock('js'));
+		</script>
+
+		<script>
+			(function(angular) {
+				if (!angular) {
+					return;
+				}
+
+				var moduleElem = document.querySelector('[ng-app]');
+				var module;
+
+				if (moduleElem) {
+					// Uses an existing module
+					module = angular.module(moduleElem.getAttribute('ng-app'));
+				}
+				else {
+					// Creates a new module
+					module = angular.module('stylemark-dragspel-default1', []);
+				}
+
+				module.controller('stylemark-dragspel-default1', function($scope) {
+					$scope.$eval(getStylemarkBlock('angularjs'));
+				});
+			})(window.angular);
+		</script>
+
+		<script>
+			(function(ReactDOM) {
+				if (!ReactDOM) {
+					return;
+				}
+
+				var Component = eval(getStylemarkBlock('jsx'));
+				var rootNode = document.getElementById('stylemark-root');
+				ReactDOM.render(Component, rootNode);
+			})(window.ReactDOM);
+		</script>
+
+		<script>
+			(function(Ember) {
+				if (!Ember) {
+					return;
+				}
+
+				var render = function() {
+					var app = window.noop
+					var container = app.__container__;
+					var renderer = container.lookup('renderer:-dom');
+					var hbs = getStylemarkBlock('handlebars') || getStylemarkBlock('hbs');
+					var template = Ember.HTMLBars.compile(hbs);
+
+					var context;
+					eval('context = ' + getStylemarkBlock('js', '{}'));
+
+					// Credit:
+					// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+					var compile = function(container, template, context) {
+						return new Ember.RSVP.Promise(function(resolve) {
+							Ember.Component.extend(Ember.merge({
+								style: 'display:none;',
+								layout: template,
+								container: container,
+								renderer: renderer,
+
+								init: function() {
+									this._super.apply(this, arguments);
+									Ember.setOwner(this, container);
+								},
+
+								didRender: function() {
+									var elem = this.$();
+									resolve(elem);
+									this.destroy();
+								}
+							}, context))
+								.create()
+								.append();
+
+						});
+					};
+
+					compile(container, template, context).then(function(elem) {
+						jQuery('#stylemark-root').append(elem);
+					});
+				};
+
+				var isReady = function() {
+					return window.noop
+						&& window.noop.__container__;
+				};
+
+				var checkReady = function() {
+					if (isReady()) {
+						render();
+					}
+					else {
+						setTimeout(checkReady, 20);
+					}
+				};
+
+				checkReady();
+
+			})(window.Ember);
+		</script>
+
+		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	</body>
+
+</html>

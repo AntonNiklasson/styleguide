@@ -84,47 +84,50 @@ Bootstrap-komponenter som inte möter Skolverkets designriktlinjer har tagits el
 
 						<div id="snabbstart" class="i-library">
 	<h1 class="display-4">Snabbstart</h1>
-	<div><p>Det finns flera alternativ tillgängliga:</p>
-<div id="kompilerad-css-och-java-script" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kompilerad-css-och-java-script" class="icon-link i-section__link -heading"></a>Kompilerad CSS och JavaScript</h2></div><p>Ladda hem färdigkompilerad kod för att enkelt lägga till i ditt projekt, inkluderar</p>
-<ul>
-<li>Kompilerad och minifierad CSS och JavaScript</li>
-</ul>
-<p>Detta alternativ saknar dokumentation och källkods-filer.</p>
-<p><a href="/dist/archive/skolverket-compiled-latest.zip" class="btn btn-primary">Ladda hem</a></p>
-<p>När du laddar ner biblioteket hittar du följande kataloger och filer,
-både kompilerade och minifierade:</p>
+	<div><div id="kallkod" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kallkod" class="icon-link i-section__link -heading"></a>Källkod</h2></div><p>Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass och sedan de komponenter du behöver i ditt projekt.</p>
+<p>När du laddar ner biblioteket hittar du följande filer:</p>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> </button>
 	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="skolverket/
-├── css/
-│   ├── skolverket.css
-│   ├── skolverket.css.map
-│   ├── skolverket.min.css
-│   ├── skolverket.min.css.map
-└── js/
-    ├── skolverket.js
-    └── skolverket.min.js" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">skolverket/
-├── css/
-│   ├── skolverket.css
-│   ├── skolverket.css.map
-│   ├── skolverket.min.css
-│   ├── skolverket.min.css.map
-└── js/
-    ├── skolverket.js
-    └── skolverket.min.js</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="src/
+├── docs/
+│   ├── components/
+│   │   ├── _accordion.md
+│   │   ├── _buttons.md
+│   │   └── ...
+│   └── getting-started/
+│       ├── conventions.md
+│       ├── introduction.md
+│       └── ...
+└── scss/
+    ├── _accordion.scss
+    ├── _buttons.scss
+    ├── ...
+    └── skolverket.scss" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">src/
+├── docs/
+│   ├── components/
+│   │   ├── _accordion.md
+│   │   ├── _buttons.md
+│   │   └── ...
+│   └── getting-started/
+│       ├── conventions.md
+│       ├── introduction.md
+│       └── ...
+└── scss/
+    ├── _accordion.scss
+    ├── _buttons.scss
+    ├── ...
+    └── skolverket.scss</code></pre>
 	</div>
-</div><p>Vi tillhandahåller kompilerad CSS and JS (<code>skolverket.*</code>), men även kompilerad och minifierad (<code>skolverket.min.*</code>). CSS <a href="https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps">source maps</a> (<code>skolverket.*.map</code>) är tillgänglig för att användas i vissa webbläsares utvecklingsverktyg.</p>
-<div id="kallkod" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kallkod" class="icon-link i-section__link -heading"></a>Källkod</h2></div><p>Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass, JavaScript, and dokumentation. Fördelen med detta alternativ är att du endast behöver välja de komponenter du behöver i ditt projekt samt att det är enklare att bygga ut komponenter för att möta ditt behov.</p>
-<p>Detta alternativ kräver att du konfigurerar</p>
+</div><p>I <code>skolverket.scss</code> kan du styra vilka komponenter du vill använda i ditt projekt.</p>
+<p>Din byggprocess kräver att du konfigurerar</p>
 <ul>
 <li>Sass-kompilator för att kompilera till CSS</li>
 <li>Autoprefixer</li>
 </ul>
-<p><a href="/dist/archive/sv-component-library-0.1.0.zip" class="btn btn-primary">Ladda hem källkod</a></p>
-<div id="npm" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#npm" class="icon-link i-section__link -heading"></a>Npm</h2></div><p>Installera med <a href="https://www.npmjs.com/">npm</a>: <code>npm install @skolverket/ui</code></p>
+<p><a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek/releases/latest" class="btn btn-primary">Ladda hem källkod</a></p>
 </div>
 </div>
 
