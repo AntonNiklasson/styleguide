@@ -22,27 +22,27 @@ Presenterar navigationsvägar med ett publiceringsdatum.
               <div text-small">
                 23 mars 2017
               </div>
-              <a href="#1" class="content-navigation-list__item-link text-medium">
+              <a href="#1" class="content-navigation-list__item-link text-big">
                 Phasellus mattis diam convallis lectus ultricies
-                <i class="icon-arrow"></i>
+                <i class="icon-arrow icon-arrow--lg"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
               <div text-small">
                 23 mars 2017
               </div>
-              <a href="#1" class="content-navigation-list__item-link text-medium">
+              <a href="#1" class="content-navigation-list__item-link text-big">
                 Phasellus mattis diam convallis ultricies
-                <i class="icon-arrow"></i>
+                <i class="icon-arrow icon-arrow--lg"></i>
               </a>
             </li>
             <li class="content-navigation-list__item">
               <div text-small">
                 23 mars 2017
               </div>
-              <a href="#1" class="content-navigation-list__item-link text-medium">
+              <a href="#1" class="content-navigation-list__item-link text-big">
                 Phasellus mattis diam ultricies
-                <i class="icon-arrow"></i>
+                <i class="icon-arrow icon-arrow--lg"></i>
               </a>
             </li>
           </ul>
