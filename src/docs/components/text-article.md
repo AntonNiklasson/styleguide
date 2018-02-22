@@ -9,7 +9,7 @@ Ger användaren överblick lorem ipsum...
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
+      <h3 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h3>
       <div class="section__header-preamble text-secondary">
         <p>Dolarsum <a href="/press" class="text-link">rimpvom</a></p>
       </div>
@@ -19,11 +19,11 @@ Ger användaren överblick lorem ipsum...
         <div class="col-12 col-md-4">
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <a href="#1" class="content-navigation-list__item-link text-medium">
+              <a href="#1" class="content-navigation-list__item-link text-standard">
                 Phasellus mattis lectus ultricies
                 <i class="icon-arrow"></i>
               </a>
-              <div class="content-navigation-list__item-text text-standard">
+              <div class="content-navigation-list__item-text text-small">
                 Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
               </div>
             </li>
@@ -32,11 +32,11 @@ Ger användaren överblick lorem ipsum...
         <div class="col-12 col-md-4">
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <a href="#2" class="content-navigation-list__item-link text-medium">
+              <a href="#2" class="content-navigation-list__item-link text-standard">
                 Phasellus mattis diam convallis
                 <i class="icon-arrow"></i>
               </a>
-              <div class="content-navigation-list__item-text text-standard">
+              <div class="content-navigation-list__item-text text-small">
                 Nunc venenatis fermentum elit non aliquet. Nunc venenatis fermentum elit non aliquet.
               </div>
             </li>
@@ -45,11 +45,11 @@ Ger användaren överblick lorem ipsum...
         <div class="col-12 col-md-4">
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item content-navigation-list__item--no-border">
-              <a href="#3" class="content-navigation-list__item-link text-medium">
+              <a href="#3" class="content-navigation-list__item-link text-standard">
                 Phasellus mattis diam
                 <i class="icon-arrow"></i>
               </a>
-              <div class="content-navigation-list__item-text text-standard">
+              <div class="content-navigation-list__item-text text-small">
                 Dictum ac elit semper malesuada nunc venenatis fermentum. Dictum ac elit semper malesuada nunc venenatis fermentum.
               </div>
             </li>
