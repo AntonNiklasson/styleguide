@@ -5,7 +5,7 @@ category: Kom igång
 
 ## Källkod
 
-Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass och sedan de komponenter du behöver i ditt projekt.
+Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass och sedan de komponenter du behöver i ditt projekt. Koden ligger publikt på [Github](https://github.com/AcandoCxC/skolverket-komponentbibliotek)
 
 När du laddar ner biblioteket hittar du följande filer:
 
@@ -35,3 +35,9 @@ Din byggprocess kräver att du konfigurerar
 - Autoprefixer
 
 <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek/releases/latest" class="btn btn-primary">Ladda hem källkod</a>
+
+
+## Bidra
+
+Vill du bidra med kod eller dokumentation till komponentbiblioteket så hittar du koden
+på [Github](https://github.com/AcandoCxC/skolverket-komponentbibliotek).
