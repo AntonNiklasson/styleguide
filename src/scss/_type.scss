@@ -23,7 +23,7 @@
 .text-standard { font-size: rem(18px); line-height: rem(24px); }
 .text-big { font-size: rem(20px); line-height: rem(26px); }
 
-@include media-query('md') { 
+@include media-min('md') { 
   .h1 { font-size: $font-size-h1; line-height: $line-height-h1; margin: 60px 0 30px 0; }
   .h2 { font-size: $font-size-h2; line-height: $line-height-h2; margin: 45px 0 20px 0; }
   .h3 { font-size: $font-size-h3; line-height: $line-height-h3; margin: 45px 0 20px 0; }
