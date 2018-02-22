@@ -31,7 +31,6 @@
 									<option value="formular">Formulär</option>
 									<option value="hero">Hero</option>
 									<option value="knappar">Knappar</option>
-									<option value="notifieringar">Notifieringar</option>
 									<option value="sektionnavigering">Sektionnavigering</option>
 									<option value="sidfot">Sidfot</option>
 									<option value="sidhuvud">Sidhuvud</option>
@@ -164,10 +163,10 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
+  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
+  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><p>I fall där två eller flera boxar behöver ligga efter varandra eller där du vill förhindra att skuggan överlappar andra element används modifieraren <code>margins</code>.</p>
@@ -198,16 +197,16 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
+  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
+  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
+  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
+  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><p>Det går att lägga vilket innehål som helst i en box.</p>
@@ -239,34 +238,34 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
   &lt;div class=&quot;toc&quot;&gt;
-    &lt;div class=&quot;toc__title text-standard&quot;&gt;På denna sida&lt;/div&gt;
+    &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
     &lt;ul class=&quot;toc__list&quot;&gt;
       &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
           Vad är yrkesprogram och högskoleförberedande program?
         &lt;/a&gt;
       &lt;/li&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;li&gt;
         &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-          &lt;li class=&quot;toc_list-item&quot;&gt;
-            &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+          &lt;li class=&quot;toc__list-item&quot;&gt;
+            &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
               Yrkesprogram
             &lt;/a&gt;
           &lt;/li&gt;
-          &lt;li class=&quot;toc_list-item&quot;&gt;
-            &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+          &lt;li class=&quot;toc__list-item&quot;&gt;
+            &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
               Högskoleförberedande program
             &lt;/a&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
           Introduktionsprogram för dig som inte har tillräckliga betyg
         &lt;/a&gt;
       &lt;/li&gt;
       &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
           Kontakta utbildningsförvaltningen
         &lt;/a&gt;
       &lt;/li&gt;
@@ -275,34 +274,34 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
   &lt;div class=&quot;toc&quot;&gt;
-    &lt;div class=&quot;toc__title text-standard&quot;&gt;På denna sida&lt;/div&gt;
+    &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
     &lt;ul class=&quot;toc__list&quot;&gt;
       &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
           Vad är yrkesprogram och högskoleförberedande program?
         &lt;/a&gt;
       &lt;/li&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;li&gt;
         &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-          &lt;li class=&quot;toc_list-item&quot;&gt;
-            &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+          &lt;li class=&quot;toc__list-item&quot;&gt;
+            &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
               Yrkesprogram
             &lt;/a&gt;
           &lt;/li&gt;
-          &lt;li class=&quot;toc_list-item&quot;&gt;
-            &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+          &lt;li class=&quot;toc__list-item&quot;&gt;
+            &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
               Högskoleförberedande program
             &lt;/a&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
           Introduktionsprogram för dig som inte har tillräckliga betyg
         &lt;/a&gt;
       &lt;/li&gt;
       &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
           Kontakta utbildningsförvaltningen
         &lt;/a&gt;
       &lt;/li&gt;
@@ -345,35 +344,35 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
   &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion1&quot;&gt;
+      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
             Grupp 1
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h5&gt;
-      &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-      &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion2&quot;&gt;
+      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
             Grupp 2
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h5&gt;
-      &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion3&quot;&gt;
+      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
             Grupp 3
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h5&gt;
-      &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
       &lt;/div&gt;
     &lt;/div&gt;
@@ -382,35 +381,35 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
   &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion1&quot;&gt;
+      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
             Grupp 1
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h5&gt;
-      &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-      &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion2&quot;&gt;
+      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
             Grupp 2
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h5&gt;
-      &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion3&quot;&gt;
+      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
             Grupp 3
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h5&gt;
-      &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
       &lt;/div&gt;
     &lt;/div&gt;
@@ -451,7 +450,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;form&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;E-post&lt;/label&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;E-post&lt;/label&gt;
     &lt;span id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textfält&lt;/span&gt;
     &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Fyll i e-post&quot;&gt;
   &lt;/div&gt;
@@ -463,7 +462,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 &lt;/form&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;form&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;E-post&lt;/label&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;E-post&lt;/label&gt;
     &lt;span id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textfält&lt;/span&gt;
     &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Fyll i e-post&quot;&gt;
   &lt;/div&gt;
@@ -512,7 +511,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 &lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Validerar&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
   &lt;input class=&quot;form-control form-control--error icon-error&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;Validerar...&quot;&gt;
-  &lt;span class=&quot;text-error&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
+  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleInputDisabled1&quot;&gt;Går ej att redigera&lt;/label&gt;
@@ -525,7 +524,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 &lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Validerar&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
   &lt;input class=&quot;form-control form-control--error icon-error&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;Validerar...&quot;&gt;
-  &lt;span class=&quot;text-error&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
+  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="textruta" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textruta" class="icon-link i-section__link -heading"></a>Textruta</h2></div><p>Flerradiga textfält har stöd för samtliga tillstånd.</p>
@@ -556,7 +555,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
+  &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
   &lt;span id=&quot;textareaHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textområde&lt;/span&gt;
   &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
@@ -573,10 +572,10 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/label&gt;
   &lt;textarea class=&quot;form-control form-control--error form-control--error-textarea icon-error&quot;
     id=&quot;exampleTextarea3&quot; rows=&quot;4&quot; placeholder=&quot;Validerar...&quot;&gt;&lt;/textarea&gt;
-  &lt;span class=&quot;text-error&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
+  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
+  &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
   &lt;span id=&quot;textareaHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textområde&lt;/span&gt;
   &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
@@ -593,7 +592,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/label&gt;
   &lt;textarea class=&quot;form-control form-control--error form-control--error-textarea icon-error&quot;
     id=&quot;exampleTextarea3&quot; rows=&quot;4&quot; placeholder=&quot;Validerar...&quot;&gt;&lt;/textarea&gt;
-  &lt;span class=&quot;text-error&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
+  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="checkbox-och-radioknappar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#checkbox-och-radioknappar" class="icon-link i-section__link -heading"></a>Checkbox och radioknappar</h2></div><p>Namnkonvention med <code>.custom-control</code> är baserad på Bootstrap 4 men har anpassats för att möta <a href="#konventioner">BEM</a>.</p>
@@ -784,7 +783,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;text-standard&quot; for=&quot;inputSearch&quot;&gt;Sökfält / textfält med ikon&lt;/label&gt;
-  &lt;div class=&quot;display-flex&quot;&gt;
+  &lt;div class=&quot;form-group--search&quot;&gt;
     &lt;input type=&quot;text&quot; class=&quot;form-control form-control--search icon-search&quot;
       id=&quot;inputSearch&quot; placeholder=&quot;Platshållare&quot; /&gt;
     &lt;button class=&quot;btn btn--primary&quot;&gt;Sök&lt;/button&gt;
@@ -792,7 +791,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
   &lt;label class=&quot;text-standard&quot; for=&quot;inputSearch&quot;&gt;Sökfält / textfält med ikon&lt;/label&gt;
-  &lt;div class=&quot;display-flex&quot;&gt;
+  &lt;div class=&quot;form-group--search&quot;&gt;
     &lt;input type=&quot;text&quot; class=&quot;form-control form-control--search icon-search&quot;
       id=&quot;inputSearch&quot; placeholder=&quot;Platshållare&quot; /&gt;
     &lt;button class=&quot;btn btn--primary&quot;&gt;Sök&lt;/button&gt;
@@ -977,279 +976,6 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 </div></div>
 </div>
 
-						<div id="notifieringar" class="i-library">
-	<h1 class="display-4">Notifieringar</h1>
-	<div><p>Beskrivning lorem ipsum...</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="notifieringar-default.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="notifieringar-default.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;notification notification--success&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Allt gott!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--warning&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Varning!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--error&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Något gick fel!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--info&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Information!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;notification notification--success&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Allt gott!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--warning&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Varning!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--error&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Något gick fel!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--info&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Information!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><p>Animerade med modifieraren <code>--animated</code>.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="notifieringar-flash.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="notifieringar-flash.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;notification notification--success notification--animated&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Allt gott!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;notification notification--success notification--animated&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__flash&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;&lt;strong&gt;Allt gott!&lt;/strong&gt; Lorem ipsum dolor sit amet.&lt;/span&gt;
-          &lt;button class=&quot;btn btn--primary&quot;&gt;Stäng&lt;/button&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><p>Inuti en box.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="notifieringar-built-in.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="notifieringar-built-in.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
-&lt;div class=&quot;notification notification--info notification--info--bordered&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__textbox&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;
-            &lt;strong&gt;Vivamus placerat:&lt;/strong&gt;
-            Morbi tortor mi, lobortis a pharetra eget, ultricies id elit. Curabitur gravida ex ac accumsan elementum. Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat tortor, vitae euismod quam sem eleifend turpis. Donec tristique commodo odio eu facilisis. Proin convallis risus mi, in mollis quam molestie.
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--warning notification--warning--bordered&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__textbox&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;
-            &lt;strong&gt;Ej gällande kursplan:&lt;/strong&gt; Läroplanen har reviderats med skrivningar
-            om digital kompetens (se länk till den nya läroplanen nedan). Under läsåret 2017/2018
-            är det möjligt att följa den nya eller den gamla läroplanen. Från och med läsåret 2018/2019
-            är det däremot obligatoriskt att följa visas mer
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
-&lt;div class=&quot;notification notification--info notification--info--bordered&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__textbox&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;
-            &lt;strong&gt;Vivamus placerat:&lt;/strong&gt;
-            Morbi tortor mi, lobortis a pharetra eget, ultricies id elit. Curabitur gravida ex ac accumsan elementum. Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat tortor, vitae euismod quam sem eleifend turpis. Donec tristique commodo odio eu facilisis. Proin convallis risus mi, in mollis quam molestie.
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;notification notification--warning notification--warning--bordered&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt;
-    &lt;div class=&quot;row&quot;&gt;
-      &lt;div class=&quot;col&quot;&gt;
-        &lt;div class=&quot;notification__textbox&quot;&gt;
-          &lt;span class=&quot;text-standard&quot;&gt;
-            &lt;strong&gt;Ej gällande kursplan:&lt;/strong&gt; Läroplanen har reviderats med skrivningar
-            om digital kompetens (se länk till den nya läroplanen nedan). Under läsåret 2017/2018
-            är det möjligt att följa den nya eller den gamla läroplanen. Från och med läsåret 2018/2019
-            är det däremot obligatoriskt att följa visas mer
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
 						<div id="sektionnavigering" class="i-library">
 	<h1 class="display-4">Sektionnavigering</h1>
 	<div><p>Ger användaren överblick lorem ipsum...</p>
@@ -1283,15 +1009,16 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
-        &lt;div class=&quot;section-navigation__label&quot;&gt;
+        &lt;h3 class=&quot;h3 section-navigation__label&quot;&gt;
           Current section
-        &lt;/div&gt;
+        &lt;/h3&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Förskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1300,7 +1027,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskoleklass&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Förskoleklass 
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1309,7 +1037,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Grundskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1318,7 +1047,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundsärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Grundsärskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1327,7 +1057,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasieskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Gymnasieskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1336,7 +1067,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasiesärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Gymnasiesärskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1345,7 +1077,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
             &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Inspiration och stöd i arbetet&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Inspiration och stöd i arbetet
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1357,15 +1090,16 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
-        &lt;div class=&quot;section-navigation__label&quot;&gt;
+        &lt;h3 class=&quot;h3 section-navigation__label&quot;&gt;
           Current section
-        &lt;/div&gt;
+        &lt;/h3&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Förskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1374,7 +1108,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskoleklass&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Förskoleklass 
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1383,7 +1118,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Grundskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1392,7 +1128,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundsärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Grundsärskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1401,7 +1138,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasieskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Gymnasieskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1410,7 +1148,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasiesärskola&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Gymnasiesärskola
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1419,7 +1158,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
             &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Inspiration och stöd i arbetet&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Inspiration och stöd i arbetet
+              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1466,7 +1206,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;div class=&quot;col-12 col-lg-5&quot;&gt;
         &lt;div class=&quot;footer__header-container&quot;&gt;
           &lt;a class=&quot;footer__logo&quot; href=&quot;#&quot;&gt;Skolverket&lt;/a&gt;
-          &lt;div class=&quot;footer__description text-medium&quot;&gt;
+          &lt;div class=&quot;footer__description text-standard&quot;&gt;
             Skolverket arbetar för att alla barn, ungdomar och vuxna ska få en utbildning av god kvalitet.
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1475,25 +1215,25 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;footer__navigation-container&quot;&gt;
           &lt;ul class=&quot;footer__navigation&quot;&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Kontakt
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Om Skolverket
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Våra webbplatser
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Press
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -1501,12 +1241,12 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;/ul&gt;
           &lt;ul class=&quot;footer__navigation&quot;&gt;
             &lt;li class=&quot;footer__navigation-item footer__navigation-item--no-border-bottom&quot;&gt;
-              &lt;a href=&quot;#5&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple&quot;&gt;
+              &lt;a href=&quot;#5&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple text-small&quot;&gt;
                 Om webbplatsen
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#6&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple&quot;&gt;
+              &lt;a href=&quot;#6&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple text-small&quot;&gt;
                 Kakor
               &lt;/a&gt;
             &lt;/li&gt;
@@ -1522,7 +1262,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;div class=&quot;col-12 col-lg-5&quot;&gt;
         &lt;div class=&quot;footer__header-container&quot;&gt;
           &lt;a class=&quot;footer__logo&quot; href=&quot;#&quot;&gt;Skolverket&lt;/a&gt;
-          &lt;div class=&quot;footer__description text-medium&quot;&gt;
+          &lt;div class=&quot;footer__description text-standard&quot;&gt;
             Skolverket arbetar för att alla barn, ungdomar och vuxna ska få en utbildning av god kvalitet.
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1531,25 +1271,25 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;footer__navigation-container&quot;&gt;
           &lt;ul class=&quot;footer__navigation&quot;&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Kontakt
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Om Skolverket
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Våra webbplatser
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;footer__navigation-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;footer__navigation-item-link text-standard&quot;&gt;
                 Press
                 &lt;i class=&quot;icon-arrow icon-arrow--white&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -1557,12 +1297,12 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;/ul&gt;
           &lt;ul class=&quot;footer__navigation&quot;&gt;
             &lt;li class=&quot;footer__navigation-item footer__navigation-item--no-border-bottom&quot;&gt;
-              &lt;a href=&quot;#5&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple&quot;&gt;
+              &lt;a href=&quot;#5&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple text-small&quot;&gt;
                 Om webbplatsen
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;footer__navigation-item&quot;&gt;
-              &lt;a href=&quot;#6&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple&quot;&gt;
+              &lt;a href=&quot;#6&quot; class=&quot;footer__navigation-item-link footer__navigation-item-link--purple text-small&quot;&gt;
                 Kakor
               &lt;/a&gt;
             &lt;/li&gt;
@@ -1612,7 +1352,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col&quot;&gt;
           &lt;div class=&quot;mobile-menu__header-container&quot;&gt;
             &lt;h1 class=&quot;h1 mobile-menu__header-title&quot;&gt;Meny&lt;/h1&gt;
-            &lt;a href=&quot;#&quot; class=&quot;icon-close text-small&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;mobile-menu__header-link icon-close&quot;&gt;
               Stäng
             &lt;/a&gt;
           &lt;/div&gt;
@@ -1626,25 +1366,25 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col&quot;&gt;
           &lt;ul class=&quot;mobile-menu__list&quot;&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 Undervisning
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 Skolutveckling
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 Lagar och regler
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 &lt;span class=&quot;text-reset&quot;&gt;Innehåll A-Ö&lt;/span&gt;
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -1666,22 +1406,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -1698,23 +1438,23 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
-                  &lt;span class=&quot;text-reset&quot;&gt;Innehåll A-Ö&lt;/span&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
+                  Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
             &lt;/ul&gt;
@@ -1731,7 +1471,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col&quot;&gt;
           &lt;div class=&quot;mobile-menu__header-container&quot;&gt;
             &lt;h1 class=&quot;h1 mobile-menu__header-title&quot;&gt;Meny&lt;/h1&gt;
-            &lt;a href=&quot;#&quot; class=&quot;icon-close text-small&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;mobile-menu__header-link icon-close&quot;&gt;
               Stäng
             &lt;/a&gt;
           &lt;/div&gt;
@@ -1745,25 +1485,25 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col&quot;&gt;
           &lt;ul class=&quot;mobile-menu__list&quot;&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 Undervisning
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 Skolutveckling
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 Lagar och regler
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;mobile-menu__list-item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;mobile-menu__list-item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;mobile-menu__list-item-link&quot;&gt;
                 &lt;span class=&quot;text-reset&quot;&gt;Innehåll A-Ö&lt;/span&gt;
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -1785,22 +1525,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -1817,23 +1557,23 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
-                  &lt;span class=&quot;text-reset&quot;&gt;Innehåll A-Ö&lt;/span&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
+                  Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
             &lt;/ul&gt;
@@ -1877,68 +1617,68 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;toc&quot;&gt;
-  &lt;div class=&quot;toc__title text-standard&quot;&gt;På denna sida&lt;/div&gt;
+  &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
   &lt;ul class=&quot;toc__list&quot;&gt;
     &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+      &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
         Vad är yrkesprogram och högskoleförberedande program?
       &lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
+    &lt;li&gt;
       &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-        &lt;li class=&quot;toc_list-item&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;li class=&quot;toc__list-item&quot;&gt;
+          &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
             Yrkesprogram
           &lt;/a&gt;
         &lt;/li&gt;
-        &lt;li class=&quot;toc_list-item&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;li class=&quot;toc__list-item&quot;&gt;
+          &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
             Högskoleförberedande program
           &lt;/a&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
     &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+      &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
         Introduktionsprogram för dig som inte har tillräckliga betyg
       &lt;/a&gt;
     &lt;/li&gt;
     &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+      &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
         Kontakta utbildningsförvaltningen
       &lt;/a&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;toc&quot;&gt;
-  &lt;div class=&quot;toc__title text-standard&quot;&gt;På denna sida&lt;/div&gt;
+  &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
   &lt;ul class=&quot;toc__list&quot;&gt;
     &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+      &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
         Vad är yrkesprogram och högskoleförberedande program?
       &lt;/a&gt;
     &lt;/li&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
+    &lt;li&gt;
       &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-        &lt;li class=&quot;toc_list-item&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;li class=&quot;toc__list-item&quot;&gt;
+          &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
             Yrkesprogram
           &lt;/a&gt;
         &lt;/li&gt;
-        &lt;li class=&quot;toc_list-item&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+        &lt;li class=&quot;toc__list-item&quot;&gt;
+          &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
             Högskoleförberedande program
           &lt;/a&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
     &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+      &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
         Introduktionsprogram för dig som inte har tillräckliga betyg
       &lt;/a&gt;
     &lt;/li&gt;
     &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;toc__list-item-link text-standard&quot;&gt;
+      &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
         Kontakta utbildningsförvaltningen
       &lt;/a&gt;
     &lt;/li&gt;
@@ -2030,26 +1770,26 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;text-standard&quot;&gt;
   Aliquam dictum ac elit semper malesuada. Nunc venenatis fermentum elit non aliquet. Pellentesque massa nisi, consectetur nec pellentesque id, fringilla et arcu. Curabitur dignissim ante sit amet lacinia gravida
-  &lt;a href=&quot;#&quot; class=&quot;text-link text-link--icon&quot;&gt;
-    &lt;span class=&quot;text-standard line-height-normal&quot;&gt;justo trist placerat&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;justo trist placerat&lt;/span&gt;
     &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
   &lt;/a&gt;
   phasellus efficitur nulla dolor, non blandit erat facilisis in. Mauris cursus ante a justo tristique placerat. Curabitur in euismod orci in risus varius, eu rutrum leo pharetra. Maecenas auctor congue purus sit amet vehicula
-  &lt;a href=&quot;#&quot; class=&quot;text-link text-link--icon&quot;&gt;
-    &lt;span class=&quot;text-standard line-height-normal&quot;&gt;per conubia nostra&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;per conubia nostra&lt;/span&gt;
     &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;
   &lt;/a&gt;
   class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar nulla nec faucibus feugiat. Nunc facilisis lobortis tellus nec tincidunt.
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;text-standard&quot;&gt;
   Aliquam dictum ac elit semper malesuada. Nunc venenatis fermentum elit non aliquet. Pellentesque massa nisi, consectetur nec pellentesque id, fringilla et arcu. Curabitur dignissim ante sit amet lacinia gravida
-  &lt;a href=&quot;#&quot; class=&quot;text-link text-link--icon&quot;&gt;
-    &lt;span class=&quot;text-standard line-height-normal&quot;&gt;justo trist placerat&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;justo trist placerat&lt;/span&gt;
     &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
   &lt;/a&gt;
   phasellus efficitur nulla dolor, non blandit erat facilisis in. Mauris cursus ante a justo tristique placerat. Curabitur in euismod orci in risus varius, eu rutrum leo pharetra. Maecenas auctor congue purus sit amet vehicula
-  &lt;a href=&quot;#&quot; class=&quot;text-link text-link--icon&quot;&gt;
-    &lt;span class=&quot;text-standard line-height-normal&quot;&gt;per conubia nostra&lt;/span&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;per conubia nostra&lt;/span&gt;
     &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;
   &lt;/a&gt;
   class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar nulla nec faucibus feugiat. Nunc facilisis lobortis tellus nec tincidunt.
@@ -2082,13 +1822,13 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-  &lt;a href=&quot;#&quot; class=&quot;text-link text-link--icon&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
     &lt;span class=&quot;text-standard&quot;&gt;Curabitur dignissim ante&lt;/span&gt;
     &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
   &lt;/a&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-  &lt;a href=&quot;#&quot; class=&quot;text-link text-link--icon&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
     &lt;span class=&quot;text-standard&quot;&gt;Curabitur dignissim ante&lt;/span&gt;
     &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
   &lt;/a&gt;
@@ -2131,7 +1871,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2148,7 +1888,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                   &lt;/a&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                     Vivamus placerat, neque quis rutrum feugiat turpis
                     &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
                   &lt;/a&gt;
@@ -2167,7 +1907,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                   &lt;/a&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                     Vivamus placerat, neque quis
                     &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
                   &lt;/a&gt;
@@ -2186,7 +1926,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                   &lt;/a&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                     Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
                     &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
                   &lt;/a&gt;
@@ -2202,7 +1942,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2219,7 +1959,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                   &lt;/a&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                     Vivamus placerat, neque quis rutrum feugiat turpis
                     &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
                   &lt;/a&gt;
@@ -2238,7 +1978,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                   &lt;/a&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                     Vivamus placerat, neque quis
                     &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
                   &lt;/a&gt;
@@ -2257,7 +1997,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                   &lt;/a&gt;
                 &lt;/div&gt;
                 &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                     Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
                     &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
                   &lt;/a&gt;
@@ -2303,7 +2043,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;ul class=&quot;content-navigation-list&quot;&gt;
         &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
           &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-xlarge&quot;&gt;
+          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
             Quisque augue dui, suscipit consequat
             &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
@@ -2314,7 +2054,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;ul class=&quot;content-navigation-list&quot;&gt;
         &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
           &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-xlarge&quot;&gt;
+          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
             Quisque augue dui, suscipit consequat metus nec, bibendum 
             &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
@@ -2329,7 +2069,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;ul class=&quot;content-navigation-list&quot;&gt;
         &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
           &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-xlarge&quot;&gt;
+          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
             Quisque augue dui, suscipit consequat
             &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
@@ -2340,7 +2080,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;ul class=&quot;content-navigation-list&quot;&gt;
         &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
           &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-xlarge&quot;&gt;
+          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
             Quisque augue dui, suscipit consequat metus nec, bibendum 
             &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
@@ -2385,7 +2125,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Frågor och svar&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Frågor och svar&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2393,46 +2133,46 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;section__body&quot;&gt;
       &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-              &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion1&quot;&gt;
-                Cliche reprehenderit, enim eiusmod?
+          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
+                Grupp 1
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h5&gt;
-          &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-          &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-              &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion2&quot;&gt;
-                Coffee nulla assumenda shoreditch?
+          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
+                Grupp 2
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h5&gt;
-          &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-              &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion3&quot;&gt;
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid?
+          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
+                Grupp 3
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h5&gt;
-          &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
           &lt;/div&gt;
         &lt;/div&gt;
-      &lt;/div&gt;  
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Frågor och svar&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Frågor och svar&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2440,39 +2180,39 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;section__body&quot;&gt;
       &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-              &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion1&quot;&gt;
-                Cliche reprehenderit, enim eiusmod?
+          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
+                Grupp 1
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h5&gt;
-          &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-          &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-              &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion2&quot;&gt;
-                Coffee nulla assumenda shoreditch?
+          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
+                Grupp 2
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h5&gt;
-          &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h5 class=&quot;accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-              &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion3&quot;&gt;
-                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid?
+          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
+                Grupp 3
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h5&gt;
-          &lt;div class=&quot;accordion__item-body&quot; data-parent=&quot;#accordion&quot;&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
           &lt;/div&gt;
         &lt;/div&gt;
-      &lt;/div&gt;  
+      &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -2512,7 +2252,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2522,19 +2262,19 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-6&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Suspendisse potenti
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam convallis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus convallis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2544,19 +2284,19 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-6&quot;&gt;
           &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Suspendisse potenti
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam convallis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus convallis
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2570,7 +2310,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2580,19 +2320,19 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-6&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Suspendisse potenti
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam convallis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus convallis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2602,19 +2342,19 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-6&quot;&gt;
           &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Suspendisse potenti
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam convallis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus convallis
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2661,7 +2401,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2674,27 +2414,27 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
               &lt;div text-small&quot;&gt;
                 23 mars 2017
               &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
                 Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
               &lt;div text-small&quot;&gt;
                 23 mars 2017
               &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
                 Phasellus mattis diam convallis ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
               &lt;div text-small&quot;&gt;
                 23 mars 2017
               &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
                 Phasellus mattis diam ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
@@ -2706,7 +2446,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2719,27 +2459,27 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
               &lt;div text-small&quot;&gt;
                 23 mars 2017
               &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
                 Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
               &lt;div text-small&quot;&gt;
                 23 mars 2017
               &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
                 Phasellus mattis diam convallis ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
               &lt;div text-small&quot;&gt;
                 23 mars 2017
               &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
                 Phasellus mattis diam ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
@@ -2788,7 +2528,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2801,7 +2541,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -2843,7 +2583,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h3&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2851,7 +2591,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h3&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2863,7 +2603,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h3&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2871,7 +2611,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h3&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2923,22 +2663,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -2955,22 +2695,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -2995,11 +2735,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;container container--no-padding&quot;&gt;
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
           &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
@@ -3022,22 +2762,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3054,22 +2794,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3094,11 +2834,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;container container--no-padding&quot;&gt;
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
           &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
@@ -3146,7 +2886,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -3156,11 +2896,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
               &lt;/div&gt;
             &lt;/li&gt;
@@ -3169,11 +2909,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam convallis
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Nunc venenatis fermentum elit non aliquet. Nunc venenatis fermentum elit non aliquet.
               &lt;/div&gt;
             &lt;/li&gt;
@@ -3182,11 +2922,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Dictum ac elit semper malesuada nunc venenatis fermentum. Dictum ac elit semper malesuada nunc venenatis fermentum.
               &lt;/div&gt;
             &lt;/li&gt;
@@ -3199,7 +2939,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h2&gt;
+      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
         &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
@@ -3209,11 +2949,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
               &lt;/div&gt;
             &lt;/li&gt;
@@ -3222,11 +2962,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam convallis
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Nunc venenatis fermentum elit non aliquet. Nunc venenatis fermentum elit non aliquet.
               &lt;/div&gt;
             &lt;/li&gt;
@@ -3235,11 +2975,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
                 Phasellus mattis diam
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Dictum ac elit semper malesuada nunc venenatis fermentum. Dictum ac elit semper malesuada nunc venenatis fermentum.
               &lt;/div&gt;
             &lt;/li&gt;
@@ -3293,22 +3033,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3325,22 +3065,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3356,9 +3096,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
-        &lt;div class=&quot;section-navigation__label section-navigation__label--overlap&quot;&gt;
+        &lt;h3 class=&quot;h3 section-navigation__label section-navigation__label--overlap&quot;&gt;
           Current section
-        &lt;/div&gt;
+        &lt;/h3&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
@@ -3433,11 +3173,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;container container--no-padding&quot;&gt;
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
           &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
@@ -3459,22 +3199,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3491,22 +3231,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3522,9 +3262,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
-        &lt;div class=&quot;section-navigation__label section-navigation__label--overlap&quot;&gt;
+        &lt;h3 class=&quot;h3 section-navigation__label section-navigation__label--overlap&quot;&gt;
           Current section
-        &lt;/div&gt;
+        &lt;/h3&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
@@ -3599,11 +3339,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;container container--no-padding&quot;&gt;
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
           &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
@@ -3760,7 +3500,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
   &lt;div class=&quot;section section--boxed section--compact-padding&quot;&gt;
     &lt;div class=&quot;feedback feedback--textarea&quot;&gt;
-      &lt;div class=&quot;form-group&quot;&gt;
+      &lt;div class=&quot;form-group form-group--margin-b-small&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
         &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
       &lt;/div&gt;
@@ -3773,7 +3513,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
   &lt;div class=&quot;section section--boxed section--compact-padding&quot;&gt;
     &lt;div class=&quot;feedback feedback--textarea&quot;&gt;
-      &lt;div class=&quot;form-group&quot;&gt;
+      &lt;div class=&quot;form-group form-group--margin-b-small&quot;&gt;
         &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
         &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
       &lt;/div&gt;
@@ -3825,22 +3565,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3857,22 +3597,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3884,37 +3624,37 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;container container--margins&quot;&gt;
-  &lt;div class=&quot;row row-reverse&quot;&gt;
+  &lt;div class=&quot;row row-reverse row-center&quot;&gt;
     &lt;div class=&quot;col-12 col-md-4&quot;&gt;
       &lt;img src=&quot;_styleguide/assets/img/overview.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-12 col-md-8&quot;&gt;
+    &lt;div class=&quot;col-11 col-md-8 col-overlap col-sm-overlap&quot;&gt;
       &lt;div class=&quot;box box--compact box--no-border&quot;&gt;
-        &lt;h1 class=&quot;h1&quot;&gt;Nationella prov i grundskolan&lt;/h1&gt;
-        &lt;p class=&quot;text-medium&quot;&gt;De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.&lt;/p&gt;
+        &lt;h2 class=&quot;h2 margin-tp-reset&quot;&gt;Nationella prov i grundskolan&lt;/h2&gt;
+        &lt;p class=&quot;text-standard&quot;&gt;De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.&lt;/p&gt;
         &lt;ul class=&quot;content-navigation-list&quot;&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-            &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Suspendisse potenti
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-            &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Phasellus mattis diam convallis lectus ultricies
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-            &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Phasellus mattis diam convallis lectus ultricies
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-            &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Phasellus convallis lectus ultricies
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -3922,11 +3662,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;container container--no-padding&quot;&gt;
   &lt;div class=&quot;box box--no-padding box--mb-large&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
           &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
@@ -3948,22 +3688,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
                   Lyssna
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate text-small&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
                   Languages
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search text-small&quot;&gt;
+                &lt;a href=&quot;#3&quot; class=&quot;navigation__list-item-search&quot;&gt;
                   Sök
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu text-small&quot;&gt;
+                &lt;a href=&quot;#4&quot; class=&quot;navigation__list-item-mobilemenu&quot;&gt;
                   Meny
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -3980,22 +3720,22 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
           &lt;div class=&quot;navigation__links-container&quot;&gt;
             &lt;ul class=&quot;navigation__list navigation__list--absolute&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#5&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Undervisning
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#6&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Skolutveckling
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link text-medium&quot;&gt;
+                &lt;a href=&quot;#7&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Lagar och regler
                 &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link text-standard&quot;&gt;
+                &lt;a href=&quot;#8&quot; class=&quot;navigation__list-item-link&quot;&gt;
                   Innehåll A-Ö
                 &lt;/a&gt;
               &lt;/li&gt;
@@ -4007,37 +3747,37 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;container container--margins&quot;&gt;
-  &lt;div class=&quot;row row-reverse&quot;&gt;
+  &lt;div class=&quot;row row-reverse row-center&quot;&gt;
     &lt;div class=&quot;col-12 col-md-4&quot;&gt;
       &lt;img src=&quot;_styleguide/assets/img/overview.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-12 col-md-8&quot;&gt;
+    &lt;div class=&quot;col-11 col-md-8 col-overlap col-sm-overlap&quot;&gt;
       &lt;div class=&quot;box box--compact box--no-border&quot;&gt;
-        &lt;h1 class=&quot;h1&quot;&gt;Nationella prov i grundskolan&lt;/h1&gt;
-        &lt;p class=&quot;text-medium&quot;&gt;De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.&lt;/p&gt;
+        &lt;h2 class=&quot;h2 margin-tp-reset&quot;&gt;Nationella prov i grundskolan&lt;/h2&gt;
+        &lt;p class=&quot;text-standard&quot;&gt;De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.&lt;/p&gt;
         &lt;ul class=&quot;content-navigation-list&quot;&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-            &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Suspendisse potenti
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-            &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Phasellus mattis diam convallis lectus ultricies
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-            &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Phasellus mattis diam convallis lectus ultricies
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-            &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-medium&quot;&gt;
+            &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
               Phasellus convallis lectus ultricies
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
@@ -4045,11 +3785,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;container container--no-padding&quot;&gt;
   &lt;div class=&quot;box box--no-padding box--mb-large&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h2&gt;
+        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
           &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
@@ -4128,7 +3868,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Box  Dragspel  Formulär  Hero  Knappar  Notifieringar  Sektionnavigering  Sidfot  Sidhuvud  TOC  Textlänkar "
+						data-filter-value=" Box  Dragspel  Formulär  Hero  Knappar  Sektionnavigering  Sidfot  Sidhuvud  TOC  Textlänkar "
 					>
 						<a href="#category-komponenter" class="i-sidebar-list-item">
 							<b>Komponenter</b>
@@ -4170,13 +3910,6 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 								data-filter-value="Knappar"
 							>
 								<span>Knappar</span>
-							</a>
-							<a
-								href="#notifieringar"
-								class="i-sidebar-list-item"
-								data-filter-value="Notifieringar"
-							>
-								<span>Notifieringar</span>
 							</a>
 							<a
 								href="#sektionnavigering"
