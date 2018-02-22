@@ -7,21 +7,27 @@ category: Kom igång
 
 Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass och sedan de komponenter du behöver i ditt projekt.
 
-
 När du laddar ner biblioteket hittar du följande filer:
 
 ```
-
-scss/
-├── _accordion.scss
-├── _box.scss
-├── _buttons.scss
-├── ...
-├── skolverket.scss
+src/
+├── docs/
+│   ├── components/
+│   │   ├── _accordion.md
+│   │   ├── _buttons.md
+│   │   └── ...
+│   └── getting-started/
+│       ├── conventions.md
+│       ├── introduction.md
+│       └── ...
+└── scss/
+    ├── _accordion.scss
+    ├── _buttons.scss
+    ├── ...
+    └── skolverket.scss
 ```
 
 I `skolverket.scss` kan du styra vilka komponenter du vill använda i ditt projekt.
-
 
 Din byggprocess kräver att du konfigurerar
 
