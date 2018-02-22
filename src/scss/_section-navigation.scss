@@ -1,5 +1,5 @@
-$label-padding-tb: 0.5625rem;
-$label-padding-tb-md: 1rem;
+$label-padding-tb: .375rem;
+$label-padding-tb-md: .75rem;
 
 $block: 'section-navigation';
 
@@ -11,27 +11,24 @@ $block: 'section-navigation';
 
   &__label {
     display: inline-block;
+    margin-top: 0;
     margin-bottom: #{2*$label-padding-tb};
     padding: $label-padding-tb 1.125rem $label-padding-tb .75rem;
     color: $color-white;
     background-color: $color-purple-dark;
-    font-size: 1.375rem;
-    line-height: 1;
-    font-weight: $font-weight-medium;
     border-top-right-radius: 1.125rem;
 
     @include media-min('md') {
       padding: $label-padding-tb-md 1.25rem $label-padding-tb-md .875rem;
-      font-size: 1.5rem;
     }
 
     &--overlap {
       position: absolute;
-      top: calc(-.875rem - 1.375rem - #{2*$label-padding-tb});
+      top: calc(-.875rem - 1.625rem - #{2*$label-padding-tb}); // 1.625rem is line height
       margin-bottom: 0;
 
       @include media-min('md') {
-        top: calc(-.875rem - 1.5rem - #{2*$label-padding-tb-md});
+        top: calc(-.875rem - 2rem - #{2*$label-padding-tb-md}); // 2rem is line height
       }
     }
   }
@@ -71,17 +68,16 @@ $block: 'section-navigation';
 
       &-link {
         color: $color-purple-dark;
-        font-size: 1.1875rem;
-        line-height: 1.26;
-        font-weight: $font-weight-medium;
-
+        font-size: rem(20px);
+        line-height: rem(26px);
+        font-weight: $font-weight-bold;
+        
         @include media-min('md') {
           display: flex;
           align-items: center;
           justify-content: center;
           text-align: center;
           height: 100%;
-          font-size: 1.5rem;
           padding-right: 0;
         }
 
