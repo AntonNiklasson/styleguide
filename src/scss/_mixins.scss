@@ -34,11 +34,27 @@
 ///
 /// Shorthand media query creation
 /// @param {String} $breakpoint
-@mixin media-query($breakpoint) {
+@mixin media-min($breakpoint) {
   // If the key exists in the map
   @if map-has-key($grid-breakpoints, $breakpoint) {
     // Prints a media query based on the value
     @media (min-width: map-get($grid-breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($grid-breakpoints)}.";
+  }
+}
+///
+/// Shorthand media query creation
+/// @param {String} $breakpoint
+@mixin media-max($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (max-width: map-get($grid-breakpoints, $breakpoint)) {
       @content;
     }
   }
@@ -86,10 +102,10 @@
 /// Adds padding for boxed content
 @mixin box-padding() {
   padding: ($baseline / 2) $page-padding-small;
-  @include media-query('sm') {
+  @include media-min('sm') {
     padding: $baseline $page-padding-medium;
   }
-  @include media-query('md') {
+  @include media-min('md') {
     padding: ($baseline * 2) $page-padding;
   }
 }

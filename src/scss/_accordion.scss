@@ -24,7 +24,7 @@ $block: 'accordion';
       color: $color-purple-dark;
       font-weight: $font-weight-medium;
 
-      @include media-query('md') {
+      @include media-min('md') {
         padding: 1rem .25rem 1rem .875rem;
       }
 

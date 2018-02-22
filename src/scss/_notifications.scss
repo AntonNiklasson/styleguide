@@ -51,7 +51,7 @@ $block: 'notification';
   }
 
   &__textbox {
-    @include media-query('md') {
+    @include media-min('md') {
       padding: 1.5rem .625rem 1.25rem .625rem;
     }
   }

@@ -9,7 +9,7 @@ $block: 'navigation';
     padding: 0.9375rem 0;
     border-top: 3px solid $color-purple-dark;
 
-    @include media-query('md') {
+    @include media-min('md') {
       padding-top: 1.25rem;
       padding-bottom: 1.25rem;
     }
@@ -25,7 +25,7 @@ $block: 'navigation';
       width: 134px;
       height: 36px;
 
-      @include media-query('md') {
+      @include media-min('md') {
         width: 160px;
       }
     }
@@ -37,7 +37,7 @@ $block: 'navigation';
     padding: 0;
     background-color: $color-purple-dark;
 
-    @include media-query('md') {
+    @include media-min('md') {
       display: block;
     }
 
@@ -55,7 +55,7 @@ $block: 'navigation';
     padding: 0;
     margin: 0;
 
-    @include media-query('md') {
+    @include media-min('md') {
       height: 100%;
     }
 
@@ -93,7 +93,7 @@ $block: 'navigation';
         background-image: url('../assets/img/volume.svg');
         margin-right: 0.4375rem;
 
-        @include media-query('md') {
+        @include media-min('md') {
           display: block;
         }
       }
@@ -103,7 +103,7 @@ $block: 'navigation';
         background-image: url('../assets/img/language.svg');
         margin-right: 0.4375rem;
 
-        @include media-query('md') {
+        @include media-min('md') {
           display: block;
         }
       }
@@ -112,7 +112,7 @@ $block: 'navigation';
         background-image: url('../assets/img/search.svg');
         margin-right: 0.4375rem;
 
-        @include media-query('md') {
+        @include media-min('md') {
           margin-right: 0;
         }
       }
@@ -120,7 +120,7 @@ $block: 'navigation';
       &-mobilemenu {
         background-image: url('../assets/img/mobilemenu.svg');
         
-        @include media-query('md') {
+        @include media-min('md') {
           display: none;
         }
       }

@@ -4,7 +4,7 @@
 $block: 'section';
 
 .#{$block} {
-  @include media-query('md') {
+  @include media-min('md') {
     display: flex;
   }
 
@@ -38,7 +38,7 @@ $block: 'section';
         transform: translateY(-50%);
         background-color: $color-purple;
 
-        @include media-query('md') {
+        @include media-min('md') {
           position: static;
           width: 3.125rem;
           margin: 0.875rem 0;
@@ -50,14 +50,14 @@ $block: 'section';
       margin-bottom: 0.875rem;
     }
 
-    @include media-query('md') {
+    @include media-min('md') {
       flex: 0 0 200px;
       max-width: 200px;
     }
   }
 
   &__body {
-    @include media-query('md') {
+    @include media-min('md') {
       flex: 1 1 0%;
       flex-basis: 0%;
       margin-left: $grid-gutter * 2

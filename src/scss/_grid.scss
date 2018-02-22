@@ -20,7 +20,7 @@
   width: 100%;
   height: 100%;
 
-  @include media-query('xl') {
+  @include media-min('xl') {
     width: $page-max-width;
     max-width: 100%;
   }
@@ -28,12 +28,12 @@
   &--overlap-top {
     margin-top: -60px;
   }
-  @include media-query('md') {
+  @include media-min('md') {
     &--overlap-top {
       margin-top: -100px;
     }
   }
-  @include media-query('lg') {
+  @include media-min('lg') {
     &--overlap-top {
       margin-top: -140px;
     }
@@ -42,6 +42,13 @@
   &--margins {
     margin-top: $baseline;
     margin-bottom: $baseline;
+  }
+
+  &--no-padding {
+    @include media-max('md') {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
   }
 }
 
@@ -57,7 +64,7 @@
 }
 
 .row-reverse {
-  @include media-query('md') {
+  @include media-min('md') {
     flex-direction: row-reverse;
   }
 }
@@ -298,7 +305,7 @@
 .offset-11 {
   margin-left: 91.666667%;
 }
-@include media-query('sm') {
+@include media-min('sm') {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -472,7 +479,7 @@
   }
 }
 
-@include media-query('md') {
+@include media-min('md') {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -646,7 +653,7 @@
   }
 }
 
-@include media-query('lg') {
+@include media-min('lg') {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
@@ -820,7 +827,7 @@
   }
 }
 
-@include media-query('xl') {
+@include media-min('xl') {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;

@@ -8,7 +8,7 @@ $block: 'mobile-menu';
     display: block;
   }
 
-  @include media-query('md') {
+  @include media-min('md') {
     display: none;
   }
 

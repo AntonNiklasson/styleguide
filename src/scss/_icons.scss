@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   margin-left: .25rem;
 
-  @include media-query('md') {
+  @include media-min('md') {
     width: .5rem; 
     height: .875rem;
     background-size: 1.5rem;
@@ -27,7 +27,7 @@
     height: .875rem;
     background-size: 1.625rem;
 
-    @include media-query('md') {
+    @include media-min('md') {
       background-size: 1.75rem;
     }
   }
@@ -37,7 +37,7 @@
     width: .5rem;
     height: .75rem;
     
-    @include media-query('md') {
+    @include media-min('md') {
       width: .875rem;
       height: 1.375rem;
       background-size: 2.5rem;
@@ -51,7 +51,7 @@
     background-size: 1.75rem;
     transform: rotate(90deg);
 
-    @include media-query('md') {
+    @include media-min('md') {
       background-size: 2.25rem;
     }
   }

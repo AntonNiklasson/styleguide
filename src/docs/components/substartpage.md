@@ -157,7 +157,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container container--no-padding">
   <div class="box box--no-padding">
     <div class="section section--boxed">
       <header class="section__header">

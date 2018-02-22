@@ -7,13 +7,13 @@ $block: 'hero';
     position: relative;
     margin: 0 ($page-padding-small * 2);
 
-    @include media-query('md') {
+    @include media-min('md') {
       margin: 0 ($page-padding-medium * 2);
     }
-    @include media-query('lg') {
+    @include media-min('lg') {
       margin: 0 $page-padding;
     }
-    @include media-query('xl') {
+    @include media-min('xl') {
       margin: 0 auto;
       max-width: $page-max-width - ($page-padding * 2);
     }
@@ -23,10 +23,10 @@ $block: 'hero';
       bottom: 30px;
       left: 0;
 
-      @include media-query('md') {
+      @include media-min('md') {
         bottom: 60px;
       }
-      @include media-query('lg') {
+      @include media-min('lg') {
         bottom: 140px;
       }
 
@@ -36,7 +36,7 @@ $block: 'hero';
         margin-left: .5rem;
         color: $color-white;
 
-        @include media-query('md') {
+        @include media-min('md') {
           font-size: 2.375rem;
           line-height: 1.7;
           margin-left: .875rem;
@@ -57,7 +57,7 @@ $block: 'hero';
           box-decoration-break: clone; // Firefox fix ???
           box-shadow: 8px 0 0 #178079, -8px 0 0 #178079;
 
-          @include media-query('md') {
+          @include media-min('md') {
             box-shadow: 14px 0 0 #178079, -14px 0 0 #178079;
           }
         }
@@ -67,14 +67,14 @@ $block: 'hero';
 
 
   &--overlap {
-    @include media-query('lg') {
+    @include media-min('lg') {
       margin-bottom: -140px;
     }
     .#{$block}__banner-body {
-      @include media-query('md') {
+      @include media-min('md') {
         bottom: 60px;
       }
-      @include media-query('lg') {
+      @include media-min('lg') {
         bottom: 200px;
       }
     }
