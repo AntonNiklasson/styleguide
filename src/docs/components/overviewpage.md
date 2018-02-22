@@ -17,22 +17,22 @@ Beskrivning...
             </a>
             <ul class="navigation__list">
               <li class="navigation__list-item">
-                <a href="#1" class="navigation__list-item-listen text-small">
+                <a href="#1" class="navigation__list-item-listen">
                   Lyssna
                 </a>
               </li>
               <li class="navigation__list-item">
-                <a href="#2" class="navigation__list-item-translate text-small">
+                <a href="#2" class="navigation__list-item-translate">
                   Languages
                 </a>
               </li>
               <li class="navigation__list-item">
-                <a href="#3" class="navigation__list-item-search text-small">
+                <a href="#3" class="navigation__list-item-search">
                   Sök
                 </a>
               </li>
               <li class="navigation__list-item">
-                <a href="#4" class="navigation__list-item-mobilemenu text-small">
+                <a href="#4" class="navigation__list-item-mobilemenu">
                   Meny
                 </a>
               </li>
@@ -49,22 +49,22 @@ Beskrivning...
           <div class="navigation__links-container">
             <ul class="navigation__list navigation__list--absolute">
               <li class="navigation__list-item">
-                <a href="#5" class="navigation__list-item-link text-medium">
+                <a href="#5" class="navigation__list-item-link">
                   Undervisning
                 </a>
               </li>
               <li class="navigation__list-item">
-                <a href="#6" class="navigation__list-item-link text-medium">
+                <a href="#6" class="navigation__list-item-link">
                   Skolutveckling
                 </a>
               </li>
               <li class="navigation__list-item">
-                <a href="#7" class="navigation__list-item-link text-medium">
+                <a href="#7" class="navigation__list-item-link">
                   Lagar och regler
                 </a>
               </li>
               <li class="navigation__list-item">
-                <a href="#8" class="navigation__list-item-link text-standard">
+                <a href="#8" class="navigation__list-item-link">
                   Innehåll A-Ö
                 </a>
               </li>
@@ -82,31 +82,31 @@ Beskrivning...
     </div>
     <div class="col-12 col-md-8">
       <div class="box box--compact box--no-border">
-        <h1 class="h1">En tydlig områdersrubrik/h1>
+        <h2 class="h2 margin-tp-reset">En tydlig områdersrubrik/h2>
         <p class="text-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <ul class="content-navigation-list">
           <li class="content-navigation-list__item">
-            <a href="#1" class="content-navigation-list__item-link text-medium">
+            <a href="#1" class="content-navigation-list__item-link text-big">
               Navigationsval 1
-              <i class="icon-arrow"></i>
+              <i class="icon-arrow icon-arrow--lg"></i>
             </a>
           </li>
           <li class="content-navigation-list__item">
-            <a href="#2" class="content-navigation-list__item-link text-medium">
+            <a href="#2" class="content-navigation-list__item-link text-big">
               Navigationsval 2
-              <i class="icon-arrow"></i>
+              <i class="icon-arrow icon-arrow--lg"></i>
             </a>
           </li>
           <li class="content-navigation-list__item">
-            <a href="#3" class="content-navigation-list__item-link text-medium">
+            <a href="#3" class="content-navigation-list__item-link text-big">
               Navigationsval 3
-              <i class="icon-arrow"></i>
+              <i class="icon-arrow icon-arrow--lg"></i>
             </a>
           </li>
           <li class="content-navigation-list__item content-navigation-list__item--no-border">
-            <a href="#4" class="content-navigation-list__item-link text-medium">
+            <a href="#4" class="content-navigation-list__item-link text-big">
               Navigationsval med extra mycket text
-              <i class="icon-arrow"></i>
+              <i class="icon-arrow icon-arrow--lg"></i>
             </a>
           </li>
         </ul>
