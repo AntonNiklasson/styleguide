@@ -29,13 +29,13 @@ Textlänkar states:
 ```within-text.html
 <div class="text-standard">
   Aliquam dictum ac elit semper malesuada. Nunc venenatis fermentum elit non aliquet. Pellentesque massa nisi, consectetur nec pellentesque id, fringilla et arcu. Curabitur dignissim ante sit amet lacinia gravida
-  <a href="#" class="text-link text-link--icon">
-    <span class="text-standard line-height-normal">justo trist placerat</span>
+  <a href="#" class="text-link">
+    <span class="text-standard">justo trist placerat</span>
     <i class="icon-lock"></i>
   </a>
   phasellus efficitur nulla dolor, non blandit erat facilisis in. Mauris cursus ante a justo tristique placerat. Curabitur in euismod orci in risus varius, eu rutrum leo pharetra. Maecenas auctor congue purus sit amet vehicula
-  <a href="#" class="text-link text-link--icon">
-    <span class="text-standard line-height-normal">per conubia nostra</span>
+  <a href="#" class="text-link">
+    <span class="text-standard">per conubia nostra</span>
     <i class="icon-hyperlink"></i>
   </a>
   class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar nulla nec faucibus feugiat. Nunc facilisis lobortis tellus nec tincidunt.
@@ -45,7 +45,7 @@ Textlänkar states:
 
 ```with-icon.html
 <div>
-  <a href="#" class="text-link text-link--icon">
+  <a href="#" class="text-link">
     <span class="text-standard">Curabitur dignissim ante</span>
     <i class="icon-lock"></i>
   </a>
