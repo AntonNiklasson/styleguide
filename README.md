@@ -2,7 +2,7 @@
 
 The component library uses a the style guide [Stylemark](https://github.com/nextbigsoundinc/stylemark) to visualize common UI components used at Skolverket. To develop new components or make changes to existing ones, you need to have both [Node](https://nodejs.org) installed and it is assumed knowledge of the version control [git](http://www.git-scm.com).
 
-View the component library at [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
+View the component library [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
 
 # View locally
 
@@ -24,5 +24,5 @@ To develop a component, go to `/src/scss/_component.scss` and write your code fo
 1. Update the component library version using `npm version <major|minor|patch> -m "Message describing what happened".` The message will be published as the [release notes in Github](https://github.com/AcandoCxC/skolverket-komponentbibliotek/releases).
 2. `git push`
 3. `git push --tags` to see the release notes in Github
-4. `npm run deploy` the component library at [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
+4. `npm run deploy` the component library [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
 5. Inform the system owners across Skolverket to upgrade to the new release.
