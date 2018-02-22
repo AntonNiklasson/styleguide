@@ -120,8 +120,12 @@ select.form-control  {
   margin-bottom: 1.75rem;
   width: 100%;
 
-  & .display-flex {
+  &--search {
     display: flex;
+  }
+
+  &--margin-b-small {
+    margin-bottom: .625rem;
   }
 }
 
