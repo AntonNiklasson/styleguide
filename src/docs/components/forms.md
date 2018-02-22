@@ -8,7 +8,7 @@ Skolverkets formulär utgår från Bootstrap 4. Det bygger på att varje formul�
 ```input-simple.html
 <form>
   <div class="form-group">
-    <label class="form-label margin-reset" for="exampleInputEmail1">E-post</label>
+    <label class="form-label form-label--margin-reset" for="exampleInputEmail1">E-post</label>
     <span id="emailHelp" class="form-text">Beskrivning av textfält</span>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Fyll i e-post">
   </div>
@@ -36,7 +36,7 @@ Fältet går både att låsa helt (`disabled`), tillåtas att kopieras/läsas (`
 <div class="form-group">
   <label class="form-label" for="exampleInputReadonly1">Validerar<span class="text-error">*</span></label>
   <input class="form-control form-control--error icon-error" id="exampleInputReadonly1" type="text" placeholder="Validerar...">
-  <span class="text-error">Hjälpsamt felmeddelande</span>
+  <span class="text-error text-small">Hjälpsamt felmeddelande</span>
 </div>
 ```
 
@@ -46,7 +46,7 @@ Flerradiga textfält har stöd för samtliga tillstånd.
 
 ```textarea.html
 <div class="form-group">
-  <label class="form-label margin-reset" for="exampleTextarea1">Textområde med beskrivning</label>
+  <label class="form-label form-label--margin-reset" for="exampleTextarea1">Textområde med beskrivning</label>
   <span id="textareaHelp" class="form-text">Beskrivning av textområde</span>
   <textarea class="form-control" id="exampleTextarea1" rows="4" aria-describedby="textareaHelp" placeholder="Platshållare"></textarea>
 </div>
@@ -63,7 +63,7 @@ Flerradiga textfält har stöd för samtliga tillstånd.
   </label>
   <textarea class="form-control form-control--error form-control--error-textarea icon-error"
     id="exampleTextarea3" rows="4" placeholder="Validerar..."></textarea>
-  <span class="text-error">Hjälpsamt felmeddelande</span>
+  <span class="text-error text-small">Hjälpsamt felmeddelande</span>
 </div>
 ```
 
