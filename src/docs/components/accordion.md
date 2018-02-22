@@ -9,35 +9,35 @@ Dragspelsmenyer låter användare öppna och stänga sektioner av innehåll. Anv
 <div class="box">
   <div class="accordion" id="accordionOne">
     <div class="accordion__item">
-      <h5 class="accordion__item-header" id="headingOne">
+      <h2 class="h3 accordion__item-header" id="headingOne">
           <a class="accordion__item-link text-medium" href="#accordion1">
             Sektionstitel 1
             <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
           </a>
-      </h5>
-      <div class="accordion__item-body" data-parent="#accordion">
+      </h2>
+      <div class="accordion__item-body text-standard" data-parent="#accordion">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       </div>
     </div>
     <div class="accordion__item accordion__item--open">
-      <h5 class="accordion__item-header" id="headingTwo">
+      <h2 class="h3 accordion__item-header" id="headingTwo">
           <a class="accordion__item-link text-medium" href="#accordion2">
             Sektionstitel 2
             <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
           </a>
-      </h5>
-      <div class="accordion__item-body" data-parent="#accordion">
+      </h2>
+      <div class="accordion__item-body text-standard" data-parent="#accordion">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       </div>
     </div>
     <div class="accordion__item">
-      <h5 class="accordion__item-header" id="headingThree">
+      <h2 class="h3 accordion__item-header" id="headingThree">
           <a class="accordion__item-link text-medium" href="#accordion3">
             Sektionstitel 3
             <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
           </a>
-      </h5>
-      <div class="accordion__item-body" data-parent="#accordion">
+      </h2>
+      <div class="accordion__item-body text-standard" data-parent="#accordion">
         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       </div>
     </div>

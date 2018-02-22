@@ -12,6 +12,7 @@ $block: 'accordion';
 
     &-header {
       margin-bottom: 0;
+      margin-top: 0;
     }
 
     &-link {
@@ -22,7 +23,7 @@ $block: 'accordion';
       border: 1px solid transparent;
       border-top: 1px solid $color-purple;
       color: $color-purple-dark;
-      font-weight: $font-weight-medium;
+      font-weight: $font-weight-bold;
 
       @include media-min('md') {
         padding: 1rem .25rem 1rem .875rem;
@@ -49,7 +50,6 @@ $block: 'accordion';
     &-body {
       display: none;
       padding: 1.625rem;
-      font-size: 1.125rem;
 
       .#{$block}__item--open & {
         display: block;
