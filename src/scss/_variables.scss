@@ -15,7 +15,7 @@ $grid-gutter: rem(14) !default;
 $grid-gutter-small: rem(7.5) !default;
 $baseline: rem(28) !default;
 
-/// Colors
+// Colors
 $color-black: #000 !default;
 $color-white: #FFF !default;
 $color-error: #CD2126 !default;
@@ -53,47 +53,38 @@ $color-input-bg: $color-purple-light !default;
 $font-family-base: 'Source Sans Pro', sans-serif;
 
 // ============= Font size =============
+// Headings
 $font-size-base: 1rem !default;     // 16px - assumes the browser default
-$font-size-h1: 2.6875rem !default;  // 43px
-$font-size-h2: 2rem !default;       // 32px
-$font-size-h3: 1.5rem !default;     // 24px
-$font-size-h4: 1.25rem !default;    // 20px
+$font-size-h1: rem(45px) !default;  
+$font-size-h2: rem(36px) !default;      
+$font-size-h3: rem(25px) !default;    
+$font-size-h4: rem(20px) !default;    
 $font-size-h5: 1.125rem !default;   // 18px
 $font-size-h6: 1rem !default;       // 16px
 
-// Custom
-$font-size-xlg: 1.75rem !default;         // 28px
-$font-size-lg: 1.5rem !default;           // 24px
-$font-size-md: 1.3125rem !default;        // 21px
-$font-size-std: 1.125rem !default;        // 18px
-$font-size-sm: $font-size-base !default;  // 16px
-$font-size-xs: .875rem !default;          // 14px
-$font-size-xxs: 0.75rem !default;         // 12px
+// Text
+$font-size-big: rem(25px) !default;
+$font-size-std: rem(20px) !default;
+$font-size-sm: rem(18px) !default;  
 
 // ============= Font weight =============
 $font-weight-base: 400 !default;
 $font-weight-book: $font-weight-base !default;
-$font-weight-medium: 600 !default;
-$font-weight-bold: 700 !default;
-$font-weight-heavy: 900 !default;
+$font-weight-bold: 600 !default;
 
 // ============= Line height =============
-$line-height-base: 1.55 !default;
-$line-height-h1: 1.3 !default;
-$line-height-h2: 1.3125 !default;
-$line-height-h3: 1.46 !default;
-$line-height-h4: 1.4 !default;
-$line-height-h5: $line-height-base !default;
-$line-height-h6: $line-height-base !default;
+// Headings
+$line-height-h1: rem(54px) !default;
+$line-height-h2: rem(46px) !default;
+$line-height-h3: rem(32px) !default;
+$line-height-h4: rem(28px) !default;
+$line-height-h5: $baseline !default;
+$line-height-h6: $baseline !default;
 
-// Custom
-$line-height-xlg: 1.25 !default;
-$line-height-lg: 1.46 !default;
-$line-height-md: 1.33 !default;
-$line-height-std: $line-height-base !default;
-$line-height-sm: 1.75 !default;
-$line-height-xs: 1.72 !default;
-$line-height-xxs: 1.72 !default;
+// Text
+$line-height-big: rem(31px) !default;
+$line-height-std: rem(28px) !default;
+$line-height-sm: rem(24px) !default;
 
 // Z-index master list
 //

@@ -1,86 +1,47 @@
 ///
-/// HEADINGS
-/// <h$>
+/// Typography
+/// This partial contains all your far-reaching typography styles.
+/// Global classes for headings and copy.
 ///============================================================================
-///
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-bold;
   margin-bottom: 0.5rem;
   margin-top: 0;
   color: inherit;
 }
 
-.h1 { font-size: $font-size-h1; line-height: $line-height-h1; }
-.h2 { font-size: $font-size-h2; line-height: $line-height-h2; }
-.h3 { font-size: $font-size-h3; line-height: $line-height-h3; }
-.h4 { font-size: $font-size-h4; line-height: $line-height-h4; }
-.h5 { font-size: $font-size-h5; line-height: $line-height-h5; }
-.h6 { font-size: $font-size-h6; line-height: $line-height-h6; }
+.h1 { font-size: rem(32px); line-height: rem(40px); margin: 40px 0 30px 0; }   
+.h2 { font-size: rem(26px); line-height: rem(31px); margin: 25px 0 10px 0; }   
+.h3 { font-size: rem(20px); line-height: rem(26px); margin: 22px 0 10px 0; }     
+.h4 { font-size: rem(18px); line-height: rem(24px); margin: 10px 0 5px 0; }    
+.h5 { font-size: 1rem; line-height: 1.50; }        // 16px
+.h6 { font-size: 0.875rem; line-height: 1.50; }    // 14px
 
-@media (max-width: 767.9999px) {
-  .h1 { font-size: 1.9375rem; line-height: 1.16; }   // 31px
-  .h2 { font-size: 1.5625rem; line-height: 1.44; }   // 25px
-  .h3 { font-size: 1.25rem; line-height: 1.25; }     // 20px
-  .h4 { font-size: 1.125rem; line-height: 1.33; }    // 18px
-  .h5 { font-size: 1rem; line-height: 1.50; }        // 16px
-  .h6 { font-size: 0.875rem; line-height: 1.50; }    // 14px
-}
+.text-small { font-size: rem(16px); line-height: rem(24px); }
+.text-standard { font-size: rem(18px); line-height: rem(24px); }
+.text-big { font-size: rem(20px); line-height: rem(26px); }
 
-///
-/// Typography
-/// This partial contains all your far-reaching typography styles.
-/// Global classes for headings and copy.
-///============================================================================
-///
-/// Size
-///----------------------------------------------------------------------------
+@include media-query('md') { 
+  .h1 { font-size: $font-size-h1; line-height: $line-height-h1; margin: 60px 0 30px 0; }
+  .h2 { font-size: $font-size-h2; line-height: $line-height-h2; margin: 45px 0 20px 0; }
+  .h3 { font-size: $font-size-h3; line-height: $line-height-h3; margin: 45px 0 20px 0; }
+  .h4 { font-size: $font-size-h4; line-height: $line-height-h4; margin: 20px 0 5px 0; }
+  .h5 { font-size: $font-size-h5; line-height: $line-height-h5; }
+  .h6 { font-size: $font-size-h6; line-height: $line-height-h6; }
 
-.text-small {
-  font-size: $font-size-sm;       // 16px
-  line-height: $line-height-sm;
-}
-
-.text-standard {
-  font-size: $font-size-std;      // 18px
-  line-height: $line-height-std;
-}
-
-.text-medium {
-  font-size: $font-size-md;       // 21px
-  line-height: $line-height-md;
-}
-
-.text-large {
-  font-size: $font-size-lg;       // 24px
-  line-height: $line-height-lg;
-}
-
-.text-xlarge {
-  font-size: $font-size-xlg;       // 28px
-  line-height: $line-height-xlg;
-}
-
-@media (max-width: 767.9999px) {
-  .text-small { font-size: 0.875rem; line-height: 1.72; }   // 14px
-  .text-standard { font-size: 1rem; line-height: 1.5; }     // 16px
-  .text-medium { font-size: 1.1875rem; line-height: 1.26; } // 19px
-  .text-large { font-size: 1.25rem; line-height: 1.5; }     // 20px
-  .text-xlarge { font-size: 1.5rem; line-height: 1.08; }    // 24px
-}
-
-.line-height-normal {
-  line-height: 1.2;
+  .text-small { font-size: $font-size-sm; line-height: $line-height-sm; }
+  .text-standard { font-size: $font-size-std; line-height: $line-height-std; }
+  .text-big { font-size: $font-size-big; line-height: $line-height-big; }
 }
 
 .text-error {
   color: $color-error;
 }
-
 .text-secondary {
   color: $color-gray;
 }
-.text-reset {
-  font-weight: $font-weight-base;
+.margin-tp-reset {
+  margin-top: 0;
 }
