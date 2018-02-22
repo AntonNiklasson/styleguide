@@ -4,7 +4,7 @@ The component library uses a the style guide [Stylemark](https://github.com/next
 
 View the component library at [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
 
-# View component library locally
+# View locally
 
 ```sh
 npm install
