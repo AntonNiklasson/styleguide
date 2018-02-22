@@ -11,7 +11,7 @@ $block: 'box';
   @include box-padding;
 
   &--compact {
-    padding: 18px 24px 24px 26px;
+    padding: rem(18px) rem(24px) rem(24px) rem(26px);
     box-shadow: 0 6px 14px 0 rgba(108, 39, 106, 0.25);
 
     @include media-min('md') {
