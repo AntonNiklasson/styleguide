@@ -10,9 +10,9 @@ Presenterar upp till åtta övergripande navigationsvägar inom ett område.
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="section-navigation__label">
+        <h2 class="h3section-navigation__label">
           Sektionstitel
-        </div>
+        </h2>
       </div>
       <div class="col-12 col-md-4 col-lg-3">
         <div class="section-navigation__box">
