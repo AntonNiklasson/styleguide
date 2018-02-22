@@ -8,10 +8,6 @@ $block: 'mobile-menu';
     display: block;
   }
 
-  @include media-min('md') {
-    display: none;
-  }
-
   &__links {
     height: 100%;
     padding: 0;
@@ -25,7 +21,12 @@ $block: 'mobile-menu';
     border-top: 3px solid $color-purple-dark;
 
     &-title {
-      margin-bottom: 0;
+      margin: 0;
+    }
+
+    &-link {
+      font-size: rem(16px);
+      line-height: rem(24px);
     }
 
     &-container {
@@ -38,12 +39,12 @@ $block: 'mobile-menu';
   &__list {
     width: 100%;
     list-style: none;
-    padding: 0;
+    padding: .125rem 0;
     margin: 0;
 
     &-item {
       width: 100%;
-      padding: 0.6875rem 0 0.6875rem 0;
+      padding: 0.625rem 0;
       border-bottom: 1px solid $color-purple;
 
       &:last-child {
@@ -51,9 +52,12 @@ $block: 'mobile-menu';
       }
 
       &-link {
+        width: 100%;
         text-decoration: none;
         color: $color-purple-dark;
-        font-weight: $font-weight-medium;
+        font-weight: $font-weight-bold;
+        font-size: rem(20px);
+        line-height: rem(26px);
 
         &:hover,
         &:focus,
