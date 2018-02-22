@@ -14,7 +14,7 @@
   background-clip: padding-box;
   border: 0;
   
-  @include media-query('md') {
+  @include media-min('md') {
     font-size: $font-size-sm;
     line-height: $line-height-sm;
   }
@@ -133,7 +133,7 @@ select.form-control  {
   font-size: rem(18px);
   line-height: rem(24px);
 
-  @include media-query('md') {
+  @include media-min('md') {
     font-size: $font-size-h4;
     line-height: $line-height-h4;
   }
@@ -151,7 +151,7 @@ select.form-control  {
   font-size: rem(16px); 
   line-height: rem(24px);
 
-  @include media-query('md') {
+  @include media-min('md') {
     font-size: $font-size-sm;
     line-height: $line-height-sm;
   }
@@ -206,7 +206,7 @@ select.form-control  {
   font-size: rem(18px); 
   line-height: rem(24px);
 
-  @include media-query('md') {
+  @include media-min('md') {
     font-size: $font-size-std;
     line-height: $line-height-std;
   }
