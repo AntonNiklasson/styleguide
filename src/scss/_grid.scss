@@ -25,20 +25,6 @@
     max-width: 100%;
   }
 
-  &--overlap-top {
-    margin-top: -60px;
-  }
-  @include media-min('md') {
-    &--overlap-top {
-      margin-top: -100px;
-    }
-  }
-  @include media-min('lg') {
-    &--overlap-top {
-      margin-top: -140px;
-    }
-  }
-
   &--margins {
     margin-top: $baseline;
     margin-bottom: $baseline;
@@ -69,6 +55,10 @@
   }
 }
 
+.row-center {
+  justify-content: center;
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -96,6 +86,37 @@
 
 .col-auto {
   width: auto;
+}
+
+.col-overlap {
+  margin-top: -100px;
+}
+@include media-min('sm') {
+  .col-overlap {
+    margin-top: auto;
+  }
+  .col-sm-overlap {
+    margin-top: -100px;
+  }
+}
+@include media-min('md') {
+  .col-sm-overlap,
+  .col-overlap {
+    margin-top: auto;
+  }
+  .col-md-overlap {
+    margin-top: -100px;
+  }
+}
+@include media-min('lg') {
+  .col-sm-overlap,
+  .col-md-overlap,
+  .col-overlap {
+    margin-top: auto;
+  }
+  .col-lg-overlap {
+    margin-top: -100px;
+  }
 }
 
 .col-1 {
@@ -306,6 +327,9 @@
   margin-left: 91.666667%;
 }
 @include media-min('sm') {
+  .row-sm-center {
+    justify-content: center;
+  }
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -480,6 +504,9 @@
 }
 
 @include media-min('md') {
+  .row-md-center {
+    justify-content: center;
+  }
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -654,6 +681,9 @@
 }
 
 @include media-min('lg') {
+  .row-lg-center {
+    justify-content: center;
+  }
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
@@ -828,6 +858,9 @@
 }
 
 @include media-min('xl') {
+  .row-xl-center {
+    justify-content: center;
+  }
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -1000,28 +1033,6 @@
     margin-left: 91.666667%;
   }
 }
-/*
-@media (max-width: 768.9999px) {
-  $page-padding:   1.625rem;
-  $grid-gutter:     0.875rem;
-  .container {
-    padding-left: $page-padding;
-    padding-right: $page-padding;
-  }
-  .row {
-    margin-right: -$grid-gutter;
-    margin-left: -$grid-gutter;
-  }
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col {
-    padding-right: $grid-gutter;
-    padding-left: $grid-gutter;
-  }
-  .narrow-desktop-grid {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-*/
 
 @media (max-width: 768.9999px) {
   .container {
@@ -1029,7 +1040,6 @@
     padding-right: $page-padding-medium;
   }
 }
-
 
 @media (max-width: 375.9999px) {
   .container {

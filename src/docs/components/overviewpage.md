@@ -76,11 +76,11 @@ Beskrivning...
   </div>
 </div>
 <div class="container container--margins">
-  <div class="row row-reverse">
+  <div class="row row-reverse row-center">
     <div class="col-12 col-md-4">
       <img src="_styleguide/assets/img/overview.png" width="100%" alt="Error with image loading..." />
     </div>
-    <div class="col-12 col-md-8">
+    <div class="col-11 col-md-8 col-overlap col-sm-overlap">
       <div class="box box--compact box--no-border">
         <h1 class="h1">Nationella prov i grundskolan</h1>
         <p class="text-medium">De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.</p>
