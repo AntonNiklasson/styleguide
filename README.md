@@ -1,6 +1,6 @@
 # Skolverket UI Component Library
 
-The component library uses a the style guide [Stylemark](https://github.com/nextbigsoundinc/stylemark) to visualize common UI components used at Skolverket.
+The component library uses the style guide [Stylemark](https://github.com/nextbigsoundinc/stylemark) to visualize common UI components used at Skolverket.
 
 View the component library [here](https://acandocxc.github.io/skolverket-komponentbibliotek/)
 
