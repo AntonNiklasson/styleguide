@@ -53,7 +53,7 @@ Med en textruta som användaren kan fylla i
   </div>
   <div class="section section--boxed section--compact-padding">
     <div class="feedback feedback--textarea">
-      <div class="form-group">
+      <div class="form-group form-group--margin-b-small">
         <label class="form-label" for="exampleTextarea1">Textområde med beskrivning</label>
         <textarea class="form-control" id="exampleTextarea1" rows="4" aria-describedby="textareaHelp" placeholder="Platshållare"></textarea>
       </div>
