@@ -129,7 +129,7 @@ Beskrivning ...
 ```searchfield.html
 <div class="form-group">
   <label class="text-standard" for="inputSearch">Sökfält / textfält med ikon</label>
-  <div class="display-flex">
+  <div class="form-group--search">
     <input type="text" class="form-control form-control--search icon-search"
       id="inputSearch" placeholder="Platshållare" />
     <button class="btn btn--primary">Sök</button>
