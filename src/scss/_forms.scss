@@ -7,12 +7,17 @@
   width: 100%;
   min-height: 42px;
   padding: .3125rem .875rem;
-  font-size: $font-size-base;
-  line-height: $line-height-sm;
+  font-size: rem(16px); 
+  line-height: rem(24px);
   color: $color-input;
   background-color: $color-input-bg;
   background-clip: padding-box;
   border: 0;
+  
+  @include media-query('md') {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
@@ -123,28 +128,33 @@ select.form-control  {
 .form-label {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-bold;
   margin-bottom: ($baseline / 4);
-  font-size: 1.25rem;
-  line-height: $line-height-std;
+  font-size: rem(18px);
+  line-height: rem(24px);
 
-  @media (max-width: 767.9999px) {
-    font-size: 1rem;
-    line-height: 1.5;
+  @include media-query('md') {
+    font-size: $font-size-h4;
+    line-height: $line-height-h4;
   }
 
-  &.margin-reset {
+  &--margin-reset {
     margin: 0;
   }
 }
 
 .form-text {
   display: block;
-  font-size: 1rem;
-  line-height: 1.75;
   color: $color-gray;
   font-style: italic;
   margin-bottom: 0.5rem;
+  font-size: rem(16px); 
+  line-height: rem(24px);
+
+  @include media-query('md') {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
 }
 
 // Custom control (checkbox, radio)
@@ -193,6 +203,14 @@ select.form-control  {
   margin-bottom: 0;
   font-weight: 400;
   cursor: pointer;
+  font-size: rem(18px); 
+  line-height: rem(24px);
+
+  @include media-query('md') {
+    font-size: $font-size-std;
+    line-height: $line-height-std;
+  }
+
 
   // Background-color
   &::before {
@@ -231,7 +249,6 @@ select.form-control  {
   .custom-control__label::before {
     border-radius: .125rem;
   }
-  margin-bottom: 0.25rem;
 
   .custom-control__input:checked ~ .custom-control__label {
     &::after {
@@ -245,7 +262,6 @@ select.form-control  {
   .custom-control__label::before {
     border-radius: 50%;
   }
-  margin-bottom: 0.25rem;
 
   .custom-control__input:checked ~ .custom-control__label {
     &::before {
