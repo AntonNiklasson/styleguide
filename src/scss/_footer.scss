@@ -73,7 +73,7 @@ $block: 'footer';
 
     &-item {
       padding: .625rem .625rem .625rem 0;
-      border-bottom: 1px solid $color-purple;
+      border-bottom: 1px solid #824A81;
       &:last-child {
         border-bottom: 0;
       }
@@ -88,9 +88,10 @@ $block: 'footer';
       }
 
       &-link {
+        width: 100%;
         text-decoration: none;
         color: $color-white;
-        font-weight: $font-weight-medium;
+        font-weight: $font-weight-bold;
 
         &:hover {
           color: $color-white;
