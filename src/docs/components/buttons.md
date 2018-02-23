@@ -19,6 +19,11 @@ Det finns tre typer av knappar:
 <button class="btn btn--primary" disabled>Inaktiv knapp</button>
 <button class="btn btn-icon icon-volume">Spökknapp</button>
 ```
+```types.css hidden
+.btn {
+  margin: 0 28px 28px 0;
+}
+```
 
 En variant för små knappar finns och _bör_ används där utrymmet är begränsat.
 
@@ -26,6 +31,11 @@ En variant för små knappar finns och _bör_ används där utrymmet är begrän
 <button class="btn btn--primary btn--small">Primär</button>
 <button class="btn btn--secondary btn--small">Sekundär</button>
 <button class="btn btn--primary btn--small" disabled>Disabled</button>
+```
+```small.css hidden
+.btn {
+  margin: 0 28px 28px 0;
+}
 ```
 
 På små skärmar kan en knapp användas i fullbredd med `.btn--block`.
