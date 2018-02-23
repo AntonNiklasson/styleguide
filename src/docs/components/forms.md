@@ -112,7 +112,7 @@ Ett sökfält låter användaren söka efter specifikt innehåll.
 ```searchfield.html
 <div class="form-group">
   <label class="text-standard" for="inputSearch">Sökfältsrubrik</label>
-  <div class="form-group--search">
+  <div class="form-group-search">
     <input type="text" class="form-control form-control--search icon-search"
       id="inputSearch" placeholder="Platshållare" />
     <button class="btn btn--primary">Sök</button>
