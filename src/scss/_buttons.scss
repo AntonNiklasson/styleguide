@@ -22,14 +22,14 @@ $block: 'btn';
   &:focus,
   &.focus {
     outline: 0;
-    border: 2px solid $color-yellow;
-    margin: -1px;
+    box-shadow: inset 0 0 0 1px $color-yellow;
+    border: 1px solid $color-yellow;
 
     &:hover {
       box-shadow: none;
     }
-  } 
-  
+  }
+
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
@@ -42,16 +42,15 @@ $block: 'btn';
     &:focus {
       box-shadow: none;
       border: 1px solid transparent;
-      margin: 0;
       background-color: $color-gray-light;
     }
   }
 
   &:active,
   &.active {
-    border-color: $color-yellow;
-  } 
-  
+    box-shadow: 0 0 1px $color-yellow;
+  }
+
   // Opinionated: add "hand" cursor to non-disabled .btn elements
   &:not([disabled]):not(.disabled) {
     cursor: pointer;
@@ -81,7 +80,7 @@ $block: 'btn';
 
     &:focus,
     &.focus {
-      margin: -1px 0;
+
     }
 
     // Vertically space out multiple block buttons
@@ -108,7 +107,8 @@ $block: 'btn';
     &:focus,
     &.focus {
       background-color: $color-purple-light;
-      margin: 0;
+      box-shadow: none;
+      border: 2px solid $color-yellow;
     }
 
     &--right {
