@@ -9,11 +9,7 @@ Presenterar navigationsvägar med ett publiceringsdatum.
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
-<<<<<<< HEAD
       <h2 class="h2 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
-=======
-      <h2 class="h2 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
->>>>>>> Change to <h2> for sections title.
       <div class="section__header-preamble text-secondary">
         <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
       </div>
