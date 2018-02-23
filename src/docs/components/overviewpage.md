@@ -118,7 +118,7 @@ Beskrivning...
   <div class="box box--no-padding box--mb-large">
     <div class="section section--boxed">
       <header class="section__header">
-        <h3 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h3>
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
         <div class="section__header-preamble text-secondary">
           <p>Fler nyheter i <a href="/press">pressrummet</a></p>
         </div>
