@@ -1,6 +1,6 @@
 ---
 name: Textpuffar
-category: Kompositioner
+category: Komponenter
 ---
 
 ```default.html

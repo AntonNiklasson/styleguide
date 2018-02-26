@@ -1,6 +1,6 @@
 ---
 name: Återkoppling
-category: Kompositioner
+category: Komponenter
 ---
 
 Låter användaren lämna synpunkter på innehåll. Komponenten placeras längst ner i en sektion.

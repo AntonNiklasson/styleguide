@@ -1,6 +1,6 @@
 ---
 name: Översiktsida
-category: Kompositioner
+category: Komponenter
 ---
 
 Beskrivning...

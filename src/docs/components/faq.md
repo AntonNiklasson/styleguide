@@ -1,6 +1,6 @@
 ---
 name: Frågor och svar
-category: Kompositioner
+category: Komponenter
 ---
 
 ```default.html

@@ -1,6 +1,6 @@
 ---
 name: Understartsida
-category: Kompositioner
+category: Komponenter
 ---
 
 Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den bilden (eller vilken komponent som helst som råkar ligga före sektions-navigationen).

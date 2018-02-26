@@ -1,6 +1,6 @@
 ---
 name: Nyhetslista
-category: Kompositioner
+category: Komponenter
 ---
 
 Presenterar navigationsvägar med ett publiceringsdatum.

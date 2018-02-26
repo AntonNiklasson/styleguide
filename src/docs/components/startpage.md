@@ -1,6 +1,6 @@
 ---
 name: Sidstart
-category: Kompositioner
+category: Komponenter
 ---
 
 Beskrivning...

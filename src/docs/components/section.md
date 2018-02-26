@@ -1,6 +1,6 @@
 ---
 name: Sektioner
-category: Kompositioner
+category: Komponenter
 ---
 
 Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida.

@@ -1,6 +1,6 @@
 ---
 name: Bildpuffar
-category: Kompositioner
+category: Komponenter
 ---
 
 ## Exempel med tre bildpuffar

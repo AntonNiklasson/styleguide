@@ -1,6 +1,6 @@
 ---
 name: Innehållsnavigering
-category: Kompositioner
+category: Komponenter
 ---
 
 Presenterar navigationsvägar inom ett område.
