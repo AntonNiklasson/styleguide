@@ -1,5 +1,5 @@
 ---
-name: Innehållsnavigering
+name: Innehållsförteckning
 category: Komponenter
 ---
 

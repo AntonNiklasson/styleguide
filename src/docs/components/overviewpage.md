@@ -82,8 +82,8 @@ Beskrivning...
     </div>
     <div class="col-12 col-md-8">
       <div class="box box--compact box--no-border">
-        <h2 class="h2 margin-tp-reset">En tydlig områdersrubrik/h2>
-        <p class="text-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2 class="h2 margin-tp-reset">En tydlig områdersrubrik</h2>
+        <p class="text-standard">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <ul class="content-navigation-list">
           <li class="content-navigation-list__item">
             <a href="#1" class="content-navigation-list__item-link text-big">
