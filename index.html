@@ -21,20 +21,20 @@
 					<select class="form-control form-control-lg">
 						<option disabled selected>Go to…</option>
 							<optgroup label="Kom igång">
-									<option value="introduktion">Introduktion</option>
 									<option value="konventioner">Konventioner</option>
+									<option value="skolverkets-style-guide">Skolverkets style guide</option>
 									<option value="snabbstart">Snabbstart</option>
 							</optgroup>
 							<optgroup label="Komponenter">
 									<option value="box">Box</option>
-									<option value="dragspel">Dragspel</option>
+									<option value="dragspelsmeny">Dragspelsmeny</option>
 									<option value="formular">Formulär</option>
 									<option value="hero">Hero</option>
+									<option value="innehallsforteckning">Innehållsförteckning</option>
 									<option value="knappar">Knappar</option>
-									<option value="sektionnavigering">Sektionnavigering</option>
+									<option value="sektionsnavigering">Sektionsnavigering</option>
 									<option value="sidfot">Sidfot</option>
 									<option value="sidhuvud">Sidhuvud</option>
-									<option value="toc">TOC</option>
 									<option value="textlankar">Textlänkar</option>
 							</optgroup>
 							<optgroup label="Kompositioner">
@@ -54,15 +54,6 @@
 			</div>
 
 				<div id="category-kom igång">
-						<div id="introduktion" class="i-library">
-	<h1 class="display-4">Introduktion</h1>
-	<div><p>Ett ramverk för snabbare och enklare webbutveckling på Skolverket.</p>
-
-<p>För ökad igenkänning bland utvecklare och därmed utvecklingseffektivitet strävar Skolverkets CSS att utgå från Bootstrap 4. Bootstrap-komponenter som inte möter Skolverkets designriktlinjer har tagits bort eller skalats ner. I de fall Bootstrap 4 komponenter saknat implementation så har de byggts ut med nya klasser för att möta Skolverkets designriktlinjer.</p>
-<div id="upphovsratt-och-licenser" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#upphovsratt-och-licenser" class="icon-link i-section__link -heading"></a>Upphovsrätt och licenser</h2></div><p>Kod släppt under <a href="https://opensource.org/licenses/MIT">MIT Licens</a>.</p>
-</div>
-</div>
-
 						<div id="konventioner" class="i-library">
 	<h1 class="display-4">Konventioner</h1>
 	<div><div id="html-och-semantik" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#html-och-semantik" class="icon-link i-section__link -heading"></a>HTML och semantik</h2></div><p>Det viktigaste att tänka på vid uppmärkning med HTML är såklart <strong>tillgänglighet</strong> och <strong>semantik</strong>, de båda går hand i hand men semantiken har också andra bonusvärden värden som sökmotorsoptimering och integration mot vissa tjänster (sk. <em>scraping</em>). Den HTML som används här eftersträvar att uppnå internationella webbriktlinjer för tillgänglighet, WCAG 2.0 (nivå AA) och PTS Webbriktlinjer samt använder sig av WAI-Aria där det behövs. Eftersom komponenterna kan implementeras på en rad olika sätt och olika miljöer <em>bör</em> dock testning och säkerställande av tillgänglighet och användbarhet göras i den tjänst som använder komponenterna. Läs mer här:</p>
@@ -77,6 +68,14 @@
 <li><strong>Bootstrap 4</strong>: <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
 </ul>
 <div id="java-script" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#java-script" class="icon-link i-section__link -heading"></a>JavaScript</h2></div><p>I dagsläget tillhandahålls inga JavaScript för att sköta beteenden i gränssnittet. Istället redovisas bara de tillstånd och varianter som du själv kan sätta.</p>
+</div>
+</div>
+
+						<div id="skolverkets-style-guide" class="i-library">
+	<h1 class="display-4">Skolverkets style guide</h1>
+	<div><p>Detta ramverk visar hur du skapar nya tjänster med ett konsekvent utseende likt Skolverket.se</p>
+<div id="med-avstamp-i-bootstrap-4-0" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#med-avstamp-i-bootstrap-4-0" class="icon-link i-section__link -heading"></a>Med avstamp i Bootstrap 4.0</h2></div><p>För ökad igenkänning bland utvecklare och därmed utvecklingseffektivitet strävar Skolverkets CSS att utgå från Bootstrap 4. Bootstrap-komponenter som inte möter Skolverkets designriktlinjer har tagits bort eller skalats ner. I de fall Bootstrap 4 komponenter saknat implementation så har de byggts ut med nya klasser för att möta Skolverkets designriktlinjer.</p>
+<div id="upphovsratt-och-licenser" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#upphovsratt-och-licenser" class="icon-link i-section__link -heading"></a>Upphovsrätt och licenser</h2></div><p>Kod släppt under <a href="https://opensource.org/licenses/MIT">MIT Licens</a>.</p>
 </div>
 </div>
 
@@ -135,7 +134,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 				<div id="category-komponenter">
 						<div id="box" class="i-library">
 	<h1 class="display-4">Box</h1>
-	<div><p>En generell box som används för att skapa tydliga sektioner på en sida.</p>
+	<div><p>Boxar är flexibla innehållsytor som kan husera en mängd olika komponenter. I fall där två eller flera boxar behöver ligga efter varandra eller där du vill förhindra att skuggan överlappar andra element används modifieraren <code>margins</code>.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -163,162 +162,20 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
-  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
-  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><p>I fall där två eller flera boxar behöver ligga efter varandra eller där du vill förhindra att skuggan överlappar andra element används modifieraren <code>margins</code>.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="box-margins.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="box-margins.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;box box--margins&quot;&gt;
-  &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><p>Det går att lägga vilket innehål som helst i en box.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="box-toc.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="box-toc.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
-  &lt;div class=&quot;toc&quot;&gt;
-    &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
-    &lt;ul class=&quot;toc__list&quot;&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-          Vad är yrkesprogram och högskoleförberedande program?
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-          &lt;li class=&quot;toc__list-item&quot;&gt;
-            &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-              Yrkesprogram
-            &lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;toc__list-item&quot;&gt;
-            &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-              Högskoleförberedande program
-            &lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-          Introduktionsprogram för dig som inte har tillräckliga betyg
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-          Kontakta utbildningsförvaltningen
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
-  &lt;div class=&quot;toc&quot;&gt;
-    &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
-    &lt;ul class=&quot;toc__list&quot;&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-          Vad är yrkesprogram och högskoleförberedande program?
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-          &lt;li class=&quot;toc__list-item&quot;&gt;
-            &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-              Yrkesprogram
-            &lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li class=&quot;toc__list-item&quot;&gt;
-            &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-              Högskoleförberedande program
-            &lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-          Introduktionsprogram för dig som inte har tillräckliga betyg
-        &lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;toc__list-item&quot;&gt;
-        &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-          Kontakta utbildningsförvaltningen
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
 
-						<div id="dragspel" class="i-library">
-	<h1 class="display-4">Dragspel</h1>
-	<div><p>Med ett så kallat dragspel kan du dela upp en sida med mycket innehåll i tydligt avgränsade stycken. Använd klassen <code>.accordion</code> och leverera din egen JavaScript-kod för att hantera öppning och stängning.</p>
+						<div id="dragspelsmeny" class="i-library">
+	<h1 class="display-4">Dragspelsmeny</h1>
+	<div><p>Dragspelsmenyer låter användare öppna och stänga sektioner av innehåll. Använd klassen <code>.accordion</code> och leverera din egen JavaScript-kod för att hantera öppning och stängning.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="dragspel-default.html"
+                            href="dragspelsmeny-default.html"
                             target="_blank"
                             class="fa fa-external-link-square fa-fw plain-link"
                             title="Open in a new window"
@@ -329,7 +186,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="dragspel-default.html"
+                            data-src="dragspelsmeny-default.html"
                             data-initinview="true"
                             data-title="Loading…"
 
@@ -344,36 +201,36 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
   &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
-            Grupp 1
+      &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion1&quot;&gt;
+            Sektionstitel 1
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h3&gt;
+      &lt;/h2&gt;
       &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
-            Grupp 2
+      &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion2&quot;&gt;
+            Sektionstitel 2
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h3&gt;
+      &lt;/h2&gt;
       &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
-            Grupp 3
+      &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion3&quot;&gt;
+            Sektionstitel 3
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h3&gt;
+      &lt;/h2&gt;
       &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -381,36 +238,36 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
   &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
-            Grupp 1
+      &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion1&quot;&gt;
+            Sektionstitel 1
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h3&gt;
+      &lt;/h2&gt;
       &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
-            Grupp 2
+      &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion2&quot;&gt;
+            Sektionstitel 2
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h3&gt;
+      &lt;/h2&gt;
       &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;accordion__item&quot;&gt;
-      &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-          &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
-            Grupp 3
+      &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+          &lt;a class=&quot;accordion__item-link text-medium&quot; href=&quot;#accordion3&quot;&gt;
+            Sektionstitel 3
             &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
-      &lt;/h3&gt;
+      &lt;/h2&gt;
       &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -421,7 +278,10 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="formular" class="i-library">
 	<h1 class="display-4">Formulär</h1>
-	<div><p>Skolverkets formulär utgår från Bootstrap 4. Det bygger på att varje formulärelement är omslutet av den <code>.form-group</code>-element.</p>
+	<div><p>Formulär används för att skicka data. Varje formulärelement är omslutet av ett <code>.form-group</code>-element.</p>
+<div id="textfalt" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textfalt" class="icon-link i-section__link -heading"></a>Textfält</h2></div><p>Textfält låter användaren skriva in en kombination av bokstäver, siffror och symboler.
+Textfält kan vara enradiga eller på flera rader.</p>
+<p>Fältet går både att låsa helt <code>disabled</code>, tillåtas att kopieras/läsas <code>readonly</code> eller markera eventuella valideringsfel.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -450,152 +310,63 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;form&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;E-post&lt;/label&gt;
-    &lt;span id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textfält&lt;/span&gt;
-    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Fyll i e-post&quot;&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Platshållare&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputPassword1&quot;&gt;Lösenord&lt;/label&gt;
-    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Lösenord&quot;&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;span id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;Kontextuell hjälptext&lt;/span&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Platshållare&quot;&gt;
   &lt;/div&gt;
-  &lt;button type=&quot;submit&quot; class=&quot;btn btn--primary&quot;&gt;Skicka&lt;/button&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputDisabled1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;exampleInputDisabled1&quot; type=&quot;text&quot; placeholder=&quot;Inaktivt textfält&quot; disabled&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; value=&quot;Inaktivt textfält där texten kan kopieras men inte ändras&quot; placeholder=&quot;Inaktivt textfält&quot; readonly&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Textfältstitel&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+    &lt;input class=&quot;form-control form-control--error icon-error&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;&quot;&gt;
+    &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
 &lt;/form&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;form&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;E-post&lt;/label&gt;
-    &lt;span id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textfält&lt;/span&gt;
-    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Fyll i e-post&quot;&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Platshållare&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;form-group&quot;&gt;
-    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputPassword1&quot;&gt;Lösenord&lt;/label&gt;
-    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Lösenord&quot;&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleInputEmail1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;span id=&quot;emailHelp&quot; class=&quot;form-text&quot;&gt;Kontextuell hjälptext&lt;/span&gt;
+    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Platshållare&quot;&gt;
   &lt;/div&gt;
-  &lt;button type=&quot;submit&quot; class=&quot;btn btn--primary&quot;&gt;Skicka&lt;/button&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputDisabled1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;exampleInputDisabled1&quot; type=&quot;text&quot; placeholder=&quot;Inaktivt textfält&quot; disabled&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; value=&quot;Inaktivt textfält där texten kan kopieras men inte ändras&quot; placeholder=&quot;Inaktivt textfält&quot; readonly&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Textfältstitel&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+    &lt;input class=&quot;form-control form-control--error icon-error&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;&quot;&gt;
+    &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textfältstitel&lt;/label&gt;
+    &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
 &lt;/form&gt;</code></pre>
 	</div>
-</div><div id="fler-varianter" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#fler-varianter" class="icon-link i-section__link -heading"></a>Fler varianter</h2></div><p>Fältet går både att låsa helt (<code>disabled</code>), tillåtas att kopieras/läsas (<code>readonly</code>) eller markeras att det inte klarat validering.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="formular-input-readonly.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="formular-input-readonly.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputDisabled1&quot;&gt;Går ej att redigera&lt;/label&gt;
-  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputDisabled1&quot; type=&quot;text&quot; placeholder=&quot;Kan inte redigeras...&quot; disabled&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Endast läsbar&lt;/label&gt;
-  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; value=&quot;Den här texten kan kopieras men inte ändras&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Validerar&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-  &lt;input class=&quot;form-control form-control--error icon-error&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;Validerar...&quot;&gt;
-  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputDisabled1&quot;&gt;Går ej att redigera&lt;/label&gt;
-  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputDisabled1&quot; type=&quot;text&quot; placeholder=&quot;Kan inte redigeras...&quot; disabled&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Endast läsbar&lt;/label&gt;
-  &lt;input class=&quot;form-control&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; value=&quot;Den här texten kan kopieras men inte ändras&quot; placeholder=&quot;Kan inte ändras...&quot; readonly&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleInputReadonly1&quot;&gt;Validerar&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
-  &lt;input class=&quot;form-control form-control--error icon-error&quot; id=&quot;exampleInputReadonly1&quot; type=&quot;text&quot; placeholder=&quot;Validerar...&quot;&gt;
-  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="textruta" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textruta" class="icon-link i-section__link -heading"></a>Textruta</h2></div><p>Flerradiga textfält har stöd för samtliga tillstånd.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="formular-textarea.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="formular-textarea.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
-  &lt;span id=&quot;textareaHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textområde&lt;/span&gt;
-  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea2&quot;&gt;Textområde som är avstängt&lt;/label&gt;
-  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea2&quot; rows=&quot;4&quot; placeholder=&quot;Kan inte ändras...&quot; disabled&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde som bara går att kopiera&lt;/label&gt;
-  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea3&quot; rows=&quot;2&quot;  readonly&gt;1bd8994b8f2998e2216d846ed40bffd62493b5cb&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde med validering&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;textarea class=&quot;form-control form-control--error form-control--error-textarea icon-error&quot;
-    id=&quot;exampleTextarea3&quot; rows=&quot;4&quot; placeholder=&quot;Validerar...&quot;&gt;&lt;/textarea&gt;
-  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label form-label--margin-reset&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
-  &lt;span id=&quot;textareaHelp&quot; class=&quot;form-text&quot;&gt;Beskrivning av textområde&lt;/span&gt;
-  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea2&quot;&gt;Textområde som är avstängt&lt;/label&gt;
-  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea2&quot; rows=&quot;4&quot; placeholder=&quot;Kan inte ändras...&quot; disabled&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde som bara går att kopiera&lt;/label&gt;
-  &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea3&quot; rows=&quot;2&quot;  readonly&gt;1bd8994b8f2998e2216d846ed40bffd62493b5cb&lt;/textarea&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea3&quot;&gt;Textområde med validering&lt;span class=&quot;text-error&quot;&gt;*&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;textarea class=&quot;form-control form-control--error form-control--error-textarea icon-error&quot;
-    id=&quot;exampleTextarea3&quot; rows=&quot;4&quot; placeholder=&quot;Validerar...&quot;&gt;&lt;/textarea&gt;
-  &lt;span class=&quot;text-error text-small&quot;&gt;Hjälpsamt felmeddelande&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="checkbox-och-radioknappar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#checkbox-och-radioknappar" class="icon-link i-section__link -heading"></a>Checkbox och radioknappar</h2></div><p>Namnkonvention med <code>.custom-control</code> är baserad på Bootstrap 4 men har anpassats för att möta <a href="#konventioner">BEM</a>.</p>
+</div><div id="kryssrutor" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kryssrutor" class="icon-link i-section__link -heading"></a>Kryssrutor</h2></div><p>Kryssrytor låter användaren göra ett eller flera val från en lista.
+Namnkonvention med <code>.custom-control</code> är baserad på Bootstrap 4 men har anpassats för att möta <a href="#konventioner">BEM</a>.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -624,30 +395,32 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;custom-control custom-control--checkbox&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;custom-control__input&quot; id=&quot;customCheck1&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck1&quot;&gt;Lorem ipsum&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck1&quot;&gt;Kryssboxval 1&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--checkbox&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;custom-control__input&quot; id=&quot;customCheck2&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck2&quot;&gt;Dollar sum&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck2&quot;&gt;Kryssboxval 1&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--checkbox&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;custom-control__input&quot; id=&quot;customCheck3&quot; disabled&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck3&quot;&gt;Ej valbar&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck3&quot;&gt;Inaktiv kryssbox&lt;/label&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;custom-control custom-control--checkbox&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;custom-control__input&quot; id=&quot;customCheck1&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck1&quot;&gt;Lorem ipsum&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck1&quot;&gt;Kryssboxval 1&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--checkbox&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;custom-control__input&quot; id=&quot;customCheck2&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck2&quot;&gt;Dollar sum&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck2&quot;&gt;Kryssboxval 1&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--checkbox&quot;&gt;
   &lt;input type=&quot;checkbox&quot; class=&quot;custom-control__input&quot; id=&quot;customCheck3&quot; disabled&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck3&quot;&gt;Ej valbar&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customCheck3&quot;&gt;Inaktiv kryssbox&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div class="i-example">
+</div><div id="radioknappar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#radioknappar" class="icon-link i-section__link -heading"></a>Radioknappar</h2></div><p>Radioknappar låter användaren göra ett val från en synlig lista.
+Namnkonvention med <code>.custom-control</code> är baserad på Bootstrap 4 men har anpassats för att möta <a href="#konventioner">BEM</a>.</p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="formular-radio.html"
@@ -675,30 +448,31 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;custom-control custom-control--radio&quot;&gt;
   &lt;input type=&quot;radio&quot; id=&quot;customRadio1&quot; name=&quot;customRadio&quot; class=&quot;custom-control__input&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio1&quot;&gt;Lorem&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio1&quot;&gt;Radioknappsval 1&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--radio&quot;&gt;
   &lt;input type=&quot;radio&quot; id=&quot;customRadio2&quot; name=&quot;customRadio&quot; class=&quot;custom-control__input&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio2&quot;&gt;Ipsum&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio2&quot;&gt;Radioknappsval 2&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--radio&quot;&gt;
   &lt;input type=&quot;radio&quot; id=&quot;customRadio3&quot; name=&quot;customRadio&quot; class=&quot;custom-control__input&quot; disabled&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio3&quot;&gt;Ej valbar&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio3&quot;&gt;Inaktiv radioknapp&lt;/label&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;custom-control custom-control--radio&quot;&gt;
   &lt;input type=&quot;radio&quot; id=&quot;customRadio1&quot; name=&quot;customRadio&quot; class=&quot;custom-control__input&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio1&quot;&gt;Lorem&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio1&quot;&gt;Radioknappsval 1&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--radio&quot;&gt;
   &lt;input type=&quot;radio&quot; id=&quot;customRadio2&quot; name=&quot;customRadio&quot; class=&quot;custom-control__input&quot;&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio2&quot;&gt;Ipsum&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio2&quot;&gt;Radioknappsval 2&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;custom-control custom-control--radio&quot;&gt;
   &lt;input type=&quot;radio&quot; id=&quot;customRadio3&quot; name=&quot;customRadio&quot; class=&quot;custom-control__input&quot; disabled&gt;
-  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio3&quot;&gt;Ej valbar&lt;/label&gt;
+  &lt;label class=&quot;custom-control__label&quot; for=&quot;customRadio3&quot;&gt;Inaktiv radioknapp&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="rullgardin" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#rullgardin" class="icon-link i-section__link -heading"></a>Rullgardin</h2></div><p>Den här komponenten använder webbläsarens inbyggda <code>&lt;select&gt;</code>-element i bakgrunden av tillgänglighetsskäl men designats för att hänga ihop med andra formulärelement.</p>
+</div><div id="rullgardinsmenyer" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#rullgardinsmenyer" class="icon-link i-section__link -heading"></a>Rullgardinsmenyer</h2></div><p>Rullgardinsmenyer låter användaren göra ett val från en lista.
+Komponenten använder webbläsarens <code>&lt;select&gt;</code>-element i bakgrunden av tillgänglighetsskäl.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -726,35 +500,37 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown1&quot;&gt;Rullgardin&lt;/label&gt;
+  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown1&quot;&gt;Rullgardinsrubrik&lt;/label&gt;
   &lt;select class=&quot;form-control icon-dropdown-arrow&quot; id=&quot;exampleDropdown1&quot;&gt;
-    &lt;option value=&quot;1&quot;&gt;Val 1&lt;/option&gt;
-    &lt;option value=&quot;1&quot;&gt;Val 2&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Rullgardinsval 1&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Rullgardinsval 2&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Rullgardinsval 3&lt;/option&gt;
   &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown2&quot;&gt;Rullgardin ej valbar&lt;/label&gt;
+  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown2&quot;&gt;Rullgardinsrubrik&lt;/label&gt;
   &lt;select class=&quot;form-control icon-dropdown-arrow-disabled&quot;
     id=&quot;exampleDropdown2&quot; disabled&gt;
-    &lt;option value=&quot;1&quot;&gt;Platshållare&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Inaktiv rullgardin&lt;/option&gt;
   &lt;/select&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown1&quot;&gt;Rullgardin&lt;/label&gt;
+  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown1&quot;&gt;Rullgardinsrubrik&lt;/label&gt;
   &lt;select class=&quot;form-control icon-dropdown-arrow&quot; id=&quot;exampleDropdown1&quot;&gt;
-    &lt;option value=&quot;1&quot;&gt;Val 1&lt;/option&gt;
-    &lt;option value=&quot;1&quot;&gt;Val 2&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Rullgardinsval 1&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Rullgardinsval 2&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Rullgardinsval 3&lt;/option&gt;
   &lt;/select&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown2&quot;&gt;Rullgardin ej valbar&lt;/label&gt;
+  &lt;label class=&quot;text-standard&quot; for=&quot;exampleDropdown2&quot;&gt;Rullgardinsrubrik&lt;/label&gt;
   &lt;select class=&quot;form-control icon-dropdown-arrow-disabled&quot;
     id=&quot;exampleDropdown2&quot; disabled&gt;
-    &lt;option value=&quot;1&quot;&gt;Platshållare&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Inaktiv rullgardin&lt;/option&gt;
   &lt;/select&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="sokfalt-textfalt-med-ikon" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sokfalt-textfalt-med-ikon" class="icon-link i-section__link -heading"></a>Sökfält / textfält med ikon</h2></div><p>Beskrivning ...</p>
+</div><div id="sokfalt" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sokfalt" class="icon-link i-section__link -heading"></a>Sökfält</h2></div><p>Ett sökfält låter användaren söka efter specifikt innehåll.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -782,16 +558,16 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;text-standard&quot; for=&quot;inputSearch&quot;&gt;Sökfält / textfält med ikon&lt;/label&gt;
-  &lt;div class=&quot;form-group--search&quot;&gt;
+  &lt;label class=&quot;text-standard&quot; for=&quot;inputSearch&quot;&gt;Sökfältsrubrik&lt;/label&gt;
+  &lt;div class=&quot;form-group-search&quot;&gt;
     &lt;input type=&quot;text&quot; class=&quot;form-control form-control--search icon-search&quot;
       id=&quot;inputSearch&quot; placeholder=&quot;Platshållare&quot; /&gt;
     &lt;button class=&quot;btn btn--primary&quot;&gt;Sök&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form-group&quot;&gt;
-  &lt;label class=&quot;text-standard&quot; for=&quot;inputSearch&quot;&gt;Sökfält / textfält med ikon&lt;/label&gt;
-  &lt;div class=&quot;form-group--search&quot;&gt;
+  &lt;label class=&quot;text-standard&quot; for=&quot;inputSearch&quot;&gt;Sökfältsrubrik&lt;/label&gt;
+  &lt;div class=&quot;form-group-search&quot;&gt;
     &lt;input type=&quot;text&quot; class=&quot;form-control form-control--search icon-search&quot;
       id=&quot;inputSearch&quot; placeholder=&quot;Platshållare&quot; /&gt;
     &lt;button class=&quot;btn btn--primary&quot;&gt;Sök&lt;/button&gt;
@@ -803,8 +579,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="hero" class="i-library">
 	<h1 class="display-4">Hero</h1>
-	<div><p>Ger användaren överblick lorem ipsum...</p>
-<div class="i-example">
+	<div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="hero-default.html"
@@ -836,7 +611,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;hero__banner-body&quot;&gt;
       &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
         &lt;a href=&quot;#&quot; class=&quot;hero__banner-body-text&quot;&gt;
-          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;En lång rubrik som sträcker sig över flera rader
             &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--xlg&quot;&gt;&lt;/i&gt;
           &lt;/span&gt;
         &lt;/a&gt;
@@ -850,7 +625,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;hero__banner-body&quot;&gt;
       &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
         &lt;a href=&quot;#&quot; class=&quot;hero__banner-body-text&quot;&gt;
-          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;En lång rubrik som sträcker sig över flera rader
             &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--xlg&quot;&gt;&lt;/i&gt;
           &lt;/span&gt;
         &lt;/a&gt;
@@ -862,13 +637,115 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 </div></div>
 </div>
 
+						<div id="innehallsforteckning" class="i-library">
+	<h1 class="display-4">Innehållsförteckning</h1>
+	<div><p>Ger användaren överblick och möjlighet att hoppa direkt till innehåll på en sida.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="innehallsforteckning-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="innehallsforteckning-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;toc&quot;&gt;
+  &lt;h4 class=&quot;h4 toc__title&quot;&gt;Rubrik&lt;/h4&gt;
+  &lt;ul class=&quot;toc__list&quot;&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+        Innehållsrubrik nivå 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+            Innehållsrubrik nivå 2
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+            Innehållsrubrik nivå 2
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+        Innehållsrubrik nivå 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+        Innehållsrubrik nivå 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;toc&quot;&gt;
+  &lt;h4 class=&quot;h4 toc__title&quot;&gt;Rubrik&lt;/h4&gt;
+  &lt;ul class=&quot;toc__list&quot;&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+        Innehållsrubrik nivå 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+            Innehållsrubrik nivå 2
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;toc_list-item&quot;&gt;
+          &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+            Innehållsrubrik nivå 2
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+        Innehållsrubrik nivå 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;toc__list-item&quot;&gt;
+      &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
+        Innehållsrubrik nivå 1
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="knappar" class="i-library">
 	<h1 class="display-4">Knappar</h1>
-	<div><p>Knappar kan användas med elementen <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, och <code>&lt;input&gt;</code>.</p>
+	<div><p>Knappar används för att signalera att en handling utförs. Knappar kan användas med elementen <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, och <code>&lt;input&gt;</code>.</p>
 <div id="exempel" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel" class="icon-link i-section__link -heading"></a>Exempel</h2></div><p>Det finns tre typer av knappar:</p>
 <ul>
 <li>Primär: Är den mest visuellt utmärkande och <em>skall</em> användas för det viktigaste valet om flera knappar används</li>
 <li>Sekundär: En alternativ knapp som <em>bör</em> användas för att märka ut att det här inte är det primära valet</li>
+<li>Spökknapp: Tar mindre visuelt fokus och kan användas när en handling inte är fokus</li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -896,18 +773,16 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;btn btn--primary&quot;&gt;Primär&lt;/button&gt;
-&lt;button class=&quot;btn btn--secondary&quot;&gt;Sekundär&lt;/button&gt;
-&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;btn btn-icon icon-volume&quot;&gt;Lyssna&lt;/button&gt;
-&lt;button class=&quot;btn btn-icon icon-volume-disabled&quot; disabled&gt;Lyssna&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary&quot;&gt;Primär&lt;/button&gt;
-&lt;button class=&quot;btn btn--secondary&quot;&gt;Sekundär&lt;/button&gt;
-&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;btn btn-icon icon-volume&quot;&gt;Lyssna&lt;/button&gt;
-&lt;button class=&quot;btn btn-icon icon-volume-disabled&quot; disabled&gt;Lyssna&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;btn btn--primary&quot;&gt;Primär knapp&lt;/button&gt;
+&lt;button class=&quot;btn btn--secondary&quot;&gt;Sekundär knapp&lt;/button&gt;
+&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Inaktiv knapp&lt;/button&gt;
+&lt;button class=&quot;btn btn-icon icon-volume&quot;&gt;Spökknapp&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary&quot;&gt;Primär knapp&lt;/button&gt;
+&lt;button class=&quot;btn btn--secondary&quot;&gt;Sekundär knapp&lt;/button&gt;
+&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Inaktiv knapp&lt;/button&gt;
+&lt;button class=&quot;btn btn-icon icon-volume&quot;&gt;Spökknapp&lt;/button&gt;</code></pre>
 	</div>
-</div><p>En variant för små knappar finns och <em>bör</em> används där utrymmet är begränsat eller där en normal knappstorlek skulle få för mycket uppmärksamhet.</p>
+</div><p>En variant för små knappar finns och <em>bör</em> används där utrymmet är begränsat.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -941,7 +816,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 &lt;button class=&quot;btn btn--secondary btn--small&quot;&gt;Sekundär&lt;/button&gt;
 &lt;button class=&quot;btn btn--primary btn--small&quot; disabled&gt;Disabled&lt;/button&gt;</code></pre>
 	</div>
-</div><p>För att få en knapp att bli 100% bred används <code>.btn--block</code>.</p>
+</div><p>På små skärmar kan en knapp användas i fullbredd med <code>.btn--block</code>.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -968,21 +843,21 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;btn btn--primary btn--block&quot;&gt;Primär&lt;/button&gt;
-&lt;button class=&quot;btn btn--secondary btn--block&quot;&gt;Sekundär&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary btn--block&quot;&gt;Primär&lt;/button&gt;
-&lt;button class=&quot;btn btn--secondary btn--block&quot;&gt;Sekundär&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;btn btn--primary btn--block&quot;&gt;Primär fullbredd&lt;/button&gt;
+&lt;button class=&quot;btn btn--secondary btn--block&quot;&gt;Sekundär fullbredd&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary btn--block&quot;&gt;Primär fullbredd&lt;/button&gt;
+&lt;button class=&quot;btn btn--secondary btn--block&quot;&gt;Sekundär fullbredd&lt;/button&gt;</code></pre>
 	</div>
 </div></div>
 </div>
 
-						<div id="sektionnavigering" class="i-library">
-	<h1 class="display-4">Sektionnavigering</h1>
-	<div><p>Ger användaren överblick lorem ipsum...</p>
+						<div id="sektionsnavigering" class="i-library">
+	<h1 class="display-4">Sektionsnavigering</h1>
+	<div><p>Presenterar upp till åtta övergripande navigationsvägar inom ett område.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="sektionnavigering-default.html"
+                            href="sektionsnavigering-default.html"
                             target="_blank"
                             class="fa fa-external-link-square fa-fw plain-link"
                             title="Open in a new window"
@@ -993,7 +868,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="sektionnavigering-default.html"
+                            data-src="sektionsnavigering-default.html"
                             data-initinview="true"
                             data-title="Loading…"
 
@@ -1009,16 +884,15 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
-        &lt;h3 class=&quot;h3 section-navigation__label&quot;&gt;
-          Current section
-        &lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section-navigation__label&quot;&gt;
+          Sektionstitel
+        &lt;/h2&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 1&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1027,8 +901,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskoleklass 
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 2&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1037,8 +910,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 3&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1047,8 +919,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundsärskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 4&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1057,8 +928,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasieskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 5&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1067,18 +937,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasiesärskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
-        &lt;div class=&quot;section-navigation__box&quot;&gt;
-          &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
-            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Inspiration och stöd i arbetet
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval med extra mycket text&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1090,16 +949,15 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
-        &lt;h3 class=&quot;h3 section-navigation__label&quot;&gt;
-          Current section
-        &lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section-navigation__label&quot;&gt;
+          Sektionstitel
+        &lt;/h2&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 1&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1108,8 +966,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskoleklass 
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 2&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1118,8 +975,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 3&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1128,8 +984,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundsärskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 4&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1138,8 +993,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasieskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval 5&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1148,18 +1002,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasiesärskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
-        &lt;div class=&quot;section-navigation__box&quot;&gt;
-          &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
-            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Inspiration och stöd i arbetet
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              Navigationsval med extra mycket text&lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
@@ -1173,7 +1016,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="sidfot" class="i-library">
 	<h1 class="display-4">Sidfot</h1>
-	<div><p>Beskrivning</p>
+	<div><p>Sidfoten guidar en användare som hamnat på botten av en sida utan att hitta det hon vill.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1318,7 +1161,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="sidhuvud" class="i-library">
 	<h1 class="display-4">Sidhuvud</h1>
-	<div><p>Beskrivning...</p>
+	<div><p>Sidhuvudet hjälper användare att se vart hon är och ge en snabbt, organiserat sätt att nå huvudsektionerna på sidan.
+Sidhuvudet är en viktig identitesbärare så att användare känner igen skolverkets sidor.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1587,107 +1431,6 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 </div></div>
 </div>
 
-						<div id="toc" class="i-library">
-	<h1 class="display-4">TOC</h1>
-	<div><p>En navigerng som används för att ge en outline av en lång sida med mycket innehåll.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="toc-default.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="toc-default.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;toc&quot;&gt;
-  &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
-  &lt;ul class=&quot;toc__list&quot;&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-        Vad är yrkesprogram och högskoleförberedande program?
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-        &lt;li class=&quot;toc__list-item&quot;&gt;
-          &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-            Yrkesprogram
-          &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;toc__list-item&quot;&gt;
-          &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-            Högskoleförberedande program
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-        Introduktionsprogram för dig som inte har tillräckliga betyg
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-        Kontakta utbildningsförvaltningen
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;toc&quot;&gt;
-  &lt;h4 class=&quot;h4 toc__title&quot;&gt;På denna sida&lt;/h4&gt;
-  &lt;ul class=&quot;toc__list&quot;&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#toc1&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-        Vad är yrkesprogram och högskoleförberedande program?
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;ul class=&quot;toc__list toc__list--sub&quot;&gt;
-        &lt;li class=&quot;toc__list-item&quot;&gt;
-          &lt;a href=&quot;#toc2&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-            Yrkesprogram
-          &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;toc__list-item&quot;&gt;
-          &lt;a href=&quot;#toc3&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-            Högskoleförberedande program
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#toc4&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-        Introduktionsprogram för dig som inte har tillräckliga betyg
-      &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;toc__list-item&quot;&gt;
-      &lt;a href=&quot;#toc5&quot; class=&quot;toc__list-item-link text-small&quot;&gt;
-        Kontakta utbildningsförvaltningen
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
 						<div id="textlankar" class="i-library">
 	<h1 class="display-4">Textlänkar</h1>
 	<div><p>Beskrivning...</p>
@@ -1841,8 +1584,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 				<div id="category-kompositioner">
 						<div id="bildpuffar" class="i-library">
 	<h1 class="display-4">Bildpuffar</h1>
-	<div><p>Ger användaren överblick lorem ipsum...</p>
-<div id="default-variant" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default-variant" class="icon-link i-section__link -heading"></a>Default Variant</h2></div><div class="i-example">
+	<div><div id="exempel-med-tre-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tre-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med tre bildpuffar</h2></div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="bildpuffar-default.html"
@@ -1871,9 +1613,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -1942,9 +1684,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2011,7 +1753,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="variant-2" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#variant-2" class="icon-link i-section__link -heading"></a>Variant 2</h2></div><div class="i-example">
+</div><div id="exempel-med-tva-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tva-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med två bildpuffar</h2></div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="bildpuffar-secondary.html"
@@ -2055,7 +1797,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
           &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
           &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-            Quisque augue dui, suscipit consequat metus nec, bibendum 
+            Quisque augue dui, suscipit consequat metus nec, bibendum
             &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
         &lt;/li&gt;
@@ -2081,7 +1823,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
           &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
           &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-            Quisque augue dui, suscipit consequat metus nec, bibendum 
+            Quisque augue dui, suscipit consequat metus nec, bibendum
             &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
           &lt;/a&gt;
         &lt;/li&gt;
@@ -2095,8 +1837,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="fragor-och-svar" class="i-library">
 	<h1 class="display-4">Frågor och svar</h1>
-	<div><p>Ger användaren överblick lorem ipsum...</p>
-<div class="i-example">
+	<div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="fragor-och-svar-default.html"
@@ -2125,44 +1866,44 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Frågor och svar&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
       &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
               &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
                 Grupp 1
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h3&gt;
+          &lt;/h2&gt;
           &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
               &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
                 Grupp 2
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h3&gt;
+          &lt;/h2&gt;
           &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
               &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
                 Grupp 3
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h3&gt;
+          &lt;/h2&gt;
           &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -2172,44 +1913,44 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Frågor och svar&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
       &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
               &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
                 Grupp 1
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h3&gt;
+          &lt;/h2&gt;
           &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
               &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
                 Grupp 2
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h3&gt;
+          &lt;/h2&gt;
           &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h3 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
               &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
                 Grupp 3
                 &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
-          &lt;/h3&gt;
+          &lt;/h2&gt;
           &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&#39;t heard of them accusamus labore sustainable VHS.
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -2222,7 +1963,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="innehallsnavigering" class="i-library">
 	<h1 class="display-4">Innehållsnavigering</h1>
-	<div><p>Ger användaren överblick lorem ipsum...</p>
+	<div><p>Presenterar navigationsvägar inom ett område.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2252,9 +1993,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2310,9 +2051,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2371,7 +2112,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="nyhetslista" class="i-library">
 	<h1 class="display-4">Nyhetslista</h1>
-	<div><p>Ger användaren överblick lorem ipsum...</p>
+	<div><p>Presenterar navigationsvägar med ett publiceringsdatum.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2401,9 +2142,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h2 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2446,9 +2187,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h2 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2494,9 +2235,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="sektioner" class="i-library">
 	<h1 class="display-4">Sektioner</h1>
-	<div><p>Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida. Den används ofta för att  särklilja olika typer av innehåll eller innehåll för olika målgrupper.</p>
+	<div><p>Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida.</p>
 <h4>Begränsningar</h4><ul>
-<li>Sektioner används uteslutande inom en <a href="#box">box</a> som omger sidan.</li>
+<li>Sektioner används uteslutande inom en <a href="#box">box</a>.</li>
 </ul>
 <h4>Tillgänglighet och semantik</h4><p>Även om vi exemplet nedan använder en <code>div</code> så används inte sällan HTML-elementet <code>section</code> för sektioner på sidan. Om det används så är det viktigt att sektionen alltid har rubrik och att rubrikhierarkin nollställs, alltså bör första rubriken vara en <code>h1</code>-rubrik.</p>
 <div class="i-example">
@@ -2528,9 +2269,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2541,9 +2282,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2552,7 +2293,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><p>När flera sektioner läggs bredvid varandra läggs en horisontell avdelare autotamtiskt till.</p>
+</div><p>När flera sektioner läggs bredvid varandra läggs en horisontell avdelare till automatiskt.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2583,7 +2324,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 1&lt;span&gt;&lt;/h2&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2591,7 +2332,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 2&lt;span&gt;&lt;/h2&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2603,7 +2344,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 1&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 1&lt;span&gt;&lt;/h2&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2611,7 +2352,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;/div&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektion 2&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 2&lt;span&gt;&lt;/h2&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
         &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
@@ -2727,7 +2468,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;hero__banner-body&quot;&gt;
       &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
         &lt;a href=&quot;#&quot; class=&quot;hero__banner-body-text&quot;&gt;
-          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;En lång rubrik som sträcker sig över flera rader
             &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--xlg&quot;&gt;&lt;/i&gt;
           &lt;/span&gt;
         &lt;/a&gt;
@@ -2739,9 +2480,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -2749,8 +2490,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;navigation&quot;&gt;
   &lt;div class=&quot;navigation__header&quot;&gt;
     &lt;div class=&quot;container&quot;&gt;
@@ -2826,7 +2566,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;hero__banner-body&quot;&gt;
       &lt;div class=&quot;col-sm-9 col-md-8 col-lg-7&quot;&gt;
         &lt;a href=&quot;#&quot; class=&quot;hero__banner-body-text&quot;&gt;
-          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;Dags för nationella prov, vi har samlat allt du behöver veta
+          &lt;span class=&quot;hero__banner-body-text-stripe&quot;&gt;En lång rubrik som sträcker sig över flera rader
             &lt;i class=&quot;icon-arrow icon-arrow--white icon-arrow--xlg&quot;&gt;&lt;/i&gt;
           &lt;/span&gt;
         &lt;/a&gt;
@@ -2838,9 +2578,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -2848,16 +2588,14 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
 
 						<div id="textpuffar" class="i-library">
 	<h1 class="display-4">Textpuffar</h1>
-	<div><p>Ger användaren överblick lorem ipsum...</p>
-<div class="i-example">
+	<div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="textpuffar-default.html"
@@ -2886,9 +2624,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2939,9 +2677,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Lorem ipsum&lt;span&gt;&lt;/h3&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Dolarsum &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;rimpvom&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -3097,14 +2835,14 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
         &lt;h3 class=&quot;h3 section-navigation__label section-navigation__label--overlap&quot;&gt;
-          Current section
+          Sektionstitel
         &lt;/h3&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskola
+              Navigationsval 1
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3114,7 +2852,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskoleklass
+              Navigationsval 2
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3124,7 +2862,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundskola
+              Navigationsval 3
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3134,7 +2872,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundsärskola
+              Navigationsval 4
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3144,17 +2882,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasieskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
-        &lt;div class=&quot;section-navigation__box&quot;&gt;
-          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
-            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasiesärskola
+              Navigationsval 5
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3163,8 +2891,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
-            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Inspiration och stöd i arbetet
+            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Navigationsval med extra mycket text
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3177,9 +2905,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3263,14 +2991,14 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
     &lt;div class=&quot;row&quot;&gt;
       &lt;div class=&quot;col-12&quot;&gt;
         &lt;h3 class=&quot;h3 section-navigation__label section-navigation__label--overlap&quot;&gt;
-          Current section
+          Sektionstitel
         &lt;/h3&gt;
       &lt;/div&gt;
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskola
+              Navigationsval 1
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3280,7 +3008,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Förskoleklass
+              Navigationsval 2
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3290,7 +3018,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundskola
+              Navigationsval 3
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3300,7 +3028,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Grundsärskola
+              Navigationsval 4
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3310,17 +3038,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item&quot;&gt;
             &lt;a href=&quot;#5&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasieskola
-              &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-            &lt;/a&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
-        &lt;div class=&quot;section-navigation__box&quot;&gt;
-          &lt;div class=&quot;section-navigation__box-item&quot;&gt;
-            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Gymnasiesärskola
+              Navigationsval 5
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3329,8 +3047,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
       &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;
         &lt;div class=&quot;section-navigation__box&quot;&gt;
           &lt;div class=&quot;section-navigation__box-item section-navigation__box-item--no-border&quot;&gt;
-            &lt;a href=&quot;#7&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
-              Inspiration och stöd i arbetet
+            &lt;a href=&quot;#6&quot; class=&quot;section-navigation__box-item-link&quot;&gt;
+              Navigationsval med extra mycket text
               &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/div&gt;
@@ -3343,9 +3061,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3360,7 +3078,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 						<div id="aterkoppling" class="i-library">
 	<h1 class="display-4">Återkoppling</h1>
-	<div><p>Återkopplngs-komponenten läggs längs ner i en sektion.</p>
+	<div><p>Låter användaren lämna synpunkter på innehåll. Komponenten placeras längst ner i en sektion.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -3418,7 +3136,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><p>När text visas utan knappar så använd klassen <code>.feedback__text--standalone</code> för att lägga till mer luft ovanför och under texten i mobilläge.</p>
+</div><p>Väljer användaren ja, presenteras en tacktext.
+När text visas utan knappar så använd klassen <code>.feedback__text--standalone</code> för att lägga till mer luft ovanför och under texten i mobilläge.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -3451,7 +3170,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;section section--boxed section--compact-padding&quot;&gt;
     &lt;div class=&quot;feedback&quot;&gt;
       &lt;span class=&quot;feedback__text feedback__text--standalone text-standard&quot;&gt;
-        Hjälpte informationen på den här sidan dig?
+        Tack för din feedback!
       &lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -3462,13 +3181,13 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;section section--boxed section--compact-padding&quot;&gt;
     &lt;div class=&quot;feedback&quot;&gt;
       &lt;span class=&quot;feedback__text feedback__text--standalone text-standard&quot;&gt;
-        Hjälpte informationen på den här sidan dig?
+        Tack för din feedback!
       &lt;/span&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><p>Med en textruta som användaren kan fylla i</p>
+</div><p>Väljer användaren nej, presenteras ett formulär med möjlighet till återkoppling.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -3501,10 +3220,10 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;section section--boxed section--compact-padding&quot;&gt;
     &lt;div class=&quot;feedback feedback--textarea&quot;&gt;
       &lt;div class=&quot;form-group form-group--margin-b-small&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea1&quot;&gt;Tack, berätta gärna hur vi kan förbättra den här sidan&lt;/label&gt;
         &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
       &lt;/div&gt;
-      &lt;button class=&quot;btn btn--primary btn--small&quot;&gt;Knapp normal&lt;/button&gt;
+      &lt;button class=&quot;btn btn--primary btn--small&quot;&gt;Skicka&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
@@ -3514,10 +3233,10 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;section section--boxed section--compact-padding&quot;&gt;
     &lt;div class=&quot;feedback feedback--textarea&quot;&gt;
       &lt;div class=&quot;form-group form-group--margin-b-small&quot;&gt;
-        &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea1&quot;&gt;Textområde med beskrivning&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;exampleTextarea1&quot;&gt;Tack, berätta gärna hur vi kan förbättra den här sidan&lt;/label&gt;
         &lt;textarea class=&quot;form-control&quot; id=&quot;exampleTextarea1&quot; rows=&quot;4&quot; aria-describedby=&quot;textareaHelp&quot; placeholder=&quot;Platshållare&quot;&gt;&lt;/textarea&gt;
       &lt;/div&gt;
-      &lt;button class=&quot;btn btn--primary btn--small&quot;&gt;Knapp normal&lt;/button&gt;
+      &lt;button class=&quot;btn btn--primary btn--small&quot;&gt;Skicka&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -3624,36 +3343,36 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;container container--margins&quot;&gt;
-  &lt;div class=&quot;row row-reverse row-center&quot;&gt;
+  &lt;div class=&quot;row row-reverse&quot;&gt;
     &lt;div class=&quot;col-12 col-md-4&quot;&gt;
       &lt;img src=&quot;_styleguide/assets/img/overview.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-11 col-md-8 col-overlap col-sm-overlap&quot;&gt;
+    &lt;div class=&quot;col-12 col-md-8&quot;&gt;
       &lt;div class=&quot;box box--compact box--no-border&quot;&gt;
-        &lt;h2 class=&quot;h2 margin-tp-reset&quot;&gt;Nationella prov i grundskolan&lt;/h2&gt;
-        &lt;p class=&quot;text-standard&quot;&gt;De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.&lt;/p&gt;
+        &lt;h2 class=&quot;h2 margin-tp-reset&quot;&gt;En tydlig områdersrubrik&lt;/h2&gt;
+        &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
         &lt;ul class=&quot;content-navigation-list&quot;&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Suspendisse potenti
+              Navigationsval 1
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Phasellus mattis diam convallis lectus ultricies
+              Navigationsval 2
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Phasellus mattis diam convallis lectus ultricies
+              Navigationsval 3
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Phasellus convallis lectus ultricies
+              Navigationsval med extra mycket text
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
@@ -3666,9 +3385,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding box--mb-large&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3747,36 +3466,36 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;container container--margins&quot;&gt;
-  &lt;div class=&quot;row row-reverse row-center&quot;&gt;
+  &lt;div class=&quot;row row-reverse&quot;&gt;
     &lt;div class=&quot;col-12 col-md-4&quot;&gt;
       &lt;img src=&quot;_styleguide/assets/img/overview.png&quot; width=&quot;100%&quot; alt=&quot;Error with image loading...&quot; /&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;col-11 col-md-8 col-overlap col-sm-overlap&quot;&gt;
+    &lt;div class=&quot;col-12 col-md-8&quot;&gt;
       &lt;div class=&quot;box box--compact box--no-border&quot;&gt;
-        &lt;h2 class=&quot;h2 margin-tp-reset&quot;&gt;Nationella prov i grundskolan&lt;/h2&gt;
-        &lt;p class=&quot;text-standard&quot;&gt;De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.&lt;/p&gt;
+        &lt;h2 class=&quot;h2 margin-tp-reset&quot;&gt;En tydlig områdersrubrik&lt;/h2&gt;
+        &lt;p class=&quot;text-standard&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
         &lt;ul class=&quot;content-navigation-list&quot;&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
             &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Suspendisse potenti
+              Navigationsval 1
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
             &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Phasellus mattis diam convallis lectus ultricies
+              Navigationsval 2
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item&quot;&gt;
             &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Phasellus mattis diam convallis lectus ultricies
+              Navigationsval 3
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
           &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
             &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-              Phasellus convallis lectus ultricies
+              Navigationsval med extra mycket text
               &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
             &lt;/a&gt;
           &lt;/li&gt;
@@ -3789,9 +3508,9 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
   &lt;div class=&quot;box box--no-padding box--mb-large&quot;&gt;
     &lt;div class=&quot;section section--boxed&quot;&gt;
       &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h3 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Press och nyheter&lt;span&gt;&lt;/h3&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Fler nyheter i &lt;a href=&quot;/press&quot;&gt;pressrummet&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3832,7 +3551,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Introduktion  Konventioner  Snabbstart "
+						data-filter-value=" Konventioner  Skolverkets style guide  Snabbstart "
 					>
 						<a href="#category-kom igång" class="i-sidebar-list-item">
 							<b>Kom igång</b>
@@ -3841,18 +3560,18 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 			
 					<div>
 							<a
-								href="#introduktion"
-								class="i-sidebar-list-item"
-								data-filter-value="Introduktion"
-							>
-								<span>Introduktion</span>
-							</a>
-							<a
 								href="#konventioner"
 								class="i-sidebar-list-item"
 								data-filter-value="Konventioner"
 							>
 								<span>Konventioner</span>
+							</a>
+							<a
+								href="#skolverkets-style-guide"
+								class="i-sidebar-list-item"
+								data-filter-value="Skolverkets style guide"
+							>
+								<span>Skolverkets style guide</span>
 							</a>
 							<a
 								href="#snabbstart"
@@ -3868,7 +3587,7 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Box  Dragspel  Formulär  Hero  Knappar  Sektionnavigering  Sidfot  Sidhuvud  TOC  Textlänkar "
+						data-filter-value=" Box  Dragspelsmeny  Formulär  Hero  Innehållsförteckning  Knappar  Sektionsnavigering  Sidfot  Sidhuvud  Textlänkar "
 					>
 						<a href="#category-komponenter" class="i-sidebar-list-item">
 							<b>Komponenter</b>
@@ -3884,11 +3603,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 								<span>Box</span>
 							</a>
 							<a
-								href="#dragspel"
+								href="#dragspelsmeny"
 								class="i-sidebar-list-item"
-								data-filter-value="Dragspel"
+								data-filter-value="Dragspelsmeny"
 							>
-								<span>Dragspel</span>
+								<span>Dragspelsmeny</span>
 							</a>
 							<a
 								href="#formular"
@@ -3905,6 +3624,13 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 								<span>Hero</span>
 							</a>
 							<a
+								href="#innehallsforteckning"
+								class="i-sidebar-list-item"
+								data-filter-value="Innehållsförteckning"
+							>
+								<span>Innehållsförteckning</span>
+							</a>
+							<a
 								href="#knappar"
 								class="i-sidebar-list-item"
 								data-filter-value="Knappar"
@@ -3912,11 +3638,11 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 								<span>Knappar</span>
 							</a>
 							<a
-								href="#sektionnavigering"
+								href="#sektionsnavigering"
 								class="i-sidebar-list-item"
-								data-filter-value="Sektionnavigering"
+								data-filter-value="Sektionsnavigering"
 							>
-								<span>Sektionnavigering</span>
+								<span>Sektionsnavigering</span>
 							</a>
 							<a
 								href="#sidfot"
@@ -3931,13 +3657,6 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 								data-filter-value="Sidhuvud"
 							>
 								<span>Sidhuvud</span>
-							</a>
-							<a
-								href="#toc"
-								class="i-sidebar-list-item"
-								data-filter-value="TOC"
-							>
-								<span>TOC</span>
 							</a>
 							<a
 								href="#textlankar"
