@@ -81,7 +81,7 @@ Beskrivning...
     <div class="hero__banner-body">
       <div class="col-sm-9 col-md-8 col-lg-7">
         <a href="#" class="hero__banner-body-text">
-          <span class="hero__banner-body-text-stripe">Dags för nationella prov, vi har samlat allt du behöver veta
+          <span class="hero__banner-body-text-stripe">En lång rubrik som sträcker sig över flera rader
             <i class="icon-arrow icon-arrow--white icon-arrow--xlg"></i>
           </span>
         </a>
@@ -93,9 +93,9 @@ Beskrivning...
   <div class="box box--no-padding">
     <div class="section section--boxed">
       <header class="section__header">
-        <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
         <div class="section__header-preamble text-secondary">
-          <p>Fler nyheter i <a href="/press">pressrummet</a></p>
+          <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
         </div>
       </header>
       <div class="section__body">

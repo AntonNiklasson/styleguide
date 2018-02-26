@@ -3,7 +3,7 @@ name: Knappar
 category: Komponenter
 ---
 
-Knappar kan användas med elementen `<a>`, `<button>`, och `<input>`.
+Knappar används för att signalera att en handling utförs. Knappar kan användas med elementen `<a>`, `<button>`, och `<input>`.
 
 ## Exempel
 
@@ -11,16 +11,16 @@ Det finns tre typer av knappar:
 
 - Primär: Är den mest visuellt utmärkande och _skall_ användas för det viktigaste valet om flera knappar används
 - Sekundär: En alternativ knapp som _bör_ användas för att märka ut att det här inte är det primära valet
+- Spökknapp: Tar mindre visuelt fokus och kan användas när en handling inte är fokus
 
 ```types.html
-<button class="btn btn--primary">Primär</button>
-<button class="btn btn--secondary">Sekundär</button>
-<button class="btn btn--primary" disabled>Disabled</button>
-<button class="btn btn-icon icon-volume">Lyssna</button>
-<button class="btn btn-icon icon-volume-disabled" disabled>Lyssna</button>
+<button class="btn btn--primary">Primär knapp</button>
+<button class="btn btn--secondary">Sekundär knapp</button>
+<button class="btn btn--primary" disabled>Inaktiv knapp</button>
+<button class="btn btn-icon icon-volume">Spökknapp</button>
 ```
 
-En variant för små knappar finns och _bör_ används där utrymmet är begränsat eller där en normal knappstorlek skulle få för mycket uppmärksamhet.
+En variant för små knappar finns och _bör_ används där utrymmet är begränsat.
 
 ```small.html
 <button class="btn btn--primary btn--small">Primär</button>
@@ -28,9 +28,9 @@ En variant för små knappar finns och _bör_ används där utrymmet är begrän
 <button class="btn btn--primary btn--small" disabled>Disabled</button>
 ```
 
-För att få en knapp att bli 100% bred används `.btn--block`.
+På små skärmar kan en knapp användas i fullbredd med `.btn--block`.
 
 ```block.html
-<button class="btn btn--primary btn--block">Primär</button>
-<button class="btn btn--secondary btn--block">Sekundär</button>
+<button class="btn btn--primary btn--block">Primär fullbredd</button>
+<button class="btn btn--secondary btn--block">Sekundär fullbredd</button>
 ```

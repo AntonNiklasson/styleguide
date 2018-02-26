@@ -76,36 +76,36 @@ Beskrivning...
   </div>
 </div>
 <div class="container container--margins">
-  <div class="row row-reverse row-center">
+  <div class="row row-reverse">
     <div class="col-12 col-md-4">
       <img src="_styleguide/assets/img/overview.png" width="100%" alt="Error with image loading..." />
     </div>
-    <div class="col-11 col-md-8 col-overlap col-sm-overlap">
+    <div class="col-12 col-md-8">
       <div class="box box--compact box--no-border">
-        <h1 class="h1">Nationella prov i grundskolan</h1>
-        <p class="text-medium">De nationella proven är ett stöd för att likvärdigt och rättvist göra en bedömning och sätta betyg.</p>
+        <h1 class="h1">En tydlig områdersrubrik/h1>
+        <p class="text-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <ul class="content-navigation-list">
           <li class="content-navigation-list__item">
             <a href="#1" class="content-navigation-list__item-link text-medium">
-              Suspendisse potenti
+              Navigationsval 1
               <i class="icon-arrow"></i>
             </a>
           </li>
           <li class="content-navigation-list__item">
             <a href="#2" class="content-navigation-list__item-link text-medium">
-              Phasellus mattis diam convallis lectus ultricies
+              Navigationsval 2
               <i class="icon-arrow"></i>
             </a>
           </li>
           <li class="content-navigation-list__item">
             <a href="#3" class="content-navigation-list__item-link text-medium">
-              Phasellus mattis diam convallis lectus ultricies
+              Navigationsval 3
               <i class="icon-arrow"></i>
             </a>
           </li>
           <li class="content-navigation-list__item content-navigation-list__item--no-border">
             <a href="#4" class="content-navigation-list__item-link text-medium">
-              Phasellus convallis lectus ultricies
+              Navigationsval med extra mycket text
               <i class="icon-arrow"></i>
             </a>
           </li>
@@ -118,9 +118,9 @@ Beskrivning...
   <div class="box box--no-padding box--mb-large">
     <div class="section section--boxed">
       <header class="section__header">
-        <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
         <div class="section__header-preamble text-secondary">
-          <p>Fler nyheter i <a href="/press">pressrummet</a></p>
+          <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
         </div>
       </header>
       <div class="section__body">

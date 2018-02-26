@@ -3,7 +3,7 @@ name: Sidfot
 category: Komponenter
 ---
 
-Beskrivning
+Sidfoten guidar en användare som hamnat på botten av en sida utan att hitta det hon vill.
 
 ```default.html
 <footer class="footer">

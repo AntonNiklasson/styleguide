@@ -3,10 +3,10 @@ name: Sektioner
 category: Kompositioner
 ---
 
-Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida. Den används ofta för att  särklilja olika typer av innehåll eller innehåll för olika målgrupper.
+Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida.
 
 #### Begränsningar
-- Sektioner används uteslutande inom en [box](#box) som omger sidan.
+- Sektioner används uteslutande inom en [box](#box).
 
 #### Tillgänglighet och semantik
 Även om vi exemplet nedan använder en `div` så används inte sällan HTML-elementet `section` för sektioner på sidan. Om det används så är det viktigt att sektionen alltid har rubrik och att rubrikhierarkin nollställs, alltså bör första rubriken vara en `h1`-rubrik.
@@ -15,9 +15,9 @@ Sektioner används för att skapa en tydlig och lättöverskådlig struktur på 
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Fler nyheter i <a href="/press" class="text-link">pressrummet</a></p>
+        <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
       </div>
     </header>
     <div class="section__body">
@@ -30,14 +30,14 @@ Sektioner används för att skapa en tydlig och lättöverskådlig struktur på 
 SG_WELL_PURPLE = true;
 ```
 
-När flera sektioner läggs bredvid varandra läggs en horisontell avdelare autotamtiskt till.
+När flera sektioner läggs bredvid varandra läggs en horisontell avdelare till automatiskt.
 
 ```multiple.html
 <div class="container">
   <div class="box box--no-padding">
     <div class="section section--boxed">
       <header class="section__header">
-        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 1<span></h2>
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel 1<span></h2>
       </header>
       <div class="section__body">
         <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
@@ -45,7 +45,7 @@ När flera sektioner läggs bredvid varandra läggs en horisontell avdelare auto
     </div>
     <div class="section section--boxed">
       <header class="section__header">
-        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektion 2<span></h2>
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel 2<span></h2>
       </header>
       <div class="section__body">
         <img src="http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />

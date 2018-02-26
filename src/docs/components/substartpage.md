@@ -81,14 +81,14 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
     <div class="row">
       <div class="col-12">
         <div class="section-navigation__label section-navigation__label--overlap">
-          Current section
+          Sektionstitel
         </div>
       </div>
       <div class="col-12 col-md-4 col-lg-3">
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#1" class="section-navigation__box-item-link">
-              Förskola
+              Navigationsval 1
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -98,7 +98,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#2" class="section-navigation__box-item-link">
-              Förskoleklass
+              Navigationsval 2
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -108,7 +108,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#3" class="section-navigation__box-item-link">
-              Grundskola
+              Navigationsval 3
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -118,7 +118,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#4" class="section-navigation__box-item-link">
-              Grundsärskola
+              Navigationsval 4
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -128,7 +128,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#5" class="section-navigation__box-item-link">
-              Gymnasieskola
+              Navigationsval 5
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -138,7 +138,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
             <a href="#6" class="section-navigation__box-item-link">
-              Gymnasiesärskola
+              Navigationsval 6
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -148,7 +148,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
         <div class="section-navigation__box">
           <div class="section-navigation__box-item section-navigation__box-item--no-border">
             <a href="#7" class="section-navigation__box-item-link">
-              Inspiration och stöd i arbetet
+              Navigationsval med extra mycket text
               <i class="icon-arrow"></i>
             </a>
           </div>
@@ -161,9 +161,9 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
   <div class="box box--no-padding">
     <div class="section section--boxed">
       <header class="section__header">
-        <h2 class="h3 section__header-title"><span class="section__header-title-text">Press och nyheter<span></h2>
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
         <div class="section__header-preamble text-secondary">
-          <p>Fler nyheter i <a href="/press">pressrummet</a></p>
+          <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
         </div>
       </header>
       <div class="section__body">

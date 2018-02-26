@@ -3,15 +3,13 @@ name: Textpuffar
 category: Kompositioner
 ---
 
-Ger användaren överblick lorem ipsum...
-
 ```default.html
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Lorem ipsum<span></h2>
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Dolarsum <a href="/press" class="text-link">rimpvom</a></p>
+        <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
       </div>
     </header>
     <div class="section__body">

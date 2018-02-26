@@ -1,41 +1,41 @@
 ---
-name: TOC
+name: Innehållsnavigering
 category: Komponenter
 ---
 
-En navigerng som används för att ge en outline av en lång sida med mycket innehåll.
+Ger användaren överblick och möjlighet att hoppa direkt till innehåll på en sida.
 
 ```default.html
 <div class="toc">
-  <div class="toc__title text-standard">På denna sida</div>
+  <div class="toc__title text-standard">Rubrik</div>
   <ul class="toc__list">
     <li class="toc__list-item">
       <a href="#" class="toc__list-item-link text-standard">
-        Vad är yrkesprogram och högskoleförberedande program?
+        Innehållsrubrik nivå 1
       </a>
     </li>
     <li class="toc__list-item">
       <ul class="toc__list toc__list--sub">
         <li class="toc_list-item">
           <a href="#" class="toc__list-item-link text-standard">
-            Yrkesprogram
+            Innehållsrubrik nivå 2
           </a>
         </li>
         <li class="toc_list-item">
           <a href="#" class="toc__list-item-link text-standard">
-            Högskoleförberedande program
+            Innehållsrubrik nivå 2
           </a>
         </li>
       </ul>
     </li>
     <li class="toc__list-item">
       <a href="#" class="toc__list-item-link text-standard">
-        Introduktionsprogram för dig som inte har tillräckliga betyg
+        Innehållsrubrik nivå 1
       </a>
     </li>
     <li class="toc__list-item">
       <a href="#" class="toc__list-item-link text-standard">
-        Kontakta utbildningsförvaltningen
+        Innehållsrubrik nivå 1
       </a>
     </li>
   </ul>
