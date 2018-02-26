@@ -9,7 +9,7 @@ Presenterar navigationsvägar inom ett område.
 <div class="box box--no-padding">
   <div class="section section--boxed">
     <header class="section__header">
-      <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">Områdestitel<span></h2>
       <div class="section__header-preamble text-secondary">
         <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
       </div>
@@ -20,7 +20,7 @@ Presenterar navigationsvägar inom ett område.
           <ul class="content-navigation-list">
             <li class="content-navigation-list__item">
               <a href="#1" class="content-navigation-list__item-link text-standard">
-                Suspendisse potenti
+                Områdeslänk
                 <i class="icon-arrow"></i>
               </a>
             </li>
