@@ -3,7 +3,7 @@ name: Sidstart
 category: Komponenter
 ---
 
-Beskrivning...
+
 
 ```default.html
 <div class="navigation">

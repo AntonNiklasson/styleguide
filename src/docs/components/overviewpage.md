@@ -3,7 +3,7 @@ name: Översiktsida
 category: Komponenter
 ---
 
-Beskrivning...
+
 
 ```default.html
 <div class="navigation">
