@@ -88,9 +88,7 @@ $block: 'navigation';
         &:focus,
         &:active,
         &:active:focus {
-          background-color: $color-purple-light;
-          color: $color-black;
-          text-decoration: none;
+          color: $color-purple-dark;
         }
       }
 
@@ -131,7 +129,7 @@ $block: 'navigation';
 
       &-mobilemenu {
         background-image: url('../assets/img/mobilemenu.svg');
-        
+
         @include media-min('md') {
           display: none;
         }
@@ -152,7 +150,7 @@ $block: 'navigation';
         &:hover {
           color: $color-white;
         }
-        
+
         &:focus,
         &:active,
         &:active:focus {

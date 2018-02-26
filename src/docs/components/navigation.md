@@ -69,9 +69,9 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
             </a>
             <ul class="navigation__list">
               <li class="navigation__list-item">
-                <a href="#1" class="navigation__list-item-listen">
-                  Lyssna
-                </a>
+              <a href="#1" class="navigation__list-item-listen text-small">
+                Lyssna
+              </a>
               </li>
               <li class="navigation__list-item">
                 <a href="#2" class="navigation__list-item-translate">

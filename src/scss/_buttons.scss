@@ -85,32 +85,4 @@ $block: 'btn';
       margin-top: .5rem;
     }
   }
-
-  &-icon {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    padding-left: calc(12px + 1.5rem);
-    padding-right: 0.875rem;
-    background-size: 1.5rem;
-    background-position: left 6px center;
-    border: 2px solid transparent;
-    font-weight: $font-weight-base;
-
-    &:hover {
-      border-color: $color-purple-dark;
-      box-shadow: 0 0 0 2px $color-white,
-                  0 0 0 5px $color-purple-dark;
-    }
-
-    &:focus,
-    &.focus {
-      border-color: $color-purple-dark;
-    }
-
-    &--right {
-      padding-left: 0.875rem;
-      padding-right: calc(12px + 1.5rem);
-      background-position: right 6px center;
-    }
-  }
 }

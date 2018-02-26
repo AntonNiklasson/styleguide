@@ -17,7 +17,6 @@ Det finns tre typer av knappar:
 <button class="btn btn--primary">Primär knapp</button>
 <button class="btn btn--secondary">Sekundär knapp</button>
 <button class="btn btn--primary" disabled>Inaktiv knapp</button>
-<button class="btn btn-icon icon-volume">Spökknapp</button>
 ```
 ```types.css hidden
 .btn {
