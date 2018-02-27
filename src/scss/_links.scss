@@ -27,10 +27,13 @@
     color: $color-grass;
   }
 
-  &.disabled {
-    color: #888888;
-    cursor: not-allowed;
-    text-decoration: none;
+  &--disabled {
+    &,
+    &:hover {
+      color: #888888;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
 
     &:active,
     &:focus {
