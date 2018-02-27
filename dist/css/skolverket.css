@@ -300,7 +300,7 @@ template {
   font-size: 1.125rem;
   line-height: 1.5rem; }
 
-.text-big {
+.text-large {
   font-size: 1.25rem;
   line-height: 1.625rem; }
 
@@ -333,7 +333,7 @@ template {
   .text-standard {
     font-size: 1.25rem;
     line-height: 1.75rem; }
-  .text-big {
+  .text-large {
     font-size: 1.5625rem;
     line-height: 1.9375rem; } }
 
@@ -345,6 +345,19 @@ template {
 
 .margin-tp-reset {
   margin-top: 0; }
+
+.list li {
+  margin-bottom: 5px; }
+
+.list--reset {
+  list-style: none;
+  padding: 0; }
+
+hr {
+  margin: 1.75rem 0;
+  height: 1px;
+  background: #E8D3E0;
+  border: 0; }
 
 .container {
   position: relative;
