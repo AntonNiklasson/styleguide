@@ -2,6 +2,7 @@ $block: 'header';
 
 .#{$block} {
   position: relative;
+  z-index: 2;
 
   &--close {
     display: none;
@@ -160,6 +161,7 @@ $block: 'header';
           color: $color-white;
         }
 
+        &--active,
         &:focus,
         &:active,
         &:active:focus {

@@ -49,7 +49,7 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
           <div class="header__links-container">
             <ul class="header__list header__list--absolute">
               <li class="header__list-item">
-                <a href="#5" class="header__list-item-link">
+                <a href="#5" class="header__list-item-link header__list-item-link--active">
                   Undervisning
                 </a>
               </li>

@@ -54,7 +54,7 @@ category: Komponenter
                 </a>
               </li>
               <li class="header__list-item">
-                <a href="#6" class="header__list-item-link">
+                <a href="#6" class="header__list-item-link header__list-item-link--active">
                   Skolutveckling
                 </a>
               </li>

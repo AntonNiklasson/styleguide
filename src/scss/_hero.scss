@@ -2,6 +2,7 @@ $block: 'hero';
 
 .#{$block} {
   position: relative;
+  z-index: 0;
 
   &__banner {
     position: relative;
