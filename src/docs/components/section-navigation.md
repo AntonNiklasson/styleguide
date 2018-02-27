@@ -61,7 +61,7 @@ Presenterar upp till åtta övergripande navigationsvägar inom ett område.
       </div>
       <div class="col-12 col-md-4 col-lg-3">
         <div class="section-navigation__box">
-          <div class="section-navigation__box-item">
+          <div class="section-navigation__box-item section-navigation__box-item--no-border">
             <a href="#6" class="section-navigation__box-item-link">
               Navigationsval med extra mycket text<i class="icon-arrow"></i>
             </a>
