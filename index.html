@@ -26,25 +26,24 @@
 									<option value="snabbstart">Snabbstart</option>
 							</optgroup>
 							<optgroup label="Komponenter">
+									<option value="bildpuffar">Bildpuffar</option>
 									<option value="box">Box</option>
 									<option value="dragspelsmeny">Dragspelsmeny</option>
 									<option value="formular">Formulär</option>
+									<option value="fragor-och-svar">Frågor och svar</option>
 									<option value="hero">Hero</option>
 									<option value="innehallsforteckning">Innehållsförteckning</option>
+									<option value="innehallsnavigering">Innehållsnavigering</option>
 									<option value="knappar">Knappar</option>
+									<option value="nyhetslista">Nyhetslista</option>
+									<option value="sektioner">Sektioner</option>
 									<option value="sektionsnavigering">Sektionsnavigering</option>
 									<option value="sidfot">Sidfot</option>
 									<option value="sidhuvud">Sidhuvud</option>
-									<option value="textlankar">Textlänkar</option>
-							</optgroup>
-							<optgroup label="Kompositioner">
-									<option value="bildpuffar">Bildpuffar</option>
-									<option value="fragor-och-svar">Frågor och svar</option>
-									<option value="innehallsnavigering">Innehållsnavigering</option>
-									<option value="nyhetslista">Nyhetslista</option>
-									<option value="sektioner">Sektioner</option>
 									<option value="sidstart">Sidstart</option>
+									<option value="textlankar">Textlänkar</option>
 									<option value="textpuffar">Textpuffar</option>
+									<option value="typografi">Typografi</option>
 									<option value="understartsida">Understartsida</option>
 									<option value="aterkoppling">Återkoppling</option>
 									<option value="oversiktsida">Översiktsida</option>
@@ -132,6 +131,259 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 
 				</div>
 				<div id="category-komponenter">
+						<div id="bildpuffar" class="i-library">
+	<h1 class="display-4">Bildpuffar</h1>
+	<div><div id="exempel-med-tre-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tre-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med tre bildpuffar</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="bildpuffar-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="bildpuffar-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                  &lt;a href=&quot;#1&quot;&gt;
+                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                    Vivamus placerat, neque quis rutrum feugiat turpis
+                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                  &lt;a href=&quot;#2&quot;&gt;
+                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                    Vivamus placerat, neque quis
+                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                  &lt;a href=&quot;#3&quot;&gt;
+                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                    Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
+                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                  &lt;a href=&quot;#1&quot;&gt;
+                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                    Vivamus placerat, neque quis rutrum feugiat turpis
+                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                  &lt;a href=&quot;#2&quot;&gt;
+                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                    Vivamus placerat, neque quis
+                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                  &lt;a href=&quot;#3&quot;&gt;
+                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                    Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
+                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="exempel-med-tva-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tva-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med två bildpuffar</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="bildpuffar-secondary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="bildpuffar-secondary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+      &lt;ul class=&quot;content-navigation-list&quot;&gt;
+        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+            Quisque augue dui, suscipit consequat
+            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+      &lt;ul class=&quot;content-navigation-list&quot;&gt;
+        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+            Quisque augue dui, suscipit consequat metus nec, bibendum
+            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+      &lt;ul class=&quot;content-navigation-list&quot;&gt;
+        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+            Quisque augue dui, suscipit consequat
+            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+      &lt;ul class=&quot;content-navigation-list&quot;&gt;
+        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+            Quisque augue dui, suscipit consequat metus nec, bibendum
+            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="box" class="i-library">
 	<h1 class="display-4">Box</h1>
 	<div><p>Boxar är flexibla innehållsytor som kan husera en mängd olika komponenter. I fall där två eller flera boxar behöver ligga efter varandra eller där du vill förhindra att skuggan överlappar andra element används modifieraren <code>margins</code>.</p>
@@ -577,6 +829,132 @@ Komponenten använder webbläsarens <code>&lt;select&gt;</code>-element i bakgru
 </div></div>
 </div>
 
+						<div id="fragor-och-svar" class="i-library">
+	<h1 class="display-4">Frågor och svar</h1>
+	<div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="fragor-och-svar-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="fragor-och-svar-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
+        &lt;div class=&quot;accordion__item&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
+                Grupp 1
+                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+          &lt;/h2&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
+                Grupp 2
+                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+          &lt;/h2&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion__item&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
+                Grupp 3
+                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+          &lt;/h2&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
+        &lt;div class=&quot;accordion__item&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
+                Grupp 1
+                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+          &lt;/h2&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
+                Grupp 2
+                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+          &lt;/h2&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;accordion__item&quot;&gt;
+          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
+              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
+                Grupp 3
+                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+          &lt;/h2&gt;
+          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="hero" class="i-library">
 	<h1 class="display-4">Hero</h1>
 	<div><div class="i-example">
@@ -738,6 +1116,155 @@ Komponenten använder webbläsarens <code>&lt;select&gt;</code>-element i bakgru
 </div></div>
 </div>
 
+						<div id="innehallsnavigering" class="i-library">
+	<h1 class="display-4">Innehållsnavigering</h1>
+	<div><p>Presenterar navigationsvägar inom ett område.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="innehallsnavigering-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="innehallsnavigering-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Områdestitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Områdeslänk
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Suspendisse potenti
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Områdestitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Områdeslänk
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Suspendisse potenti
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="knappar" class="i-library">
 	<h1 class="display-4">Knappar</h1>
 	<div><p>Knappar används för att signalera att en handling utförs. Knappar kan användas med elementen <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, och <code>&lt;input&gt;</code>.</p>
@@ -775,12 +1302,10 @@ Komponenten använder webbläsarens <code>&lt;select&gt;</code>-element i bakgru
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;btn btn--primary&quot;&gt;Primär knapp&lt;/button&gt;
 &lt;button class=&quot;btn btn--secondary&quot;&gt;Sekundär knapp&lt;/button&gt;
-&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Inaktiv knapp&lt;/button&gt;
-&lt;button class=&quot;btn btn-icon icon-volume&quot;&gt;Spökknapp&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Inaktiv knapp&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary&quot;&gt;Primär knapp&lt;/button&gt;
 &lt;button class=&quot;btn btn--secondary&quot;&gt;Sekundär knapp&lt;/button&gt;
-&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Inaktiv knapp&lt;/button&gt;
-&lt;button class=&quot;btn btn-icon icon-volume&quot;&gt;Spökknapp&lt;/button&gt;</code></pre>
+&lt;button class=&quot;btn btn--primary&quot; disabled&gt;Inaktiv knapp&lt;/button&gt;</code></pre>
 	</div>
 </div><p>En variant för små knappar finns och <em>bör</em> används där utrymmet är begränsat.</p>
 <div class="i-example">
@@ -847,6 +1372,260 @@ Komponenten använder webbläsarens <code>&lt;select&gt;</code>-element i bakgru
 &lt;button class=&quot;btn btn--secondary btn--block&quot;&gt;Sekundär fullbredd&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn--primary btn--block&quot;&gt;Primär fullbredd&lt;/button&gt;
 &lt;button class=&quot;btn btn--secondary btn--block&quot;&gt;Sekundär fullbredd&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="nyhetslista" class="i-library">
+	<h1 class="display-4">Nyhetslista</h1>
+	<div><p>Presenterar navigationsvägar med ett publiceringsdatum.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="nyhetslista-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="nyhetslista-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h2 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div text-small&quot;&gt;
+                23 mars 2017
+              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div text-small&quot;&gt;
+                23 mars 2017
+              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+                Phasellus mattis diam convallis ultricies
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div text-small&quot;&gt;
+                23 mars 2017
+              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+                Phasellus mattis diam ultricies
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h2 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div text-small&quot;&gt;
+                23 mars 2017
+              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div text-small&quot;&gt;
+                23 mars 2017
+              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+                Phasellus mattis diam convallis ultricies
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;div text-small&quot;&gt;
+                23 mars 2017
+              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
+                Phasellus mattis diam ultricies
+                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="sektioner" class="i-library">
+	<h1 class="display-4">Sektioner</h1>
+	<div><p>Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida.</p>
+<h4>Begränsningar</h4><ul>
+<li>Sektioner används uteslutande inom en <a href="#box">box</a>.</li>
+</ul>
+<h4>Tillgänglighet och semantik</h4><p>Även om vi exemplet nedan använder en <code>div</code> så används inte sällan HTML-elementet <code>section</code> för sektioner på sidan. Om det används så är det viktigt att sektionen alltid har rubrik och att rubrikhierarkin nollställs, alltså bör första rubriken vara en <code>h1</code>-rubrik.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="sektioner-boxed.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="sektioner-boxed.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><p>När flera sektioner läggs bredvid varandra läggs en horisontell avdelare till automatiskt.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="sektioner-multiple.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="sektioner-multiple.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 1&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 2&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;box box--no-padding&quot;&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 1&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;section section--boxed&quot;&gt;
+      &lt;header class=&quot;section__header&quot;&gt;
+        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 2&lt;span&gt;&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class=&quot;section__body&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1250,9 +2029,9 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
-                  Lyssna
-                &lt;/a&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                Lyssna
+              &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
                 &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
@@ -1369,9 +2148,9 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
             &lt;/a&gt;
             &lt;ul class=&quot;navigation__list&quot;&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
-                &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen&quot;&gt;
-                  Lyssna
-                &lt;/a&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;navigation__list-item-listen text-small&quot;&gt;
+                Lyssna
+              &lt;/a&gt;
               &lt;/li&gt;
               &lt;li class=&quot;navigation__list-item&quot;&gt;
                 &lt;a href=&quot;#2&quot; class=&quot;navigation__list-item-translate&quot;&gt;
@@ -1431,943 +2210,9 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
 </div></div>
 </div>
 
-						<div id="textlankar" class="i-library">
-	<h1 class="display-4">Textlänkar</h1>
-	<div><p>Beskrivning...</p>
-<div id="default" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default" class="icon-link i-section__link -heading"></a>Default</h2></div><p>Textlänkar states:</p>
-<ul>
-<li>Standard</li>
-<li>Visited</li>
-<li>Disabled</li>
-</ul>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="textlankar-default.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="textlankar-default.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;#1&quot; class=&quot;text-link&quot;&gt;
-  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
-&lt;/a&gt;
-&lt;a href=&quot;#2&quot; class=&quot;text-link&quot;&gt;
-  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
-&lt;/a&gt;
-&lt;a href=&quot;#3&quot; class=&quot;text-link disabled&quot;&gt;
-  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
-&lt;/a&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;#1&quot; class=&quot;text-link&quot;&gt;
-  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
-&lt;/a&gt;
-&lt;a href=&quot;#2&quot; class=&quot;text-link&quot;&gt;
-  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
-&lt;/a&gt;
-&lt;a href=&quot;#3&quot; class=&quot;text-link disabled&quot;&gt;
-  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
-&lt;/a&gt;</code></pre>
-	</div>
-</div><div id="textlank-within-a-text" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textlank-within-a-text" class="icon-link i-section__link -heading"></a>Textlänk within a text</h2></div><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="textlankar-within-text.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="textlankar-within-text.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;text-standard&quot;&gt;
-  Aliquam dictum ac elit semper malesuada. Nunc venenatis fermentum elit non aliquet. Pellentesque massa nisi, consectetur nec pellentesque id, fringilla et arcu. Curabitur dignissim ante sit amet lacinia gravida
-  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
-    &lt;span class=&quot;text-standard&quot;&gt;justo trist placerat&lt;/span&gt;
-    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-  phasellus efficitur nulla dolor, non blandit erat facilisis in. Mauris cursus ante a justo tristique placerat. Curabitur in euismod orci in risus varius, eu rutrum leo pharetra. Maecenas auctor congue purus sit amet vehicula
-  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
-    &lt;span class=&quot;text-standard&quot;&gt;per conubia nostra&lt;/span&gt;
-    &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-  class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar nulla nec faucibus feugiat. Nunc facilisis lobortis tellus nec tincidunt.
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;text-standard&quot;&gt;
-  Aliquam dictum ac elit semper malesuada. Nunc venenatis fermentum elit non aliquet. Pellentesque massa nisi, consectetur nec pellentesque id, fringilla et arcu. Curabitur dignissim ante sit amet lacinia gravida
-  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
-    &lt;span class=&quot;text-standard&quot;&gt;justo trist placerat&lt;/span&gt;
-    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-  phasellus efficitur nulla dolor, non blandit erat facilisis in. Mauris cursus ante a justo tristique placerat. Curabitur in euismod orci in risus varius, eu rutrum leo pharetra. Maecenas auctor congue purus sit amet vehicula
-  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
-    &lt;span class=&quot;text-standard&quot;&gt;per conubia nostra&lt;/span&gt;
-    &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-  class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar nulla nec faucibus feugiat. Nunc facilisis lobortis tellus nec tincidunt.
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="textlank-med-ikon" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textlank-med-ikon" class="icon-link i-section__link -heading"></a>Textlänk med ikon</h2></div><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="textlankar-with-icon.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="textlankar-with-icon.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
-    &lt;span class=&quot;text-standard&quot;&gt;Curabitur dignissim ante&lt;/span&gt;
-    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
-    &lt;span class=&quot;text-standard&quot;&gt;Curabitur dignissim ante&lt;/span&gt;
-    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-				</div>
-				<div id="category-kompositioner">
-						<div id="bildpuffar" class="i-library">
-	<h1 class="display-4">Bildpuffar</h1>
-	<div><div id="exempel-med-tre-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tre-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med tre bildpuffar</h2></div><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="bildpuffar-default.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="bildpuffar-default.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat turpis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat turpis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-md-4&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="exempel-med-tva-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tva-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med två bildpuffar</h2></div><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="bildpuffar-secondary.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="bildpuffar-secondary.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-            Quisque augue dui, suscipit consequat
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-            Quisque augue dui, suscipit consequat metus nec, bibendum
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-            Quisque augue dui, suscipit consequat
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-            Quisque augue dui, suscipit consequat metus nec, bibendum
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-						<div id="fragor-och-svar" class="i-library">
-	<h1 class="display-4">Frågor och svar</h1>
-	<div><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="fragor-och-svar-default.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="fragor-och-svar-default.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
-        &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
-                Grupp 1
-                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-          &lt;/h2&gt;
-          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
-                Grupp 2
-                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-          &lt;/h2&gt;
-          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
-                Grupp 3
-                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-          &lt;/h2&gt;
-          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;accordion&quot; id=&quot;accordionOne&quot;&gt;
-        &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingOne&quot;&gt;
-              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion1&quot;&gt;
-                Grupp 1
-                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-          &lt;/h2&gt;
-          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;accordion__item accordion__item--open&quot;&gt;
-          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingTwo&quot;&gt;
-              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion2&quot;&gt;
-                Grupp 2
-                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-          &lt;/h2&gt;
-          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;accordion__item&quot;&gt;
-          &lt;h2 class=&quot;h3 accordion__item-header&quot; id=&quot;headingThree&quot;&gt;
-              &lt;a class=&quot;accordion__item-link&quot; href=&quot;#accordion3&quot;&gt;
-                Grupp 3
-                &lt;i class=&quot;accordion__item-icon icon-arrow icon-arrow--down&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-          &lt;/h2&gt;
-          &lt;div class=&quot;accordion__item-body text-standard&quot; data-parent=&quot;#accordion&quot;&gt;
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-          &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-						<div id="innehallsnavigering" class="i-library">
-	<h1 class="display-4">Innehållsnavigering</h1>
-	<div><p>Presenterar navigationsvägar inom ett område.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="innehallsnavigering-default.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="innehallsnavigering-default.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Suspendisse potenti
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Suspendisse potenti
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus convallis
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Suspendisse potenti
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#4&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Suspendisse potenti
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;a href=&quot;#5&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#6&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                Phasellus convallis
-                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-						<div id="nyhetslista" class="i-library">
-	<h1 class="display-4">Nyhetslista</h1>
-	<div><p>Presenterar navigationsvägar med ett publiceringsdatum.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="nyhetslista-default.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="nyhetslista-default.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h2 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div text-small&quot;&gt;
-                23 mars 2017
-              &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-                Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div text-small&quot;&gt;
-                23 mars 2017
-              &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-                Phasellus mattis diam convallis ultricies
-                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div text-small&quot;&gt;
-                23 mars 2017
-              &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-                Phasellus mattis diam ultricies
-                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h2 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;div class=&quot;col&quot;&gt;
-          &lt;ul class=&quot;content-navigation-list&quot;&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div text-small&quot;&gt;
-                23 mars 2017
-              &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-                Phasellus mattis diam convallis lectus ultricies
-                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div text-small&quot;&gt;
-                23 mars 2017
-              &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-                Phasellus mattis diam convallis ultricies
-                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div text-small&quot;&gt;
-                23 mars 2017
-              &lt;/div&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-big&quot;&gt;
-                Phasellus mattis diam ultricies
-                &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-						<div id="sektioner" class="i-library">
-	<h1 class="display-4">Sektioner</h1>
-	<div><p>Sektioner används för att skapa en tydlig och lättöverskådlig struktur på en sida.</p>
-<h4>Begränsningar</h4><ul>
-<li>Sektioner används uteslutande inom en <a href="#box">box</a>.</li>
-</ul>
-<h4>Tillgänglighet och semantik</h4><p>Även om vi exemplet nedan använder en <code>div</code> så används inte sällan HTML-elementet <code>section</code> för sektioner på sidan. Om det används så är det viktigt att sektionen alltid har rubrik och att rubrikhierarkin nollställs, alltså bör första rubriken vara en <code>h1</code>-rubrik.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="sektioner-boxed.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="sektioner-boxed.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
-  &lt;div class=&quot;section section--boxed&quot;&gt;
-    &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;div class=&quot;section__body&quot;&gt;
-      &lt;img src=&quot;http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><p>När flera sektioner läggs bredvid varandra läggs en horisontell avdelare till automatiskt.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="sektioner-multiple.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="sektioner-multiple.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;box box--no-padding&quot;&gt;
-    &lt;div class=&quot;section section--boxed&quot;&gt;
-      &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 1&lt;span&gt;&lt;/h2&gt;
-      &lt;/header&gt;
-      &lt;div class=&quot;section__body&quot;&gt;
-        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;section section--boxed&quot;&gt;
-      &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 2&lt;span&gt;&lt;/h2&gt;
-      &lt;/header&gt;
-      &lt;div class=&quot;section__body&quot;&gt;
-        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;box box--no-padding&quot;&gt;
-    &lt;div class=&quot;section section--boxed&quot;&gt;
-      &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 1&lt;span&gt;&lt;/h2&gt;
-      &lt;/header&gt;
-      &lt;div class=&quot;section__body&quot;&gt;
-        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;section section--boxed&quot;&gt;
-      &lt;header class=&quot;section__header&quot;&gt;
-        &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel 2&lt;span&gt;&lt;/h2&gt;
-      &lt;/header&gt;
-      &lt;div class=&quot;section__body&quot;&gt;
-        &lt;img src=&quot;http://placehold.it/800x150/ffffff/E8D3E0?text=(Sektionens innehåll)&quot; style=&quot;max-width: 100%&quot;  /&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
 						<div id="sidstart" class="i-library">
 	<h1 class="display-4">Sidstart</h1>
-	<div><p>Beskrivning...</p>
-<div class="i-example">
+	<div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="sidstart-default.html"
@@ -2593,6 +2438,154 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
 </div></div>
 </div>
 
+						<div id="textlankar" class="i-library">
+	<h1 class="display-4">Textlänkar</h1>
+	<div><div id="default" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default" class="icon-link i-section__link -heading"></a>Default</h2></div><p>Textlänkar states:</p>
+<ul>
+<li>Standard</li>
+<li>Visited</li>
+<li>Disabled</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="textlankar-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="textlankar-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;#1&quot; class=&quot;text-link&quot;&gt;
+  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#2&quot; class=&quot;text-link&quot;&gt;
+  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#3&quot; class=&quot;text-link disabled&quot;&gt;
+  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
+&lt;/a&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;#1&quot; class=&quot;text-link&quot;&gt;
+  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#2&quot; class=&quot;text-link&quot;&gt;
+  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
+&lt;/a&gt;
+&lt;a href=&quot;#3&quot; class=&quot;text-link disabled&quot;&gt;
+  &lt;span class=&quot;text-standard&quot;&gt;Textlänkar&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+	</div>
+</div><div id="textlank-within-a-text" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textlank-within-a-text" class="icon-link i-section__link -heading"></a>Textlänk within a text</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="textlankar-within-text.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="textlankar-within-text.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;text-standard&quot;&gt;
+  Aliquam dictum ac elit semper malesuada. Nunc venenatis fermentum elit non aliquet. Pellentesque massa nisi, consectetur nec pellentesque id, fringilla et arcu. Curabitur dignissim ante sit amet lacinia gravida
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;justo trist placerat&lt;/span&gt;
+    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  phasellus efficitur nulla dolor, non blandit erat facilisis in. Mauris cursus ante a justo tristique placerat. Curabitur in euismod orci in risus varius, eu rutrum leo pharetra. Maecenas auctor congue purus sit amet vehicula
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;per conubia nostra&lt;/span&gt;
+    &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar nulla nec faucibus feugiat. Nunc facilisis lobortis tellus nec tincidunt.
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;text-standard&quot;&gt;
+  Aliquam dictum ac elit semper malesuada. Nunc venenatis fermentum elit non aliquet. Pellentesque massa nisi, consectetur nec pellentesque id, fringilla et arcu. Curabitur dignissim ante sit amet lacinia gravida
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;justo trist placerat&lt;/span&gt;
+    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  phasellus efficitur nulla dolor, non blandit erat facilisis in. Mauris cursus ante a justo tristique placerat. Curabitur in euismod orci in risus varius, eu rutrum leo pharetra. Maecenas auctor congue purus sit amet vehicula
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;per conubia nostra&lt;/span&gt;
+    &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar nulla nec faucibus feugiat. Nunc facilisis lobortis tellus nec tincidunt.
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="textlank-med-ikon" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#textlank-med-ikon" class="icon-link i-section__link -heading"></a>Textlänk med ikon</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="textlankar-with-icon.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="textlankar-with-icon.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;Curabitur dignissim ante&lt;/span&gt;
+    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;a href=&quot;#&quot; class=&quot;text-link&quot;&gt;
+    &lt;span class=&quot;text-standard&quot;&gt;Curabitur dignissim ante&lt;/span&gt;
+    &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="textpuffar" class="i-library">
 	<h1 class="display-4">Textpuffar</h1>
 	<div><div class="i-example">
@@ -2727,6 +2720,225 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="typografi" class="i-library">
+	<h1 class="display-4">Typografi</h1>
+	<div><p>På skolverkets domäner, använd alltid Source Sans Pro i vikterna Regular och Bold.</p>
+<div id="rubriker" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#rubriker" class="icon-link i-section__link -heading"></a>Rubriker</h2></div><ul>
+<li>använd Source Sans Pro Bold</li>
+<li>använd versalisering för rubriker</li>
+<li>använd rubriker konsekvent för att skapa en tydlig hierarki</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="typografi-headlines.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="typografi-headlines.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;h1 class=&quot;h1&quot;&gt;En 45px Bold rubrik&lt;/h1&gt;
+    &lt;h2 class=&quot;h2&quot;&gt;En 36px Bold rubrik&lt;/h2&gt;
+    &lt;h3 class=&quot;h3&quot;&gt;En 25px Bold rubrik&lt;/h3&gt;
+    &lt;h4 class=&quot;h4&quot;&gt;En 20px Bold rubrik&lt;/h4&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;h1 class=&quot;h1&quot;&gt;En 45px Bold rubrik&lt;/h1&gt;
+    &lt;h2 class=&quot;h2&quot;&gt;En 36px Bold rubrik&lt;/h2&gt;
+    &lt;h3 class=&quot;h3&quot;&gt;En 25px Bold rubrik&lt;/h3&gt;
+    &lt;h4 class=&quot;h4&quot;&gt;En 20px Bold rubrik&lt;/h4&gt;</code></pre>
+	</div>
+</div><div id="ingress" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#ingress" class="icon-link i-section__link -heading"></a>Ingress</h2></div><ul>
+<li>använd 25px för en ingress</li>
+<li>det bör bara finnas en ingress per sida</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="typografi-leading.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="typografi-leading.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;text-big&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&lt;/p&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;text-big&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&lt;/p&gt;</code></pre>
+	</div>
+</div><div id="brodtext" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#brodtext" class="icon-link i-section__link -heading"></a>Brödtext</h2></div><ul>
+<li>använd 20px Regular – 18px på mindre skärmar</li>
+<li>undvik fetstil eller kursiv text</li>
+<li>använd mindre storlekar enbart om det finns ett användarbehov (ex. 16px, 14px, 12px)</li>
+<li>se till att spaltbredden inte överstiger 80 tecken, läsbarheten blir sämre över den gränsen.</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="typografi-body.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="typografi-body.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;text-standard&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;text-standard&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.&lt;/p&gt;</code></pre>
+	</div>
+</div><div id="lankar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#lankar" class="icon-link i-section__link -heading"></a>Länkar</h2></div><ul>
+<li>länkar i brödtext ska vara blåa och understrukna</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="typografi-links.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="typografi-links.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;text-standard&quot;&gt;&lt;a href=&quot;#link1&quot; class=&quot;text-link&quot;&gt;En länk utan omgivande text&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;&lt;a href=&quot;#link2&quot; class=&quot;text-link&quot;&gt;En länk med omgivande text&lt;/a&gt; sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;
+  &lt;a href=&quot;#link1&quot; class=&quot;text-link&quot;&gt;En extern länk &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;
+  &lt;a href=&quot;#link1&quot; class=&quot;text-link&quot;&gt;En länk som kräver inloggning &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;
+  &lt;a href=&quot;#link1&quot; class=&quot;text-link disabled&quot;&gt;En blockerad länk&lt;/a&gt;
+&lt;/p&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;text-standard&quot;&gt;&lt;a href=&quot;#link1&quot; class=&quot;text-link&quot;&gt;En länk utan omgivande text&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;&lt;a href=&quot;#link2&quot; class=&quot;text-link&quot;&gt;En länk med omgivande text&lt;/a&gt; sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;
+  &lt;a href=&quot;#link1&quot; class=&quot;text-link&quot;&gt;En extern länk &lt;i class=&quot;icon-lock&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;
+  &lt;a href=&quot;#link1&quot; class=&quot;text-link&quot;&gt;En länk som kräver inloggning &lt;i class=&quot;icon-hyperlink&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p class=&quot;text-standard&quot;&gt;
+  &lt;a href=&quot;#link1&quot; class=&quot;text-link disabled&quot;&gt;En blockerad länk&lt;/a&gt;
+&lt;/p&gt;</code></pre>
+	</div>
+</div><div id="listor" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#listor" class="icon-link i-section__link -heading"></a>Listor</h2></div><ul>
+<li>punktlistor börjar med gemen bokstav och avslutas inte med punkt</li>
+<li>i numrerade listor är det viktigt att skriva fullständiga meningar</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="typografi-lists.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="typografi-lists.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;ul&gt;
+  &lt;li&gt;perspiciatis unde omnis iste&lt;/li&gt;
+  &lt;li&gt;consequuntur magni dolores eos qui ratione&lt;/li&gt;
+  &lt;li&gt;quis nostrum exercitationem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Perspiciatis unde omnis iste.&lt;/li&gt;
+  &lt;li&gt;Consequuntur magni dolores eos qui ratione.&lt;/li&gt;
+  &lt;li&gt;Quis nostrum exercitationem.&lt;/li&gt;
+&lt;/ol&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;ul&gt;
+  &lt;li&gt;perspiciatis unde omnis iste&lt;/li&gt;
+  &lt;li&gt;consequuntur magni dolores eos qui ratione&lt;/li&gt;
+  &lt;li&gt;quis nostrum exercitationem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Perspiciatis unde omnis iste.&lt;/li&gt;
+  &lt;li&gt;Consequuntur magni dolores eos qui ratione.&lt;/li&gt;
+  &lt;li&gt;Quis nostrum exercitationem.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -3246,8 +3458,7 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 
 						<div id="oversiktsida" class="i-library">
 	<h1 class="display-4">Översiktsida</h1>
-	<div><p>Beskrivning...</p>
-<div class="i-example">
+	<div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="oversiktsida-default.html"
@@ -3587,7 +3798,7 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Box  Dragspelsmeny  Formulär  Hero  Innehållsförteckning  Knappar  Sektionsnavigering  Sidfot  Sidhuvud  Textlänkar "
+						data-filter-value=" Bildpuffar  Box  Dragspelsmeny  Formulär  Frågor och svar  Hero  Innehållsförteckning  Innehållsnavigering  Knappar  Nyhetslista  Sektioner  Sektionsnavigering  Sidfot  Sidhuvud  Sidstart  Textlänkar  Textpuffar  Typografi  Understartsida  Återkoppling  Översiktsida "
 					>
 						<a href="#category-komponenter" class="i-sidebar-list-item">
 							<b>Komponenter</b>
@@ -3595,6 +3806,13 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 					</h5>
 			
 					<div>
+							<a
+								href="#bildpuffar"
+								class="i-sidebar-list-item"
+								data-filter-value="Bildpuffar"
+							>
+								<span>Bildpuffar</span>
+							</a>
 							<a
 								href="#box"
 								class="i-sidebar-list-item"
@@ -3617,6 +3835,13 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 								<span>Formulär</span>
 							</a>
 							<a
+								href="#fragor-och-svar"
+								class="i-sidebar-list-item"
+								data-filter-value="Frågor och svar"
+							>
+								<span>Frågor och svar</span>
+							</a>
+							<a
 								href="#hero"
 								class="i-sidebar-list-item"
 								data-filter-value="Hero"
@@ -3631,11 +3856,32 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 								<span>Innehållsförteckning</span>
 							</a>
 							<a
+								href="#innehallsnavigering"
+								class="i-sidebar-list-item"
+								data-filter-value="Innehållsnavigering"
+							>
+								<span>Innehållsnavigering</span>
+							</a>
+							<a
 								href="#knappar"
 								class="i-sidebar-list-item"
 								data-filter-value="Knappar"
 							>
 								<span>Knappar</span>
+							</a>
+							<a
+								href="#nyhetslista"
+								class="i-sidebar-list-item"
+								data-filter-value="Nyhetslista"
+							>
+								<span>Nyhetslista</span>
+							</a>
+							<a
+								href="#sektioner"
+								class="i-sidebar-list-item"
+								data-filter-value="Sektioner"
+							>
+								<span>Sektioner</span>
 							</a>
 							<a
 								href="#sektionsnavigering"
@@ -3659,63 +3905,6 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 								<span>Sidhuvud</span>
 							</a>
 							<a
-								href="#textlankar"
-								class="i-sidebar-list-item"
-								data-filter-value="Textlänkar"
-							>
-								<span>Textlänkar</span>
-							</a>
-					</div>
-			
-				</div>
-				<div class="i-sidebar-list-group">
-			
-					<h5
-						class="pt-4 mb-1"
-						data-filter-value=" Bildpuffar  Frågor och svar  Innehållsnavigering  Nyhetslista  Sektioner  Sidstart  Textpuffar  Understartsida  Återkoppling  Översiktsida "
-					>
-						<a href="#category-kompositioner" class="i-sidebar-list-item">
-							<b>Kompositioner</b>
-						</a>
-					</h5>
-			
-					<div>
-							<a
-								href="#bildpuffar"
-								class="i-sidebar-list-item"
-								data-filter-value="Bildpuffar"
-							>
-								<span>Bildpuffar</span>
-							</a>
-							<a
-								href="#fragor-och-svar"
-								class="i-sidebar-list-item"
-								data-filter-value="Frågor och svar"
-							>
-								<span>Frågor och svar</span>
-							</a>
-							<a
-								href="#innehallsnavigering"
-								class="i-sidebar-list-item"
-								data-filter-value="Innehållsnavigering"
-							>
-								<span>Innehållsnavigering</span>
-							</a>
-							<a
-								href="#nyhetslista"
-								class="i-sidebar-list-item"
-								data-filter-value="Nyhetslista"
-							>
-								<span>Nyhetslista</span>
-							</a>
-							<a
-								href="#sektioner"
-								class="i-sidebar-list-item"
-								data-filter-value="Sektioner"
-							>
-								<span>Sektioner</span>
-							</a>
-							<a
 								href="#sidstart"
 								class="i-sidebar-list-item"
 								data-filter-value="Sidstart"
@@ -3723,11 +3912,25 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 								<span>Sidstart</span>
 							</a>
 							<a
+								href="#textlankar"
+								class="i-sidebar-list-item"
+								data-filter-value="Textlänkar"
+							>
+								<span>Textlänkar</span>
+							</a>
+							<a
 								href="#textpuffar"
 								class="i-sidebar-list-item"
 								data-filter-value="Textpuffar"
 							>
 								<span>Textpuffar</span>
+							</a>
+							<a
+								href="#typografi"
+								class="i-sidebar-list-item"
+								data-filter-value="Typografi"
+							>
+								<span>Typografi</span>
 							</a>
 							<a
 								href="#understartsida"

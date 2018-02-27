@@ -9,9 +9,6 @@
 
 
 		<style>
-					.btn {
-  margin: 0 28px 28px 0;
-}
 		</style>
 
 		<style>
@@ -35,24 +32,33 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-knappar-types"
+			ng-controller="stylemark-typografi-default"
 			style="
 				display: block;
 				padding: ;
 				width: ;
 			"
-		><button class="btn btn--primary">Primär knapp</button>
-<button class="btn btn--secondary">Sekundär knapp</button>
-<button class="btn btn--primary" disabled>Inaktiv knapp</button></main>
+		><div class="box box--no-padding">
+  <div class="section section--boxed">
+    <div class="section__body">
+      <h1 class="h1">En 45px Bold rubrik</h1>
+      <h2 class="h2">En 36px Bold rubrik</h2>
+      <h3 class="h3">En 25px Bold rubrik</h3>
+      <h4 class="h4">En 20px Bold rubrik</h4>
+  </div>
+</div></main>
 
 		
 
-			<script type="text/x-stylemark" data-language="html"><button class="btn btn--primary">Primär knapp</button>
-<button class="btn btn--secondary">Sekundär knapp</button>
-<button class="btn btn--primary" disabled>Inaktiv knapp</button></script>
-			<script type="text/x-stylemark" data-language="css">.btn {
-  margin: 0 28px 28px 0;
-}</script>
+			<script type="text/x-stylemark" data-language="html"><div class="box box--no-padding">
+  <div class="section section--boxed">
+    <div class="section__body">
+      <h1 class="h1">En 45px Bold rubrik</h1>
+      <h2 class="h2">En 36px Bold rubrik</h2>
+      <h3 class="h3">En 25px Bold rubrik</h3>
+      <h4 class="h4">En 20px Bold rubrik</h4>
+  </div>
+</div></script>
 
 		<script>
 			eval(getStylemarkBlock('js'));
@@ -73,10 +79,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-knappar-types', []);
+					module = angular.module('stylemark-typografi-default', []);
 				}
 
-				module.controller('stylemark-knappar-types', function($scope) {
+				module.controller('stylemark-typografi-default', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);

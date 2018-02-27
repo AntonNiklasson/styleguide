@@ -9,9 +9,6 @@
 
 
 		<style>
-					.btn {
-  margin: 0 28px 28px 0;
-}
 		</style>
 
 		<style>
@@ -35,24 +32,37 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-knappar-types"
+			ng-controller="stylemark-typografi-lists"
 			style="
 				display: block;
 				padding: ;
 				width: ;
 			"
-		><button class="btn btn--primary">Primär knapp</button>
-<button class="btn btn--secondary">Sekundär knapp</button>
-<button class="btn btn--primary" disabled>Inaktiv knapp</button></main>
+		><ul>
+  <li>perspiciatis unde omnis iste</li>
+  <li>consequuntur magni dolores eos qui ratione</li>
+  <li>quis nostrum exercitationem</li>
+</ul>
+
+<ol>
+  <li>Perspiciatis unde omnis iste.</li>
+  <li>Consequuntur magni dolores eos qui ratione.</li>
+  <li>Quis nostrum exercitationem.</li>
+</ol></main>
 
 		
 
-			<script type="text/x-stylemark" data-language="html"><button class="btn btn--primary">Primär knapp</button>
-<button class="btn btn--secondary">Sekundär knapp</button>
-<button class="btn btn--primary" disabled>Inaktiv knapp</button></script>
-			<script type="text/x-stylemark" data-language="css">.btn {
-  margin: 0 28px 28px 0;
-}</script>
+			<script type="text/x-stylemark" data-language="html"><ul>
+  <li>perspiciatis unde omnis iste</li>
+  <li>consequuntur magni dolores eos qui ratione</li>
+  <li>quis nostrum exercitationem</li>
+</ul>
+
+<ol>
+  <li>Perspiciatis unde omnis iste.</li>
+  <li>Consequuntur magni dolores eos qui ratione.</li>
+  <li>Quis nostrum exercitationem.</li>
+</ol></script>
 
 		<script>
 			eval(getStylemarkBlock('js'));
@@ -73,10 +83,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-knappar-types', []);
+					module = angular.module('stylemark-typografi-lists', []);
 				}
 
-				module.controller('stylemark-knappar-types', function($scope) {
+				module.controller('stylemark-typografi-lists', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);

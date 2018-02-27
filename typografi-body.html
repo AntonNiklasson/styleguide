@@ -9,9 +9,6 @@
 
 
 		<style>
-					.btn {
-  margin: 0 28px 28px 0;
-}
 		</style>
 
 		<style>
@@ -35,24 +32,17 @@
 		<main
 			role="main"
 			id="stylemark-root"
-			ng-controller="stylemark-knappar-types"
+			ng-controller="stylemark-typografi-body"
 			style="
 				display: block;
 				padding: ;
 				width: ;
 			"
-		><button class="btn btn--primary">Primär knapp</button>
-<button class="btn btn--secondary">Sekundär knapp</button>
-<button class="btn btn--primary" disabled>Inaktiv knapp</button></main>
+		><p class="text-standard">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p></main>
 
 		
 
-			<script type="text/x-stylemark" data-language="html"><button class="btn btn--primary">Primär knapp</button>
-<button class="btn btn--secondary">Sekundär knapp</button>
-<button class="btn btn--primary" disabled>Inaktiv knapp</button></script>
-			<script type="text/x-stylemark" data-language="css">.btn {
-  margin: 0 28px 28px 0;
-}</script>
+			<script type="text/x-stylemark" data-language="html"><p class="text-standard">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Et quasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p></script>
 
 		<script>
 			eval(getStylemarkBlock('js'));
@@ -73,10 +63,10 @@
 				}
 				else {
 					// Creates a new module
-					module = angular.module('stylemark-knappar-types', []);
+					module = angular.module('stylemark-typografi-body', []);
 				}
 
-				module.controller('stylemark-knappar-types', function($scope) {
+				module.controller('stylemark-typografi-body', function($scope) {
 					$scope.$eval(getStylemarkBlock('angularjs'));
 				});
 			})(window.angular);
