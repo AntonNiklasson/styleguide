@@ -48,7 +48,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
             </li>
             <li class="mobile-menu__list-item">
               <a href="#4" class="mobile-menu__list-item-link">
-                <span class="text-reset">Innehåll A-Ö</span>
+                Innehåll A-Ö
                 <i class="icon-arrow"></i>
               </a>
             </li>
