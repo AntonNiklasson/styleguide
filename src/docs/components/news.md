@@ -22,7 +22,7 @@ Presenterar navigationsvägar med ett publiceringsdatum.
               <div text-small">
                 23 mars 2017
               </div>
-              <a href="#1" class="content-navigation-list__item-link text-big">
+              <a href="#1" class="content-navigation-list__item-link text-large">
                 Phasellus mattis diam convallis lectus ultricies
                 <i class="icon-arrow icon-arrow--lg"></i>
               </a>
@@ -31,7 +31,7 @@ Presenterar navigationsvägar med ett publiceringsdatum.
               <div text-small">
                 23 mars 2017
               </div>
-              <a href="#1" class="content-navigation-list__item-link text-big">
+              <a href="#1" class="content-navigation-list__item-link text-large">
                 Phasellus mattis diam convallis ultricies
                 <i class="icon-arrow icon-arrow--lg"></i>
               </a>
@@ -40,7 +40,7 @@ Presenterar navigationsvägar med ett publiceringsdatum.
               <div text-small">
                 23 mars 2017
               </div>
-              <a href="#1" class="content-navigation-list__item-link text-big">
+              <a href="#1" class="content-navigation-list__item-link text-large">
                 Phasellus mattis diam ultricies
                 <i class="icon-arrow icon-arrow--lg"></i>
               </a>

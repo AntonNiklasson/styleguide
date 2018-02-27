@@ -21,7 +21,7 @@
 
 .text-small { font-size: rem(16px); line-height: rem(24px); }
 .text-standard { font-size: rem(18px); line-height: rem(24px); }
-.text-big { font-size: rem(20px); line-height: rem(26px); }
+.text-large { font-size: rem(20px); line-height: rem(26px); }
 
 @include media-min('md') {
   .h1 { font-size: $font-size-h1; line-height: $line-height-h1; margin: 60px 0 30px 0; }
@@ -33,7 +33,7 @@
 
   .text-small { font-size: $font-size-sm; line-height: $line-height-sm; }
   .text-standard { font-size: $font-size-std; line-height: $line-height-std; }
-  .text-big { font-size: $font-size-big; line-height: $line-height-big; }
+  .text-large { font-size: $font-size-big; line-height: $line-height-big; }
 }
 
 .text-error {
@@ -44,4 +44,23 @@
 }
 .margin-tp-reset {
   margin-top: 0;
+}
+
+/// Lists
+.list li {
+  margin-bottom: 5px;
+}
+.list--reset {
+  list-style: none;
+  padding: 0;
+}
+
+
+/// Misc
+
+hr {
+  margin: $baseline 0;
+  height: 1px;
+  background: $color-purple;
+  border: 0;
 }

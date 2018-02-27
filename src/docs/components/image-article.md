@@ -91,7 +91,7 @@ SG_WELL_PURPLE = true;
       <ul class="content-navigation-list">
         <li class="content-navigation-list__item content-navigation-list__item--no-border">
           <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
-          <a href="#1" class="content-navigation-list__item-link text-big">
+          <a href="#1" class="content-navigation-list__item-link text-large">
             Quisque augue dui, suscipit consequat
             <i class="icon-arrow icon-arrow--lg"></i>
           </a>
@@ -102,7 +102,7 @@ SG_WELL_PURPLE = true;
       <ul class="content-navigation-list">
         <li class="content-navigation-list__item content-navigation-list__item--no-border">
           <img src="_styleguide/assets/img/image16-9.png" class="content-navigation-list__item-image-large" />
-          <a href="#2" class="content-navigation-list__item-link text-big">
+          <a href="#2" class="content-navigation-list__item-link text-large">
             Quisque augue dui, suscipit consequat metus nec, bibendum
             <i class="icon-arrow icon-arrow--lg"></i>
           </a>
