@@ -6,33 +6,33 @@ category: Komponenter
 Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den bilden (eller vilken komponent som helst som råkar ligga före sektions-navigationen).
 
 ```default.html
-<div class="navigation">
-  <div class="navigation__header">
+<div class="header">
+  <div class="header__top">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="navigation__header-container">
+          <div class="header__top-container">
             <a href="#/">
-              <img src="_styleguide/assets/img/skolverket-logotype.svg" alt="Skolverket" class="navigation__header-logo" />
+              <img src="_styleguide/assets/img/skolverket-logotype.svg" alt="Skolverket" class="header__top-logo" />
             </a>
-            <ul class="navigation__list">
-              <li class="navigation__list-item">
-                <a href="#1" class="navigation__list-item-listen">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="#1" class="header__list-item-listen">
                   Lyssna
                 </a>
               </li>
-              <li class="navigation__list-item">
-                <a href="#2" class="navigation__list-item-translate">
+              <li class="header__list-item">
+                <a href="#2" class="header__list-item-translate">
                   Languages
                 </a>
               </li>
-              <li class="navigation__list-item">
-                <a href="#3" class="navigation__list-item-search">
+              <li class="header__list-item">
+                <a href="#3" class="header__list-item-search">
                   Sök
                 </a>
               </li>
-              <li class="navigation__list-item">
-                <a href="#4" class="navigation__list-item-mobilemenu">
+              <li class="header__list-item">
+                <a href="#4" class="header__list-item-mobilemenu">
                   Meny
                 </a>
               </li>
@@ -42,29 +42,29 @@ Genom att använda modifieraren `overlap` på sektionsnamnet så överlappar den
       </div>
     </div>
   </div>
-  <div class="navigation__links">
+  <div class="header__links">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="navigation__links-container">
-            <ul class="navigation__list navigation__list--absolute">
-              <li class="navigation__list-item">
-                <a href="#5" class="navigation__list-item-link">
+          <div class="header__links-container">
+            <ul class="header__list header__list--absolute">
+              <li class="header__list-item">
+                <a href="#5" class="header__list-item-link">
                   Undervisning
                 </a>
               </li>
-              <li class="navigation__list-item">
-                <a href="#6" class="navigation__list-item-link">
+              <li class="header__list-item">
+                <a href="#6" class="header__list-item-link">
                   Skolutveckling
                 </a>
               </li>
-              <li class="navigation__list-item">
-                <a href="#7" class="navigation__list-item-link">
+              <li class="header__list-item">
+                <a href="#7" class="header__list-item-link">
                   Lagar och regler
                 </a>
               </li>
-              <li class="navigation__list-item">
-                <a href="#8" class="navigation__list-item-link">
+              <li class="header__list-item">
+                <a href="#8" class="header__list-item-link">
                   Innehåll A-Ö
                 </a>
               </li>

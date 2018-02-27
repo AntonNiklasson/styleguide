@@ -1,4 +1,4 @@
-$block: 'navigation';
+$block: 'header';
 
 .#{$block} {
   position: relative;
@@ -7,7 +7,7 @@ $block: 'navigation';
     display: none;
   }
 
-  &__header {
+  &__top {
     min-height: 4.5rem;
     background-color: $color-white;
     padding: 0.9375rem 0;
@@ -23,6 +23,10 @@ $block: 'navigation';
       min-height: 2rem;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: 340px) {
+        flex-direction: column;
+      }
     }
 
     &-logo {
@@ -31,6 +35,10 @@ $block: 'navigation';
 
       @include media-min('md') {
         width: 160px;
+      }
+      @media (max-width: 340px) {
+        margin-right: 0;
+        margin-bottom: 20px;
       }
     }
   }
@@ -49,6 +57,7 @@ $block: 'navigation';
       display: flex;
       position: relative;
       min-height: 3.5rem;
+
     }
   }
 
@@ -169,15 +178,5 @@ $block: 'navigation';
         }
       }
     }
-  }
-}
-
-@media (max-width: 340px) {
-  .navigation__header-container {
-    flex-direction: column;
-  }
-  .navigation__header-logo {
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 }
