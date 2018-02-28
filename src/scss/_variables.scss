@@ -15,42 +15,38 @@ $grid-gutter: rem(14) !default;
 $grid-gutter-small: rem(7.5) !default;
 $baseline: rem(28) !default;
 
-// Colors
-$color-black: #292929 !default;
-$color-white: #FFF !default;
-$color-error: #CD2126 !default;
+// ============= Colors =============
 
-$color-gray: #666666;
-$color-gray-light: #F3F3F3;
-$color-gray-dark: #222222;
+// Links
+$color-blue: #0079C2 !default;
+$color-blue-dark: #005182 !default;
+$color-grass: #386406 !default;
 
-$color-vinered: #932360 !default;
-$color-yellow: #FCB933 !default;
-$color-yellow-light: #FEF1D8 !default;
+// Backgrounds and decoration
 $color-purple-dark: #692969 !default;
 $color-purple-light: #F8F4F8 !default;
-$color-purple: #E8D3E0 !default;
-$color-blue: #0079C2 !default;
-$color-blue-light: #E5F1F8 !default;
-$color-blue-dark: #005182 !default;
-$color-lavender: #E1D4E1 !default;
-$color-turq: #A5DBD6 !default; // turquouise
-$color-turq-light: #DDF2F0 !default;
-$color-turq-dark: #1EA699 !default;
-$color-grass: #386406 !default;
-$color-pink: #F5D3D4 !default;
-$color-pink-dark: #CD2126 !default;
+$color-purple: #E1D4E1 !default;
 
-$color-body: $color-black !default;
-$color-body-bg: $color-white !default;
+// Greys and base
+$color-black: #000000 !default;
+$color-white: #FFFFFF !default;
+$color-gray: #666666 !default;
+$color-gray-lighter: #CFCFCF !default;
+$color-gray-light: #F3F3F3 !default;
+$color-gray-dark: #292929 !default;
+
+// Status
+$color-error: #CD2126 !default;
+
+// Focus
+$color-yellow: #FCB933 !default;
+
+// Complementary
+$color-turq: #178079 !default;
+
+// Application
 $color-link: $color-blue !default;
 $color-link-hover: $color-blue-dark !default;
-$color-input: $color-gray !default;
-$color-input-bg: $color-purple-light !default;
-
-
-// Fonts
-$font-family-base: 'Source Sans Pro', sans-serif;
 
 // ============= Font size =============
 // Headings

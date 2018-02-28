@@ -31,7 +31,7 @@ $block: 'btn';
   &--disabled,
   &:disabled {
     background-color: $color-gray-light;
-    color: #999999;
+    color: $color-gray;
     cursor: not-allowed;
     border: 1px solid transparent;
 

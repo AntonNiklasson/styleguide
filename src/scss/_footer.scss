@@ -73,7 +73,8 @@ $block: 'footer';
 
     &-item {
       padding: .625rem .625rem .625rem 0;
-      border-bottom: 1px solid #824A81;
+      border-bottom: 1px solid rgba($color-purple, .25);
+
       &:last-child {
         border-bottom: 0;
       }
@@ -122,4 +123,3 @@ $block: 'footer';
     }
   }
 }
-

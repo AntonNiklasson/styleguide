@@ -2,6 +2,9 @@
 // Textual form controls
 //
 
+$color-input: $color-gray !default;
+$color-input-bg: $color-purple-light !default;
+
 .form-control {
   display: block;
   width: 100%;

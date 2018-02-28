@@ -1,9 +1,9 @@
-@import "variables";
-@import "mixins";
-@import "functions";
-@import "reboot";
-@import "type";
-@import "grid";
+@import "variables"; // SASS Variable configuration. Required
+@import "mixins"; // SASS configuration. Required
+@import "functions"; // SASS configuration. Required
+@import "reboot"; // Base CSS. Required
+@import "type"; // Main typography. Required by many components
+@import "grid"; // Grid units. Required by many components
 @import "icons";
 @import "forms";
 @import "hero";

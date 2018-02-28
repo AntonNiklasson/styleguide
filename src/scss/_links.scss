@@ -30,7 +30,7 @@
   &--disabled {
     &,
     &:hover {
-      color: #888888;
+      color: $color-gray;
       cursor: not-allowed;
       text-decoration: none;
     }

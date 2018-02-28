@@ -54,13 +54,13 @@ $block: 'hero';
         }
 
         &-stripe {
-          background-color: #178079;
+          background-color: $color-turq;
           padding: .375rem 0;
           box-decoration-break: clone; // Firefox fix ???
-          box-shadow: 8px 0 0 #178079, -8px 0 0 #178079;
+          box-shadow: 8px 0 0 $color-turq, -8px 0 0 $color-turq;
 
           @include media-min('md') {
-            box-shadow: 14px 0 0 #178079, -14px 0 0 #178079;
+            box-shadow: 14px 0 0 $color-turq, -14px 0 0 $color-turq;
           }
         }
       }
