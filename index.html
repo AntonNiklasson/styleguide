@@ -30,6 +30,7 @@
 									<option value="box">Box</option>
 									<option value="dragspelsmeny">Dragspelsmeny</option>
 									<option value="formular">Formulär</option>
+									<option value="farger">Färger</option>
 									<option value="hero">Hero</option>
 									<option value="innehallsforteckning">Innehållsförteckning</option>
 									<option value="innehallsnavigering">Innehållsnavigering</option>
@@ -823,6 +824,118 @@ Komponenten använder webbläsarens <code>&lt;select&gt;</code>-element i bakgru
     &lt;button class=&quot;btn btn--primary&quot;&gt;Sök&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="farger" class="i-library">
+	<h1 class="display-4">Färger</h1>
+	<div><p>Använd alltid Skolverkets färgpalett.</p>
+<h3>Färgkontrast</h3><p>Använd alltid ett kontrastvärde på minst 4:5:1 som är <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">rekommenderat av W3C</a>. Du behöver testa att din tjänst uppfyller denna riktlinje.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="farger-base.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="farger-base.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> sass</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="// Links
+$color-blue: #0079C2 !default;
+$color-blue-dark: #005182 !default;
+$color-grass: #386406 !default;
+
+// Backgrounds and decoration
+$color-purple-dark: #692969 !default;
+$color-purple-light: #F8F4F8 !default;
+$color-purple: #E1D4E1 !default;
+
+// Greys and base
+$color-black: #000000 !default;
+$color-white: #FFFFFF !default;
+$color-gray: #666666 !default;
+$color-gray-lighter: #CFCFCF !default;
+$color-gray-light: #F3F3F3 !default;
+$color-gray-dark: #292929 !default;
+
+// Status
+$color-error: #CD2126 !default;
+
+// Focus
+$color-yellow: #FCB933 !default;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">// Links
+$color-blue: #0079C2 !default;
+$color-blue-dark: #005182 !default;
+$color-grass: #386406 !default;
+
+// Backgrounds and decoration
+$color-purple-dark: #692969 !default;
+$color-purple-light: #F8F4F8 !default;
+$color-purple: #E1D4E1 !default;
+
+// Greys and base
+$color-black: #000000 !default;
+$color-white: #FFFFFF !default;
+$color-gray: #666666 !default;
+$color-gray-lighter: #CFCFCF !default;
+$color-gray-light: #F3F3F3 !default;
+$color-gray-dark: #292929 !default;
+
+// Status
+$color-error: #CD2126 !default;
+
+// Focus
+$color-yellow: #FCB933 !default;</code></pre>
+	</div>
+</div><div id="utokad-fargpalett" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#utokad-fargpalett" class="icon-link i-section__link -heading"></a>Utökad färgpalett</h2></div><p>Används för komplement ex. i grafer och grafik.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="farger-extended.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="farger-extended.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> sass</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="// Complementary
+$color-turq: #178079 !default;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">// Complementary
+$color-turq: #178079 !default;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -3619,7 +3732,7 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Bildpuffar  Box  Dragspelsmeny  Formulär  Hero  Innehållsförteckning  Innehållsnavigering  Knappar  Nyhetslista  Sektioner  Sektionsnavigering  Sidfot  Sidhuvud  Sidstart  Textpuffar  Typografi  Understartsida  Återkoppling  Översiktsida "
+						data-filter-value=" Bildpuffar  Box  Dragspelsmeny  Formulär  Färger  Hero  Innehållsförteckning  Innehållsnavigering  Knappar  Nyhetslista  Sektioner  Sektionsnavigering  Sidfot  Sidhuvud  Sidstart  Textpuffar  Typografi  Understartsida  Återkoppling  Översiktsida "
 					>
 						<a href="#category-komponenter" class="i-sidebar-list-item">
 							<b>Komponenter</b>
@@ -3654,6 +3767,13 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 								data-filter-value="Formulär"
 							>
 								<span>Formulär</span>
+							</a>
+							<a
+								href="#farger"
+								class="i-sidebar-list-item"
+								data-filter-value="Färger"
+							>
+								<span>Färger</span>
 							</a>
 							<a
 								href="#hero"
