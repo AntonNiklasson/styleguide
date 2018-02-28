@@ -35,14 +35,17 @@ src/
 
 I `skolverket.scss` kan du styra vilka komponenter du vill använda i ditt projekt.
 
-Enklast är om du använder du det inbyggda byggprocessen (NodeJS).
+Enklast är om du använder du det inbyggda byggprocessen ([NodeJS](https://nodejs.org/)).
 
 Om du använder en egen behöver ha en byggprocess där du konfigurerar:
 
-- SASS-kompilator för att kompilera till CSS
-- Autoprefixer
+- [SASS](https://sass-lang.com/)-kompilator för att kompilera till CSS
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
 
 ## Bidra
 
 Vill du bidra med kod eller dokumentation till komponentbiblioteket så hittar du koden
 på [Github](https://github.com/AcandoCxC/skolverket-komponentbibliotek).
+
+## Upphovsrätt och licenser
+Kod släppt under [MIT Licens](https://opensource.org/licenses/MIT).
