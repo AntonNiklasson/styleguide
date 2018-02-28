@@ -14,16 +14,19 @@
     "watch-docs": "stylemark -i src/docs -o public -c stylemark.yml -w -b",
     "build-docs": "stylemark -i src/docs -o public -c stylemark.yml",
     "build-css": "node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css",
+    "build-css-prefix": "postcss public/dist/css/*.css --use autoprefixer -d public/dist/css",
     "copy-assets": "cpx \"src/assets/**/*\" public/dist/assets",
     "watch-assets": "cpx \"src/assets/**/*\" public/dist/assets --watch",
     "watch-css": "npm run build-css && node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css --watch --recursive",
     "predeploy": "npm run build"
   },
   "dependencies": {
+    "autoprefixer": "^8.0.0",
     "cpx": "^1.5.0",
     "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0",
     "sass-lint": "^1.12.1",
     "stylemark": "^0.6.4"
   }
