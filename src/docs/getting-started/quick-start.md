@@ -3,9 +3,15 @@ name: Snabbstart
 category: Kom igång
 ---
 
+## Ladda ned
+
+Alla releaser finns att ladda ned på Github:
+
+<a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek/releases/latest" class="btn btn-primary">Ladda hem senare versionen</a>
+
 ## Källkod
 
-Kompilera Skolverkets komponentbibliotek med din egen byggprocess genom att ladda hem källkoden för Sass och sedan de komponenter du behöver i ditt projekt. Koden ligger publikt på [Github](https://github.com/AcandoCxC/skolverket-komponentbibliotek)
+För att skräddarsy Skolverkets komponentbibliotek kan du ladda hem källkoden och bygga ut de komponenter du behöver i ditt projekt. Koden ligger publikt på [Github](https://github.com/AcandoCxC/skolverket-komponentbibliotek)
 
 När du laddar ner biblioteket hittar du följande filer:
 
@@ -29,13 +35,12 @@ src/
 
 I `skolverket.scss` kan du styra vilka komponenter du vill använda i ditt projekt.
 
-Din byggprocess kräver att du konfigurerar
+Enklast är om du använder du det inbyggda byggprocessen (NodeJS).
 
-- Sass-kompilator för att kompilera till CSS
+Om du använder en egen behöver ha en byggprocess där du konfigurerar:
+
+- SASS-kompilator för att kompilera till CSS
 - Autoprefixer
-
-<a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek/releases/latest" class="btn btn-primary">Ladda hem källkod</a>
-
 
 ## Bidra
 
