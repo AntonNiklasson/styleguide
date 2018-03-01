@@ -45,10 +45,10 @@ På skolverkets domäner, använd alltid Source Sans Pro i vikterna Regular och 
 <p class="text-standard"><a href="#link1" class="text-link">En länk utan omgivande text</a></p>
 <p class="text-standard"><a href="#link2" class="text-link">En länk med omgivande text</a> sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
 <p class="text-standard">
-  <a href="#link1" class="text-link">En extern länk <i class="icon-lock"></i></a>
+  <a href="#link1" class="text-link">En extern länk <i class="icon-external"></i></a>
 </p>
 <p class="text-standard">
-  <a href="#link1" class="text-link">En länk som kräver inloggning <i class="icon-hyperlink"></i></a>
+  <a href="#link1" class="text-link">En länk som kräver inloggning <i class="icon-lock"></i></a>
 </p>
 <p class="text-standard">
   <a href="#link1" class="text-link text-link--disabled">En blockerad länk</a>
