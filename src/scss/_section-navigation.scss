@@ -44,13 +44,14 @@ $block: 'section-navigation';
       @include media-min('md') {
         min-height: 7rem;
         margin: .875rem 0;
-        box-shadow: 0 6px 14px 0 rgba(108, 39, 106, 0.25);
+        border-bottom: 0;
         background-color: $color-white;
+
+        &:hover, &:focus {
+          border-bottom: 1px solid $color-purple;
+        }
       }
 
-      &:hover, &:focus {
-        border-bottom: 1px solid $color-purple;
-      }
 
       @include media-max('md') {
         &--no-border {
@@ -77,11 +78,14 @@ $block: 'section-navigation';
           height: 100%;
           padding: 1rem;
           border: 2px solid transparent;
+          box-shadow: 0 6px 14px 0 rgba(108, 39, 106, 0.25);
+          transition: box-shadow .15s ease-in-out;
 
           &:hover,
           &:focus {
             border: 2px solid $color-purple-dark;
             outline: none;
+            box-shadow: none;
           }
 
           & > .icon-arrow {
