@@ -7,24 +7,27 @@ $block: 'btn';
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: 2px solid $color-purple-dark;
-  padding: 0.3125rem 1.3125rem;
+  border: 1px solid transparent;
+  padding: 0.3725rem 1.3125rem;
   font-size: $font-size-std;
   line-height: $line-height-std;
   border-radius: 0.1875rem;
-  transition: all .12s ease-out;
+  transition: all .2s ease-in-out;
   background-color: $color-white;
 
   &:hover {
-    box-shadow: 0 0 0 2px $color-white,
-                0 0 0 5px $color-purple-dark;
+    box-shadow: 0 7px 14px 0 rgba(108, 39, 106, 0.4);
   }
 
   &:focus,
   &.focus {
     outline: 0;
-    box-shadow: 0 0 0 2px $color-yellow,
-                0 0 0 5px $color-purple-dark;
+    box-shadow: inset 0 0 0 1px $color-yellow;
+    border: 1px solid $color-yellow;
+
+    &:hover {
+      box-shadow: none;
+    }
   }
 
   // Disabled comes first so active can properly restyle
@@ -45,11 +48,11 @@ $block: 'btn';
 
   &:active,
   &.active {
-    transform: translateY(2px);
+    box-shadow: 0 0 1px $color-yellow;
   }
 
   // Opinionated: add "hand" cursor to non-disabled .btn elements
-  &:not([disabled]) {
+  &:not([disabled]):not(.disabled) {
     cursor: pointer;
   }
 
@@ -62,7 +65,7 @@ $block: 'btn';
   &--secondary {
     color: $color-purple-dark;
     background-color: $color-white;
-    border-color: $color-purple-dark;
+    border-color: $color-purple;
   }
 
   &--small {
@@ -83,6 +86,35 @@ $block: 'btn';
     // Vertically space out multiple block buttons
     + .btn--block {
       margin-top: .5rem;
+    }
+  }
+
+  &-icon {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    padding-left: calc(12px + 1.5rem);
+    padding-right: 0.875rem;
+    background-size: 1.5rem;
+    background-position: left 6px center;
+    border: 2px solid transparent;
+    font-weight: $font-weight-base;
+
+    &:hover {
+      box-shadow: none;
+      background-color: $color-purple-light;
+    }
+
+    &:focus,
+    &.focus {
+      background-color: $color-purple-light;
+      box-shadow: none;
+      border: 2px solid $color-yellow;
+    }
+
+    &--right {
+      padding-left: 0.875rem;
+      padding-right: calc(12px + 1.5rem);
+      background-position: right 6px center;
     }
   }
 }
