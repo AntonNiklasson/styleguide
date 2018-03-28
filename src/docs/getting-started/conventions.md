@@ -4,7 +4,7 @@ category: Kom igång
 ---
 
 ## CSS
-För att underlätta utveckling och bibehålla komponenternas modularitet och visuella integritet så används strikta regler för hur klasser och regler skrivs. Med undantag för de fall då konventioner lånas från Bootstrap 4 (t.ex i formulär) används metoden _BEM_ (_Block Element Modifier_) för att skapa skalbar och objektorientead CSS. Kort kan säga att BEM är byggt för att underlätta så att stilregler från en komponents CSS stör någon annan (med oväntat arv) och underlätta samarbete mellan många utvecklare. Läs mer här:
+För att underlätta utveckling och bibehålla komponenternas modularitet och visuella integritet så används strikta regler för hur klasser och regler skrivs. Med undantag för de fall då konventioner lånas från Bootstrap 4 (t.ex i formulär) används metoden _BEM_ (_Block Element Modifier_) för att skapa skalbar och objektorientead CSS. Kort kan säga att BEM är byggt för att underlätta så att stilregler från en komponents CSS inte stör någon annan (med oväntat arv) och underlätta samarbete mellan många utvecklare. Läs mer här:
 
 - **BEM**: http://www.getbem.com
 - **Bootstrap 4**: https://getbootstrap.com/
