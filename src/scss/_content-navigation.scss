@@ -28,7 +28,7 @@ $block: 'content-navigation-list';
 
     &-text {
       @include media-min('md') {
-        margin-top: 1rem;
+        margin-top: $baseline-px / 3;
       }
     }
 
