@@ -1,0 +1,19 @@
+///
+/// Visibility utilities
+///----------------------------------------------------------------------------
+
+@include media-max('sm') {
+  .hide-small-below {
+    display: none !important;
+  }
+}
+@include media-max('md') {
+  .hide-medium-below {
+    display: none !important;
+  }
+}
+@include media-max('md') {
+  .hide-large-below {
+    display: none !important;
+  }
+}

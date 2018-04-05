@@ -98,7 +98,7 @@ $cursor-disabled : not-allowed !default;
 // @prop {Map} values - Values are actual breakpoints expressed in pixels
 $grid-breakpoints: (
   xs: 0,
-  sm: 375px, // 576px
+  sm: 375px,
   md: 768px,
   lg: 992px,
   xl: 1280px

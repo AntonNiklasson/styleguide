@@ -55,6 +55,24 @@
   padding: 0;
 }
 
+// Links
+.link-prominent {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: $color-purple-dark;
+  font-weight: $font-weight-bold;
+
+  &:hover {
+    color: $color-purple-dark;
+  }
+
+  &:focus,
+  &:active,
+  &:active:focus {
+    color: $color-purple-dark;
+  }
+}
 
 /// Misc
 
