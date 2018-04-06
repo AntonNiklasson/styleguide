@@ -9,7 +9,7 @@ category: Komponenter
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
+        <p>Kontextuell fördjupningstext <a href="/press" class="text-link">med länk</a></p>
       </div>
     </header>
     <div class="section__body">
@@ -60,7 +60,7 @@ category: Komponenter
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
+        <p>Kontextuell fördjupningstext <a href="/press" class="text-link">med länk</a></p>
       </div>
     </header>
     <div class="section__body">
@@ -98,7 +98,7 @@ category: Komponenter
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
+        <p>Kontextuell fördjupningstext <a href="/press" class="text-link">med länk</a></p>
       </div>
     </header>
     <div class="section__body">
@@ -136,7 +136,7 @@ category: Komponenter
     <header class="section__header">
       <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
       <div class="section__header-preamble text-secondary">
-        <p>Kontextuell fördjupningstext<a href="/press" class="text-link">med länk</a></p>
+        <p>Kontextuell fördjupningstext <a href="/press" class="text-link">med länk</a></p>
       </div>
     </header>
     <div class="section__body">
