@@ -6,7 +6,7 @@
     "npm": "4.2.0"
   },
   "private": true,
-  "homepage": "https://acandocxc.github.io/skolverket-komponentbibliotek",
+  "homepage": "https://skolverket.github.io/styleguide",
   "scripts": {
     "start": "npm-run-all -p watch-*",
     "build": "npm-run-all build-docs* build-css* copy-assets",
