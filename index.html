@@ -60,7 +60,7 @@
 
 						<div id="konventioner" class="i-library">
 	<h1 class="display-4">Konventioner</h1>
-	<div><div id="css" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#css" class="icon-link i-section__link -heading"></a>CSS</h2></div><p>För att underlätta utveckling och bibehålla komponenternas modularitet och visuella integritet så används strikta regler för hur klasser och regler skrivs. Med undantag för de fall då konventioner lånas från Bootstrap 4 (t.ex i formulär) används metoden <em>BEM</em> (<em>Block Element Modifier</em>) för att skapa skalbar och objektorientead CSS. Kort kan säga att BEM är byggt för att underlätta så att stilregler från en komponents CSS stör någon annan (med oväntat arv) och underlätta samarbete mellan många utvecklare. Läs mer här:</p>
+	<div><div id="css" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#css" class="icon-link i-section__link -heading"></a>CSS</h2></div><p>För att underlätta utveckling och bibehålla komponenternas modularitet och visuella integritet så används strikta regler för hur klasser och regler skrivs. Med undantag för de fall då konventioner lånas från Bootstrap 4 (t.ex i formulär) används metoden <em>BEM</em> (<em>Block Element Modifier</em>) för att skapa skalbar och objektorientead CSS. Kort kan säga att BEM är byggt för att underlätta så att stilregler från en komponents CSS inte stör någon annan (med oväntat arv) och underlätta samarbete mellan många utvecklare. Läs mer här:</p>
 <ul>
 <li><strong>BEM</strong>: <a href="http://www.getbem.com">http://www.getbem.com</a></li>
 <li><strong>Bootstrap 4</strong>: <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></li>
@@ -79,8 +79,8 @@
 						<div id="snabbstart" class="i-library">
 	<h1 class="display-4">Snabbstart</h1>
 	<div><div id="ladda-ned" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#ladda-ned" class="icon-link i-section__link -heading"></a>Ladda ned</h2></div><p>Alla releaser finns att ladda ned på Github:</p>
-<p><a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek/releases/latest" class="btn btn-primary">Ladda hem senare versionen</a></p>
-<div id="kallkod" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kallkod" class="icon-link i-section__link -heading"></a>Källkod</h2></div><p>För att skräddarsy Skolverkets komponentbibliotek kan du ladda hem källkoden och bygga ut de komponenter du behöver i ditt projekt. Koden ligger publikt på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github</a></p>
+<p><a href="https://github.com/skolverket/styleguide/releases/latest" class="btn btn-primary">Ladda hem senare versionen</a></p>
+<div id="kallkod" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#kallkod" class="icon-link i-section__link -heading"></a>Källkod</h2></div><p>För att skräddarsy Skolverkets komponentbibliotek kan du ladda hem källkoden och bygga ut de komponenter du behöver i ditt projekt. Koden ligger publikt på <a href="https://github.com/skolverket/styleguide">Github</a></p>
 <p>När du laddar ner biblioteket hittar du följande filer:</p>
 
 <div class="i-code-block">
@@ -125,7 +125,7 @@
 <li><a href="https://github.com/postcss/autoprefixer">Autoprefixer</a></li>
 </ul>
 <div id="bidra" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#bidra" class="icon-link i-section__link -heading"></a>Bidra</h2></div><p>Vill du bidra med kod eller dokumentation till komponentbiblioteket så hittar du koden
-på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github</a>.</p>
+på <a href="https://github.com/skolverket/styleguide">Github</a>.</p>
 <div id="upphovsratt-och-licenser" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#upphovsratt-och-licenser" class="icon-link i-section__link -heading"></a>Upphovsrätt och licenser</h2></div><p>Kod släppt under <a href="https://opensource.org/licenses/MIT">MIT Licens</a>.</p>
 </div>
 </div>
@@ -134,7 +134,8 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 				<div id="category-komponenter">
 						<div id="bildpuffar" class="i-library">
 	<h1 class="display-4">Bildpuffar</h1>
-	<div><div id="exempel-med-tre-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tre-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med tre bildpuffar</h2></div><div class="i-example">
+	<div><p>Det finns tre varianter som tillsammans skapar en visuell hierarki. En modul med endast en bild ges högre informationsvärde än en modul med tre bilder i. Det representeras genom att bild och text visas större. Hierarkin är ett av redaktörens verktyg för att guida och rikta besökarens uppmärksamhet. Vi försöker behålla den hierarkin i så hög utsträckning som möjligt genom alla brytpunkter.</p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="bildpuffar-default.html"
@@ -163,67 +164,111 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;En bildpuff&lt;span&gt;&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+        &lt;div class=&quot;content-navigation-list&quot;&gt;
+          &lt;div class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+            &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+      &lt;div class=&quot;content-navigation-list&quot;&gt;
+        &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+        Quisque augue dui suscipit consequat &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;p class=&quot;content-navigation-list__item-text text-standard&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Två bildpuffar&lt;span&gt;&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+              &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                  Quisque augue dui suscipit consequat
+                  &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+              &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                  Suscipit consequat quisque augue dui
+                  &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Tre bildpuffar&lt;span&gt;&lt;/h2&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
       &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat turpis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;hide-medium-below&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+              &lt;/a&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Vivamus placerat, neque quis rutrum feugiat turpis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;hide-medium-below&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+              &lt;/a&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Vivamus placerat, neque quis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;hide-medium-below&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+              &lt;/a&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
@@ -234,150 +279,115 @@ på <a href="https://github.com/AcandoCxC/skolverket-komponentbibliotek">Github<
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
   &lt;div class=&quot;section section--boxed&quot;&gt;
     &lt;header class=&quot;section__header&quot;&gt;
-      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionsrubrik&lt;span&gt;&lt;/h2&gt;
-      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;En bildpuff&lt;span&gt;&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+        &lt;div class=&quot;content-navigation-list&quot;&gt;
+          &lt;div class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+            &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
+      &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+      &lt;div class=&quot;content-navigation-list&quot;&gt;
+        &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+        Quisque augue dui suscipit consequat &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;p class=&quot;content-navigation-list__item-text text-standard&quot;&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Två bildpuffar&lt;span&gt;&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+              &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                  Quisque augue dui suscipit consequat
+                  &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+              &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
+                &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                  Suscipit consequat quisque augue dui
+                  &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Tre bildpuffar&lt;span&gt;&lt;/h2&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
       &lt;div class=&quot;row&quot;&gt;
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat turpis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;hide-medium-below&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+              &lt;/a&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Vivamus placerat, neque quis rutrum feugiat turpis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;hide-medium-below&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+              &lt;/a&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Vivamus placerat, neque quis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;div class=&quot;row&quot;&gt;
-                &lt;div class=&quot;col-4 push-8 col-md-12 push-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot;&gt;
-                    &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;col-8 pull-4 col-md-12 pull-md-0&quot;&gt;
-                  &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
-                    Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
-                    &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
-                  &lt;/a&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;hide-medium-below&quot;&gt;
+                &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image&quot; /&gt;
+              &lt;/a&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="exempel-med-tva-bildpuffar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#exempel-med-tva-bildpuffar" class="icon-link i-section__link -heading"></a>Exempel med två bildpuffar</h2></div><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="bildpuffar-secondary.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="bildpuffar-secondary.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
-            Quisque augue dui, suscipit consequat
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
-            Quisque augue dui, suscipit consequat metus nec, bibendum
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
-            Quisque augue dui, suscipit consequat
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-12 col-md-6&quot;&gt;
-      &lt;ul class=&quot;content-navigation-list&quot;&gt;
-        &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-          &lt;img src=&quot;_styleguide/assets/img/image16-9.png&quot; class=&quot;content-navigation-list__item-image-large&quot; /&gt;
-          &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
-            Quisque augue dui, suscipit consequat metus nec, bibendum
-            &lt;i class=&quot;icon-arrow icon-arrow--lg&quot;&gt;&lt;/i&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1137,7 +1147,7 @@ $color-turq: #178079 !default;</code></pre>
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Områdestitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -1195,7 +1205,7 @@ $color-turq: #178079 !default;</code></pre>
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Områdestitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -1241,6 +1251,167 @@ $color-turq: #178079 !default;</code></pre>
                 Phasellus convallis
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="med-text-och-rubrik" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#med-text-och-rubrik" class="icon-link i-section__link -heading"></a>Med text och rubrik</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="innehallsnavigering-text.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="innehallsnavigering-text.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Områdestitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;h3 class=&quot;h3 margin-tp-reset&quot;&gt;Unde omnis&lt;/h3&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Områdeslänk
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Sed ut perspiciatis unde omnis iste natus.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Doloremque laudantium, totam rem aperiam ipsa quae ab  unde omnis.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Totam rem aperiam, eaque ipsa quae ab illo inventore.&lt;/p&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
+          &lt;h3 class=&quot;h3 margin-tp-reset&quot;&gt;Rem aperia&lt;/h3&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Perspiciatis natus
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Sed ut perspiciatis unde omnis iste natus sed ut perspiciatis unde omnis iste natus.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Doloremque totam rem aperiam.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis lectus ultricies rem aperiam
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Totam rem aperiam, eaque ipsa quae ab illo inventore.&lt;/p&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;box box--no-padding&quot;&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Områdestitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;h3 class=&quot;h3 margin-tp-reset&quot;&gt;Unde omnis&lt;/h3&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Områdeslänk
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Sed ut perspiciatis unde omnis iste natus.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Doloremque laudantium, totam rem aperiam ipsa quae ab  unde omnis.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Totam rem aperiam, eaque ipsa quae ab illo inventore.&lt;/p&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list content-navigation-list&quot;&gt;
+          &lt;h3 class=&quot;h3 margin-tp-reset&quot;&gt;Rem aperia&lt;/h3&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Perspiciatis natus
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Sed ut perspiciatis unde omnis iste natus sed ut perspiciatis unde omnis iste natus.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Convallis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Doloremque totam rem aperiam.&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;content-navigation-list__item&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus convallis lectus ultricies rem aperiam
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;p class=&quot;text-small margin-bt-reset&quot;&gt;Totam rem aperiam, eaque ipsa quae ab illo inventore.&lt;/p&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/div&gt;
@@ -1397,7 +1568,7 @@ $color-turq: #178079 !default;</code></pre>
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -1442,7 +1613,7 @@ $color-turq: #178079 !default;</code></pre>
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -1524,7 +1695,7 @@ $color-turq: #178079 !default;</code></pre>
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -1537,7 +1708,7 @@ $color-turq: #178079 !default;</code></pre>
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2314,7 +2485,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
       &lt;header class=&quot;section__header&quot;&gt;
         &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -2322,7 +2493,8 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+&lt;/div&gt;
+" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;header&quot;&gt;
   &lt;div class=&quot;header__top&quot;&gt;
     &lt;div class=&quot;container&quot;&gt;
@@ -2412,7 +2584,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
       &lt;header class=&quot;section__header&quot;&gt;
         &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -2420,7 +2592,8 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
 	</div>
 </div></div>
 </div>
@@ -2458,7 +2631,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2466,7 +2639,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-small&quot;&gt;
                 Phasellus mattis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2479,7 +2652,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-small&quot;&gt;
                 Phasellus mattis diam convallis
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2492,12 +2665,113 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-small&quot;&gt;
                 Phasellus mattis diam
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
               &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Dictum ac elit semper malesuada nunc venenatis fermentum. Dictum ac elit semper malesuada nunc venenatis fermentum.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Nunc venenatis fermentum elit non aliquet. Nunc venenatis fermentum elit non aliquet.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                Phasellus mattis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                Phasellus mattis diam convallis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Nunc venenatis fermentum elit non aliquet. Nunc venenatis fermentum elit non aliquet.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                Phasellus mattis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-large&quot;&gt;
+                Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
               &lt;/div&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
@@ -2511,7 +2785,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
     &lt;header class=&quot;section__header&quot;&gt;
       &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
       &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-        &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
       &lt;/div&gt;
     &lt;/header&gt;
     &lt;div class=&quot;section__body&quot;&gt;
@@ -2519,7 +2793,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-small&quot;&gt;
                 Phasellus mattis lectus ultricies
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2532,7 +2806,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-small&quot;&gt;
                 Phasellus mattis diam convallis
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
@@ -2545,12 +2819,113 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
         &lt;div class=&quot;col-12 col-md-4&quot;&gt;
           &lt;ul class=&quot;content-navigation-list&quot;&gt;
             &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
-              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+              &lt;a href=&quot;#3&quot; class=&quot;content-navigation-list__item-link text-small&quot;&gt;
                 Phasellus mattis diam
                 &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
               &lt;/a&gt;
               &lt;div class=&quot;content-navigation-list__item-text text-small&quot;&gt;
                 Dictum ac elit semper malesuada nunc venenatis fermentum. Dictum ac elit semper malesuada nunc venenatis fermentum.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-standard&quot;&gt;
+                Phasellus mattis diam convallis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Nunc venenatis fermentum elit non aliquet. Nunc venenatis fermentum elit non aliquet.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                Phasellus mattis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-12 col-md-6&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#2&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                Phasellus mattis diam convallis
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-standard&quot;&gt;
+                Nunc venenatis fermentum elit non aliquet. Nunc venenatis fermentum elit non aliquet.
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section section--boxed&quot;&gt;
+    &lt;header class=&quot;section__header&quot;&gt;
+      &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
+      &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
+        &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;div class=&quot;section__body&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-12&quot;&gt;
+          &lt;ul class=&quot;content-navigation-list&quot;&gt;
+            &lt;li class=&quot;content-navigation-list__item content-navigation-list__item--no-border&quot;&gt;
+              &lt;a href=&quot;#1&quot; class=&quot;content-navigation-list__item-link text-large&quot;&gt;
+                Phasellus mattis lectus ultricies
+                &lt;i class=&quot;icon-arrow&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;div class=&quot;content-navigation-list__item-text text-large&quot;&gt;
+                Aliquam dictum ac elit semper malesuada venenatis. Aliquam dictum ac elit semper malesuada venenatis.
               &lt;/div&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
@@ -3055,7 +3430,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
       &lt;header class=&quot;section__header&quot;&gt;
         &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3211,7 +3586,7 @@ Sidhuvudet är en viktig identitesbärare så att användare känner igen skolve
       &lt;header class=&quot;section__header&quot;&gt;
         &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3534,7 +3909,7 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
       &lt;header class=&quot;section__header&quot;&gt;
         &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3657,7 +4032,7 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
       &lt;header class=&quot;section__header&quot;&gt;
         &lt;h2 class=&quot;h3 section__header-title&quot;&gt;&lt;span class=&quot;section__header-title-text&quot;&gt;Sektionstitel&lt;span&gt;&lt;/h2&gt;
         &lt;div class=&quot;section__header-preamble text-secondary&quot;&gt;
-          &lt;p&gt;Kontextuell fördjupningstext&lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Kontextuell fördjupningstext &lt;a href=&quot;/press&quot; class=&quot;text-link&quot;&gt;med länk&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
       &lt;/header&gt;
       &lt;div class=&quot;section__body&quot;&gt;
@@ -3684,7 +4059,7 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 				Style Guide
 			</h1>
 			
-			<form class="relative mt-3 mb-2 px-0">
+			<div class="relative mt-3 mb-2 px-0">
 				<div class="i-search-input">
 					<input id="search-filter" name="filter" type="search" placeholder="Search" class="form-control i-sidebar-item-filter">
 					<label for="search-filter" class="search-input-icon icon-search"></label>
@@ -3692,7 +4067,7 @@ När text visas utan knappar så använd klassen <code>.feedback__text--standalo
 						<i class="icon-cross"></i>
 					</button>
 				</div>
-			</form>
+			</div>
 			
 				<div class="i-sidebar-list-group">
 			
