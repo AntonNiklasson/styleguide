@@ -1,0 +1,91 @@
+$block: 'section';
+
+.#{$block} {
+  @include media-min('lg') {
+    display: flex;
+  }
+
+  + .#{$block} {
+    border-top: 1px solid $color-purple;
+  }
+
+  &__header {
+    width: 100%;
+    margin-bottom: $baseline;
+
+    &-title {
+      position: relative;
+      font-weight: 400;
+      margin: 0;
+
+      &-text {
+        position: relative;
+        z-index: 1;
+        background: $color-white;
+        padding-right: 15px;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+        height: 3px;
+        transform: translateY(-50%);
+        background-color: $color-purple;
+
+        @include media-min('lg') {
+          position: static;
+          width: 3.125rem;
+          margin: 0.875rem 0;
+          transform: none;
+        }
+      }
+    }
+    &-preamble {
+      font-size: rem(16px);
+      line-height: rem(24px);
+
+      p {
+        margin-bottom: 0;
+      }
+
+      @include media-min('lg') {
+        flex: 0 0 220px;
+        max-width: 220px;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+      }
+    }
+
+    @include media-min('lg') {
+      flex: 0 0 220px;
+      max-width: 220px;
+    }
+  }
+
+  &__body {
+    @include media-min('lg') {
+      flex: 1 1 0%;
+      flex-basis: 0%;
+	  // margin-left: $grid-gutter * 2
+    }
+  }
+
+  &--boxed {
+    @include box-padding;
+  }
+
+  &--compact-padding {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
