@@ -1,3 +1,6 @@
 module.exports = {
-	name: 'Sektion'
+	name: "Sektion",
+	context: {
+		title: "Sektionstitel"
+	}
 }
