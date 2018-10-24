@@ -1,0 +1,25 @@
+<div class="toc">
+	{{#if title }}<h3 class="toc__title">{{ title }}</h3>{{/if}}
+	<ul class="toc__list">
+		{{#each pages}}
+		<li tabindex="1" class="toc__list-item">
+			{{#if this.active}}
+			{{this.title}}
+			{{else}}
+			<a href="{{ this.url }}">{{ this.title }}</a>
+			{{/if}}
+		</li>
+		{{#if this.pages }}
+		<li>
+			<ul class="toc__list toc__list--sub">
+				{{#each this.pages }}
+				<li class="toc__list-item">
+					<a href="{{ this.url }}">{{ this.title }}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</li>
+		{{/if}}
+		{{/each}}
+	</ul>
+</div>
