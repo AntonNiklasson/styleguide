@@ -1,0 +1,14 @@
+$breakpoints: (
+  mobile: 600px,
+  tablet-portrait: 900px,
+  tablet-landscape: 1200px,
+  desktop: 1800px
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+) !default;

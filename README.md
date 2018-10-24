@@ -1,12 +1,12 @@
 # Skolverket UI Component Library
 
-The component library uses the style guide [Stylemark](https://github.com/nextbigsoundinc/stylemark) to visualize common UI components used at Skolverket.
+The component library uses the style guide [Fractal](https://fractal.build/) to visualize common UI components used at Skolverket.
 
 View the component library [here](https://skolverket.github.io/styleguide/)
 
 # View locally
 
-If you want to view the components locally or start contributing code or documentation to the project. You need to have both [Node](https://nodejs.org) installed.
+If you want to view the components locally or start contributing code or documentation to the project. You need to have [Node](https://nodejs.org) installed.
 
 ```sh
 npm install
