@@ -1,0 +1,5 @@
+<nav class="sitenav">
+	{{#each links}}
+	<a href="{{ this.url }}" class="sitenav__link {{#if this.active }}sitenav__link--active{{/if}}">{{ this.label }}</a>
+	{{/each}}
+</nav>
