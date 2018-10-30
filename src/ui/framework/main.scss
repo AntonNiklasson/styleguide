@@ -5,9 +5,14 @@
 "../core/scss/core";
 
 @import
+"../framework/header/header",
+"../framework/header/mobile-menu";
+
+@import
 "../components/section/section",
 "../components/accordion/accordion",
 "../components/box/box",
 "../components/btn/btn",
-"../components/section/section",
+"../components/toc/toc",
+"../components/hero/hero",
 "../containers/content-navigation/content-navigation";

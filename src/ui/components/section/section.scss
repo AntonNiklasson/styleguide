@@ -1,11 +1,9 @@
-$block: 'section';
-
-.#{$block} {
+.section {
   @include media-min('lg') {
     display: flex;
   }
 
-  + .#{$block} {
+  + .section {
     border-top: 1px solid $color-purple;
   }
 

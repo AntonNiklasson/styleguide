@@ -1,4 +1,5 @@
 <div class="box box--no-padding">
+  {{#each sections }}
   <div class="section section--boxed">
     <header class="section__header">
 <<<<<<< HEAD
@@ -7,11 +8,12 @@
       <h2 class="h3 section__header-title"><span class="section__header-title-text">{{ title }}<span></span></h2>
 >>>>>>> @{-1}
       <div class="section__header-preamble text-secondary">
-        <p>Kontextuell fördjupningstext <a href="/press" class="text-link">med länk</a></p>
+        {{{ description }}}
       </div>
     </header>
     <div class="section__body">
-      <img src="http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+      {{{ body }}}
     </div>
   </div>
+  {{/each}}
 </div>
