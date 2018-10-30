@@ -55,6 +55,28 @@ const files = [
         replace: `{{ entity.displayName }}`
       }
     ]
+  },
+  {
+    note: 'Renamed navigation titles',
+    path: '../../node_modules/@frctl/fractal/config.js',
+    patches: [
+      {
+        pattern: `label: 'components',`,
+        replace: `label: 'exempel',`
+      },
+      {
+        pattern: `title: 'Components',`,
+        replace: `title: 'Exempel',`
+      },
+      {
+        pattern: `label: 'documentation',`,
+        replace: `label: 'dokumentation',`
+      },
+      {
+        pattern: `title: 'Documentation',`,
+        replace: `title: 'Dokumentation',`
+      }
+    ]
   }
 ]
 

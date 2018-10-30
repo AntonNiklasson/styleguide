@@ -2,7 +2,7 @@ const status = require('../../../dev/fractal/fractal-component-status')
 
 module.exports = {
   status: status.ready,
-  name: 'Knäppar',
+  name: 'Knappar',
   defaultName: 'Primär knapp',
   context: {
     theme: 'primary',
