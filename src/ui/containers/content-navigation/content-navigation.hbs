@@ -1,0 +1,40 @@
+<div class="box box--no-padding">
+  <div class="section section--boxed">
+    <header class="section__header">
+      <h2 class="h3 section__header-title"><span class="section__header-title-text">{{ title }}<span></h2>
+      <div class="section__header-preamble text-secondary">
+        {{{ description }}}
+      </div>
+    </header>
+    <div class="section__body">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <ul class="content-navigation-list">
+            {{#each columnOne }}
+              <li class="content-navigation-list__item">
+                <a href="{{ url }}" class="content-navigation-list__item-link text-standard">
+                  {{ label }}
+                  <i class="icon-arrow"></i>
+                </a>
+                {{#if description}}<p class="text-small margin-bt-reset">{{ description }}</p>{{/if}}
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <ul class="content-navigation-list">
+            {{#each columnOne }}
+              <li class="content-navigation-list__item">
+                <a href="{{ url }}" class="content-navigation-list__item-link text-standard">
+                  {{ label }}
+                  <i class="icon-arrow"></i>
+                </a>
+                {{#if description}}<p class="text-small margin-bt-reset">{{ description }}</p>{{/if}}
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
