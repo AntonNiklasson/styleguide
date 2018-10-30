@@ -1,0 +1,17 @@
+@mixin on-event($self: false) {
+  @if $self{
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+  @else {
+    &:active,
+    &:focus,
+    &:hover {
+      @content;
+    }
+  }
+}
