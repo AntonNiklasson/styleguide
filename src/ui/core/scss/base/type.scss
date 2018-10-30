@@ -1,0 +1,87 @@
+///
+/// Typography
+/// This partial contains all your far-reaching typography styles.
+/// Global classes for headings and copy.
+///============================================================================
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  color: inherit;
+}
+
+.h1 { font-size: rem(32px); line-height: rem(40px); margin: 40px 0 30px 0; }
+.h2 { font-size: rem(26px); line-height: rem(31px); margin: 25px 0 10px 0; }
+.h3 { font-size: rem(20px); line-height: rem(26px); margin: 22px 0 10px 0; }
+.h4 { font-size: rem(18px); line-height: rem(24px); margin: 10px 0 5px 0; }
+.h5 { font-size: 1rem; line-height: 1.5; }
+.h6 { font-size: rem(14px); line-height: 1.5; }
+
+.text-small { font-size: rem(16px); line-height: rem(24px); }
+.text-standard { font-size: rem(18px); line-height: rem(24px); }
+.text-large { font-size: rem(20px); line-height: rem(26px); }
+
+@include media-min('md') {
+  .h1 { font-size: $font-size-h1; line-height: $line-height-h1; margin: 60px 0 30px 0; }
+  .h2 { font-size: $font-size-h2; line-height: $line-height-h2; margin: 45px 0 20px 0; }
+  .h3 { font-size: $font-size-h3; line-height: $line-height-h3; margin: 45px 0 20px 0; }
+  .h4 { font-size: $font-size-h4; line-height: $line-height-h4; margin: 20px 0 5px 0; }
+  .h5 { font-size: $font-size-h5; line-height: $line-height-h5; }
+  .h6 { font-size: $font-size-h6; line-height: $line-height-h6; }
+
+  .text-small { font-size: $font-size-sm; line-height: $line-height-sm; }
+  .text-standard { font-size: $font-size-std; line-height: $line-height-std; }
+  .text-large { font-size: $font-size-big; line-height: $line-height-big; }
+}
+
+.text-error {
+  color: $color-error;
+}
+.text-secondary {
+  color: $color-gray;
+}
+.margin-tp-reset {
+  margin-top: 0;
+}
+.margin-bt-reset {
+  margin-bottom: 0;
+}
+
+/// Lists
+.list li {
+  margin-bottom: 5px;
+}
+.list--reset {
+  list-style: none;
+  padding: 0;
+}
+
+// Links
+.link-prominent {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: $color-purple-dark;
+  font-weight: $font-weight-bold;
+
+  &:hover {
+    color: $color-purple-dark;
+  }
+
+  &:focus,
+  &:active,
+  &:active:focus {
+    color: $color-purple-dark;
+  }
+}
+
+/// Misc
+
+hr {
+  margin: $baseline 0;
+  height: 1px;
+  background: $color-purple;
+  border: 0;
+}
