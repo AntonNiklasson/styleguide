@@ -5,11 +5,13 @@
 "../core/scss/core";
 
 @import
+"../framework/header/header",
+"../framework/header/mobile-menu";
+
+@import
 "../components/section/section",
 "../components/accordion/accordion",
 "../components/box/box",
-"../components/sitenav/sitenav",
 "../components/btn/btn",
-"../containers/siteheader/siteheader",
 "../components/toc/toc",
 "../components/hero/hero";
