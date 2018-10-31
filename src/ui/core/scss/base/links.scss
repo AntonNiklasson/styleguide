@@ -1,0 +1,43 @@
+///
+/// Links
+///
+///----------------------------------------------------------------------------
+
+.text-link {
+  position: relative;
+  display: inline-flex;
+  text-decoration: underline;
+  color: $color-link;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-link-hover;
+  }
+
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    color: $color-link;
+    outline: 0;
+    background: $color-yellow;
+  }
+
+  &:visited {
+    color: $color-grass;
+  }
+
+  &--disabled {
+    &,
+    &:hover {
+      color: $color-gray;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+
+    &:active,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
