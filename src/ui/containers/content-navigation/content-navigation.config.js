@@ -9,9 +9,9 @@ module.exports = {
 			{ label: 'Phasellus convallis lectus ultricies', url: '#' }
 		],
     columnTwo: [
-      { label: 'Områdeslänk', url: '#1' },
-      { label: "Phasellus mattis diam convallis lectus ultricies", url: "#" },
-      { label: 'Phasellus convallis lectus ultricies', url: '#' }
+      { label: 'Perspiciatis natus', url: '#1' },
+      { label: "Convallis lectus ultricies", url: "#" },
+      { label: 'Phasellus convallis lectus ultricies rem aperiam', url: '#' }
     ]
 	},
   variants: [
