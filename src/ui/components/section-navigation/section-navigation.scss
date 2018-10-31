@@ -1,0 +1,102 @@
+$label-padding-tb: .375rem;
+$label-padding-tb-md: .75rem;
+
+.section-navigation {
+  position: relative;
+  padding-top: .875rem;
+  padding-bottom: .875rem;
+
+  &__label {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: #{2*$label-padding-tb};
+    padding: $label-padding-tb 1.125rem $label-padding-tb .75rem;
+    color: $color-white;
+    background-color: $color-purple-dark;
+    border-top-right-radius: 1.125rem;
+
+    @include media-min('md') {
+      padding: $label-padding-tb-md 1.25rem $label-padding-tb-md .875rem;
+    }
+
+    &--overlap {
+      position: absolute;
+      top: calc(-.875rem - 1.625rem - #{2*$label-padding-tb}); // 1.625rem is line height
+      margin-bottom: 0;
+
+      @include media-min('md') {
+        top: calc(-.875rem - 2rem - #{2*$label-padding-tb-md}); // 2rem is line height
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+
+    &-item {
+      width: 100%;
+      background-color: $color-purple-light;
+      border-bottom: 1px solid $color-purple;
+
+      @include media-min('md') {
+        min-height: 7rem;
+        margin: .875rem 0;
+        border-bottom: 0;
+        background-color: $color-white;
+
+        &:hover, &:focus {
+          border-bottom: 1px solid $color-purple;
+        }
+      }
+
+
+      @include media-max('md') {
+        &--no-border {
+          border-bottom: 0;
+          &:hover, &:focus {
+            border-bottom: 0;
+          }
+        }
+      }
+
+      &-link {
+        display: block;
+        color: $color-purple-dark;
+        font-size: rem(20px);
+        line-height: rem(26px);
+        font-weight: $font-weight-bold;
+        padding: 0.6875rem 0;
+
+        @include media-min('md') {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 100%;
+          padding: 1rem;
+          border: 2px solid transparent;
+          box-shadow: 0 6px 14px 0 rgba(108, 39, 106, 0.25);
+          transition: box-shadow .15s ease-in-out;
+
+          &:hover,
+          &:focus {
+            border: 2px solid $color-purple-dark;
+            outline: none;
+            box-shadow: none;
+          }
+
+          & > .icon-arrow {
+            display: none;
+          }
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus {
+          color: $color-purple-dark;
+        }
+      }
+    }
+  }
+}

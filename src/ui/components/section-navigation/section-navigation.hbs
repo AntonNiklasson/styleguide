@@ -1,0 +1,22 @@
+<div class="section-navigation">
+  <div class="row">
+    {{#if headline }}
+      <div class="col-12">
+        <h2 class="h3 section-navigation__label">
+          {{ headline }}
+        </h2>
+      </div>
+    {{/if}}
+    {{#each links }}
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="{{ url }}" class="section-navigation__box-item-link">
+              {{ text }}<i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
