@@ -1,0 +1,3 @@
+# Bildpuffar
+
+Det finns tre varianter som tillsammans skapar en visuell hierarki. En modul med endast en bild ges högre informationsvärde än en modul med tre bilder i. Det representeras genom att bild och text visas större. Hierarkin är ett av redaktörens verktyg för att guida och rikta besökarens uppmärksamhet. Vi försöker behålla den hierarkin i så hög utsträckning som möjligt genom alla brytpunkter.
