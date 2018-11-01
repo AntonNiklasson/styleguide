@@ -32,3 +32,7 @@ html {
 .Browser-panel {
 	background: white;
 }
+
+.Browser-panel .Code {
+	background: white;
+}
