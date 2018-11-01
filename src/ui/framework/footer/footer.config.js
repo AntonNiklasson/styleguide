@@ -1,4 +1,6 @@
 module.exports = {
+  name: 'Sidfot',
+  handle: 'footer',
 	context: {
 		logoAlt: 'Skolverket',
 		description: 'Skolverket arbetar för att alla barn, ungdomar och vuxna ska få en utbildning av god kvalitet.',

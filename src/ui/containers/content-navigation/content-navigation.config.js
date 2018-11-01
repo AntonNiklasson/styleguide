@@ -1,5 +1,6 @@
 module.exports = {
-	name: 'Innehållsnavigering',
+  name: 'Innehållsnavigering',
+  handle: 'content-navigation',
 	context: {
 		title: 'Områdestitel',
 		description: 'Kontextuell fördjupningstext.',

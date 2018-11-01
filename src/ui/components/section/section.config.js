@@ -1,5 +1,6 @@
 module.exports = {
-	name: "Sektion",
+  name: "Sektion",
+  handle: 'section',
 	context: {
 		sections: [
       {
@@ -11,7 +12,7 @@ module.exports = {
 	},
   variants: [
     {
-      name: 'flera-sektionär',
+      name: 'flera-sektioner',
       context: {
         sections: [
           {

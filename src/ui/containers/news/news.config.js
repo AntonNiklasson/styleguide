@@ -1,3 +1,4 @@
 module.exports = {
-	name: 'Nyhetslista'
+  name: 'Nyhetslista',
+  handle: 'news-list'
 }

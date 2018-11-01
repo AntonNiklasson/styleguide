@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  {{ render '@head' }}
+</head>
+<body class="Body--purple">
+  {{ render '@header' }}
+  {{{ yield }}}
+  {{ render '@footer' }}
+  <script async defer src="/js/main.min.js"></script>
+</body>
+</html>

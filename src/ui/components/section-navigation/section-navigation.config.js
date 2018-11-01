@@ -1,6 +1,8 @@
 module.exports = {
   name: "Sektionsnavigering",
+  handle: 'section-navigation',
   context: {
+    shouldOverlap: false,
     headline: 'Sektionstitel',
     links: [
       {

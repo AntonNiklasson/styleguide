@@ -1,5 +1,6 @@
 module.exports = {
   name: "Innehållsförteckning",
+  handle: 'toc',
   context: {
     title: "Rubrik",
     pages: [

@@ -4,6 +4,8 @@ name: Färger
 
 # Färger
 
+Använd alltid ett kontrastvärde på minst 4:5:1 som är [rekommenderat av W3C](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). Du behöver testa att din tjänst uppfyller denna riktlinje.
+
 Namn | Hex | Variabel | Exempel
 ---|---|---|---
 {{#each colors}}

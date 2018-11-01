@@ -1,13 +1,14 @@
 <div class="section-navigation">
-  <div class="row">
-    {{#if headline }}
+  <div class="container">
+    <div class="row">
+      {{#if headline }}
       <div class="col-12">
-        <h2 class="h3 section-navigation__label">
+        <h3 class="h3 section-navigation__label{{#if shouldOverlap}} section-navigation__label--overlap{{/if}}">
           {{ headline }}
-        </h2>
+        </h3>
       </div>
-    {{/if}}
-    {{#each links }}
+      {{/if}}
+      {{#each links }}
       <div class="col-12 col-md-4 col-lg-3">
         <div class="section-navigation__box">
           <div class="section-navigation__box-item">
@@ -17,6 +18,7 @@
           </div>
         </div>
       </div>
-    {{/each}}
+      {{/each}}
+    </div>
   </div>
 </div>

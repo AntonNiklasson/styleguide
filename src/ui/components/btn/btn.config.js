@@ -3,6 +3,7 @@ const status = require('../../../dev/fractal/fractal-component-status')
 module.exports = {
   status: status.ready,
   name: 'Knappar',
+  handle: 'btn',
   context: {
     theme: 'primary',
     text: 'Knapp',
