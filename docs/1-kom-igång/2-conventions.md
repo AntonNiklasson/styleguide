@@ -1,6 +1,5 @@
 ---
 name: Konventioner
-category: Kom igång
 ---
 
 ## CSS
