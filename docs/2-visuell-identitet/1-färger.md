@@ -1,3 +1,9 @@
+---
+name: Färger
+---
+
+# Färger
+
 Namn | Hex | Variabel | Exempel
 ---|---|---|---
 {{#each colors}}

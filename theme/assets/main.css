@@ -37,3 +37,8 @@
 .Browser-panel .Code {
 	background: white;
 }
+
+.Document .Prose {
+	margin: 0 auto;
+	max-width: 50em;
+}
