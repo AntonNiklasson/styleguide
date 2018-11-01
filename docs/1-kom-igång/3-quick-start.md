@@ -2,6 +2,8 @@
 name: Snabbstart
 ---
 
+# Snabbstart
+
 ## Ladda ned
 
 Alla releaser finns att ladda ned på Github:
@@ -28,6 +30,8 @@ src/
 └── scss/
     ├── _accordion.scss
     ├── _buttons.scss
+
+# Snabbstart
     ├── ...
     └── skolverket.scss
 ```
