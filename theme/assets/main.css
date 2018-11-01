@@ -42,3 +42,7 @@
 	margin: 0 auto;
 	max-width: 50em;
 }
+
+.Browser-panel .Prose {
+	padding: 1.5rem;
+}
