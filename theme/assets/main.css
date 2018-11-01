@@ -1,6 +1,13 @@
 .Header {
 	background: #692759;
+	background: white;
+	border-bottom: 1px solid #AAA;
+	box-shadow: none;
+	color: #333;
 	font-weight: bold;
+}
+.Header svg {
+	fill: #333;
 }
 
 [dir="ltr"] .Frame-panel--sidebar {
