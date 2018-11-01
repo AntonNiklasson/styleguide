@@ -1,6 +1,7 @@
 <div class="hero">
   <img src="{{ background }}" width="100%" alt="Error with image loading..." />
   <div class="hero__banner">
+    {{#if title}}
     <div class="hero__banner-body">
       <div class="col-sm-9 col-md-8 col-lg-7">
         <a href="{{ url }}" class="hero__banner-body-text">
@@ -10,5 +11,6 @@
         </a>
       </div>
     </div>
+    {{/if}}
   </div>
 </div>
