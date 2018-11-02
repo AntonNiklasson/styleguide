@@ -13,7 +13,9 @@
     "build": "fractal build",
     "deploy": "npm run build && gh-pages -d dist",
     "postinstall": "node gulp/fractal-patch/patch.js",
-    "release": "rm -f skolverket-styleguide-*.tgz && yarn pack && dotenv release-it"
+    "release": "rm -f skolverket-styleguide-*.tgz && yarn pack && dotenv release-it",
+    "release:minor": "dotenv release-it minor",
+    "release:major": "dotenv release-it major"
   },
   "files": [
     "src/ui",
