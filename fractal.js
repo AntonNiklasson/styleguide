@@ -12,5 +12,5 @@ fractal.docs.set('path', path.join(__dirname, 'docs'))
 fractal.web.theme(theme);
 fractal.web.set('static.path', path.join(__dirname, 'dist'))
 fractal.web.set('server.syncOptions', {
-    files: ["dist/**/*", 'src/**/*.hbs', 'src/dev/**/*']
+    files: ["dist/**/*", 'src/**/*.hbs', 'src/dev/**/*', 'theme/**/*.nunj']
 })

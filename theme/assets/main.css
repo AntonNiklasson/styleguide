@@ -9,6 +9,16 @@
 .Header svg {
 	fill: #333;
 }
+.Header__title {
+  flex: 1;
+  display: flex;
+}
+.Header__links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
 
 [dir="ltr"] .Frame-panel--sidebar {
 	background: #F8F4F8;
