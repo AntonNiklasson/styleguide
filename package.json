@@ -13,9 +13,9 @@
     "build": "fractal build",
     "deploy": "npm run build && gh-pages -d dist",
     "postinstall": "node gulp/fractal-patch/patch.js",
-    "release": "rm -f skolverket-styleguide-*.tgz && yarn pack && dotenv release-it",
-    "release:minor": "dotenv release-it minor",
-    "release:major": "dotenv release-it major"
+    "prerelease": "yarn pack",
+    "release": "dotenv release-it",
+    "postrelease": "rm -f skolverket-styleguide-*.tgz"
   },
   "files": [
     "src/ui",
@@ -30,6 +30,7 @@
     "babelify": "~8.0.0",
     "browserify": "~14.5.0",
     "del": "~3.0.0",
+    "dotenv-cli": "^1.4.0",
     "gh-pages": "^1.1.0",
     "gulp": "~3.9.1",
     "gulp-autoprefixer": "~4.0.0",
@@ -44,9 +45,9 @@
     "gulp-svgstore": "~6.1.0",
     "gulp-uglify": "~3.0.0",
     "parallelshell": "~3.0.2",
+    "release-it": "^7.6.2",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
-    "watchify": "~3.9.0",
-    "release-it": "^7.6.2"
+    "watchify": "~3.9.0"
   }
 }
