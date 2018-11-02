@@ -14,3 +14,5 @@ fractal.web.set('static.path', path.join(__dirname, 'dist'))
 fractal.web.set('server.syncOptions', {
     files: ["dist/**/*", 'src/**/*.hbs', 'src/dev/**/*', 'theme/**/*.nunj']
 })
+
+fractal.web.set('builder.dest', __dirname + '/site')

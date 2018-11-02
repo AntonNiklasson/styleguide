@@ -1,5 +1,6 @@
 {
   "name": "sv-component-library",
+  "license": "MIT",
   "version": "0.1.2",
   "engines": {
     "node": "^8.12.0",
@@ -10,10 +11,14 @@
   "scripts": {
     "dev": "parallelshell \"fractal start --sync\" \"gulp -s\"",
     "build": "fractal build",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "postinstall": "node gulp/fractal-patch/patch.js"
+    "deploy": "npm run build && gh-pages -d dist",
+    "postinstall": "node gulp/fractal-patch/patch.js",
+    "release": "rm -f skolverket-styleguide-*.tgz && yarn pack && dotenv release-it"
   },
+  "files": [
+    "src/ui",
+    "dist/js"
+  ],
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "babel-core": "~6.26.0",
@@ -39,6 +44,7 @@
     "parallelshell": "~3.0.2",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
-    "watchify": "~3.9.0"
+    "watchify": "~3.9.0",
+    "release-it": "^7.6.2"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "src": {
+    "tagName": "v%s"
+  },
+  "github": {
+    "release": true,
+    "assets": "skolverket-styleguide-*.tgz"
+  },
+  "npm": {
+    "publish": false
+  }
+}
