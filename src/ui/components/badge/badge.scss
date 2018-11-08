@@ -1,0 +1,19 @@
+.badge {
+  display: inline-block;
+  padding: 4px;
+  background: $color-blue;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $color-white;
+
+  &--alert {
+    background: $color-error;
+  }
+
+  &--success {
+    background: $color-grass;
+  }
+}
