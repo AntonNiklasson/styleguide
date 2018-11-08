@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+
+  a {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0.5em;
+    font-size: 18px;
+    border: 1px solid $color-purple;
+    border-radius: 2px;
+  }
+
+  &__previous {
+    &:before {
+      content: "« ";
+    }
+  }
+  &__next {
+    &:after {
+      content: " »";
+    }
+  }
+
+  &__dots {
+    &:after {
+      content: '...';
+    }
+  }
+}

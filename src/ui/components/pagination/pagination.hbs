@@ -1,0 +1,25 @@
+<nav class="pagination">
+  <a class="pagination__previous" href="#">Föregående</a>
+  <a class="pagination__first" href="#">1</a>
+
+  {{#if previousDots}}
+  <span class="pagination__dots"></span>
+  {{/if}}
+
+  {{#each previousPages}}
+    <a href="#">{{ this }}</a>
+  {{/each}}
+
+  <a class="pagination__current">{{ currentPage }}</a>
+
+  {{#each nextPages}}
+    <a href="#">{{ this }}</a>
+  {{/each}}
+
+  {{#if nextDots}}
+  <span class="pagination__dots"></span>
+  {{/if}}
+
+  <a class="pagination__last" href="#">{{ lastPage }}</a>
+  <a class="pagination__next" href="#">Nästa</a>
+</nav>
