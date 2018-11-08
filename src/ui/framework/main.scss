@@ -1,5 +1,5 @@
-@import
-"../../../node_modules/normalize.scss/normalize";
+// @import
+// "../../../node_modules/normalize.scss/normalize";
 
 @import
 "../core/scss/core";
@@ -18,5 +18,6 @@
 "../components/feedback/feedback",
 "../components/toc/toc",
 "../components/hero/hero",
+"../components/search-hit/search-hit",
 "../containers/content-navigation/content-navigation",
 "../containers/form/form";

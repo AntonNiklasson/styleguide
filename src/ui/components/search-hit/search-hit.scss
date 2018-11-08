@@ -1,0 +1,39 @@
+.search-hit {
+  padding: 1em 0.5em;
+  border-bottom: 1px solid $color-gray-light;
+
+  &__title {
+    margin: 0.2em 0;
+    color: $color-purple-dark;
+
+    a {
+      color: currentColor;
+    }
+  }
+
+  &__path {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: $color-gray;
+
+    li {
+      display: inline;
+      margin-right: 0.3em;
+
+      &:not(:last-child):after {
+        content: "›";
+        margin-left: 0.3em;
+      }
+    }
+
+    a {
+      color: currentColor;
+    }
+  }
+
+  &__body {
+    line-height: 1.2;
+    margin: 0;
+  }
+}
