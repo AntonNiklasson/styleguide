@@ -9,6 +9,7 @@
   "repository": "https://github.com/skolverket/styleguide",
   "scripts": {
     "dev": "parallelshell \"fractal start --sync\" \"gulp -s\"",
+    "generate": "./scripts/create.js",
     "build": "fractal build",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
@@ -40,5 +41,8 @@
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.9.0"
+  },
+  "devDependencies": {
+    "prompts": "^1.2.0"
   }
 }
