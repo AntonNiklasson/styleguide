@@ -1,0 +1,94 @@
+$border-radius: 4px;
+$transition-duration: 250ms;
+$header--open__background: $color-purple-dark;
+$header--open__color: $color-white;
+$header--closed__background: $color-gray-light;
+$header--closed__color: $color-purple-dark;
+$content--open__background: $color-gray-light;
+
+.reveal {
+  margin: 8px;
+  border: 1px solid $color-gray-lighter;
+  border-radius: $border-radius;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: $header--closed__background;
+    color: $header--closed__color;
+    border-radius: $border-radius;
+    transition-property: background-color, color;
+    transition-duration: $transition-duration;
+
+    h3 {
+      margin: 0;
+      font-weight: normal;
+    }
+  }
+
+  &__toggle {
+    border: none;
+    background: transparent;
+    color: inherit;
+
+    &:before {
+      content: 'Visa';
+    }
+  }
+  &--open &__toggle {
+    &:before {
+      content: "Dölj";
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    padding: 16px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+
+  &--open &__header {
+    background: $header--open__background;
+    color: $header--open__color;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &--open &__content {
+    opacity: 1;
+  }
+
+  &__content-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition-property: max-height;
+    transition-duration: $transition-duration;
+  }
+
+  &--open &__content-wrapper {
+    overflow: scroll;
+    background: $content--open__background;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  background: $color-white;
+
+  thead {
+    background: $color-turq;
+    color: white;
+  }
+
+  th {
+    padding: 4px;
+  }
+
+  td {
+    border: 1px solid $color-gray-lighter;
+    padding: 4px;
+  }
+}
