@@ -1,0 +1,19 @@
+table.editorial-table {
+  margin: 16px;
+  border: 1px solid $color-gray;
+
+  thead {
+    background: $color-turq;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  tr:nth-child(2n) {
+    background: $color-gray-light;
+  }
+
+  td {
+    padding: 8px;
+  }
+}
