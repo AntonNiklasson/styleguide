@@ -1,4 +1,4 @@
 module.exports = {
   name: 'Översikt',
-  preview: '@layout--page'
+  preview: '@layout--page',
 }
