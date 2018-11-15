@@ -73,22 +73,3 @@ $content--open__background: $color-gray-light;
     background: $content--open__background;
   }
 }
-
-table {
-  border-collapse: collapse;
-  background: $color-white;
-
-  thead {
-    background: $color-turq;
-    color: white;
-  }
-
-  th {
-    padding: 4px;
-  }
-
-  td {
-    border: 1px solid $color-gray-lighter;
-    padding: 4px;
-  }
-}
