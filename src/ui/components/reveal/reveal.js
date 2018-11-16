@@ -1,4 +1,5 @@
-var items = document.querySelectorAll('.reveal__toggle');
+/*
+var items = document.querySelectorAll('[data-js-reveal]');
 
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener('click', function() {
@@ -12,3 +13,4 @@ for (var i = 0; i < items.length; i++) {
     }
   });
 }
+*/

@@ -1,9 +1,12 @@
 <div class="reveal">
   <header class="reveal__header">
     <h3>{{ title }}</h3>
-    <button class="reveal__toggle" />
+    <button class="reveal__toggle" aria-controls="{{ id }}" aria-expanded="false" data-js-reveal>
+      <span class="reveal__toggle-text reveal__toggle-text--close">{{ toggleCloseText }}</span>
+      <span class="reveal__toggle-text reveal__toggle-text--open">{{ toggleOpenText }}</span>
+    </button>
   </header>
-  <div class="reveal__content-wrapper">
+  <div class="reveal__content-wrapper" id="{{ id }}" tabindex="-1">
     <div class="reveal__content">
       <table>
         <thead>

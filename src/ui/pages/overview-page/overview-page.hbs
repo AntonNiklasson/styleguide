@@ -46,11 +46,9 @@
         <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
       </header>
       <div class="section__body">
-        {{ render '@reveal' }}
-        {{ render '@reveal' }}
-        {{ render '@reveal' }}
-        {{ render '@reveal' }}
-        {{ render '@reveal' }}
+        {{#each reveals }}
+          {{ render '@reveal' . merge=true }}
+        {{/each}}
       </div>
     </div>
   </div>
