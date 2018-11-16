@@ -2,15 +2,116 @@
   <div class="row">
     <div class="col-12 col-md-8">
       <div class="box box--compact box--no-border">
-        <h1>Sök</h1>
-        {{ render '@search' searchModel }}
-
-        <h2>Visst webbinnehåll har eget sök</h2>
-        <ul>
-          <li><a href="#">Sök bland Skolverkets publikationer</a></li>
-          <li><a href="#">Sök i Skolverkets författningssamling (SKOLFS)</a></li>
-          <li><a href="#">Sök statistik om skolan och annan pedagogisk verksamhet</a></li>
+        <h2 class="h2 margin-tp-reset">Statsbidrag</h2>
+        <p class="text-standard">Med våra statsbidrag kan du som driver förskolor, skolor och vuxenutbildning ge barn
+          och elever bättre förutsättningar att lära sig. Det finns även statsbidrag för organisationer som arbetar med
+          utbildning.</p>
+        <ul class="content-navigation-list">
+          <li class="content-navigation-list__item">
+            <a href="#1" class="content-navigation-list__item-link text-large">
+              <i class="icon-arrow icon-arrow--lg"></i>
+              Hitta och välj statsbidrag
+            </a>
+          </li>
+          <li class="content-navigation-list__item">
+            <a href="#1" class="content-navigation-list__item-link text-large">
+              <i class="icon-arrow icon-arrow--lg"></i>
+              E-tjänsten för statsbidrag
+            </a>
+          </li>
+          <li class="content-navigation-list__item">
+            <a href="#1" class="content-navigation-list__item-link text-large">
+              <i class="icon-arrow icon-arrow--lg"></i>
+              Statsbidragskalendern 2018
+            </a>
+          </li>
+          <li class="content-navigation-list__item">
+            <a href="#1" class="content-navigation-list__item-link text-large">
+              <i class="icon-arrow icon-arrow--lg"></i>
+              Om statsbidrag för skolan
+            </a>
+          </li>
         </ul>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="/tmp/img/overview.png" />
+    </div>
+  </div>
+</div>
+<div class="container container--margins">
+  <div class="row">
+    <div class="col-12">
+      <div class="box box--compact box--no-border">
+        <h1>Hitta statsbidrag</h1>
+        <p>Kryssa för kategorier och använd sökrutan för att hitta det du letar efter.</p>
+
+        <div class="section section--no-padding">
+          <div class="section__body">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                {{#each checkboxGroups }}
+                <div class="form-group">
+                  <h3>{{ title }}</h3>
+                  {{ render '@form--checkboxes' this merge=true }}
+                </div>
+                {{/each}}
+              </div>
+              <div class="col-12 col-lg-8">
+                {{> @search placeholder=searchModel.placeholder }}
+                <p><strong>108</strong> träffar</p>
+
+                <div class="search-results">
+                  <!-- TODO: Replace with actual Search Hit component once that's merged -->
+                  <div class="search-hit">
+                    <a href="#" class="skolv_filter-list-item-title">Statsbidrag för arbetet mot sexuella
+                      trakasserier 2018/19</a>
+                    <p class="skolv_filter-text-preamble">Stärk arbetet mot sexuella trakasserier och öka kompetensen
+                      inom sex- och samlevnadsundervisning i skolan.</p>
+                  </div>
+                  <div class="search-hit">
+                    <a href="#">Statsbidrag för att utveckla sfi 2018</a>
+                    <p class="skolv_filter-text-preamble">Riksdagen har beslutat om att tilldela ytterligare medelför
+                      att utveckla sfi. Bidraget kan därför sökas för 2018. Bidraget ska användas till insatser som
+                      höjer kvaliteten i sfi-utbildningen, samt gör den mer flexibel och individanpassad.</p>
+                  </div>
+                  <div class="search-hit">
+                    <a href="#" class="skolv_filter-list-item-title">Statsbidrag för barn som inte är folkbokförda i
+                      Sverige 2018</a>
+                    <p class="skolv_filter-text-preamble">Vissa barn och ungdomar som inte är folkbokförda i Sverige
+                      har rätt till kostnadsfri utbildning. Då kan den kommun där barnet bor söka bidrag för att
+                      täcka utbildningskostnaden.</p>
+                  </div>
+                  <div class="search-hit">
+                    <a href="#" class="skolv_filter-list-item-title">Statsbidrag för behörighetsgivande utbildning
+                      för yrkeslärare 2017</a>
+                    <p class="skolv_filter-text-preamble">Det här statsbidraget ska ge yrkeslärare möjlighet att
+                      kombinera studier och arbete och få en yrkeslärarexamen.</p>
+                  </div>
+                  <div class="search-hit">
+                    <a href="#" class="skolv_filter-list-item-title">Statsbidrag för behörighetsgivande utbildning
+                      för yrkeslärare 2018</a>
+                    <p class="skolv_filter-text-preamble">Det här statsbidraget ska ge yrkeslärare möjlighet att
+                      kombinera studier och arbete och få en yrkeslärarexamen.</p>
+                  </div>
+                  <div class="search-hit">
+                    <a href="#" class="skolv_filter-list-item-title">Statsbidrag för behörighetsgivande utbildning
+                      för yrkeslärare 2019</a>
+                    <p class="skolv_filter-text-preamble">Det här statsbidraget ska ge yrkeslärare möjlighet att
+                      kombinera studier och arbete och få en yrkeslärarexamen.</p>
+                  </div>
+                  <div class="search-hit">
+                    <a href="#" class="skolv_filter-list-item-title">Statsbidrag för branschers arbete för fler
+                      yrkeslärare 2018</a>
+                    <p class="skolv_filter-text-preamble">Statsbidraget kan sökas av bransch- och
+                      intresseorganisationer. Bidraget ska användas till insatser som kan väcka intresse hos
+                      yrkesverksamma att bli yrkeslärare.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
