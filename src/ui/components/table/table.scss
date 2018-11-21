@@ -1,12 +1,31 @@
+$cell-padding: 8px;
+$border-radius: 4px;
+
 table.editorial-table {
   margin: 16px;
-  border: 1px solid $color-gray;
+  border: 1px solid $color-gray-lighter;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+
+  caption {
+    caption-side: top;
+    padding: $cell-padding;
+    text-align: left;
+    background: $color-turq;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    font-size: 1.2em;
+    color: $color-white;
+  }
 
   thead {
-    background: $color-turq;
-    color: $color-white;
-    font-weight: bold;
     font-size: 1.1em;
+    border-bottom: 2px solid $color-turq;
+  }
+
+  th {
+    padding: $cell-padding;
+    font-weight: bold;
   }
 
   tr:nth-child(2n) {
