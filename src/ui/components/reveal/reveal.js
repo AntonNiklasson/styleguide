@@ -1,16 +1,46 @@
-/*
-var items = document.querySelectorAll('[data-js-reveal]');
+const reveal = {
 
-for (var i = 0; i < items.length; i++) {
-  items[i].addEventListener('click', function() {
-    var reveal = this.closest('.reveal');
+  selectors: {
+    trigger: '[data-js-reveal-trigger]'
+  },
 
-    if(reveal.classList.toggle('reveal--open')) {
-      var contentHeight = reveal.querySelector('.reveal__content').clientHeight + 1;
-      reveal.querySelector('.reveal__content-wrapper').style.maxHeight = contentHeight + 'px';
-    } else {
-      reveal.querySelector('.reveal__content-wrapper').style.maxHeight = 0;
+  classNames: {
+    triggerActive: 'reveal__toggle--close'
+  },
+
+  init() {
+    reveal.registerEvents()
+  },
+
+  registerEvents() {
+    var triggers = document.querySelectorAll(reveal.selectors.trigger)
+
+    for(var i=0; i < triggers.length; i++) {
+      triggers[i].addEventListener('click', reveal.eventHandlers.onTriggerClick)
     }
-  });
+  },
+
+  eventHandlers: {
+    onTriggerClick() {
+      const targetId = this.getAttribute('aria-controls')
+      const target = document.getElementById(targetId)
+      const shouldExpand = this.getAttribute('aria-expanded') === 'false'
+
+      if(target) {
+        target.style.maxHeight = shouldExpand ? '0px' : target.scrollHeight + 'px'
+        target.addEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
+        this.setAttribute('aria-expanded', shouldExpand)
+        target.style.maxHeight = (shouldExpand ? target.scrollHeight : 0) + 'px'
+      }
+    },
+
+    handleTargetTransitionEnd() {
+      this.style.maxHeight = this.style.maxHeight !== '0px' ? 'none': null
+      this.removeEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
+      this.setAttribute('tabindex', -1)
+      this.focus()
+    }
+  }
 }
-*/
+
+reveal.init()
