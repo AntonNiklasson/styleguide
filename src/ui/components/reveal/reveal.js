@@ -30,7 +30,11 @@ const reveal = {
         target.style.maxHeight = shouldExpand ? '0px' : target.scrollHeight + 'px'
         target.addEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
         this.setAttribute('aria-expanded', shouldExpand)
-        target.style.maxHeight = (shouldExpand ? target.scrollHeight : 0) + 'px'
+        target.previousElementSibling.classList.toggle('reveal__header--open');
+
+        setTimeout(() => {
+          target.style.maxHeight = (shouldExpand ? target.scrollHeight : 0) + 'px'
+        }, 10);
       }
     },
 

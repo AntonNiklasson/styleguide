@@ -19,10 +19,10 @@ $content--open__background: $color-gray-light;
     background: $header--closed__background;
     color: $header--closed__color;
     border-radius: $border-radius;
-    // transition-property: background-color, color;
+    transition-property: background-color, color;
     transition-duration: 0s;
 
-    &--open &,
+    &--open,
     .no-js & {
       background: $header--open__background;
       color: $header--open__color;
