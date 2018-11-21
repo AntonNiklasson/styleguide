@@ -1,11 +1,14 @@
 const reveal = {
 
   selectors: {
+    root: '[data-js-reveal]',
+    header: '[data-js-reveal-header]',
     trigger: '[data-js-reveal-trigger]'
   },
 
   classNames: {
-    triggerActive: 'reveal__toggle--close'
+    triggerActive: 'reveal__toggle--close',
+    openHeader: 'reveal__header--open',
   },
 
   init() {
@@ -30,19 +33,28 @@ const reveal = {
         target.style.maxHeight = shouldExpand ? '0px' : target.scrollHeight + 'px'
         target.addEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
         this.setAttribute('aria-expanded', shouldExpand)
-        target.previousElementSibling.classList.toggle('reveal__header--open');
 
+        // Wait for the DOM to set max-height on the target.
         setTimeout(() => {
           target.style.maxHeight = (shouldExpand ? target.scrollHeight : 0) + 'px'
+
+          if (shouldExpand) {
+            this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.add(reveal.classNames.openHeader);
+          }
         }, 10);
       }
     },
 
     handleTargetTransitionEnd() {
-      this.style.maxHeight = this.style.maxHeight !== '0px' ? 'none': null
+      var isCollapsed = this.style.maxHeight === '0px';
+      this.style.maxHeight = !isCollapsed ? 'none': null
       this.removeEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
       this.setAttribute('tabindex', -1)
       this.focus()
+
+      if (isCollapsed) {
+        this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
+      }
     }
   }
 }

@@ -19,8 +19,8 @@ $content--open__background: $color-gray-light;
     background: $header--closed__background;
     color: $header--closed__color;
     border-radius: $border-radius;
-    transition-property: background-color, color;
-    transition-duration: 0s;
+    // transition-property: background-color, color;
+    transition-duration: $transition-duration;
 
     &--open,
     .no-js & {
@@ -28,6 +28,8 @@ $content--open__background: $color-gray-light;
       color: $header--open__color;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
+
+      transition: background-color 0s;
     }
 
     h3 {
