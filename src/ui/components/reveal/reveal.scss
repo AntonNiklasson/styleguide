@@ -2,25 +2,30 @@ $border-radius: 4px;
 $transition-duration: 300ms;
 $header--open__background: $color-purple-dark;
 $header--open__color: $color-white;
-$header--closed__background: $color-gray-light;
+$header--closed__background: $color-blue-light;
 $header--closed__color: $color-purple-dark;
 $content--open__background: $color-gray-light;
 
 .reveal {
   margin: 16px 0;
-  border: 1px solid $color-gray-lighter;
-  border-radius: $border-radius;
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    padding: 8px 90px 8px 16px;
     background: $header--closed__background;
     color: $header--closed__color;
+    border: 1px solid $color-gray-lighter;
     border-radius: $border-radius;
     // transition-property: background-color, color;
     transition-duration: $transition-duration;
+    font-weight: $font-weight-bold;
+    position: relative;
+
+    &:hover {
+      background: darken($header--closed__background, 4);
+    }
 
     &--open,
     .no-js & {
@@ -28,13 +33,19 @@ $content--open__background: $color-gray-light;
       color: $header--open__color;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
-
+      border: 1px solid $header--open__background;
       transition: background-color 0s;
+
+      &:hover {
+        background: darken($header--open__background, 4);
+      }
     }
 
     h3 {
       margin: 0;
-      font-weight: normal;
+      font-weight: inherit;
+      padding-right: 15px;
+      line-height: 1.35em;
     }
   }
 
@@ -42,6 +53,28 @@ $content--open__background: $color-gray-light;
     border: none;
     background: transparent;
     color: inherit;
+    font-weight: inherit;
+    white-space: nowrap;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    text-align: right;
+    cursor: pointer;
+
+    &-icon {
+      vertical-align: middle;
+      transform: rotate(90deg);
+      transition: transform .3s ease;
+
+      [aria-expanded="true"] & {
+        transform: rotate(-90deg);
+        background-image: url('../assets/img/arrow-white.svg');
+      }
+    }
 
     &-text {
       .no-js & {
@@ -73,8 +106,12 @@ $content--open__background: $color-gray-light;
   &__content {
     overflow: hidden;
     padding: 16px;
-    border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
+    /*border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;*/
+    background-color: $color-blue-light;
+    border: 1px solid $color-gray-lighter;
+    border-radius: 0 0 $border-radius $border-radius;
+    border-top: none;
   }
 
   &--open &__content {

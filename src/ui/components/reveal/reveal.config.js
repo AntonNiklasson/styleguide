@@ -4,8 +4,8 @@ module.exports = {
   context: {
     id: 1321,
     title: 'Lorem ipsum dolor sit amet',
-    toggleCloseText: 'Stäng',
-    toggleOpenText: 'Öppna',
+    toggleCloseText: 'Dölj',
+    toggleOpenText: 'Visa',
     body: `
       <table>
         <thead>

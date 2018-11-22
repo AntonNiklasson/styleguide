@@ -41,7 +41,7 @@ const reveal = {
           if (shouldExpand) {
             this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.add(reveal.classNames.openHeader);
           }
-        }, 10);
+        }, 50);
       }
     },
 
@@ -53,8 +53,9 @@ const reveal = {
       if (isCollapsed) {
         this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
       } else {
-        this.setAttribute('tabindex', -1)
-        this.focus()
+        /* This causes the page to jump */
+        // this.setAttribute('tabindex', -1)
+        // this.focus()
       }
     }
   }
