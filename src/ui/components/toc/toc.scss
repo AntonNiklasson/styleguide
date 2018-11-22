@@ -1,4 +1,4 @@
-.toc {
+.skv-toc {
   margin: 1em;
   padding: 0 1em;
   border-left: 3px solid $color-blue;
@@ -30,7 +30,7 @@
     // Is sub list (nested)
     &--sub {
       padding-left: 1.875rem;
-      .toc__list-item-link {
+      .skv-toc__list-item-link {
         font-weight: 400;
       }
     }

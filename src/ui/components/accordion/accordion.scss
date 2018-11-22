@@ -1,7 +1,7 @@
-.accordion {
+.skv-accordion {
   &__item {
     &:first-child {
-      .accordion__item-link:not(:focus) {
+      .skv-accordion__item-link:not(:focus) {
         border-top-color: transparent;
       }
     }
@@ -47,13 +47,13 @@
       display: none;
       padding: 1.625rem;
 
-      .accordion__item--open & {
+      .skv-accordion__item--open & {
         display: block;
       }
     }
 
     &-icon {
-      .accordion__item--open & {
+      .skv-accordion__item--open & {
         transform: rotate(-90deg);
       }
     }
