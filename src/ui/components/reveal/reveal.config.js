@@ -5,6 +5,63 @@ module.exports = {
     id: 1321,
     title: 'Lorem ipsum dolor sit amet',
     toggleCloseText: 'Stäng',
-    toggleOpenText: 'Öppna'
+    toggleOpenText: 'Öppna',
+    body: `
+      <table>
+        <thead>
+        <tr>
+          <th>Lorem</th>
+          <th>Ipsum</th>
+          <th>Dolor</th>
+          <th>Sit</th>
+          <th>Amet</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        </tbody>
+      </table>
+    `
   }
 }
