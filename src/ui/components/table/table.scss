@@ -19,8 +19,8 @@ table.editorial-table {
   }
 
   thead {
-    font-size: 1.1em;
-    border-bottom: 2px solid $color-turq;
+    font-size: 1em;
+    border-bottom: 3px solid $color-turq;
   }
 
   th {
@@ -34,5 +34,6 @@ table.editorial-table {
 
   td {
     padding: 8px;
+    border: 1px solid $color-gray-lighter;
   }
 }
