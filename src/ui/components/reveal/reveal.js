@@ -49,11 +49,12 @@ const reveal = {
       var isCollapsed = this.style.maxHeight === '0px';
       this.style.maxHeight = !isCollapsed ? 'none': null
       this.removeEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
-      this.setAttribute('tabindex', -1)
-      this.focus()
 
       if (isCollapsed) {
         this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
+      } else {
+        this.setAttribute('tabindex', -1)
+        this.focus()
       }
     }
   }
