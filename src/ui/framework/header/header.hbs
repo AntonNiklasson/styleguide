@@ -1,11 +1,11 @@
-<div class="mobile-menu">
-  <div class="mobile-menu__header">
+<div class="skv-mobile-menu">
+  <div class="skv-mobile-menu__header">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="mobile-menu__header-container">
-            <h1 class="h1 mobile-menu__header-title">Meny</h1>
-            <a href="#" class="mobile-menu__header-link icon-close">
+          <div class="skv-mobile-menu__header-container">
+            <h1 class="h1 skv-mobile-menu__header-title">Meny</h1>
+            <a href="#" class="skv-mobile-menu__header-link icon-close">
               Stäng
             </a>
           </div>
@@ -13,31 +13,31 @@
       </div>
     </div>
   </div>
-  <div class="mobile-menu__links">
+  <div class="skv-mobile-menu__links">
     <div class="container">
       <div class="row">
         <div class="col">
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__list-item">
-              <a href="#1" class="mobile-menu__list-item-link">
+          <ul class="skv-mobile-menu__list">
+            <li class="skv-mobile-menu__list-item">
+              <a href="#1" class="skv-mobile-menu__list-item-link">
                 Undervisning
                 <i class="icon-arrow"></i>
               </a>
             </li>
-            <li class="mobile-menu__list-item">
-              <a href="#2" class="mobile-menu__list-item-link">
+            <li class="skv-mobile-menu__list-item">
+              <a href="#2" class="skv-mobile-menu__list-item-link">
                 Skolutveckling
                 <i class="icon-arrow"></i>
               </a>
             </li>
-            <li class="mobile-menu__list-item">
-              <a href="#3" class="mobile-menu__list-item-link">
+            <li class="skv-mobile-menu__list-item">
+              <a href="#3" class="skv-mobile-menu__list-item-link">
                 Lagar och regler
                 <i class="icon-arrow"></i>
               </a>
             </li>
-            <li class="mobile-menu__list-item">
-              <a href="#4" class="mobile-menu__list-item-link">
+            <li class="skv-mobile-menu__list-item">
+              <a href="#4" class="skv-mobile-menu__list-item-link">
                 Innehåll A-Ö
                 <i class="icon-arrow"></i>
               </a>
@@ -48,19 +48,19 @@
     </div>
   </div>
 </div>
-<div class="header">
-  <div class="header__top">
+<div class="skv-header">
+  <div class="skv-header__top">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="header__top-container">
+          <div class="skv-header__top-container">
             <a href="{{ rootUrl }}">
-              <img src="{{ logo.src }}" alt="{{ logo.alt }}" class="header__top-logo" />
+              <img src="{{ logo.src }}" alt="{{ logo.alt }}" class="skv-header__top-logo" />
             </a>
-            <ul class="header__list">
+            <ul class="skv-header__list">
               {{#each utilities }}
-              <li class="header__list-item">
-                <a href="{{ uel }}" class="header__list-item-{{ type }}">
+              <li class="skv-header__list-item">
+                <a href="{{ uel }}" class="skv-header__list-item-{{ type }}">
                   {{ text }}
                 </a>
               </li>
@@ -71,15 +71,15 @@
       </div>
     </div>
   </div>
-  <div class="header__links">
+  <div class="skv-header__links">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="header__links-container">
-            <ul class="header__list header__list--absolute">
+          <div class="skv-header__links-container">
+            <ul class="skv-header__list skv-header__list--absolute">
               {{# each links }}
-              <li class="header__list-item">
-                <a href="{{ url }}" class="header__list-item-link{{#if isActive }} header__list-item-link--active{{/if}}">
+              <li class="skv-header__list-item">
+                <a href="{{ url }}" class="skv-header__list-item-link{{#if isActive }} skv-header__list-item-link--active{{/if}}">
                   {{ text }}
                 </a>
               </li>
