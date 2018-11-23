@@ -6,22 +6,21 @@ $header--closed__background: $color-blue-light;
 $header--closed__color: $color-purple-dark;
 $content--open__background: $color-gray-light;
 
+@mixin reveal__header--activestyling {
+  background: $header--open__background;
+  color: $header--open__color;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid $header--open__background;
+  transition: background-color 0s;
+
+  &:hover {
+    background: darken($header--open__background, 4);
+  }
+}
+
 .reveal {
   margin: 16px 0;
-
-  @media print {
-    &__header {
-      border-radius: $border-radius $border-radius 0 0 !important;
-    }
-
-    &__content-wrapper {
-      max-height: unset !important;
-    }
-
-    button {
-      display: none;
-    }
-  }
 
   &__header {
     display: flex;
@@ -41,18 +40,13 @@ $content--open__background: $color-gray-light;
       background: darken($header--closed__background, 4);
     }
 
+    @include media-print {
+      @include reveal__header--activestyling();
+    }
+
     &--open,
     .no-js & {
-      background: $header--open__background;
-      color: $header--open__color;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      border: 1px solid $header--open__background;
-      transition: background-color 0s;
-
-      &:hover {
-        background: darken($header--open__background, 4);
-      }
+      @include reveal__header--activestyling();
     }
 
     h3 {
@@ -78,6 +72,10 @@ $content--open__background: $color-gray-light;
     padding: 0 15px;
     text-align: right;
     cursor: pointer;
+
+    @include media-print {
+      display: none;
+    }
 
     &-icon {
       vertical-align: middle;
@@ -137,6 +135,10 @@ $content--open__background: $color-gray-light;
     overflow: hidden;
     transition-property: max-height;
     transition-duration: $transition-duration;
+
+    @include media-print {
+      max-height: none !important;
+    }
 
     .no-js & {
       max-height: none;
