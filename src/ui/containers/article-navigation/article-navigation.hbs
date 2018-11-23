@@ -1,24 +1,24 @@
 {{#each sections}}
-<div class="section section--boxed">
+<div class="skv-section skv-section--boxed">
   {{#if title}}
-  <header class="section__header">
-    <h2 class="h3 section__header-title"><span class="section__header-title-text">{{ title }}<span></h2>
+  <header class="skv-section__header">
+    <h2 class="h3 skv-section__header-title"><span class="skv-section__header-title-text">{{ title }}<span></h2>
   </header>
   {{/if}}
-  <div class="section__body">
+  <div class="skv-section__body">
     <div class="row">
       {{#each items}}
       <div class="col-12 col-md-{{../colspan}}">
-        <ul class="content-navigation-list">
-          <li class="content-navigation-list__item content-navigation-list__item--no-border">
+        <ul class="skv-content-navigation-list">
+          <li class="skv-content-navigation-list__item skv-content-navigation-list__item--no-border">
             {{#if imageUrl}}
-            <img src="{{imageUrl}}" class="content-navigation-list__item-image-large" />
+            <img src="{{imageUrl}}" class="skv-content-navigation-list__item-image-large" />
             {{/if}}
             {{#if title}}
-            <a href="{{ url }}" class="content-navigation-list__item-link text-standard">
+            <a href="{{ url }}" class="skv-content-navigation-list__item-link text-standard">
               {{title}} <i class="icon-arrow icon-arrow--lg"></i>
             </a>
-            {{#if description}}<p class="content-navigation-list__item-text text-small">{{description}}</p>{{/if}}
+            {{#if description}}<p class="skv-content-navigation-list__item-text text-small">{{description}}</p>{{/if}}
             {{/if}}
           </li>
         </ul>
