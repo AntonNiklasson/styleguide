@@ -9,6 +9,20 @@ $content--open__background: $color-gray-light;
 .reveal {
   margin: 16px 0;
 
+  @media print {
+    &__header {
+      border-radius: $border-radius $border-radius 0 0 !important;
+    }
+
+    &__content-wrapper {
+      max-height: unset !important;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
