@@ -31,7 +31,6 @@ $content--open__background: $color-gray-light;
     color: $header--closed__color;
     border: 1px solid $color-gray-lighter;
     border-radius: $border-radius;
-    // transition-property: background-color, color;
     transition-duration: $transition-duration;
     font-weight: $font-weight-bold;
     position: relative;
@@ -44,8 +43,7 @@ $content--open__background: $color-gray-light;
       @include reveal__header--activestyling();
     }
 
-    &--open,
-    .no-js & {
+    &--open {
       @include reveal__header--activestyling();
     }
 
@@ -63,7 +61,6 @@ $content--open__background: $color-gray-light;
     color: inherit;
     font-weight: inherit;
     white-space: nowrap;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -89,9 +86,6 @@ $content--open__background: $color-gray-light;
     }
 
     &-text {
-      .no-js & {
-        display: none;
-      }
 
       &--open {
         [aria-expanded="true"] & {
@@ -118,8 +112,6 @@ $content--open__background: $color-gray-light;
   &__content {
     overflow: hidden;
     padding: 16px;
-    /*border-bottom-left-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;*/
     background-color: $color-blue-light;
     border: 1px solid $color-gray-lighter;
     border-radius: 0 0 $border-radius $border-radius;
@@ -131,6 +123,7 @@ $content--open__background: $color-gray-light;
   }
 
   &__content-wrapper {
+    display: none;
     max-height: 0;
     overflow: hidden;
     transition-property: max-height;
@@ -138,10 +131,6 @@ $content--open__background: $color-gray-light;
 
     @include media-print {
       max-height: none !important;
-    }
-
-    .no-js & {
-      max-height: none;
     }
   }
 

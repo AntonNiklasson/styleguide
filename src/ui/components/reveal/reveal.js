@@ -31,6 +31,7 @@ const reveal = {
 
       if(target) {
         target.style.maxHeight = shouldExpand ? '0px' : target.scrollHeight + 'px'
+        target.style.display = 'block'
         target.addEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
         this.setAttribute('aria-expanded', shouldExpand)
 
@@ -52,6 +53,7 @@ const reveal = {
 
       if (isCollapsed) {
         this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
+        this.style.display = 'none'
       } else {
         /* This causes the page to jump */
         // this.setAttribute('tabindex', -1)

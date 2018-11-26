@@ -20,7 +20,7 @@ module.exports = {
         <tbody>
         <tr>
           <td>Lorem ipsum dolor sit amet.</td>
-          <td>Lorem ipsum dolor sit amet.</td>
+          <td><a href="#">Lorem ipsum dolor sit amet.</a></td>
           <td>Lorem ipsum dolor sit amet.</td>
           <td>Lorem ipsum dolor sit amet.</td>
           <td>Lorem ipsum dolor sit amet.</td>
