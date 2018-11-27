@@ -22,6 +22,10 @@ $content--open__background: $color-gray-light;
 .reveal {
   margin: 16px 0;
 
+  @include media-print {
+    page-break-inside: avoid;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -131,6 +135,7 @@ $content--open__background: $color-gray-light;
 
     @include media-print {
       max-height: none !important;
+      display: block;
     }
   }
 
