@@ -23,5 +23,11 @@ module.exports = {
         <p><a href="/skolutveckling/kompetensutveckling/lararlyftets-kurser-och-utbildningar">Säkra behörigheten med Lärarlyftets kurser och utbildningar</a></p>
       </div>
     `
-  }
+  },
+  variants: [
+    {
+      name: 'nojs',
+      hidden: true
+    }
+  ]
 }
