@@ -1,21 +1,16 @@
-$border-radius: 4px;
-$transition-duration: 300ms;
-$header--open__background: $color-purple-dark;
-$header--open__color: $color-white;
-$header--closed__background: $color-blue-light;
-$header--closed__color: $color-purple-dark;
-$content--open__background: $color-gray-light;
+$reveal-border-radius: 4px;
+$reveal-transition-duration: 300ms;
 
-@mixin reveal__header--activestyling {
-  background: $header--open__background;
-  color: $header--open__color;
+@mixin reveal-header-active {
+  background: $color-purple-dark;
+  color: $color-white;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  border: 1px solid $header--open__background;
+  border: 1px solid $color-purple-dark;
   transition: background-color 0s;
 
   &:hover {
-    background: darken($header--open__background, 4);
+    background: darken($color-purple-dark, 4);
   }
 }
 
@@ -31,47 +26,47 @@ $content--open__background: $color-gray-light;
     justify-content: space-between;
     align-items: center;
     padding: 8px 90px 8px 16px;
-    background: $header--closed__background;
-    color: $header--closed__color;
+    background: $color-blue-light;
+    color: $color-purple-dark;
     border: 1px solid $color-gray-lighter;
-    border-radius: $border-radius;
-    transition-duration: $transition-duration;
+    border-radius: $reveal-border-radius;
+    transition-duration: $reveal-transition-duration;
     font-weight: $font-weight-bold;
     position: relative;
 
-    &:hover {
-      background: darken($header--closed__background, 4);
+    @include media-print {
+      @include reveal-header-active();
     }
 
-    @include media-print {
-      @include reveal__header--activestyling();
+    &:hover {
+      background: darken($color-blue-light, 4);
     }
 
     &--open {
-      @include reveal__header--activestyling();
-    }
-
-    h3 {
-      margin: 0;
-      font-weight: inherit;
-      padding-right: 15px;
-      line-height: 1.35em;
+      @include reveal-header-active();
     }
   }
 
-  &__toggle {
-    border: none;
-    background: transparent;
-    color: inherit;
+  &__title {
+    margin: 0;
     font-weight: inherit;
-    white-space: nowrap;
+    padding-right: 15px;
+    line-height: 1.35em;
+  }
+
+  &__toggle {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     padding: 0 15px;
+    border: none;
+    white-space: nowrap;
     text-align: right;
+    background: transparent;
+    color: inherit;
+    font-weight: inherit;
     cursor: pointer;
 
     @include media-print {
@@ -81,7 +76,7 @@ $content--open__background: $color-gray-light;
     &-icon {
       vertical-align: middle;
       transform: rotate(90deg);
-      transition: transform .3s ease;
+      transition: transform $reveal-transition-duration;
 
       [aria-expanded="true"] & {
         transform: rotate(-90deg);
@@ -90,7 +85,6 @@ $content--open__background: $color-gray-light;
     }
 
     &-text {
-
       &--open {
         [aria-expanded="true"] & {
           display: none;
@@ -103,45 +97,29 @@ $content--open__background: $color-gray-light;
         }
       }
     }
-
-    &-input {
-      visibility: hidden;
-      width: 0;
-      height: 0;
-      overflow: hidden;
-      display: block;
-    }
   }
 
   &__content {
-    overflow: hidden;
     padding: 16px;
     background-color: $color-blue-light;
     border: 1px solid $color-gray-lighter;
-    border-radius: 0 0 $border-radius $border-radius;
     border-top: none;
-  }
-
-  &--open &__content {
-    opacity: 1;
+    border-radius: 0 0 $reveal-border-radius $reveal-border-radius;
   }
 
   &__content-wrapper {
     display: none;
     max-height: 0;
     overflow: hidden;
-    transition-property: max-height;
-    transition-duration: $transition-duration;
+    transition: max-height $reveal-transition-duration;
 
     @include media-print {
       max-height: none !important;
       display: block;
     }
-  }
 
-  &--open &__content-wrapper {
-    overflow: scroll;
-    background: $content--open__background;
-    transition-delay: .1s;
+    .reveal--open & {
+      transition-delay: .1s;
+    }
   }
 }
