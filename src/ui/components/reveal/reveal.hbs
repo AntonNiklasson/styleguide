@@ -1,14 +1,7 @@
-<noscript>
-  <style>
-    .reveal__toggle { display: none; }
-    .reveal__content-wrapper { max-height: none; display: block; }
-  </style>
-</noscript>
-
 <div class="reveal" data-js-reveal>
   <header class="reveal__header" data-js-reveal-header>
     <h3 class="reveal__title">{{ title }}</h3>
-    <button class="reveal__toggle" aria-controls="{{ id }}" aria-expanded="false" data-js-reveal-trigger>
+    <button class="reveal__toggle" aria-label="{{ title }}" aria-controls="{{ id }}" aria-expanded="false" data-js-reveal-trigger>
       <span class="reveal__toggle-text reveal__toggle-text--close">{{ toggleCloseText }}</span>
       <span class="reveal__toggle-text reveal__toggle-text--open">{{ toggleOpenText }}</span>
       <svg class="reveal__toggle-icon" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">

@@ -105,21 +105,21 @@ $reveal-transition-duration: 300ms;
     border: 1px solid $color-gray-lighter;
     border-top: none;
     border-radius: 0 0 $reveal-border-radius $reveal-border-radius;
-  }
 
-  &__content-wrapper {
-    display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height $reveal-transition-duration;
+    &-wrapper {
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height $reveal-transition-duration;
 
-    @include media-print {
-      max-height: none !important;
-      display: block;
-    }
+      @include media-print {
+        max-height: none !important;
+        display: block;
+      }
 
-    .reveal--open & {
-      transition-delay: .1s;
+      .reveal--open & {
+        transition-delay: .1s;
+      }
     }
   }
 }

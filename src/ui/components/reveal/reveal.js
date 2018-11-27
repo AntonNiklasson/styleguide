@@ -16,9 +16,9 @@ const reveal = {
   },
 
   registerEvents() {
-    var triggers = document.querySelectorAll(reveal.selectors.trigger)
+    const triggers = document.querySelectorAll(reveal.selectors.trigger)
 
-    for(var i=0; i < triggers.length; i++) {
+    for(let i=0; i < triggers.length; i++) {
       triggers[i].addEventListener('click', reveal.eventHandlers.onTriggerClick)
     }
   },
@@ -47,7 +47,7 @@ const reveal = {
     },
 
     handleTargetTransitionEnd() {
-      var isCollapsed = this.style.maxHeight === '0px';
+      const isCollapsed = this.style.maxHeight === '0px';
       this.style.maxHeight = !isCollapsed ? 'none': null
       this.removeEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
 
@@ -55,9 +55,16 @@ const reveal = {
         this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
         this.style.display = 'none'
       } else {
-        /* This causes the page to jump */
-        // this.setAttribute('tabindex', -1)
-        // this.focus()
+        const oldScrollPosition = window.pageYOffset
+
+        this.addEventListener('focus', e => {
+          window.scrollTo(0, oldScrollPosition)
+          e.preventDefault()
+          e.stopPropagation()
+        })
+
+        this.setAttribute('tabindex', -1)
+        this.focus()
       }
     }
   }
