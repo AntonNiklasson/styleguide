@@ -23,48 +23,70 @@ const reveal = {
     }
   },
 
+  toggleExpandedState(node) {
+    const targetId = node.getAttribute('aria-controls')
+    const target = document.getElementById(targetId)
+    const shouldExpand = node.getAttribute('aria-expanded') === 'false'
+
+    if(target) {
+      target.style.maxHeight = shouldExpand ? '0px' : target.scrollHeight + 'px'
+      target.style.display = 'block'
+      target.addEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd);
+      node.setAttribute('aria-expanded', shouldExpand)
+
+      // Wait for the DOM to set max-height on the target.
+      setTimeout(() => {
+        target.style.maxHeight = (shouldExpand ? target.scrollHeight : 0) + 'px'
+
+        if (shouldExpand) {
+          node.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.add(reveal.classNames.openHeader);
+        }
+      }, 50);
+    }
+  },
+
   eventHandlers: {
-    onTriggerClick() {
-      const targetId = this.getAttribute('aria-controls')
-      const target = document.getElementById(targetId)
-      const shouldExpand = this.getAttribute('aria-expanded') === 'false'
-
-      if(target) {
-        target.style.maxHeight = shouldExpand ? '0px' : target.scrollHeight + 'px'
-        target.style.display = 'block'
-        target.addEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
-        this.setAttribute('aria-expanded', shouldExpand)
-
-        // Wait for the DOM to set max-height on the target.
-        setTimeout(() => {
-          target.style.maxHeight = (shouldExpand ? target.scrollHeight : 0) + 'px'
-
-          if (shouldExpand) {
-            this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.add(reveal.classNames.openHeader);
-          }
-        }, 50);
-      }
+    onTriggerClick(event) {
+      reveal.toggleExpandedState(event.target)
     },
 
-    handleTargetTransitionEnd() {
-      const isCollapsed = this.style.maxHeight === '0px';
-      this.style.maxHeight = !isCollapsed ? 'none': null
-      this.removeEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
+    handleTargetTransitionEnd(event) {
+      const { target } = event;
+      const isCollapsed = target.style.maxHeight === '0px';
+      target.style.maxHeight = !isCollapsed ? 'none': null
+      target.removeEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
 
       if (isCollapsed) {
-        this.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
-        this.style.display = 'none'
+        target.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
+        target.style.display = 'none'
       } else {
         const oldScrollPosition = window.pageYOffset
 
-        this.addEventListener('focus', e => {
+        target.addEventListener('focus', e => {
           window.scrollTo(0, oldScrollPosition)
           e.preventDefault()
           e.stopPropagation()
-        })
+        });
 
-        this.setAttribute('tabindex', -1)
-        this.focus()
+        target.setAttribute('tabindex', -1)
+        target.focus()
+
+        // Add an <Esc> listener. Make sure to clean that up on blur.
+        target.addEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
+        target.addEventListener('blur', reveal.eventHandlers.onBlurContent);
+      }
+    },
+
+    onBlurContent(event) {
+      if (!event.target.contains(event.relatedTarget)) {
+        event.target.removeEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
+      }
+    },
+
+    onKeyPressInContent(event) {
+      if (event.key === 'Escape') {
+        reveal.toggleExpandedState(this.parentNode.querySelector(reveal.selectors.trigger))
+        this.removeEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
       }
     }
   }
