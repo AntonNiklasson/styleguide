@@ -55,7 +55,7 @@ const reveal = {
     },
 
     onKeyPressInContent(event) {
-      if (event.key === 'Escape') {
+      if (event.which === 27) {
         reveal.utils.toggleExpandedState(this.parentNode.querySelector(reveal.selectors.trigger))
         this.removeEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
       }
