@@ -56,5 +56,6 @@ name: Färger
 	border-radius: 50%;
 	color: black;
 	font-size: 14px;
+	text-align: center;
 }
 </style>

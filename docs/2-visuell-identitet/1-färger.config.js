@@ -60,44 +60,41 @@ module.exports = {
             ]
           }
         ]
-      }
-      /*
+      },
       {
         title: "Ramverk",
         colors: [
           {
             name: "Textfärg",
             hex: "#292929",
-            variable: "$color-text"
-          },
-          {
-            name: "Sekundär textfärg",
-            hex: "#666666",
-            variable: "$color-text-secondary"
-          },
-          {
-            name: "Ljus textfärg",
-            hex: "#FFFFFF",
-            variable: "$color-text-light"
+            variable: "$color-text",
+            variants: [
+              {
+                name: "Textfärg, inaktiv",
+                hex: "#666666",
+                variable: "$color-text-secondary"
+              }
+            ]
           },
           {
             name: "Länkfärg",
             hex: "#0079C2",
-            variable: "$color-link"
-          },
-          {
-            name: "Länkfärg, hover",
-            hex: "#005182",
-            variable: "$color-link-hover"
-          },
-          {
-            name: "Länkfärg, besökt",
-            hex: "#386406",
-            variable: "$color-link-visited"
+            variable: "$color-link",
+            variants: [
+              {
+                name: "Länkfärg, hover",
+                hex: "#005182",
+                variable: "$color-link-hover"
+              },
+              {
+                name: "Länkfärg, besökt",
+                hex: "#386406",
+                variable: "$color-link-visited"
+              }
+            ]
           }
         ]
       }
-      */
     ]
   }
 };
