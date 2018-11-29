@@ -4,10 +4,57 @@ name: Färger
 
 # Färger
 
-Använd alltid ett kontrastvärde på minst 4:5:1 som är [rekommenderat av W3C](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html). Du behöver testa att din tjänst uppfyller denna riktlinje.
+<div class="colorgroups-container">
+	{{#each colorGroups}}
+		<div class="colorgroup">
+			<h2>{{title}}</h2>
+    		<div class="colorgroup__list">
+    			{{#each colors}}
+				<div>
+    			<div class="colordot" style="background-color: {{hex}};">
+    				<span class="colordot__title">{{name}}</span>
+    				<span class="colordot__hex">{{hex}}</span>
+    			</div>
+					{{#if variants}}
+						{{#each variants}}
+						<div class="colordot" style="background-color: {{hex}};">
+							<span class="colordot__title">{{name}}</span>
+							<span class="colordot__hex">{{hex}}</span>
+						</div>
+						{{/each}}
+					{{/if}}
+				</div>
+    			{{/each}}
+    		</div>
+    	</div>
+    {{/each}}
 
-Namn | Hex | Variabel | Exempel
----|---|---|---
-{{#each colors}}
-	{{this.name}} | `{{ this.hex }}` | `{{ this.variable }}` | <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: {{ this.hex }};">
-{{/each}}
+</div>
+
+<style>
+.colorgroups-container {
+	display: flex;
+	flex-direction: column;
+}
+.colorgroup {
+	flex: 1;
+	margin: 1em 0;
+}
+.colorgroup__list {
+	display: flex;
+	flex-flow: row wrap;
+}
+.colordot {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 8px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	color: black;
+	font-size: 14px;
+}
+</style>
