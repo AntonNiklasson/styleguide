@@ -46,7 +46,7 @@ const reveal = {
 
   eventHandlers: {
     onTriggerClick(event) {
-      reveal.utils.toggleExpandedState(event.target)
+      reveal.utils.toggleExpandedState(event.currentTarget)
     },
 
     handleTargetTransitionEnd(event) {
@@ -70,8 +70,8 @@ const reveal = {
     },
 
     onBlurContent(event) {
-      if (!event.target.contains(event.relatedTarget)) {
-        event.target.removeEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
+      if (!event.currentTarget.contains(event.relatedTarget)) {
+        event.currentTarget.removeEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
       }
     },
 
