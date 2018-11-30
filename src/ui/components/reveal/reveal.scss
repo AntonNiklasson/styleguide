@@ -120,6 +120,11 @@ $reveal-transition-duration: 300ms;
       .reveal--open & {
         transition-delay: .1s;
       }
+
+      &--expanded {
+        display: block;
+        max-height: none;
+      }
     }
   }
 }

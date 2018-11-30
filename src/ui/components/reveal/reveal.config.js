@@ -6,6 +6,7 @@ module.exports = {
     title: 'Lorem ipsum dolor sit amet',
     toggleCloseText: 'Dölj',
     toggleOpenText: 'Visa',
+    expanded: false,
     body: `
       <div>
         <p>Du måste ha en lärar- eller förskollärarexamen för att få en legitimation. Om du inte har en examen kan du vidareutbilda dig. Vilken utbildning som passar bäst beror på dina tidigare erfarenheter och studier. Det finns olika vägar till examen.</p>
@@ -28,6 +29,12 @@ module.exports = {
     {
       name: 'nojs',
       hidden: true
+    },
+    {
+      name: 'expanded',
+      context: {
+        expanded: true
+      }
     }
   ]
 }
