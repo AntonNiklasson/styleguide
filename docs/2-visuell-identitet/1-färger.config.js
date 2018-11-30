@@ -80,7 +80,7 @@ module.exports = {
           {
             name: "Länkfärg",
             hex: "#0079C2",
-            variable: "$color-link",
+            textColor: 'white',
             variants: [
               {
                 name: "Länkfärg, hover",

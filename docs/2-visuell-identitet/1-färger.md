@@ -13,7 +13,7 @@ name: Färger
 				<div>
     			<div class="colordot" style="background-color: {{hex}}; {{#if textColor}}color: {{textColor}};{{/if}}">
     				<span class="colordot__title">{{name}}</span>
-    				<span class="colordot__hex">{{hex}}</span>
+    				<span class="colordot__value">{{hex}}</span>
     			</div>
 					{{#if variants}}
 						{{#each variants}}
