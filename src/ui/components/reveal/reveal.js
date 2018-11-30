@@ -1,128 +1,95 @@
-const reveal = {
+(() => {
+  const Reveal = function(el) {
+    this.root = el
+    this.header = el.querySelector('[data-js-reveal-header]')
+    this.trigger = el.querySelector('[data-js-reveal-trigger]')
+    this.container = el.querySelector('[data-js-reveal-container]')
+    this.isExpanded = this.trigger.getAttribute('aria-expanded') === 'true'
 
-  selectors: {
-    root: '[data-js-reveal]',
-    header: '[data-js-reveal-header]',
-    trigger: '[data-js-reveal-trigger]'
-  },
-
-  classNames: {
-    triggerActive: 'reveal__toggle--close',
-    openHeader: 'reveal__header--open',
-  },
-
-  init() {
-    reveal.registerEvents();
-    reveal.polyfill()
-  },
-
-  polyfill() {
-    if (!Element.prototype.matches)
-      Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
-
-    if (!Element.prototype.closest) {
-      Element.prototype.closest = function(s) {
-        var el = this;
-
-        if (!document.documentElement.contains(el)) return null;
-
-        do {
-          if (el.matches(s)) return el;
-          el = el.parentElement || el.parentNode;
-        } while (el !== null && el.nodeType === 1);
-
-        return null;
-      };
-    }
-  },
-
-  registerEvents() {
-    const triggers = document.querySelectorAll(reveal.selectors.trigger)
-
-    for(let i=0; i < triggers.length; i++) {
-      triggers[i].addEventListener('click', reveal.eventHandlers.onTriggerClick)
-    }
-  },
-
-  eventHandlers: {
-    onTriggerClick(event) {
-      reveal.utils.toggleExpandedState(event.currentTarget)
-    },
-
-    handleTargetTransitionEnd(event) {
-      const { target } = event;
-      const isCollapsed = target.style.maxHeight === '0px';
-      target.style.maxHeight = !isCollapsed ? 'none': null
-      target.removeEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd)
-
-      if (isCollapsed) {
-        target.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.remove(reveal.classNames.openHeader);
-        target.style.display = 'none'
-      } else {
-        reveal.utils.preventFocusScroll(target)
-
-        target.setAttribute('tabindex', -1)
-        target.focus()
-
-        target.addEventListener('keyup', reveal.eventHandlers.onKeyPressInContent);
-        target.addEventListener('blur', reveal.eventHandlers.onBlurContent);
-      }
-    },
-
-    onBlurContent(event) {
-      if (!event.currentTarget.contains(event.relatedTarget)) {
-        event.currentTarget.removeEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
-      }
-    },
-
-    onKeyPressInContent(event) {
-      if (event.which === 27) {
-        reveal.utils.toggleExpandedState(this.parentNode.querySelector(reveal.selectors.trigger))
-        this.removeEventListener('keypress', reveal.eventHandlers.onKeyPressInContent);
-      }
-    }
-  },
-
-  utils: {
-    preventFocusScroll(target) {
-      const oldScrollPosition = window.pageYOffset
-
-      target.addEventListener('focus', e => {
-        window.scrollTo(0, oldScrollPosition)
-        e.preventDefault()
-        e.stopPropagation()
-      })
-    },
-
-    toggleExpandedState(node) {
-      const targetId = node.getAttribute('aria-controls')
-      const target = document.getElementById(targetId)
-      const shouldExpand = node.getAttribute('aria-expanded') === 'false'
-
-      if(target) {
-        target.style.maxHeight = shouldExpand ? '0px' : target.scrollHeight + 'px'
-        target.style.display = 'block'
-        target.addEventListener('transitionend', reveal.eventHandlers.handleTargetTransitionEnd);
-        node.setAttribute('aria-expanded', shouldExpand)
-
-        if(!shouldExpand) {
-          node.focus()
-        }
-
-        reveal.utils.setTargetHeight(node, target, shouldExpand)
-      }
-    },
-
-    setTargetHeight(node, target, shouldExpand) {
-      setTimeout(() => { // Wait for the DOM to set max-height on the target.
-        target.style.maxHeight = (shouldExpand ? target.scrollHeight : 0) + 'px'
-
-        if (shouldExpand) {
-          node.closest(reveal.selectors.root).querySelector(reveal.selectors.header).classList.add(reveal.classNames.openHeader);
-        }
-      }, 50);
-    }
+    this.registerEvents()
   }
-}
 
-reveal.init()
+  Reveal.prototype = {
+
+    classList: {
+      headerOpen: 'reveal__header--open',
+      containerOpen: 'reveal__content-wrapper--open'
+    },
+
+    registerEvents() {
+      this.onTriggerClick     = this.onTriggerClick.bind(this)
+      this.onKeyUp            = this.onKeyUp.bind(this)
+      this.updateUi           = this.updateUi.bind(this)
+      this.setUiClose         = this.setUiClose.bind(this)
+      this.setUiOpen          = this.setUiOpen.bind(this)
+      this.onTransitionEnd    = this.onTransitionEnd.bind(this)
+      this.preventFocusScroll = this.preventFocusScroll.bind(this)
+
+      this.trigger.addEventListener('click', this.onTriggerClick)
+      this.container.addEventListener('transitionend', this.onTransitionEnd)
+      this.container.addEventListener('keyup', this.onKeyUp)
+    },
+
+    onTriggerClick() {
+      this.isExpanded = !this.isExpanded
+      this.updateUi()
+    },
+
+    onKeyUp(e) {
+      if(e.which === 27 && this.isExpanded) {
+        this.isExpanded = false
+        this.updateUi()
+      }
+    },
+
+    updateUi() {
+      if(this.isExpanded)
+        this.setUiOpen()
+      else
+        this.setUiClose()
+    },
+
+    setUiClose() {
+      this.trigger.setAttribute('aria-expanded', false)
+      this.container.style.maxHeight = `${this.container.scrollHeight}px`
+
+      setTimeout(() => { // Wait for the DOM to set the containers max-height
+        this.container.style.maxHeight = '0px'
+        this.trigger.focus()
+      }, 50)
+    },
+
+    setUiOpen() {
+      this.trigger.setAttribute('aria-expanded', true)
+      this.header.classList.add(this.classList.headerOpen)
+
+      this.container.style.display = 'block'
+      this.container.style.maxHeight = `${this.container.scrollHeight}px`
+
+      this.container.addEventListener('focus', this.preventFocusScroll)
+      this.container.setAttribute('tabindex', -1)
+      this.container.focus()
+    },
+
+    onTransitionEnd() {
+      if(this.isExpanded) {
+        this.container.classList.add(this.classList.containerOpen)
+        this.container.removeAttribute('style')
+      } else {
+        this.container.classList.remove(this.classList.containerOpen)
+        this.header.classList.remove(this.classList.headerOpen)
+        this.container.removeAttribute('style')
+      }
+    },
+
+    preventFocusScroll() {
+      const oldScrollPosition = window.pageYOffset
+      window.scrollTo(0, oldScrollPosition)
+      this.container.removeEventListener('focus', this.preventFocusScroll)
+    }
+
+  }
+
+  document.querySelectorAll('[data-js-reveal]').forEach(el => new Reveal(el))
+
+})()

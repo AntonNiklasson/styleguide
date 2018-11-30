@@ -121,7 +121,7 @@ $reveal-transition-duration: 300ms;
         transition-delay: .1s;
       }
 
-      &--expanded {
+      &--open {
         display: block;
         max-height: none;
       }

@@ -10,7 +10,7 @@
       </svg>
     </button>
   </header>
-  <div class="reveal__content-wrapper{{#if expanded}} reveal__content-wrapper--expanded{{/if}}" id="{{ id }}" tabindex="-1">
+  <div class="reveal__content-wrapper{{#if expanded}} reveal__content-wrapper--open{{/if}}" id="{{ id }}" tabindex="-1" data-js-reveal-container>
     <div class="reveal__content">
       {{{ body }}}
     </div>
