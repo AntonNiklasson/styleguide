@@ -11,15 +11,15 @@ name: Färger
     		<div class="colorgroup__list">
     			{{#each colors}}
 				<div>
-    			<div class="colordot" style="background-color: {{hex}};">
+    			<div class="colordot" style="background-color: {{hex}}; {{#if textColor}}color: {{textColor}};{{/if}}">
     				<span class="colordot__title">{{name}}</span>
     				<span class="colordot__hex">{{hex}}</span>
     			</div>
 					{{#if variants}}
 						{{#each variants}}
-						<div class="colordot" style="background-color: {{hex}};">
+    			<div class="colordot" style="background-color: {{hex}}; {{#if textColor}}color: {{textColor}};{{/if}}">
 							<span class="colordot__title">{{name}}</span>
-							<span class="colordot__hex">{{hex}}</span>
+							<pre class="colordot__value">{{hex}}</pre>
 						</div>
 						{{/each}}
 					{{/if}}
@@ -51,11 +51,17 @@ name: Färger
 	justify-content: center;
 	align-items: center;
 	margin: 8px;
-	width: 100px;
-	height: 100px;
+	width: 130px;
+	height: 130px;
 	border-radius: 50%;
 	color: black;
 	font-size: 14px;
 	text-align: center;
+}
+.colordot__title {
+  font-weight: bold;
+}
+.colordot__value {
+  font-family: monospace;
 }
 </style>

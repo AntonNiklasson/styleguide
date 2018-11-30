@@ -7,11 +7,12 @@ module.exports = {
           {
             name: "Lila",
             hex: "#692969",
-            variable: "$color-background-dark"
+            textColor: 'white',
           },
           {
             name: "Grön",
-            hex: "#00424C"
+            hex: "#00424C",
+            textColor: 'white'
           },
           {
             name: "Korall 1",
@@ -67,12 +68,12 @@ module.exports = {
           {
             name: "Textfärg",
             hex: "#292929",
-            variable: "$color-text",
+            textColor: 'white',
             variants: [
               {
                 name: "Textfärg, inaktiv",
                 hex: "#666666",
-                variable: "$color-text-secondary"
+                textColor: 'white',
               }
             ]
           },
@@ -84,11 +85,13 @@ module.exports = {
               {
                 name: "Länkfärg, hover",
                 hex: "#005182",
+                textColor: 'white',
                 variable: "$color-link-hover"
               },
               {
                 name: "Länkfärg, besökt",
                 hex: "#386406",
+                textColor: 'white',
                 variable: "$color-link-visited"
               }
             ]
