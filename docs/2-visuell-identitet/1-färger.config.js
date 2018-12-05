@@ -3,63 +3,98 @@ module.exports = {
     colorGroups: [
       {
         title: "Profilfärger",
+        description: 'Skolverkets primära färger är lile och mörkturkos. Dessa ska användas genomgående i all kommunikation.',
         colors: [
           {
-            name: "Lila",
-            hex: "#692969",
-            textColor: 'white',
+            name: "Profilfärg 1",
+            hex: "#692859",
           },
           {
-            name: "Grön",
+            name: "Profilfärg 2",
             hex: "#00424C",
-            textColor: 'white'
+          }
+        ]
+      },
+      {
+        title: "Accentfärger",
+        description: 'Accentfärgerna används sparsamt. Används främst till dekorelement och ikoner.',
+        colors: [
+          {
+            name: "Accentfärg 1",
+            hex: "#99CED4",
           },
           {
-            name: "Korall 1",
+            name: "Accentfärg 2",
             hex: "#EF7748",
+
+          },
+          {
+            name: "Accentfärg 3",
+            hex: "#F59C00",
+          }
+        ]
+      },
+      {
+        title: "Bakgrundsfärger",
+        description: 'Bakgrundsfärgerna får även användas i 50% och 25% opacitet.',
+        colors: [
+          {
+            name: "Bakgrundsfärg 1",
+            hex: "#DCEAEA",
             variants: [
               {
-                name: "Korall 2",
-                hex: "#fbceb4"
+                label: '50%',
+                hex: "#DCEAEA88",
               },
               {
-                name: "Korall 2 (50%)",
-                hex: "#fde6d9"
-              },
-              {
-                name: "Korall 2 (25%)",
-                hex: "#fef2ec"
-              },
-              {
-                name: "Korall 3",
-                hex: "#fef3ed"
+                label: '25%',
+                hex: 'pink',
+                hex: "#DCEAEA44",
               }
             ]
           },
           {
-            name: "Turkos 1",
-            hex: "#94c6cc",
+            name: 'Bakgrundsfärg 2',
+            hex: "#FCDBCB",
             variants: [
               {
-                name: "Turkos 2",
-                hex: "#dceaea"
+                label: '50%',
+            hex: "#FCDBCB88",
               },
               {
-                name: "Turkos 3",
-                hex: "#eff4f4"
+                label: '25%',
+            hex: "#FCDBCB44",
               }
             ]
           },
           {
-            name: "Gul 1",
-            hex: "#fbd85d",
+            name: 'Bakgrundsfärg 3',
+            hex: '#ffe56f',
             variants: [
               {
-                name: "Gul 2",
-                hex: "#fff3d5"
+                label: '50%',
+                hex: '#ffe56f88',
+              },
+              {
+                label: '25%',
+                hex: '#ffe56f44',
               }
             ]
           }
+        ]
+      },
+      {
+        title: "Komplementfärger",
+        description: 'Komplementfärgerna används vid behov av ytterligare färger, exempelvis i diagram och grafik.',
+        colors: [
+          {
+            name: "Komplementfärg 1",
+            hex: "#497E89",
+          },
+          {
+            name: 'Komplementfärg 2',
+            hex: "#B1451C",
+          },
         ]
       },
       {
@@ -69,32 +104,14 @@ module.exports = {
             name: "Textfärg",
             hex: "#292929",
             textColor: 'white',
-            variants: [
-              {
-                name: "Textfärg, inaktiv",
-                hex: "#666666",
-                textColor: 'white',
-              }
-            ]
           },
           {
             name: "Länkfärg",
             hex: "#0079C2",
-            textColor: 'white',
-            variants: [
-              {
-                name: "Länkfärg, hover",
-                hex: "#005182",
-                textColor: 'white',
-                variable: "$color-link-hover"
-              },
-              {
-                name: "Länkfärg, besökt",
-                hex: "#386406",
-                textColor: 'white',
-                variable: "$color-link-visited"
-              }
-            ]
+          },
+          {
+            name: 'Felmeddelande',
+            hex: "#CD2126"
           }
         ]
       }

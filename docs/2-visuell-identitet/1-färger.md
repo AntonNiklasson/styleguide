@@ -8,22 +8,28 @@ name: Färger
 	{{#each colorGroups}}
 		<div class="colorgroup">
 			<h2>{{title}}</h2>
+      {{#if description}}
+        <p class="colorgroup__description">{{description}}</p>
+      {{/if}}
     		<div class="colorgroup__list">
     			{{#each colors}}
-				<div>
-    			<div class="colordot" style="background-color: {{hex}}; {{#if textColor}}color: {{textColor}};{{/if}}">
-    				<span class="colordot__title">{{name}}</span>
-    				<span class="colordot__value">{{hex}}</span>
+    			<div class="colordot">
+          <div class="colordot__previews">
+            <div class="colordot__preview" style="background-color: {{hex}};"></div>
+            {{#if variants}}
+              {{#each variants}}
+                <div class="colordot__preview--variant" style="background-color: {{hex}};"></div>
+              {{/each}}
+            {{/if}}
+            </div>
+    				<div class="colordot__title">{{name}}</div>
+    				<div class="colordot__value"><span>{{hex}}</span> {{#if variants}}<span style="color: #666;">(100%)</span>{{/if}}</div>
+            {{#if variants}}
+              {{#each variants}}
+                <div class="colordot__value"><span>{{hex}}</span><span style="color: #666;">({{label}})</span></div>
+              {{/each}}
+            {{/if}}
     			</div>
-					{{#if variants}}
-						{{#each variants}}
-    			<div class="colordot" style="background-color: {{hex}}; {{#if textColor}}color: {{textColor}};{{/if}}">
-							<span class="colordot__title">{{name}}</span>
-							<pre class="colordot__value">{{hex}}</pre>
-						</div>
-						{{/each}}
-					{{/if}}
-				</div>
     			{{/each}}
     		</div>
     	</div>
@@ -38,30 +44,46 @@ name: Färger
 }
 .colorgroup {
 	flex: 1;
-	margin: 1em 0;
+	margin: 20px 0;
+}
+.colorgroup h2 {
+  margin: 0 0 10px 0;
+}
+.colorgroup__description {
+  margin: 0 0 15px 0;
 }
 .colorgroup__list {
 	display: flex;
 	flex-flow: row wrap;
 }
 .colordot {
-	flex: 0 0 auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 8px;
-	width: 130px;
-	height: 130px;
-	border-radius: 50%;
+  margin-right: 20px;
 	color: black;
-	font-size: 14px;
-	text-align: center;
+	font-size: 16px;
+}
+.colordot:last-child {
+  margin-right: 0;
+}
+.colordot__previews {
+  margin: 0 0 10px 0;
+}
+.colordot__preview {
+	width: 150px;
+  height: 150px;
+}
+.colordot__preview--variant {
+  width: 150px;
+  height: 50px;
 }
 .colordot__title {
   font-weight: bold;
 }
-.colordot__value {
+.colordot__value span {
   font-family: monospace;
+}
+
+.Document .Prose {
+  /*margin: 0;*/
+  max-width: 500px;
 }
 </style>
