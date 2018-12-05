@@ -4,9 +4,10 @@
   {{ render '@head' }}
 </head>
 <body class="Body--purple">
-  {{ render '@header' }}
-  {{{ yield }}}
-  {{ render '@footer' }}
-  <script async defer src="/js/main.min.js"></script>
+{{ render '@inline-svg' }}
+{{ render '@header' }}
+{{{ yield }}}
+{{ render '@footer' }}
+<script async defer src="/js/main.min.js"></script>
 </body>
 </html>

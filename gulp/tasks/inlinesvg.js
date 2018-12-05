@@ -15,8 +15,8 @@ module.exports = gulp => {
       .pipe(rename({prefix: 'icon-'}))
       .pipe(svgstore({inlineSvg: true}))
       .pipe(replace('<svg xmlns="http://www.w3.org/2000/svg">', '<svg style="height:0;width:0;display:block;" xmlns="http://www.w3.org/2000/svg">'))
-      .pipe(rename(gulpUtils.useEPiServer || gulpUtils.isProduction() ? 'InlineSvg.cshtml' : 'inline-svg.hbs'))
-      .pipe(gulp.dest(gulpUtils.useEPiServer  || gulpUtils.isProduction() ? '../Views/Shared' : 'src/ui/framework/inline-svg'))
+      .pipe(rename('inline-svg.hbs'))
+      .pipe(gulp.dest('src/ui/framework/inline-svg'))
   })
 
   gulp.task('inlinesvg:watch', () => {
