@@ -1,0 +1,16 @@
+.reveal {
+  &__header,
+  &__header:hover {
+    background-color: $color-purple-dark;
+    color: $color-white;
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  &__content-wrapper {
+    max-height: none;
+    display: block;
+  }
+}

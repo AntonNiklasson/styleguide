@@ -1,4 +1,4 @@
-.btn {
+.skv-btn {
   display: inline-block;
   font-weight: $font-weight-bold;
   text-align: center;
@@ -82,7 +82,7 @@
     }
 
     // Vertically space out multiple block buttons
-    + .btn--block {
+    + .skv-btn--block {
       margin-top: .5rem;
     }
   }

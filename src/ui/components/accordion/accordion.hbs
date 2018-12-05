@@ -1,13 +1,13 @@
-<div class="accordion" id="accordionOne">
+<div class="skv-accordion" id="accordionOne">
   {{#each items }}
-  <div class="accordion__item{{#if isActive }} accordion__item--open{{/if}}">
-    <h2 class="h3 accordion__item-header" id="headingOne">
-      <a class="accordion__item-link text-medium" href="#accordion1">
+  <div class="skv-accordion__item{{#if isActive }} skv-accordion__item--open{{/if}}">
+    <h2 class="h3 skv-accordion__item-header" id="headingOne">
+      <a class="skv-accordion__item-link text-medium" href="#accordion1">
         {{ headline }}
-        <i class="accordion__item-icon icon-arrow icon-arrow--down"></i>
+        <i class="skv-accordion__item-icon icon-arrow icon-arrow--down"></i>
       </a>
     </h2>
-    <div class="accordion__item-body text-standard" data-parent="#accordion">
+    <div class="skv-accordion__item-body text-standard" data-parent="#accordion">
       {{{ body }}}
     </div>
   </div>

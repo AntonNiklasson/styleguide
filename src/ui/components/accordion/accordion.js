@@ -1,6 +1,6 @@
-var items = document.querySelectorAll('.accordion__item-link');
+var items = document.querySelectorAll('.skv-accordion__item-link');
 for (var i = 0; i < items.length; i++) {
   items[i].addEventListener('click', function() {
-    this.closest(".accordion__item").classList.toggle('accordion__item--open');
+    this.closest(".skv-accordion__item").classList.toggle('skv-accordion__item--open');
   });
 }

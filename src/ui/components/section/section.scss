@@ -1,9 +1,9 @@
-.section {
+.skv-section {
   @include media-min('lg') {
     display: flex;
   }
 
-  + .section {
+  + .skv-section {
     border-top: 1px solid $color-purple;
   }
 
