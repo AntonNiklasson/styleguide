@@ -70,19 +70,22 @@ $reveal-transition-duration: 300ms;
     color: inherit;
     font-weight: inherit;
     cursor: pointer;
+    overflow: hidden; // Due to focus outline jank during animation in Chrome.
 
     @include media-print {
       display: none;
     }
 
     &-icon {
-      vertical-align: middle;
-      transform: rotate(90deg);
+      display: inline-block;
+      font-size: 28px;
       transition: transform $reveal-transition-duration;
+      vertical-align: middle;
+      line-height: 1em;
+      height: 1em;
 
       [aria-expanded="true"] & {
-        transform: rotate(-90deg);
-        background-image: url('../assets/img/arrow-white.svg');
+        transform: rotate(180deg);
       }
     }
 

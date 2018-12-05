@@ -90,6 +90,10 @@
 
   }
 
-  document.querySelectorAll('[data-js-reveal]').forEach(el => new Reveal(el))
+  const components = document.querySelectorAll('[data-js-reveal]')
+
+  for(let i=0; i < components.length; i++) {
+    new Reveal(components[i])
+  }
 
 })()
