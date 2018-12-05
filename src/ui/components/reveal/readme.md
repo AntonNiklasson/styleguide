@@ -5,7 +5,7 @@
 ## Tillgänglighet
 Följande interaktionsprinciper förväntas av den här komponenten:
 
-### Knapptryck eller fokus på knapp + enter
+### Knapptryck eller fokus på knapp + enter/mellanslag
 Ska fälla ut/ihop innehållet. Om vi fäller ut så fokus sättas på innehållet. Om vi fäller ihop skall fokus sättas på knappen 
 
 ### Fokus på innehåll + Escape
@@ -26,13 +26,7 @@ Innehållet lyssnar inte längre på knapptryck
 | <strong>body</strong>            | En html-sträng som är innehållet som rendreras i behållaren. |
 
 ### No-js
-Om man har stängt av javascript så skall man fortfarande kunna ta till sig innehållet. 
-För att göra det här möjligt utan att påverka renderingen av sidan så inlkuderar man följande html i en `noscript`-tag i layout-filen.
-Se [head](http://localhost:3000/components/detail/head) för mer information.
-
-```
-{{ render '@reveal--nojs' }}
-```
+Om man har stängt av javascript så skall man fortfarande kunna ta till sig innehållet. Detta görs genom att inkludera `/css/no-js.min.css` i [headern](http://localhost:3000/components/detail/head) i en noscript-tag.
 
 ### Print
 När man skriver ut sidan så visar vi allt innehåll som om komponenten är utfälld. Vi tar även bort knapptexten.
