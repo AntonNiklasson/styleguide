@@ -32,3 +32,9 @@
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Available breakpoints are: #{map-keys($grid-breakpoints)}.";
   }
 }
+
+@mixin media-print {
+  @media print {
+    @content;
+  }
+}
