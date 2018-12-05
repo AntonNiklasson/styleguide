@@ -12,8 +12,8 @@
   Reveal.prototype = {
 
     classList: {
-      headerOpen: 'reveal__header--open',
-      containerOpen: 'reveal__content-wrapper--open'
+      headerOpen: 'skv-reveal__header--open',
+      containerOpen: 'skv-reveal__content-wrapper--open'
     },
 
     registerEvents() {

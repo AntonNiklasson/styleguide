@@ -14,7 +14,7 @@ $reveal-transition-duration: 300ms;
   }
 }
 
-.reveal {
+.skv-reveal {
   margin: 16px 0;
 
   @include media-print {
@@ -117,19 +117,21 @@ $reveal-transition-duration: 300ms;
       max-height: 0;
       overflow: hidden;
       transition: max-height $reveal-transition-duration;
+      transition-timing-function: ease-in;
 
       @include media-print {
         max-height: none !important;
         display: block;
       }
 
-      .reveal--open & {
+      .skv-reveal--open & {
         transition-delay: .1s;
       }
 
       &--open {
         display: block;
         max-height: none;
+        transition-timing-function: ease-out;
       }
     }
   }
