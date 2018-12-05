@@ -9,7 +9,7 @@ $color-input-bg: $color-purple-light !default;
   display: block;
   width: 100%;
   min-height: 42px;
-  padding: .3125rem .875rem;
+  padding: 0.3125rem 0.875rem;
   font-size: rem(16px);
   line-height: rem(24px);
   color: $color-input;
@@ -17,7 +17,7 @@ $color-input-bg: $color-purple-light !default;
   background-clip: padding-box;
   border: 0;
 
-  @include media-min('md') {
+  @include media-min("md") {
     font-size: $font-size-sm;
     line-height: $line-height-sm;
   }
@@ -60,13 +60,13 @@ $color-input-bg: $color-purple-light !default;
     border: 2px solid $color-error;
     box-shadow: 0 3px 0 0 $color-error;
     padding-right: 2.625rem;
-    background-position: center right .625rem;
+    background-position: center right 0.625rem;
     background-size: 1.5rem;
-    background-color: #FCF4F4;
-    margin-bottom: .5rem;
+    background-color: #fcf4f4;
+    margin-bottom: 0.5rem;
 
     &-textarea {
-      background-position: top .5rem right .625rem;
+      background-position: top 0.5rem right 0.625rem;
     }
 
     &:focus {
@@ -77,22 +77,22 @@ $color-input-bg: $color-purple-light !default;
 
   &--search {
     padding-left: 2.625rem;
-    background-position: left .625rem center;
+    background-position: left 0.625rem center;
     background-size: 1.5rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 }
 
-select.skv-form-control  {
+select.skv-form-control {
   padding-right: 2.625rem;
-  background-position: right .625rem center;
+  background-position: right 0.625rem center;
   background-size: 1.25rem 1.25rem;
   border-radius: 0;
 
   /*for firefox*/
   -moz-appearance: none;
   /*for chrome*/
-  -webkit-appearance:none;
+  -webkit-appearance: none;
 
   /*for IE10*/
   &::-ms-expand {
@@ -128,7 +128,7 @@ select.skv-form-control  {
   }
 
   &--margin-b-small {
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -140,7 +140,7 @@ select.skv-form-control  {
   font-size: rem(18px);
   line-height: rem(24px);
 
-  @include media-min('md') {
+  @include media-min("md") {
     font-size: $font-size-h4;
     line-height: $line-height-h4;
   }
@@ -158,7 +158,7 @@ select.skv-form-control  {
   font-size: rem(16px);
   line-height: rem(24px);
 
-  @include media-min('md') {
+  @include media-min("md") {
     font-size: $font-size-sm;
     line-height: $line-height-sm;
   }
@@ -189,8 +189,8 @@ select.skv-form-control  {
     background-color: $color-purple;
   }
 
-  &:focus ~ .skv-custom-control__label::before {    // ???
-    outline: 1px solid #4D90FE;
+  &:focus ~ .skv-custom-control__label::before {
+    outline: 1px solid #4d90fe;
   }
 
   &:disabled {
@@ -213,11 +213,10 @@ select.skv-form-control  {
   font-size: rem(18px);
   line-height: rem(24px);
 
-  @include media-min('md') {
+  @include media-min("md") {
     font-size: $font-size-std;
     line-height: $line-height-std;
   }
-
 
   // Background-color
   &::before {
@@ -254,12 +253,12 @@ select.skv-form-control  {
 // Custom checkbox
 .skv-custom-control--checkbox {
   .skv-custom-control__label::before {
-    border-radius: .125rem;
+    border-radius: 0.125rem;
   }
 
   .skv-custom-control__input:checked ~ .skv-custom-control__label {
     &::after {
-      background-image: url('../assets/img/tick-white.svg');
+      background-image: url("../assets/img/tick-white.svg");
     }
   }
 }
@@ -275,7 +274,7 @@ select.skv-form-control  {
       background-color: $color-white;
     }
     &::after {
-      background-image: url('../assets/img/radio-checked.svg');
+      background-image: url("../assets/img/radio-checked.svg");
       background-size: 0.75rem;
     }
   }

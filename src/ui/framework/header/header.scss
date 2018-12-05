@@ -1,4 +1,4 @@
-.header {
+.skv-header {
   position: relative;
   z-index: 2;
 
@@ -101,7 +101,7 @@
       }
 
       &:last-child {
-        .navigation__list-item-link {
+        .skv-navigation__list-item-link {
           font-weight: $font-weight-base;
         }
       }

@@ -1,16 +1,16 @@
-<div class="reveal" data-js-reveal>
-  <header class="reveal__header{{#if expanded}} reveal__header--open{{/if}}" data-js-reveal-header>
-    <h3 class="reveal__title">{{ title }}</h3>
-    <button class="reveal__toggle" aria-label="{{ title }}" aria-controls="{{ id }}" aria-expanded="{{#if expanded}}true{{else}}false{{/if}}" data-js-reveal-trigger>
-      <span class="reveal__toggle-text reveal__toggle-text--close">{{ toggleCloseText }}</span>
-      <span class="reveal__toggle-text reveal__toggle-text--open">{{ toggleOpenText }}</span>
-      <span class="reveal__toggle-icon">
+<div class="skv-reveal" data-js-reveal>
+  <header class="skv-reveal__header{{#if expanded}} skv-reveal__header--open{{/if}}" data-js-reveal-header>
+    <h3 class="skv-reveal__title">{{ title }}</h3>
+    <button class="skv-reveal__toggle" aria-label="{{ title }}" aria-controls="{{ id }}" aria-expanded="{{#if expanded}}true{{else}}false{{/if}}" data-js-reveal-trigger>
+      <span class="skv-reveal__toggle-text skv-reveal__toggle-text--close">{{ toggleCloseText }}</span>
+      <span class="skv-reveal__toggle-text skv-reveal__toggle-text--open">{{ toggleOpenText }}</span>
+      <span class="skv-reveal__toggle-icon">
         {{> @icon name='expand-more' }}
       </span>
     </button>
   </header>
-  <div class="reveal__content-wrapper{{#if expanded}} reveal__content-wrapper--open{{/if}}" id="{{ id }}" tabindex="-1" data-js-reveal-container>
-    <div class="reveal__content">
+  <div class="skv-reveal__content-wrapper{{#if expanded}} skv-reveal__content-wrapper--open{{/if}}" id="{{ id }}" tabindex="-1" data-js-reveal-container>
+    <div class="skv-reveal__content">
       {{{ body }}}
     </div>
   </div>
