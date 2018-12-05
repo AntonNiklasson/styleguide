@@ -5,7 +5,7 @@
 $color-input: $color-gray !default;
 $color-input-bg: $color-purple-light !default;
 
-.form-control {
+.skv-form-control {
   display: block;
   width: 100%;
   min-height: 42px;
@@ -83,7 +83,7 @@ $color-input-bg: $color-purple-light !default;
   }
 }
 
-select.form-control  {
+select.skv-form-control  {
   padding-right: 2.625rem;
   background-position: right .625rem center;
   background-size: 1.25rem 1.25rem;
@@ -119,7 +119,7 @@ select.form-control  {
 //
 // Designed to help with the organization and spacing of vertical forms. For
 // horizontal forms, use the predefined grid classes.
-.form-group {
+.skv-form-group {
   margin-bottom: 1.75rem;
   width: 100%;
 
@@ -132,7 +132,7 @@ select.form-control  {
   }
 }
 
-.form-label {
+.skv-form-label {
   // Allow labels to use `margin` for spacing.
   display: inline-block;
   font-weight: $font-weight-bold;
@@ -150,7 +150,7 @@ select.form-control  {
   }
 }
 
-.form-text {
+.skv-form-text {
   display: block;
   color: $color-gray;
   font-style: italic;
@@ -167,7 +167,7 @@ select.form-control  {
 // Custom control (checkbox, radio)
 //
 // Following Bootstrap 4 naming convention but extended with BEM
-.custom-control {
+.skv-custom-control {
   position: relative;
   display: block;
   min-height: 1rem;
@@ -175,26 +175,26 @@ select.form-control  {
   margin-right: 1rem;
 }
 
-.custom-control__input {
+.skv-custom-control__input {
   position: absolute;
   z-index: -1;
   // Put the input behind the label so it doesn't overlay text
   opacity: 0;
 
-  &:checked ~ .custom-control__label::before {
+  &:checked ~ .skv-custom-control__label::before {
     background-color: $color-purple-dark;
   }
 
-  &:active ~ .custom-control__label::before {
+  &:active ~ .skv-custom-control__label::before {
     background-color: $color-purple;
   }
 
-  &:focus ~ .custom-control__label::before {    // ???
+  &:focus ~ .skv-custom-control__label::before {    // ???
     outline: 1px solid #4D90FE;
   }
 
   &:disabled {
-    ~ .custom-control__label {
+    ~ .skv-custom-control__label {
       color: $color-gray;
       cursor: not-allowed;
 
@@ -206,7 +206,7 @@ select.form-control  {
   }
 }
 
-.custom-control__label {
+.skv-custom-control__label {
   margin-bottom: 0;
   font-weight: 400;
   cursor: pointer;
@@ -252,12 +252,12 @@ select.form-control  {
 }
 
 // Custom checkbox
-.custom-control--checkbox {
-  .custom-control__label::before {
+.skv-custom-control--checkbox {
+  .skv-custom-control__label::before {
     border-radius: .125rem;
   }
 
-  .custom-control__input:checked ~ .custom-control__label {
+  .skv-custom-control__input:checked ~ .skv-custom-control__label {
     &::after {
       background-image: url('../assets/img/tick-white.svg');
     }
@@ -265,12 +265,12 @@ select.form-control  {
 }
 
 // Custom radio
-.custom-control--radio {
-  .custom-control__label::before {
+.skv-custom-control--radio {
+  .skv-custom-control__label::before {
     border-radius: 50%;
   }
 
-  .custom-control__input:checked ~ .custom-control__label {
+  .skv-custom-control__input:checked ~ .skv-custom-control__label {
     &::before {
       background-color: $color-white;
     }
