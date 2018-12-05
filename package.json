@@ -18,7 +18,8 @@
     "postrelease": "rm -f skolverket-styleguide-*.tgz"
   },
   "files": [
-    "src/ui",
+    "dist/assets",
+    "dist/css",
     "dist/js"
   ],
   "dependencies": {
