@@ -1,0 +1,18 @@
+<div class="reveal" data-js-reveal>
+  <header class="reveal__header{{#if expanded}} reveal__header--open{{/if}}" data-js-reveal-header>
+    <h3 class="reveal__title">{{ title }}</h3>
+    <button class="reveal__toggle" aria-label="{{ title }}" aria-controls="{{ id }}" aria-expanded="{{#if expanded}}true{{else}}false{{/if}}" data-js-reveal-trigger>
+      <span class="reveal__toggle-text reveal__toggle-text--close">{{ toggleCloseText }}</span>
+      <span class="reveal__toggle-text reveal__toggle-text--open">{{ toggleOpenText }}</span>
+      <svg class="reveal__toggle-icon" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"/>
+        <path d="M0-.25h24v24H0z" fill="none"/>
+      </svg>
+    </button>
+  </header>
+  <div class="reveal__content-wrapper{{#if expanded}} reveal__content-wrapper--open{{/if}}" id="{{ id }}" tabindex="-1" data-js-reveal-container>
+    <div class="reveal__content">
+      {{{ body }}}
+    </div>
+  </div>
+</div>
