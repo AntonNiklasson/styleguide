@@ -34,16 +34,18 @@ $reveal-transition-duration: 300ms;
     font-weight: $font-weight-bold;
     position: relative;
 
-    @include media-print {
-      @include reveal-header-active();
-    }
-
     &:hover {
       background: darken($color-blue-light, 4);
     }
 
     &--open {
       @include reveal-header-active();
+    }
+
+    @include media-print {
+      background: $color-white;
+      color: $color-purple-dark;
+      border: 1px solid $color-gray-lighter;
     }
   }
 
@@ -105,6 +107,10 @@ $reveal-transition-duration: 300ms;
     border: 1px solid $color-gray-lighter;
     border-top: none;
     border-radius: 0 0 $reveal-border-radius $reveal-border-radius;
+
+    @include media-print {
+      background-color: $color-white;
+    }
 
     &-wrapper {
       display: none;
