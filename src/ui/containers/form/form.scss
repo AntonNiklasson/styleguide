@@ -189,14 +189,8 @@ select.skv-form-control {
     background-color: $color-purple;
   }
 
-<<<<<<< HEAD
   &:focus ~ .skv-custom-control__label::before {
-    // ???
     outline: 1px solid #4d90fe;
-=======
-  &:focus ~ .skv-custom-control__label::before {    // ???
-    outline: 1px solid #4D90FE;
->>>>>>> 4cc29eb... prefix form classes
   }
 
   &:disabled {
