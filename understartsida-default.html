@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/skolverket.css">
+<link rel="stylesheet" href="_styleguide/css/well.css">
+<script src="_styleguide/js/well.js"></script>
+
+
+		<style>
+		</style>
+
+		<style>
+			html, body {
+				min-height: 0 !important;
+				height: auto !important;
+			}
+		</style>
+
+		<script>
+			function getStylemarkBlock(language, defaultIfEmpty) {
+				defaultIfEmpty = defaultIfEmpty || '';
+				var script = document.querySelector('script[data-language="' + language + '"]');
+				return script ? script.innerText : defaultIfEmpty;
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<main
+			role="main"
+			id="stylemark-root"
+			ng-controller="stylemark-understartsida-default"
+			style="
+				display: block;
+				padding: ;
+				width: ;
+			"
+		><div class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header__top-container">
+            <a href="#/">
+              <img src="_styleguide/assets/img/skolverket-logotype.svg" alt="Skolverket" class="header__top-logo" />
+            </a>
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="#1" class="header__list-item-listen">
+                  Lyssna
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#2" class="header__list-item-translate">
+                  Languages
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#3" class="header__list-item-search">
+                  Sök
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#4" class="header__list-item-mobilemenu">
+                  Meny
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__links">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header__links-container">
+            <ul class="header__list header__list--absolute">
+              <li class="header__list-item">
+                <a href="#5" class="header__list-item-link header__list-item-link--active">
+                  Undervisning
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#6" class="header__list-item-link">
+                  Skolutveckling
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#7" class="header__list-item-link">
+                  Lagar och regler
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#8" class="header__list-item-link">
+                  Innehåll A-Ö
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="_styleguide/assets/img/understart.png" width="100%" alt="Error with image loading..." />
+<div class="section-navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="h3 section-navigation__label section-navigation__label--overlap">
+          Sektionstitel
+        </h3>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#1" class="section-navigation__box-item-link">
+              Navigationsval 1
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#2" class="section-navigation__box-item-link">
+              Navigationsval 2
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#3" class="section-navigation__box-item-link">
+              Navigationsval 3
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#4" class="section-navigation__box-item-link">
+              Navigationsval 4
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#5" class="section-navigation__box-item-link">
+              Navigationsval 5
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item section-navigation__box-item--no-border">
+            <a href="#6" class="section-navigation__box-item-link">
+              Navigationsval med extra mycket text
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container container--no-padding">
+  <div class="box box--no-padding">
+    <div class="section section--boxed">
+      <header class="section__header">
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
+        <div class="section__header-preamble text-secondary">
+          <p>Kontextuell fördjupningstext <a href="/press" class="text-link">med länk</a></p>
+        </div>
+      </header>
+      <div class="section__body">
+        <img src="http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+      </div>
+    </div>
+  </div>
+</div></main>
+
+		
+
+			<script type="text/x-stylemark" data-language="html"><div class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header__top-container">
+            <a href="#/">
+              <img src="_styleguide/assets/img/skolverket-logotype.svg" alt="Skolverket" class="header__top-logo" />
+            </a>
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="#1" class="header__list-item-listen">
+                  Lyssna
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#2" class="header__list-item-translate">
+                  Languages
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#3" class="header__list-item-search">
+                  Sök
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#4" class="header__list-item-mobilemenu">
+                  Meny
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__links">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="header__links-container">
+            <ul class="header__list header__list--absolute">
+              <li class="header__list-item">
+                <a href="#5" class="header__list-item-link header__list-item-link--active">
+                  Undervisning
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#6" class="header__list-item-link">
+                  Skolutveckling
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#7" class="header__list-item-link">
+                  Lagar och regler
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a href="#8" class="header__list-item-link">
+                  Innehåll A-Ö
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<img src="_styleguide/assets/img/understart.png" width="100%" alt="Error with image loading..." />
+<div class="section-navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="h3 section-navigation__label section-navigation__label--overlap">
+          Sektionstitel
+        </h3>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#1" class="section-navigation__box-item-link">
+              Navigationsval 1
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#2" class="section-navigation__box-item-link">
+              Navigationsval 2
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#3" class="section-navigation__box-item-link">
+              Navigationsval 3
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#4" class="section-navigation__box-item-link">
+              Navigationsval 4
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item">
+            <a href="#5" class="section-navigation__box-item-link">
+              Navigationsval 5
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="section-navigation__box">
+          <div class="section-navigation__box-item section-navigation__box-item--no-border">
+            <a href="#6" class="section-navigation__box-item-link">
+              Navigationsval med extra mycket text
+              <i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container container--no-padding">
+  <div class="box box--no-padding">
+    <div class="section section--boxed">
+      <header class="section__header">
+        <h2 class="h3 section__header-title"><span class="section__header-title-text">Sektionstitel<span></h2>
+        <div class="section__header-preamble text-secondary">
+          <p>Kontextuell fördjupningstext <a href="/press" class="text-link">med länk</a></p>
+        </div>
+      </header>
+      <div class="section__body">
+        <img src="http://placehold.it/800x250/ffffff/E8D3E0?text=(Sektionens innehåll)" style="max-width: 100%"  />
+      </div>
+    </div>
+  </div>
+</div></script>
+			<script type="text/x-stylemark" data-language="js">SG_WELL_PURPLE = true;
+SG_WELL_NOT_PADDED = true;</script>
+
+		<script>
+			eval(getStylemarkBlock('js'));
+		</script>
+
+		<script>
+			(function(angular) {
+				if (!angular) {
+					return;
+				}
+
+				var moduleElem = document.querySelector('[ng-app]');
+				var module;
+
+				if (moduleElem) {
+					// Uses an existing module
+					module = angular.module(moduleElem.getAttribute('ng-app'));
+				}
+				else {
+					// Creates a new module
+					module = angular.module('stylemark-understartsida-default', []);
+				}
+
+				module.controller('stylemark-understartsida-default', function($scope) {
+					$scope.$eval(getStylemarkBlock('angularjs'));
+				});
+			})(window.angular);
+		</script>
+
+		<script>
+			(function(ReactDOM) {
+				if (!ReactDOM) {
+					return;
+				}
+
+				var Component = eval(getStylemarkBlock('jsx'));
+				var rootNode = document.getElementById('stylemark-root');
+				ReactDOM.render(Component, rootNode);
+			})(window.ReactDOM);
+		</script>
+
+		<script>
+			(function(Ember) {
+				if (!Ember) {
+					return;
+				}
+
+				var render = function() {
+					var app = window.noop
+					var container = app.__container__;
+					var renderer = container.lookup('renderer:-dom');
+					var hbs = getStylemarkBlock('handlebars') || getStylemarkBlock('hbs');
+					var template = Ember.HTMLBars.compile(hbs);
+
+					var context;
+					eval('context = ' + getStylemarkBlock('js', '{}'));
+
+					// Credit:
+					// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+					var compile = function(container, template, context) {
+						return new Ember.RSVP.Promise(function(resolve) {
+							Ember.Component.extend(Ember.merge({
+								style: 'display:none;',
+								layout: template,
+								container: container,
+								renderer: renderer,
+
+								init: function() {
+									this._super.apply(this, arguments);
+									Ember.setOwner(this, container);
+								},
+
+								didRender: function() {
+									var elem = this.$();
+									resolve(elem);
+									this.destroy();
+								}
+							}, context))
+								.create()
+								.append();
+
+						});
+					};
+
+					compile(container, template, context).then(function(elem) {
+						jQuery('#stylemark-root').append(elem);
+					});
+				};
+
+				var isReady = function() {
+					return window.noop
+						&& window.noop.__container__;
+				};
+
+				var checkReady = function() {
+					if (isReady()) {
+						render();
+					}
+					else {
+						setTimeout(checkReady, 20);
+					}
+				};
+
+				checkReady();
+
+			})(window.Ember);
+		</script>
+
+		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	</body>
+
+</html>

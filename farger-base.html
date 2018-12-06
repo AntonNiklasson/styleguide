@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/skolverket.css">
+<link rel="stylesheet" href="_styleguide/css/well.css">
+<script src="_styleguide/js/well.js"></script>
+
+
+		<style>
+		</style>
+
+		<style>
+			html, body {
+				min-height: 0 !important;
+				height: auto !important;
+			}
+		</style>
+
+		<script>
+			function getStylemarkBlock(language, defaultIfEmpty) {
+				defaultIfEmpty = defaultIfEmpty || '';
+				var script = document.querySelector('script[data-language="' + language + '"]');
+				return script ? script.innerText : defaultIfEmpty;
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<main
+			role="main"
+			id="stylemark-root"
+			ng-controller="stylemark-farger-base"
+			style="
+				display: block;
+				padding: ;
+				width: ;
+			"
+		><div class="row">
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Text</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #292929;"></div>
+      <div class="swatch__value">#292929</div>
+      <div class="swatch__label">Textfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #666666;"></div>
+      <div class="swatch__value">#666666</div>
+      <div class="swatch__label">Sekundär textfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview swatch__preview--bordered" style="background: #FFFFFF;"></div>
+      <div class="swatch__value">#FFFFFF</div>
+      <div class="swatch__label">Text mot mörkt</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Länkar</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #0079C2;"></div>
+      <div class="swatch__value">#0079C2</div>
+      <div class="swatch__label">Länkfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #005182;"></div>
+      <div class="swatch__value">#005182</div>
+      <div class="swatch__label">Länkfärg hover</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #386406;"></div>
+      <div class="swatch__value">#386406</div>
+      <div class="swatch__label">Länkfärg besökt</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Bakgrunder</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #692969;"></div>
+      <div class="swatch__value">#692969</div>
+      <div class="swatch__label">Mörk bakgrund</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #E1D4E1;"></div>
+      <div class="swatch__value">#E1D4E1</div>
+      <div class="swatch__label">Ramfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #F8F4F8;"></div>
+      <div class="swatch__value">#F8F4F8</div>
+      <div class="swatch__label">Ljus bakgrund</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Statusfärger</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #CD2126;"></div>
+      <div class="swatch__value">#CD2126</div>
+      <div class="swatch__label">Felmeddelande</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #FCB933;"></div>
+      <div class="swatch__value">#FCB933</div>
+      <div class="swatch__label">Fokus</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Gråskala</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #292929;"></div>
+      <div class="swatch__value">#292929</div>
+      <div class="swatch__label"></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #666666;"></div>
+      <div class="swatch__value">#666666</div>
+      <div class="swatch__label"></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #CFCFCF;"></div>
+      <div class="swatch__value">#CFCFCF</div>
+      <div class="swatch__label"></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #F3F3F3;"></div>
+      <div class="swatch__value">#F3F3F3</div>
+      <div class="swatch__label"></div>
+    </div>
+  </div>
+</div></main>
+
+		
+
+			<script type="text/x-stylemark" data-language="html"><div class="row">
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Text</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #292929;"></div>
+      <div class="swatch__value">#292929</div>
+      <div class="swatch__label">Textfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #666666;"></div>
+      <div class="swatch__value">#666666</div>
+      <div class="swatch__label">Sekundär textfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview swatch__preview--bordered" style="background: #FFFFFF;"></div>
+      <div class="swatch__value">#FFFFFF</div>
+      <div class="swatch__label">Text mot mörkt</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Länkar</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #0079C2;"></div>
+      <div class="swatch__value">#0079C2</div>
+      <div class="swatch__label">Länkfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #005182;"></div>
+      <div class="swatch__value">#005182</div>
+      <div class="swatch__label">Länkfärg hover</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #386406;"></div>
+      <div class="swatch__value">#386406</div>
+      <div class="swatch__label">Länkfärg besökt</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Bakgrunder</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #692969;"></div>
+      <div class="swatch__value">#692969</div>
+      <div class="swatch__label">Mörk bakgrund</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #E1D4E1;"></div>
+      <div class="swatch__value">#E1D4E1</div>
+      <div class="swatch__label">Ramfärg</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #F8F4F8;"></div>
+      <div class="swatch__value">#F8F4F8</div>
+      <div class="swatch__label">Ljus bakgrund</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Statusfärger</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #CD2126;"></div>
+      <div class="swatch__value">#CD2126</div>
+      <div class="swatch__label">Felmeddelande</div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #FCB933;"></div>
+      <div class="swatch__value">#FCB933</div>
+      <div class="swatch__label">Fokus</div>
+    </div>
+  </div>
+
+  <div class="col" style="text-align: center;">
+    <h2 class="h4">Gråskala</h2><br>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #292929;"></div>
+      <div class="swatch__value">#292929</div>
+      <div class="swatch__label"></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #666666;"></div>
+      <div class="swatch__value">#666666</div>
+      <div class="swatch__label"></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #CFCFCF;"></div>
+      <div class="swatch__value">#CFCFCF</div>
+      <div class="swatch__label"></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__preview" style="background: #F3F3F3;"></div>
+      <div class="swatch__value">#F3F3F3</div>
+      <div class="swatch__label"></div>
+    </div>
+  </div>
+</div></script>
+			<script type="text/x-stylemark" data-language="sass">// Links
+$color-blue: #0079C2 !default;
+$color-blue-dark: #005182 !default;
+$color-grass: #386406 !default;
+
+// Backgrounds and decoration
+$color-purple-dark: #692969 !default;
+$color-purple-light: #F8F4F8 !default;
+$color-purple: #E1D4E1 !default;
+
+// Greys and base
+$color-black: #000000 !default;
+$color-white: #FFFFFF !default;
+$color-gray: #666666 !default;
+$color-gray-lighter: #CFCFCF !default;
+$color-gray-light: #F3F3F3 !default;
+$color-gray-dark: #292929 !default;
+
+// Status
+$color-error: #CD2126 !default;
+
+// Focus
+$color-yellow: #FCB933 !default;</script>
+
+		<script>
+			eval(getStylemarkBlock('js'));
+		</script>
+
+		<script>
+			(function(angular) {
+				if (!angular) {
+					return;
+				}
+
+				var moduleElem = document.querySelector('[ng-app]');
+				var module;
+
+				if (moduleElem) {
+					// Uses an existing module
+					module = angular.module(moduleElem.getAttribute('ng-app'));
+				}
+				else {
+					// Creates a new module
+					module = angular.module('stylemark-farger-base', []);
+				}
+
+				module.controller('stylemark-farger-base', function($scope) {
+					$scope.$eval(getStylemarkBlock('angularjs'));
+				});
+			})(window.angular);
+		</script>
+
+		<script>
+			(function(ReactDOM) {
+				if (!ReactDOM) {
+					return;
+				}
+
+				var Component = eval(getStylemarkBlock('jsx'));
+				var rootNode = document.getElementById('stylemark-root');
+				ReactDOM.render(Component, rootNode);
+			})(window.ReactDOM);
+		</script>
+
+		<script>
+			(function(Ember) {
+				if (!Ember) {
+					return;
+				}
+
+				var render = function() {
+					var app = window.noop
+					var container = app.__container__;
+					var renderer = container.lookup('renderer:-dom');
+					var hbs = getStylemarkBlock('handlebars') || getStylemarkBlock('hbs');
+					var template = Ember.HTMLBars.compile(hbs);
+
+					var context;
+					eval('context = ' + getStylemarkBlock('js', '{}'));
+
+					// Credit:
+					// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+					var compile = function(container, template, context) {
+						return new Ember.RSVP.Promise(function(resolve) {
+							Ember.Component.extend(Ember.merge({
+								style: 'display:none;',
+								layout: template,
+								container: container,
+								renderer: renderer,
+
+								init: function() {
+									this._super.apply(this, arguments);
+									Ember.setOwner(this, container);
+								},
+
+								didRender: function() {
+									var elem = this.$();
+									resolve(elem);
+									this.destroy();
+								}
+							}, context))
+								.create()
+								.append();
+
+						});
+					};
+
+					compile(container, template, context).then(function(elem) {
+						jQuery('#stylemark-root').append(elem);
+					});
+				};
+
+				var isReady = function() {
+					return window.noop
+						&& window.noop.__container__;
+				};
+
+				var checkReady = function() {
+					if (isReady()) {
+						render();
+					}
+					else {
+						setTimeout(checkReady, 20);
+					}
+				};
+
+				checkReady();
+
+			})(window.Ember);
+		</script>
+
+		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	</body>
+
+</html>
