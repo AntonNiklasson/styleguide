@@ -4,9 +4,11 @@
   },
   "github": {
     "release": true,
-    "assets": "skolverket-styleguide-*.tgz"
+    "releaseName": "${version}",
+    "assets": "skolverket-styleguide-*.zip"
   },
   "npm": {
     "publish": false
-  }
+  },
+  "buildCommand": "rm -f skolverket-styleguide-*.zip && ./scripts/buildReleaseArchive.js"
 }
