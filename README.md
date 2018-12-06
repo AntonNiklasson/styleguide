@@ -1,10 +1,10 @@
-# Skolverket UI Component Library
+# Skolverkets Komponentbibliotek
 
-The component library uses the style guide [Fractal](https://fractal.build/) to visualize common UI components used at Skolverket.
+Komponentbiblioteket använder ramverket [Fractal](https://fractal.build) för att visualisera och dokumentera de olika komponenterna.
 
-View the component library [here](https://skolverket.github.io/styleguide/)
+Den senaste versionen av komponentbiblioteket finns live på https://skolverket.github.io/styleguide
 
-# Contribute
+# Utveckling
 
 ```
 git clone git@github.com:skolverket/styleguide.git
@@ -16,12 +16,18 @@ open http://localhost:3000
 
 # Releases
 
-Use the command `yarn release` to create a new release. This is built with `release-it` and configured through `.release-it.json` in the repo. Also, the asset included in the release is built using `./scripts/buildReleaseArchive.js`.
+Komponentbiblioteket följer standarden [semantic versioning](https://semver.org/) för att avgöra vilken typ av release en viss ändring genererar.
 
-- `yarn release`
-- `yarn release minor`
+Innan du skapar en release:
+
+- Läs igenom [Checklista för utvecklare](/docs/3-kod/0-checklista-för-utvecklare.md)
+- Alla ändringar är incheckade och pushade till GitHub
+
+Gör releases med kommandot `yarn release`. Det verktyget bygger på [`release-it`](https://github.com/webpro/release-it) och konfigureras i filen `.release-it.json` i roten av kodprojektet. Det filarkiv som inkluderas i varje release konstrueras i skriptet `./scripts/buildReleaseArchive.js`.
+
+- `yarn release` Skapar en patchrelease automatiskt
 - `yarn release minor`
 - `yarn release major`
 - `yarn release preminor`
 
-Just make sure the working tree is clean and everything you want to include in the release is pushed to GitHub.
+När releasen är publicerade finns den listad tillsammans med en changelog som automatiskt genererades baserat på de commits som tillkommit sedan den senaste releasen. Se gärna den texten och uppdatera för att göra det så enkelt att följa som möjligt.
