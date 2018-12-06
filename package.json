@@ -13,6 +13,7 @@
     "build": "fractal build",
     "deploy": "npm run build && gh-pages -d dist",
     "postinstall": "node gulp/fractal-patch/patch.js",
+    "prerelease": "NODE_ENV=production gulp",
     "release": "dotenv release-it --"
   },
   "dependencies": {
