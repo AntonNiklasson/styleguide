@@ -1,8 +1,13 @@
+const process = require('process')
 const helpers = require('./src/ui/core/hbs/helpers')
 const hbs = require('@frctl/handlebars')({ helpers })
 const path = require('path')
 const theme = require('./theme');
 const fractal = module.exports = require('@frctl/fractal').create()
+
+const PRODUCTION = process.env.NODE_ENV === 'production';
+
+console.log('FRACTAL CONFIG FILE', { PRODUCTION })
 
 fractal.set('project.title', 'Skolverkets Komponentbilbiotek')
 fractal.components.engine(hbs)
@@ -16,3 +21,7 @@ fractal.web.set('server.syncOptions', {
 })
 
 fractal.web.set('builder.dest', __dirname + '/site')
+
+if (PRODUCTION) {
+  fractal.web.set('static.mount', 'styleguide');
+}

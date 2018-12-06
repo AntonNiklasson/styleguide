@@ -10,8 +10,8 @@
   "repository": "https://github.com/skolverket/styleguide",
   "scripts": {
     "dev": "parallelshell \"fractal start --sync\" \"gulp -s\"",
-    "build": "NODE_ENV=production gulp -s && fractal build",
-    "deploy": "yarn build && gh-pages -d site",
+    "build": "gulp -s && fractal build",
+    "deploy": "NODE_ENV=production yarn build && gh-pages -d site",
     "postinstall": "node gulp/fractal-patch/patch.js",
     "prerelease": "NODE_ENV=production gulp",
     "release": "dotenv release-it --",
