@@ -22,6 +22,6 @@ fractal.web.set('server.syncOptions', {
 
 fractal.web.set('builder.dest', __dirname + '/site')
 
-if (PRODUCTION) {
+if (!PRODUCTION) {
   fractal.web.set('static.mount', 'styleguide');
 }

@@ -7,7 +7,7 @@ module.exports = {
   context: {
     rootUrl: '#',
     logo: {
-      src: '/assets/img/skolverket-logotype.svg',
+      src: '/styleguide/assets/img/skolverket-logotype.svg',
       alt: 'Skolverket'
     },
     utilities: [
