@@ -5,7 +5,7 @@ const fs = require('fs')
 const zip = new require('node-zip')()
 const pkg = require('../package.json')
 
-const archiveName = `skolverket-styleguide-${pkg.version}`;
+const archiveName = `skolverket-bundle-${pkg.version}`;
 const files = {
   'dist/js/main.min.js': 'main.min.js',
   'dist/css/main.min.css': 'main.min.css',

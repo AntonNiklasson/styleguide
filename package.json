@@ -14,7 +14,8 @@
     "deploy": "npm run build && gh-pages -d dist",
     "postinstall": "node gulp/fractal-patch/patch.js",
     "prerelease": "NODE_ENV=production gulp",
-    "release": "dotenv release-it --"
+    "release": "dotenv release-it --",
+    "postrelease": "rm skolverket-*.zip"
   },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
