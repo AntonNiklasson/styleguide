@@ -9,11 +9,11 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="themes/mandelbrot/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="themes/mandelbrot/css/black.css?cachebust=1.2.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.2.0" type="text/css">
 
-<link rel="stylesheet" href="theme/main.css?cachebust=1.2.0" type="text/css">
+<link rel="stylesheet" href="../../theme/main.css?cachebust=1.2.0" type="text/css">
 
 
 <title>Skolverkets Komponentbilbiotek</title>
@@ -40,7 +40,7 @@
 </svg>
 
     </button>
-    <a href="" class="Header-title" data-pjax>Skolverkets Komponentbilbiotek</a>
+    <a href="../../index.html" class="Header-title" data-pjax>Skolverkets Komponentbilbiotek</a>
   </div>
 
   <div class="Header__links">
@@ -70,29 +70,93 @@
 
     
     
-    <h1 id="skolverkets-styleguide">Skolverkets Styleguide</h1>
-<style>
-  .large-button {
-    margin: 4px;
-    padding: 0.5rem 1rem;
-    background: white;
-    border: 1px solid purple;
-    border-radius: 4px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: purple;
-    text-decoration: none;
-  }
-  .large-button:hover {
-    background: #feefff;
-    color: purple;
-  }
-</style>
+    <h1 id="f-rger">Färger</h1>
+<p>Använd alltid ett kontrastvärde på minst 4:5:1 som är <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">rekommenderat av W3C</a>. Du behöver testa att din tjänst uppfyller denna riktlinje.</p>
+<table>
+<thead>
+<tr>
+<th>Namn</th>
+<th>Hex</th>
+<th>Variabel</th>
+<th>Exempel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>    Textfärg</td>
+<td><code>#292929</code></td>
+<td><code>$color-text</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #292929;"></td>
+</tr>
+<tr>
+<td>    Sekundär textfärg</td>
+<td><code>#666666</code></td>
+<td><code>$color-text-secondary</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #666666;"></td>
+</tr>
+<tr>
+<td>    Ljus textfärg</td>
+<td><code>#FFFFFF</code></td>
+<td><code>$color-text-light</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #FFFFFF;"></td>
+</tr>
+<tr>
+<td>    Länkfärg</td>
+<td><code>#0079C2</code></td>
+<td><code>$color-link</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #0079C2;"></td>
+</tr>
+<tr>
+<td>    Länkfärg, hover</td>
+<td><code>#005182</code></td>
+<td><code>$color-link-hover</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #005182;"></td>
+</tr>
+<tr>
+<td>    Länkfärg, besökt</td>
+<td><code>#386406</code></td>
+<td><code>$color-link-visited</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #386406;"></td>
+</tr>
+<tr>
+<td>    Ramfärg</td>
+<td><code>#E1D4E1</code></td>
+<td><code>$color-border</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #E1D4E1;"></td>
+</tr>
+<tr>
+<td>    Bakgrund, mörk</td>
+<td><code>#692969</code></td>
+<td><code>$color-background-dark</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #692969;"></td>
+</tr>
+<tr>
+<td>    Bakgrund, ljus</td>
+<td><code>#F8F4F8</code></td>
+<td><code>$color-background-light</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #F8F4F8;"></td>
+</tr>
+<tr>
+<td>    Fel</td>
+<td><code>#CD2126</code></td>
+<td><code>$color-error</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #CD2126;"></td>
+</tr>
+<tr>
+<td>    Fokus</td>
+<td><code>#FCB933</code></td>
+<td><code>$color-focus</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #FCB933;"></td>
+</tr>
+<tr>
+<td>    Turkos</td>
+<td><code>#178079</code></td>
+<td><code>$color-turkos</code></td>
+<td><div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 2px; background-color: #178079;"></td>
+</tr>
+</tbody>
+</table>
 
-<div class="navigation-container">
-  <a class="large-button" href="/docs/kom-igang/snabbstart">Kom igång!</a>
-  <a class="large-button" href="https://github.com/skolverket/styleguide/issues/new">Rapportera en bugg!</a>
-</div>
     
 
 
@@ -135,7 +199,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/kom-igang/introduktion.html" data-pjax>
+            <a class="Tree-entityLink" href="../kom-igang/introduktion.html" data-pjax>
                 <span>Introduktion</span>
                 
             </a>
@@ -145,7 +209,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/kom-igang/snabbstart.html" data-pjax>
+            <a class="Tree-entityLink" href="../kom-igang/snabbstart.html" data-pjax>
                 <span>Snabbstart</span>
                 
             </a>
@@ -155,7 +219,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/kom-igang/konventioner.html" data-pjax>
+            <a class="Tree-entityLink" href="../kom-igang/konventioner.html" data-pjax>
                 <span>Konventioner</span>
                 
             </a>
@@ -165,7 +229,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/kom-igang/utveckling.html" data-pjax>
+            <a class="Tree-entityLink" href="../kom-igang/utveckling.html" data-pjax>
                 <span>Utveckling</span>
                 
             </a>
@@ -190,8 +254,8 @@
     
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/visuell-identitet/farger.html" data-pjax>
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Färger</span>
                 
             </a>
@@ -217,7 +281,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="docs/kod/checklista-for-utvecklare.html" data-pjax>
+            <a class="Tree-entityLink" href="../kod/checklista-for-utvecklare.html" data-pjax>
                 <span>Checklista för utvecklare</span>
                 
             </a>
@@ -270,7 +334,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/feedback--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/feedback--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -294,7 +358,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/feedback--input.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/feedback--input.html" data-pjax>
                 <span>Input</span>
                 
 
@@ -318,7 +382,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/feedback--response.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/feedback--response.html" data-pjax>
                 <span>Response</span>
                 
 
@@ -347,7 +411,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/box.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/box.html" data-pjax>
                 <span>Box</span>
                 
 
@@ -371,7 +435,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/accordion.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/accordion.html" data-pjax>
                 <span>Dragspelsmeny</span>
                 
 
@@ -406,7 +470,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/hero--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/hero--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -430,7 +494,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/hero--without-title.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/hero--without-title.html" data-pjax>
                 <span>Without title</span>
                 
 
@@ -470,7 +534,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/icon--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/icon--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -494,7 +558,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/icon--expand-more.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/icon--expand-more.html" data-pjax>
                 <span>Expand more</span>
                 
 
@@ -523,7 +587,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/toc.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/toc.html" data-pjax>
                 <span>Innehållsförteckning</span>
                 
 
@@ -558,7 +622,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/btn--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/btn--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -582,7 +646,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/btn--theme-secondary.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/btn--theme-secondary.html" data-pjax>
                 <span>Theme secondary</span>
                 
 
@@ -606,7 +670,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/btn--disabled.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/btn--disabled.html" data-pjax>
                 <span>Disabled</span>
                 
 
@@ -630,7 +694,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/btn--small.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/btn--small.html" data-pjax>
                 <span>Small</span>
                 
 
@@ -654,7 +718,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/btn--block.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/btn--block.html" data-pjax>
                 <span>Block</span>
                 
 
@@ -678,7 +742,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/btn--small-block.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/btn--small-block.html" data-pjax>
                 <span>Small block</span>
                 
 
@@ -707,7 +771,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/rich-text.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/rich-text.html" data-pjax>
                 <span>Rich text</span>
                 
 
@@ -731,7 +795,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/search.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/search.html" data-pjax>
                 <span>Search</span>
                 
 
@@ -766,7 +830,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/section--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/section--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -790,7 +854,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/section--flera-sektioner.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/section--flera-sektioner.html" data-pjax>
                 <span>Flera sektioner</span>
                 
 
@@ -819,7 +883,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/section-navigation.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/section-navigation.html" data-pjax>
                 <span>Sektionsnavigering</span>
                 
 
@@ -854,7 +918,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/reveal--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/reveal--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -878,7 +942,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/reveal--expanded.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/reveal--expanded.html" data-pjax>
                 <span>Expanded</span>
                 
 
@@ -934,7 +998,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-navigation--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/content-navigation--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -958,7 +1022,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-navigation--utan-bilder.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/content-navigation--utan-bilder.html" data-pjax>
                 <span>Utan bilder</span>
                 
 
@@ -982,7 +1046,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-navigation--tva-bildpuffar.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/content-navigation--tva-bildpuffar.html" data-pjax>
                 <span>Tva bildpuffar</span>
                 
 
@@ -1006,7 +1070,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-navigation--tre-bildpuffar.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/content-navigation--tre-bildpuffar.html" data-pjax>
                 <span>Tre bildpuffar</span>
                 
 
@@ -1046,7 +1110,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/form--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/form--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -1070,7 +1134,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/form--checkboxes.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/form--checkboxes.html" data-pjax>
                 <span>Checkboxes</span>
                 
 
@@ -1094,7 +1158,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/form--radiobuttons.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/form--radiobuttons.html" data-pjax>
                 <span>Radiobuttons</span>
                 
 
@@ -1118,7 +1182,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/form--select.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/form--select.html" data-pjax>
                 <span>Select</span>
                 
 
@@ -1158,7 +1222,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-navigation--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/content-navigation--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -1182,7 +1246,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/content-navigation--med-lanktext.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/content-navigation--med-lanktext.html" data-pjax>
                 <span>Med lanktext</span>
                 
 
@@ -1211,7 +1275,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/news-list.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/news-list.html" data-pjax>
                 <span>Nyhetslista</span>
                 
 
@@ -1251,7 +1315,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/head.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/head.html" data-pjax>
                 <span>Head</span>
                 
 
@@ -1275,7 +1339,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/inline-svg.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/inline-svg.html" data-pjax>
                 <span>Inline svg</span>
                 
 
@@ -1310,7 +1374,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/layout--default.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/layout--default.html" data-pjax>
                 <span>Default</span>
                 
 
@@ -1334,7 +1398,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/layout--page.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/layout--page.html" data-pjax>
                 <span>Page</span>
                 
 
@@ -1363,7 +1427,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/footer.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/footer.html" data-pjax>
                 <span>Sidfot</span>
                 
 
@@ -1387,7 +1451,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/header.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/header.html" data-pjax>
                 <span>Sidhuvud</span>
                 
 
@@ -1427,7 +1491,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/oversikt.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/oversikt.html" data-pjax>
                 <span>Översikt</span>
                 
 
@@ -1451,7 +1515,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/start-page.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/start-page.html" data-pjax>
                 <span>Startsida</span>
                 
 
@@ -1475,7 +1539,7 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="components/detail/understartsida.html" data-pjax>
+            <a class="Tree-entityLink" href="../../components/detail/understartsida.html" data-pjax>
                 <span>Understartsida</span>
                 
 
@@ -1518,7 +1582,7 @@
 
 
 
-<script src="themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
 
 
 
