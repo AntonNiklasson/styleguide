@@ -1,0 +1,65 @@
+.skv-feedback {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+  // Different styling when textarea
+  &--textarea {
+    max-width: 410px;
+    display: block;
+  }
+
+  @include media-min('md') {
+    flex-direction: row;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: .875rem;
+    text-align: center;
+
+    &--standalone {
+      // Add more space when buttons aren't present
+      margin-bottom: 0;
+      text-align: center;
+      padding: 1.4375rem 0;
+    }
+
+    @include media-min('md') {
+      text-align: left;
+      margin-bottom: 0;
+
+      &--standalone {
+        text-align: left;
+        padding: 0;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__button {
+    min-width: 84px;
+
+    &:first-child {
+      margin: 0 .875rem;
+    }
+  }
+
+  &__text-area {
+    padding-top: .6875rem;
+    padding-bottom: .6875rem;
+
+    &--title {
+      margin-bottom: .125rem;
+    }
+  }
+}
