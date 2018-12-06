@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="no-js">
+<head>
+  {{ render '@head' }}
+</head>
+<body class="Body--purple">
+{{ render '@inline-svg' }}
+{{ render '@header' }}
+{{{ yield }}}
+{{ render '@footer' }}
+<script async defer src="/styleguide/js/main.min.js"></script>
+</body>
+</html>

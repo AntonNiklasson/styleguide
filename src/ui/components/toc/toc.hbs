@@ -1,0 +1,25 @@
+<div class="skv-toc">
+	{{#if title }}<h3 class="skv-toc__title">{{ title }}</h3>{{/if}}
+	<ul class="skv-toc__list">
+		{{#each pages}}
+		<li tabindex="1" class="skv-toc__list-item">
+			{{#if this.active}}
+			{{this.title}}
+			{{else}}
+			<a class="skv-toc__list-item-link text-small" href="{{ this.url }}">{{ this.title }}</a>
+			{{/if}}
+		</li>
+		{{#if this.pages }}
+		<li>
+			<ul class="skv-toc__list skv-toc__list--sub">
+				{{#each this.pages }}
+				<li class="skv-toc__list-item">
+					<a class="skv-toc__list-item-link text-small" href="{{ this.url }}">{{ this.title }}</a>
+				</li>
+				{{/each}}
+			</ul>
+		</li>
+		{{/if}}
+		{{/each}}
+	</ul>
+</div>

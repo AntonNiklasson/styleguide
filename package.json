@@ -1,33 +1,52 @@
 {
-  "name": "sv-component-library",
-  "version": "0.1.2",
+  "name": "skolverket-styleguide",
+  "license": "MIT",
+  "version": "0.1.3",
   "engines": {
-    "node": "7.10.0",
-    "npm": "4.2.0"
+    "node": "^8.12.0",
+    "yarn": "^1.10.0"
   },
-  "private": true,
   "homepage": "https://skolverket.github.io/styleguide",
+  "repository": "https://github.com/skolverket/styleguide",
   "scripts": {
-    "start": "npm-run-all -p watch-*",
-    "build": "npm-run-all build-docs* build-css* copy-assets",
-    "deploy": "gh-pages -d public --dotfiles",
-    "watch-docs": "stylemark -i src/docs -o public -c stylemark.yml -w -b",
-    "build-docs": "stylemark -i src/docs -o public -c stylemark.yml",
-    "build-css": "node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css",
-    "build-css-prefix": "postcss public/dist/css/*.css --use autoprefixer -d public/dist/css",
-    "copy-assets": "cpx \"src/assets/**/*\" public/dist/assets",
-    "watch-assets": "cpx \"src/assets/**/*\" public/dist/assets --watch",
-    "watch-css": "npm run build-css && node-sass-chokidar src/scss/skolverket.scss --include-path=src -o public/dist/css --watch --recursive",
-    "predeploy": "npm run build"
+    "dev": "parallelshell \"fractal start --sync\" \"gulp -s\"",
+    "build": "gulp -s && fractal build",
+    "deploy": "NODE_ENV=production yarn build && gh-pages -d site",
+    "postinstall": "node gulp/fractal-patch/patch.js",
+    "prerelease": "NODE_ENV=production gulp",
+    "release": "dotenv release-it --",
+    "postrelease": "rm skolverket-*.zip"
   },
   "dependencies": {
-    "autoprefixer": "^8.0.0",
-    "cpx": "^1.5.0",
+    "@frctl/fractal": "^1.1.7",
+    "babel-core": "~6.26.0",
+    "babel-polyfill": "~6.26.0",
+    "babel-preset-es2015": "~6.24.1",
+    "babel-preset-stage-2": "~6.24.1",
+    "babelify": "~8.0.0",
+    "browserify": "~14.5.0",
+    "del": "~3.0.0",
+    "dotenv-cli": "^1.4.0",
     "gh-pages": "^1.1.0",
-    "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.2",
-    "postcss-cli": "^5.0.0",
-    "sass-lint": "^1.12.1",
-    "stylemark": "^0.6.4"
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "~4.0.0",
+    "gulp-environments": "~0.1.2",
+    "gulp-flatten": "~0.3.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-replace": "~0.6.1",
+    "gulp-sass": "~3.1.0",
+    "gulp-sequence": "~0.4.6",
+    "gulp-sourcemaps": "~2.6.1",
+    "gulp-svgmin": "~1.2.4",
+    "gulp-svgstore": "~6.1.0",
+    "gulp-uglify": "~3.0.0",
+    "parallelshell": "~3.0.2",
+    "release-it": "^8.2.0",
+    "vinyl-buffer": "~1.0.0",
+    "vinyl-source-stream": "~1.1.0",
+    "watchify": "~3.9.0"
+  },
+  "devDependencies": {
+    "node-zip": "^1.1.1"
   }
 }

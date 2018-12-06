@@ -1,0 +1,123 @@
+.skv-footer {
+  display: flex;
+  min-height: 14rem;
+  background-color: $color-purple-dark;
+  padding-top: 2.25rem;
+  padding-bottom: 1.625rem;
+
+  @include media-min('md') {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  &__header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-min('lg') {
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 160px;
+    height: 36px;
+    font: 0/0 a; // zeros out the font size and line-height
+    border: 0;
+    background-image: url('/styleguide/assets/img/skolverket-logotype-white.svg');
+    background-repeat: no-repeat;
+    color: transparent;
+    background-color: transparent;
+    background-size: 100%;
+  }
+
+  &__description {
+    margin-top: 1rem;
+    color: $color-purple;
+    text-align: center;
+    margin-bottom: 1.875rem;
+
+    @include media-min('lg') {
+      text-align: left;
+    }
+  }
+
+  &__navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    @include media-min('lg') {
+      align-items: flex-end;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include media-min('md') {
+      flex-direction: row;
+      width: auto;
+    }
+
+    &-item {
+      padding: .625rem .625rem .625rem 0;
+      border-bottom: 1px solid rgba($color-purple, .25);
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &--no-border-bottom {
+        border-bottom: 0;
+      }
+
+      @include media-min('md') {
+        border-bottom: 0;
+        padding-right: 1.75rem;
+      }
+
+      &-link {
+        width: 100%;
+        text-decoration: none;
+        color: $color-white;
+        font-weight: $font-weight-bold;
+
+        &:hover {
+          color: $color-white;
+          text-decoration: underline;
+        }
+
+        &:focus,
+        &:active,
+        &:active:focus {
+          color: $color-white;
+        }
+
+        &--purple {
+          color: $color-purple;
+          font-weight: 400;
+
+          &:hover {
+            color: $color-purple;
+          }
+
+          &:focus,
+          &:active,
+          &:active:focus {
+            color: $color-purple;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "src": {
+    "tagName": "v%s"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "${version}",
+    "assets": "skolverket-bundle-*.zip"
+  },
+  "npm": {
+    "publish": false
+  },
+  "buildCommand": "./scripts/buildReleaseArchive.js"
+}

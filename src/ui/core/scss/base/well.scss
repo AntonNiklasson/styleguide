@@ -1,0 +1,22 @@
+.Body--padded {
+  padding: 20px;
+}
+.Body--purple {
+  background: #F8F4F8;
+}
+.Body--purple.Body--padded {
+  padding: 40px;
+}
+
+.swatch {
+  margin-bottom: 1em;
+}
+.swatch__preview {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+.swatch__preview--bordered { border: 1px solid #ccc }
+.swatch__value {
+  font-weight: bold;
+}

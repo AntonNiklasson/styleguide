@@ -1,0 +1,16 @@
+<div class="Header">
+  <div class="Header__title">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+      {% include 'icons/close-nav.svg' %}
+      {% include 'icons/open-nav.svg' %}
+    </button>
+    <a href="{{ path('/') }}" class="Header-title" data-pjax>{{ frctl.get('project.title') | default('Component
+      Library') }}</a>
+  </div>
+
+  <div class="Header__links">
+    <nav>
+      <a href="https://www.github.com/skolverket/styleguide" target="_blank">GitHub</a>
+    </nav>
+  </div>
+</div>

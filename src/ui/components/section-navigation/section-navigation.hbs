@@ -1,0 +1,24 @@
+<div class="skv-section-navigation">
+  <div class="container">
+    <div class="row">
+      {{#if headline }}
+      <div class="col-12">
+        <h3 class="h3 skv-section-navigation__label{{#if shouldOverlap}} skv-section-navigation__label--overlap{{/if}}">
+          {{ headline }}
+        </h3>
+      </div>
+      {{/if}}
+      {{#each links }}
+      <div class="col-12 col-md-4 col-lg-3">
+        <div class="skv-section-navigation__box">
+          <div class="skv-section-navigation__box-item">
+            <a href="{{ url }}" class="skv-section-navigation__box-item-link">
+              {{ text }}<i class="icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

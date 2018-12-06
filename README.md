@@ -1,28 +1,39 @@
-# Skolverket UI Component Library
+# Skolverkets Komponentbibliotek
 
-The component library uses the style guide [Stylemark](https://github.com/nextbigsoundinc/stylemark) to visualize common UI components used at Skolverket.
+Komponentbiblioteket använder ramverket [Fractal](https://fractal.build) för att visualisera och dokumentera de olika komponenterna.
 
-View the component library [here](https://skolverket.github.io/styleguide/)
+Den senaste versionen av komponentbiblioteket finns live på https://skolverket.github.io/styleguide
 
-# View locally
+# Utveckling
 
-If you want to view the components locally or start contributing code or documentation to the project. You need to have both [Node](https://nodejs.org) installed.
-
-```sh
-npm install
-npm start
+```
+git clone git@github.com:skolverket/styleguide.git
+cd styleguide
+yarn
+yarn dev
+open http://localhost:3000
 ```
 
-Go to [localhost:3000](http://localhost:3000) to view the component library.
+# Releases
 
-# Contribute
+Komponentbiblioteket följer standarden [semantic versioning](https://semver.org/) för att avgöra vilken typ av release en viss ändring genererar.
 
-To develop a component, go to `/src/scss/_component.scss` and write your code following [BEM](http://getbem.com/introduction/). Document your component in Markdown `/src/docs/_component.scss`. Then make a Pull Request.
+Innan du skapar en release:
 
-# Release Management
+- Läs igenom [Checklista för utvecklare](/docs/3-kod/0-checklista-för-utvecklare.md)
+- Alla ändringar är incheckade och pushade till GitHub
 
-1. Update the component library version using `npm version <major|minor|patch> -m "Message describing what happened".` The message will be published as the [release notes in Github](https://github.com/skolverket/styleguide/releases).
-2. `git push`
-3. `git push --tags` to see the release notes in Github
-4. `npm run deploy` the component library [here](https://skolverket.github.io/styleguide/)
-5. Inform the system owners across Skolverket to upgrade to the new release.
+Gör releases med kommandot `yarn release`. Det verktyget bygger på [`release-it`](https://github.com/webpro/release-it) och konfigureras i filen `.release-it.json` i roten av kodprojektet. Det filarkiv som inkluderas i varje release konstrueras i skriptet `./scripts/buildReleaseArchive.js`.
+
+- `yarn release` Skapar en patchrelease automatiskt
+- `yarn release minor`
+- `yarn release major`
+- `yarn release preminor`
+
+När releasen är publicerade finns den listad tillsammans med en changelog som automatiskt genererades baserat på de commits som tillkommit sedan den senaste releasen. Se gärna den texten och uppdatera för att göra det så enkelt att följa som möjligt.
+
+# Deployment
+
+För att uppdatera siten som finns på skolverket.github.io/skolverket använder vi kommandot `yarn deploy`. Det kommer att ta hand om fractalbygget, och publicerar sedan den senaste versionen på siten.
+
+Siten hostas med hjälp av GitHub Pages. Mer information finns i inställningarna för repot.
