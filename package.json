@@ -1,6 +1,7 @@
 {
-  "name": "sv-component-library",
-  "version": "0.1.2",
+  "name": "skolverket-styleguide",
+  "license": "MIT",
+  "version": "0.1.3",
   "engines": {
     "node": "^8.12.0",
     "yarn": "^1.10.0"
@@ -9,10 +10,12 @@
   "repository": "https://github.com/skolverket/styleguide",
   "scripts": {
     "dev": "parallelshell \"fractal start --sync\" \"gulp -s\"",
-    "build": "fractal build",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "postinstall": "node gulp/fractal-patch/patch.js"
+    "build": "NODE_ENV=production gulp -s && fractal build",
+    "deploy": "yarn build && gh-pages -d site",
+    "postinstall": "node gulp/fractal-patch/patch.js",
+    "prerelease": "NODE_ENV=production gulp",
+    "release": "dotenv release-it --",
+    "postrelease": "rm skolverket-*.zip"
   },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
@@ -23,6 +26,7 @@
     "babelify": "~8.0.0",
     "browserify": "~14.5.0",
     "del": "~3.0.0",
+    "dotenv-cli": "^1.4.0",
     "gh-pages": "^1.1.0",
     "gulp": "~3.9.1",
     "gulp-autoprefixer": "~4.0.0",
@@ -37,8 +41,12 @@
     "gulp-svgstore": "~6.1.0",
     "gulp-uglify": "~3.0.0",
     "parallelshell": "~3.0.2",
+    "release-it": "^8.2.0",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.9.0"
+  },
+  "devDependencies": {
+    "node-zip": "^1.1.1"
   }
 }
