@@ -3,6 +3,8 @@
     "tagName": "v%s"
   },
   "github": {
+    "draft": true,
+    "preRelease": true,
     "release": true,
     "releaseName": "${version}",
     "assets": "skolverket-styleguide-*.zip"
