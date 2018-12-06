@@ -61,6 +61,7 @@ typings/
 
 # production
 /build
+/site
 
 # misc
 .DS_Store

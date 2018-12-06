@@ -31,3 +31,9 @@ Gör releases med kommandot `yarn release`. Det verktyget bygger på [`release-i
 - `yarn release preminor`
 
 När releasen är publicerade finns den listad tillsammans med en changelog som automatiskt genererades baserat på de commits som tillkommit sedan den senaste releasen. Se gärna den texten och uppdatera för att göra det så enkelt att följa som möjligt.
+
+# Deployment
+
+För att uppdatera siten som finns på skolverket.github.io/skolverket använder vi kommandot `yarn deploy`. Det kommer att ta hand om fractalbygget, och publicerar sedan den senaste versionen på siten.
+
+Siten hostas med hjälp av GitHub Pages. Mer information finns i inställningarna för repot.
