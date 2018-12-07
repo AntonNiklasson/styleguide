@@ -23,4 +23,6 @@ fractal.web.set('builder.dest', __dirname + '/site')
 
 if (!PRODUCTION) {
   fractal.web.set('static.mount', 'styleguide');
+} else {
+  fractal.set('plugins.web.build.root', 'styleguide');
 }
