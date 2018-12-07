@@ -1,4 +1,4 @@
-# Skolverkets Styleguide
+# Skolverkets Komponentbibliotek
 
 <style>
   .large-button {
@@ -11,6 +11,7 @@
     font-size: 1.2rem;
     color: purple;
     text-decoration: none;
+    display: inline-block;
   }
   .large-button:hover {
     background: #feefff;
@@ -19,6 +20,6 @@
 </style>
 
 <div class="navigation-container">
-  <a class="large-button" href="/docs/kom-igang/snabbstart">Kom igång!</a>
-  <a class="large-button" href="https://github.com/skolverket/styleguide/issues/new">Rapportera en bugg!</a>
+  <a class="large-button" href="docs/kom-igang/snabbstart">Kom igång!</a>
+  <a class="large-button" href="https://github.com/skolverket/styleguide/issues/new" target="_blank">Rapportera en bugg!</a>
 </div>
