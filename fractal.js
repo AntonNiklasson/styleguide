@@ -4,12 +4,11 @@ const hbs = require('@frctl/handlebars')({ helpers })
 const path = require('path')
 const theme = require('./theme');
 const fractal = module.exports = require('@frctl/fractal').create()
+const pkg = require('./package.json')
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
-console.log('FRACTAL CONFIG FILE', { PRODUCTION })
-
-fractal.set('project.title', 'Skolverkets Komponentbilbiotek')
+fractal.set('project.title', `Skolverkets Komponentbilbiotek v${ pkg.version }${ !PRODUCTION ? ' (Dev)' : '' }`)
 fractal.components.engine(hbs)
 fractal.components.set('path', path.join(__dirname, 'src/ui'))
 fractal.components.set('default.preview', '@layout')
