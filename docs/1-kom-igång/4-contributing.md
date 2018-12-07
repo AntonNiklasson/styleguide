@@ -27,4 +27,4 @@ Lansera en ny version av styleguiden med `yarn release`. Det här skriptet ansva
 
 För att kunna ladda upp hela releasen till GitHub behöver du skapa ett [_Personal Access Token_](https://github.com/settings/tokens) och klistra in det i en fil `.env` som du skapar utifrån `.env.example` som finns med i repot. Det enda som behövs är access till scopet `repo`:
 
-![GitHub Scopes](/tmp/img/github-scopes.png)
+![GitHub Scopes](/styleguide/tmp/img/github-scopes.png)

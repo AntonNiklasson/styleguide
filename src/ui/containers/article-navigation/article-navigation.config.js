@@ -1,13 +1,13 @@
 module.exports = {
   name: "Artikelpuffar",
-  handle: "content-navigation",
+  handle: "article-navigation",
   context: {
     sections: [
       {
         title: "En bildpuff",
         colspan: 6,
         items: [
-          { imageUrl: "/tmp/img/people-16x9-1.jpg" },
+          { imageUrl: "/styleguide/tmp/img/people-16x9-1.jpg" },
           {
             title: "Quisque augue dui suscipit consequat",
             description:
@@ -19,7 +19,7 @@ module.exports = {
         title: "En bildpuff",
         colspan: 6,
         items: [
-          { imageUrl: "/tmp/img/people-16x9-1.jpg" },
+          { imageUrl: "/styleguide/tmp/img/people-16x9-1.jpg" },
           {
             title: "Quisque augue dui suscipit consequat",
             description:
@@ -62,11 +62,11 @@ module.exports = {
             colspan: 6,
             items: [
               {
-                imageUrl: "/tmp/img/people-16x9-3.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-3.jpg",
                 title: "Quisque augue dui suscipit consequat"
               },
               {
-                imageUrl: "/tmp/img/people-16x9-1.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-1.jpg",
                 title: "Suscipit consequat quisque augue dui"
               }
             ]
@@ -76,11 +76,11 @@ module.exports = {
             colspan: 6,
             items: [
               {
-                imageUrl: "/tmp/img/people-16x9-3.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-3.jpg",
                 title: "Quisque augue dui suscipit consequat"
               },
               {
-                imageUrl: "/tmp/img/people-16x9-1.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-1.jpg",
                 title: "Suscipit consequat quisque augue dui"
               }
             ]
@@ -97,15 +97,15 @@ module.exports = {
             colspan: 4,
             items: [
               {
-                imageUrl: "/tmp/img/people-16x9-2.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-2.jpg",
                 title: "Vivamus placerat, neque quis rutrum feugiat turpis"
               },
               {
-                imageUrl: "/tmp/img/people-16x9-3.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-3.jpg",
                 title: "Vivamus placerat, neque quis"
               },
               {
-                imageUrl: "/tmp/img/people-16x9-1.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-1.jpg",
                 title:
                   "Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat"
               }
@@ -116,15 +116,15 @@ module.exports = {
             colspan: 4,
             items: [
               {
-                imageUrl: "/tmp/img/people-16x9-2.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-2.jpg",
                 title: "Vivamus placerat, neque quis rutrum feugiat turpis"
               },
               {
-                imageUrl: "/tmp/img/people-16x9-3.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-3.jpg",
                 title: "Vivamus placerat, neque quis"
               },
               {
-                imageUrl: "/tmp/img/people-16x9-1.jpg",
+                imageUrl: "/styleguide/tmp/img/people-16x9-1.jpg",
                 title:
                   "Vivamus placerat, neque quis rutrum feugiat, turpis turpis placerat"
               }
