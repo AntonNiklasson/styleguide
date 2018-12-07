@@ -4,4 +4,4 @@
 Bygg-skriptet kollar på alla svg-filer som befinner sig i mappen <strong>src/ui/assets/svg</strong> och komprimerar sedan dessa till en html-fil.
 
 ## Implementering
-Den här kodsnutten skall inkluderas precis efter `<body>`-taggen. Den innehåller svg path-data för alla ikoner som sedan refereras till. Man renderar en ikon genom [ikon-komponenten](/components/detail/icon)
+Den här kodsnutten skall inkluderas precis efter `<body>`-taggen. Den innehåller svg path-data för alla ikoner som sedan refereras till. Man renderar en ikon genom [ikon-komponenten](components/detail/icon)
