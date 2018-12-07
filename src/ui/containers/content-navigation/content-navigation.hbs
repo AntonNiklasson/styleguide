@@ -1,39 +1,37 @@
-<div class="skv-box skv-box--no-padding">
-  <div class="skv-section section--boxed">
-    <header class="skv-section__header">
-      <h2 class="h3 skv-section__header-title"><span class="skv-section__header-title-text">{{ title }}<span></h2>
-      <div class="skv-section__header-preamble text-secondary">
-        {{{ description }}}
+<div class="skv-section skv-section--boxed">
+  <header class="skv-section__header">
+    <h2 class="h3 skv-section__header-title"><span class="skv-section__header-title-text">{{ title }}<span></h2>
+    <div class="skv-section__header-preamble text-secondary">
+      {{{ description }}}
+    </div>
+  </header>
+  <div class="skv-section__body">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <ul class="skv-content-navigation-list">
+          {{#each columnOne }}
+            <li class="skv-content-navigation-list__item">
+              <a href="{{ url }}" class="skv-content-navigation-list__item-link text-standard">
+                {{ label }}
+                <i class="icon-arrow"></i>
+              </a>
+              {{#if description}}<p class="text-small margin-bt-reset">{{ description }}</p>{{/if}}
+            </li>
+          {{/each}}
+        </ul>
       </div>
-    </header>
-    <div class="skv-section__body">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <ul class="skv-content-navigation-list">
-            {{#each columnOne }}
-              <li class="skv-content-navigation-list__item">
-                <a href="{{ url }}" class="skv-content-navigation-list__item-link text-standard">
-                  {{ label }}
-                  <i class="icon-arrow"></i>
-                </a>
-                {{#if description}}<p class="text-small margin-bt-reset">{{ description }}</p>{{/if}}
-              </li>
-            {{/each}}
-          </ul>
-        </div>
-        <div class="col-12 col-md-6">
-          <ul class="skv-content-navigation-list">
-            {{#each columnTwo }}
-              <li class="skv-content-navigation-list__item">
-                <a href="{{ url }}" class="skv-content-navigation-list__item-link text-standard">
-                  {{ label }}
-                  <i class="icon-arrow"></i>
-                </a>
-                {{#if description}}<p class="text-small margin-bt-reset">{{ description }}</p>{{/if}}
-              </li>
-            {{/each}}
-          </ul>
-        </div>
+      <div class="col-12 col-md-6">
+        <ul class="skv-content-navigation-list">
+          {{#each columnTwo }}
+            <li class="skv-content-navigation-list__item">
+              <a href="{{ url }}" class="skv-content-navigation-list__item-link text-standard">
+                {{ label }}
+                <i class="icon-arrow"></i>
+              </a>
+              {{#if description}}<p class="text-small margin-bt-reset">{{ description }}</p>{{/if}}
+            </li>
+          {{/each}}
+        </ul>
       </div>
     </div>
   </div>
