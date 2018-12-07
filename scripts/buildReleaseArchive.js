@@ -9,6 +9,7 @@ const archiveName = `skolverket-bundle-${pkg.version}`;
 const files = {
   'dist/js/main.min.js': 'main.min.js',
   'dist/css/main.min.css': 'main.min.css',
+  'dist/css/no-js.min.css': 'no-js.min.css',
   'dist/assets/': 'assets/',
   'README.md': 'README.md'
 }
@@ -20,7 +21,7 @@ const isDirectory = name => {
 const getSubtree = (folder, alias) => {
   let tree = {};
   const files = fs.readdirSync(folder)
-  
+
   files.forEach(file => {
     const filepath = path.join(folder, file);
 
@@ -30,7 +31,7 @@ const getSubtree = (folder, alias) => {
     } else {
       tree[filepath.replace(folder, alias)] = fs.readFileSync(filepath)
     }
-  })    
+  })
 
   return tree;
 }
